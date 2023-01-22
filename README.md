@@ -2,14 +2,14 @@
 
 #### _Plugin for [Kanboard](https://github.com/fguillot/kanboard "Kanboard - Kanban Project Management Software")_
 
-`Brief intro`
+Use this plugin to rename your Kanboard application and update the site meta tags. When sharing the login page or public tasks, the meta information including and icons show nicely to give your interface a professional organised look.
 
 
 Features
 -------------
 
-- `main features list`
-- `main features list`
+- Rename your installation of Kanboard
+- Favicons included for all common devices
 
 
 Screenshots
