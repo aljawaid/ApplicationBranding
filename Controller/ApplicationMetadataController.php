@@ -1,17 +1,17 @@
 <?php
 
-namespace Kanboard\Plugin\PluginNameExampleStudlyCaps\Controller;
+namespace Kanboard\Plugin\ApplicationMetadata\Controller;
 
 use Kanboard\Controller\BaseController;
 use Kanboard\Core\Plugin\Directory;
 
 /**
- * Plugin PluginNameExampleStudlyCaps
- * Class myController
+ * Plugin ApplicationMetadata
+ * Class ApplicationMetadataController
  * @author aljawaid
  */
 
-class MyController extends \Kanboard\Controller\PluginController
+class ApplicationMetadataController extends \Kanboard\Controller\PluginController
 {
     /**
      * Display the Settings Page
@@ -25,8 +25,8 @@ class MyController extends \Kanboard\Controller\PluginController
 
     public function show()
     {
-        $this->response->html($this->helper->layout->config('pluginNameExampleCamelCase:folder/filename', array(
-            'title' => t('PluginNameExampleStudlyCaps').' &#10562; '.t('Settings'),
+        $this->response->html($this->helper->layout->config('applicationMetadata:config/settings', array(
+            'title' => t('Application Metadata').' &#10562; '.t('Settings'),
         )));
     }
 }
