@@ -1,4 +1,4 @@
-# `Plugin Name`
+# ApplicationMetadata
 
 #### _Plugin for [Kanboard](https://github.com/fguillot/kanboard "Kanboard - Kanban Project Management Software")_
 
@@ -8,7 +8,11 @@ Use this plugin to rename your Kanboard application and update the site meta tag
 Features
 -------------
 
+**Application Name**
 - Rename your installation of Kanboard
+ - Choose your own name or allow the default `My Workspace` to be used
+
+**Application Metadata**
 - Favicons included for all common devices
 
 
@@ -23,7 +27,7 @@ Screenshots
 Usage
 -------------
 
-Go to `Settings` &#10562;
+Share the login page or a public task. Note the icon and meta information.
 
 
 Compatibility
