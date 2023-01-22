@@ -19,6 +19,15 @@ class Plugin extends Base
         //  - Override name should start lowercase e.g. pluginNameExampleCamelCase
         $this->template->hook->attach('template:config:application', 'applicationMeta:config/settings');
 
+        // Views - Add Menu Item - Template Hook
+        //  - Override name should start lowercase e.g. pluginNameExampleCamelCase
+        $this->template->hook->attach('template:config:sidebar', 'applicationMetadata:config/sidebar');
+
+        // Extra Page - Routes
+        //  - Example: $this->route->addRoute('/my/custom/route', 'myController', 'show', 'PluginNameExampleStudlyCaps');
+        //  - Must have the corresponding action in the matching controller
+        $this->route->addRoute('/metadata', 'applicationMetadataController', 'show', 'ApplicationMetadata');
+
     }
 
     public function onStartup()
