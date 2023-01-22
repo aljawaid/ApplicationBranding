@@ -17,7 +17,7 @@ class Plugin extends Base
 
         // Views - Template Hook
         //  - Override name should start lowercase e.g. pluginNameExampleCamelCase
-        $this->template->hook->attach('template:config:application', 'applicationMeta:config/settings');
+        $this->template->hook->attach('template:config:application', 'applicationMetadata:config/settings');
 
         // Views - Add Menu Item - Template Hook
         //  - Override name should start lowercase e.g. pluginNameExampleCamelCase
