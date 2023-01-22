@@ -1,6 +1,6 @@
 <?php
 
-namespace Kanboard\Plugin\ApplicationMeta;
+namespace Kanboard\Plugin\ApplicationMetadata;
 
 use Kanboard\Core\Plugin\Base;
 use Kanboard\Core\Translator;
@@ -13,7 +13,7 @@ class Plugin extends Base
     {
         // Template Override
         //  - Override name should be camelCase e.g. pluginNameExampleCamelCase
-        $this->template->setTemplateOverride('layout', 'applicationMeta:layout');
+        $this->template->setTemplateOverride('layout', 'applicationMetadata:layout');
 
         // Views - Template Hook
         //  - Override name should start lowercase e.g. pluginNameExampleCamelCase
@@ -30,12 +30,12 @@ class Plugin extends Base
     {
         // Plugin Name MUST be identical to namespace for Plugin Directory to detect updated versions
         // Do not translate the plugin name here
-        return 'ApplicationMeta';
+        return 'ApplicationMetadata';
     }
 
     public function getPluginDescription()
     {
-        return t('Use this plugin to rename your Kanboard application and update the site meta tags. When sharing the login page or public tasks, the meta information including and icons show nicely to give your interface a professional organised look.');
+        return t('Use this plugin to rename your Kanboard application and update the site meta tags. When sharing the login page or public tasks, the meta information including icons show nicely to give your interface a professional organised look.');
     }
 
     public function getPluginAuthor()
@@ -59,6 +59,6 @@ class Plugin extends Base
 
     public function getPluginHomepage()
     {
-        return 'https://github.com/aljawaid/ApplicationMeta';
+        return 'https://github.com/aljawaid/ApplicationMetadata';
     }
 }

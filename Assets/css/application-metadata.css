@@ -18,12 +18,12 @@
     --blue-border-gradient-match: #476E9E;
     --button-background-delete: #D05C84;
     --link-color-primary: #36C;
-    --header-page-margin-ksp: 5px 15px 10px 15px;
-    --page-margin-ksp: 0px 15px 0px 15px;
-    --title-margin-ksp: 0px 15px 0px 15px;
-    --border-radius-ksp: 3px;
-    --panel-background-ksp: #EEEEEE;
-    --transition-ksp: ease-in-out all .3s;
+    --header-page-margin-app-metadata: 5px 15px 10px 15px;
+    --page-margin-app-metadata: 0px 15px 0px 15px;
+    --title-margin-app-metadata: 0px 15px 0px 15px;
+    --border-radius-app-metadata: 3px;
+    --panel-background-app-metadata: #EEEEEE;
+    --transition-app-metadata: ease-in-out all .3s;
 }
 
 .pp-blue { color: var(--pp-blue); fill: var(--pp-blue); }
@@ -39,11 +39,15 @@
 .pp-dark-green { color: var(--pp-green-dark); fill: var(--pp-green-dark); }
 .pp-orange { color: var(--pp-orange); fill: var(--pp-orange); }
 
+/*
 a, details, summary, i, img, table, tr, svg, figure, button {
-    transition: var(--transition-ksp);
+    transition: var(--transition-app-metadata);
 }
+*/
 
+/*
 a:hover { color: var(--pp-red-alt-2) !important; }
+*/
 
 .display-none, .d-none { display: none !important; }
 
