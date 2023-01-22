@@ -1,6 +1,6 @@
 <?php
 
-namespace Kanboard\Plugin\PluginNameExampleStudlyCaps;
+namespace Kanboard\Plugin\ApplicationMeta;
 
 use Kanboard\Core\Plugin\Base;
 use Kanboard\Core\Translator;
@@ -13,33 +13,12 @@ class Plugin extends Base
     {
         // Template Override
         //  - Override name should be camelCase e.g. pluginNameExampleCamelCase
-        $this->template->setTemplateOverride('action/index', 'pluginNameExampleCamelCase:action/index');
-
-        // CSS - Asset Hook
-        //  - Keep filename lowercase
-        $this->hook->on('template:layout:css', array('template' => 'plugins/PluginNameExampleStudlyCaps/Assets/css/plugin-name.css'));
-
-        // JS - Asset Hook
-        //  - Keep filename lowercase
-        $this->hook->on('template:layout:js', array('template' => 'plugins/PluginNameExampleStudlyCaps/Assets/js/plugin-name.js'));
+        $this->template->setTemplateOverride('layout', 'applicationMeta:layout');
 
         // Views - Template Hook
         //  - Override name should start lowercase e.g. pluginNameExampleCamelCase
-        $this->template->hook->attach('template:project-header:view-switcher-before-project-overview', 'pluginNameExampleCamelCase:project_header/actions');
+        $this->template->hook->attach('template:config:application', 'applicationMeta:config/settings');
 
-        // Views - Add Menu Item - Template Hook
-        //  - Override name should start lowercase e.g. pluginNameExampleCamelCase
-        //  - Example for menu item in kanboard settings page: $this->template->hook->attach('template:config:sidebar', 'pluginNameExampleCamelCase:config/sidebar');
-
-        // Extra Page - Routes
-        //  - Example: $this->route->addRoute('/my/custom/route', 'myController', 'show', 'PluginNameExampleStudlyCaps');
-        //  - Must have the corresponding action in the matching controller
-        $this->route->addRoute('/ / ', ' ', ' ', 'PluginNameExampleStudlyCaps');
-
-        // Helper
-        //  - Example: $this->helper->register('helperClassNameCamelCase', '\Kanboard\Plugin\PluginNameExampleStudlyCaps\Helper\HelperNameExampleStudlyCaps');
-        //  - Add each Helper in the 'use' section at the top of this file
-        $this->helper->register(' ', '\Kanboard\Plugin\  \Helper\  ');
     }
 
     public function onStartup()
@@ -51,12 +30,12 @@ class Plugin extends Base
     {
         // Plugin Name MUST be identical to namespace for Plugin Directory to detect updated versions
         // Do not translate the plugin name here
-        return 'PluginNameExampleStudlyCaps';
+        return 'ApplicationMeta';
     }
 
     public function getPluginDescription()
     {
-        return t('description text');
+        return t('Use this plugin to rename your Kanboard application and update the site meta tags. When sharing the login page or public tasks, the meta information including and icons show nicely to give your interface a professional organised look.');
     }
 
     public function getPluginAuthor()
@@ -80,6 +59,6 @@ class Plugin extends Base
 
     public function getPluginHomepage()
     {
-        return 'https://github.com/aljawaid/url';
+        return 'https://github.com/aljawaid/ApplicationMeta';
     }
 }
