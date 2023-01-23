@@ -40,7 +40,7 @@ Compatibility
 #### Other Plugins & Action Plugins
 - _No known issues_
 #### Core Files & Templates
-- `02` Template overrides
+- `03` Template overrides
 - _No database changes_
 
 
