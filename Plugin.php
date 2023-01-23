@@ -13,6 +13,7 @@ class Plugin extends Base
         // Template Override
         //  - Override name should be camelCase e.g. pluginNameExampleCamelCase
         $this->template->setTemplateOverride('layout', 'applicationMetadata:layout');
+        $this->template->setTemplateOverride('header/title', 'applicationMetadata:header/title');
 
         // CSS - Asset Hook
         //  - Keep filename lowercase

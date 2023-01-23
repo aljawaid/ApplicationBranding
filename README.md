@@ -15,6 +15,7 @@ Features
 
 **Application Metadata**
 - Favicons included for all common devices
+- Include logo in top left corner of the site (header)
 
 
 Screenshots
@@ -39,7 +40,7 @@ Compatibility
 #### Other Plugins & Action Plugins
 - _No known issues_
 #### Core Files & Templates
-- `01` Template override
+- `02` Template overrides
 - _No database changes_
 
 
