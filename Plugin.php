@@ -49,7 +49,7 @@ class Plugin extends Base
 
     public function getPluginDescription()
     {
-        return t('Use this plugin to rename your Kanboard application and update the site meta tags. When sharing the login page or public tasks, the meta information including icons show nicely to give your interface a professional organised look.');
+        return t('Rename and rebrand your installation of Kanboard to whatever you choose. By default, this plugin will rename your Kanboard to \'My Workspace\' and add favicons and device logos in the metadata for a better user experience when sharing links.');
     }
 
     public function getPluginAuthor()

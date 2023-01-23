@@ -1,8 +1,8 @@
-# ApplicationMetadata
+# ApplicationBranding
 
 #### _Plugin for [Kanboard](https://github.com/fguillot/kanboard "Kanboard - Kanban Project Management Software")_
 
-Use this plugin to rename your Kanboard application and update the site meta tags. When sharing the login page or public tasks, the meta information including and icons show nicely to give your interface a professional organised look.
+Rename and rebrand your installation of Kanboard to whatever you choose. By default, this plugin will rename your Kanboard to 'My Workspace' and add favicons and device logos in the metadata for a better user experience when sharing links.
 
 
 Features
@@ -17,6 +17,11 @@ Features
 - Favicons included for all common devices
 - Include logo in top left corner of the site (header)
 
+**New Login Page**
+- Show User IP Address
+- Show application name and copyright
+- Include metadata (for when sharing links)
+- Show Unsplash image background
 
 Screenshots
 ----------
