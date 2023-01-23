@@ -53,9 +53,13 @@ a:hover { color: var(--pp-red-alt-2) !important; }
 
 .font-weight-bold { font-weight: bold; }
 
-.text-center { text-align: center; }
+.center, .text-center { text-align: center; }
 
 .relative { position: relative; }
+
+.no-top {margin-top: 0;}
+
+.no-bottom {margin-bottom: 0;}
 
 .app-metadata-settings h3 {
     margin-top: 0;
@@ -72,4 +76,51 @@ a:hover { color: var(--pp-red-alt-2) !important; }
 .app-rename .form-help {
     display: inline-block;
     margin-left: 5px;
+}
+
+
+.ws-logo {
+    display: block;
+    margin: 1.5em auto 2.5em auto;
+    width: 100px;
+}
+
+footer.copyright {
+    font-size: .8em;
+    color: gray;
+    text-align: center;
+}
+
+
+.login-title {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    text-transform: full-width;
+    font-size: 1.8em;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+
+.login-area .form-login {
+    margin: 1em auto;
+    padding: 1em;
+    border: 1px solid #8f8c8c;
+    border-radius: 10px;
+    background-color: #ffffff96;
+    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.78);
+}
+
+.form-login .warning {
+    font-weight: bold;
+    color: red;
+    text-align: center;
+}
+
+.reset-password {margin-bottom: 10px;}
+
+.user-remote-ip {
+    display: block;
+    width: fit-content;
+    margin: auto;
 }

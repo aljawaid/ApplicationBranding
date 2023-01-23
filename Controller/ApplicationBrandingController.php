@@ -1,17 +1,17 @@
 <?php
 
-namespace Kanboard\Plugin\ApplicationMetadata\Controller;
+namespace Kanboard\Plugin\ApplicationBranding\Controller;
 
 use Kanboard\Controller\BaseController;
 use Kanboard\Core\Plugin\Directory;
 
 /**
- * Plugin ApplicationMetadata
- * Class ApplicationMetadataController
+ * Plugin ApplicationBranding
+ * Class ApplicationBrandingController
  * @author aljawaid
  */
 
-class ApplicationMetadataController extends \Kanboard\Controller\PluginController
+class ApplicationBrandingController extends \Kanboard\Controller\PluginController
 {
     /**
      * Display the Settings Page
@@ -25,7 +25,7 @@ class ApplicationMetadataController extends \Kanboard\Controller\PluginControlle
 
     public function show()
     {
-        $this->response->html($this->helper->layout->config('applicationMetadata:config/metadata', array(
+        $this->response->html($this->helper->layout->config('applicationBranding:config/metadata', array(
             'title' => t('Site Metadata'),
         )));
     }

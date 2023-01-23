@@ -1,6 +1,6 @@
 <?php
 
-namespace Kanboard\Plugin\ApplicationMetadata;
+namespace Kanboard\Plugin\ApplicationBranding;
 
 use Kanboard\Core\Plugin\Base;
 use Kanboard\Core\Translator;
@@ -12,26 +12,26 @@ class Plugin extends Base
     {
         // Template Override
         //  - Override name should be camelCase e.g. pluginNameExampleCamelCase
-        $this->template->setTemplateOverride('layout', 'applicationMetadata:layout');
-        $this->template->setTemplateOverride('header/title', 'applicationMetadata:header/title');
-        $this->template->setTemplateOverride('auth/index', 'applicationMetadata:auth/index');
+        $this->template->setTemplateOverride('layout', 'applicationBranding:layout');
+        $this->template->setTemplateOverride('header/title', 'applicationBranding:header/title');
+        $this->template->setTemplateOverride('auth/index', 'applicationBranding:auth/index');
 
         // CSS - Asset Hook
         //  - Keep filename lowercase
-        $this->hook->on('template:layout:css', array('template' => 'plugins/ApplicationMetadata/Assets/css/application-metadata.css'));
+        $this->hook->on('template:layout:css', array('template' => 'plugins/ApplicationBranding/Assets/css/application-branding.css'));
 
         // Views - Template Hook
         //  - Override name should start lowercase e.g. pluginNameExampleCamelCase
-        $this->template->hook->attach('template:config:application', 'applicationMetadata:config/metadata-settings');
+        $this->template->hook->attach('template:config:application', 'applicationBranding:config/branding-settings');
 
         // Views - Add Menu Item - Template Hook
         //  - Override name should start lowercase e.g. pluginNameExampleCamelCase
-        $this->template->hook->attach('template:config:sidebar', 'applicationMetadata:config/sidebar');
+        $this->template->hook->attach('template:config:sidebar', 'applicationBranding:config/sidebar');
 
         // Extra Page - Routes
         //  - Example: $this->route->addRoute('/my/custom/route', 'myController', 'show', 'PluginNameExampleStudlyCaps');
         //  - Must have the corresponding action in the matching controller
-        $this->route->addRoute('/settings/metadata', 'ApplicationMetadataController', 'show', 'ApplicationMetadata');
+        $this->route->addRoute('/settings/metadata', 'ApplicationBrandingController', 'show', 'ApplicationBranding');
 
     }
 
@@ -44,7 +44,7 @@ class Plugin extends Base
     {
         // Plugin Name MUST be identical to namespace for Plugin Directory to detect updated versions
         // Do not translate the plugin name here
-        return 'ApplicationMetadata';
+        return 'ApplicationBranding';
     }
 
     public function getPluginDescription()
@@ -73,6 +73,6 @@ class Plugin extends Base
 
     public function getPluginHomepage()
     {
-        return 'https://github.com/aljawaid/ApplicationMetadata';
+        return 'https://github.com/aljawaid/ApplicationBranding';
     }
 }

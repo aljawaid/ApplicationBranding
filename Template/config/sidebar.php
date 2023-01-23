@@ -1,3 +1,3 @@
-<li <?= $this->app->checkMenuSelection('ApplicationMetadataController', 'show', 'ApplicationMetadata') ?>>
-    <?= $this->url->link('Site Metadata', 'ApplicationMetadataController', 'show', ['plugin' => 'ApplicationMetadata']) ?>
+<li <?= $this->app->checkMenuSelection('ApplicationBrandingController', 'show', 'ApplicationBranding') ?>>
+    <?= $this->url->link('Site Metadata', 'ApplicationBrandingController', 'show', ['plugin' => 'ApplicationBranding']) ?>
 </li>
