@@ -1,7 +1,7 @@
-<fieldset id="AppMetadataSettings" class="panel app-metadata-settings">
+<fieldset id="AppBrandingSettings" class="panel app-branding-settings">
     <h3 class="">
         <img src="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/workspace-icon-500x500.png" class="" width="30px" alt="<?= t('Workspace logo') ?>">
-        <?= t('Branding') ?>
+        <?= t('Application Branding') ?>
     </h3>
     <fieldset class="">
         <legend class=""><?= t('Application Name') ?></legend>

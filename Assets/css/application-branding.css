@@ -18,12 +18,12 @@
     --blue-border-gradient-match: #476E9E;
     --button-background-delete: #D05C84;
     --link-color-primary: #36C;
-    --header-page-margin-app-metadata: 5px 15px 10px 15px;
-    --page-margin-app-metadata: 0px 15px 0px 15px;
-    --title-margin-app-metadata: 0px 15px 0px 15px;
-    --border-radius-app-metadata: 3px;
-    --panel-background-app-metadata: #EEEEEE;
-    --transition-app-metadata: ease-in-out all .3s;
+    --header-page-margin-app-branding: 5px 15px 10px 15px;
+    --page-margin-app-branding: 0px 15px 0px 15px;
+    --title-margin-app-branding: 0px 15px 0px 15px;
+    --border-radius-app-branding: 5px;
+    --panel-background-app-branding: #EEEEEE;
+    --transition-app-branding: ease-in-out all .3s;
 }
 
 .pp-blue { color: var(--pp-blue); fill: var(--pp-blue); }
@@ -61,15 +61,15 @@ a:hover { color: var(--pp-red-alt-2) !important; }
 
 .no-bottom {margin-bottom: 0;}
 
-.app-metadata-settings h3 {
-    margin-top: 0;
-}
-
-#AppMetadataSettings h3 {
+#AppBrandingSettings h3 {
     font-weight: 600;
 }
 
-.app-metadata-settings h3 > img {
+.app-branding-settings h3 {
+    margin-top: 0;
+}
+
+.app-branding-settings h3 > img {
     vertical-align: bottom;
 }
 
@@ -87,10 +87,21 @@ a:hover { color: var(--pp-red-alt-2) !important; }
 
 footer.copyright {
     font-size: .8em;
-    color: gray;
+    background-color: #ffffff96;
+    letter-spacing: 1px;
+    padding: 3px;
     text-align: center;
+    position: fixed;
+    height: 18px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
 }
 
+section.login-logo {
+    margin-bottom: 30px;
+}
 
 .login-title {
     text-transform: uppercase;
@@ -105,16 +116,17 @@ footer.copyright {
 .login-area .form-login {
     margin: 1em auto;
     padding: 1em;
-    border: 1px solid #8f8c8c;
-    border-radius: 10px;
+    border: 1px solid var(--pp-white);
+    border-radius: var(--border-radius-app-branding);
     background-color: #ffffff96;
     box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.78);
 }
 
 .form-login .warning {
     font-weight: bold;
-    color: red;
+    color: var(--pp-red-alt-2);
     text-align: center;
+    margin-bottom: 15px;
 }
 
 .reset-password {margin-bottom: 10px;}
@@ -123,4 +135,13 @@ footer.copyright {
     display: block;
     width: fit-content;
     margin: auto;
+}
+
+.required-wrapper .form-required {
+    /*position: absolute;
+    right: 15px;
+    transform: scale(1.5);
+    padding-top: 5px;
+    color: var(--pp-red-alt);*/
+    display: none;
 }
