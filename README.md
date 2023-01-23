@@ -8,9 +8,10 @@ Use this plugin to rename your Kanboard application and update the site meta tag
 Features
 -------------
 
-**Application Name**
+**Rename Application**
 - Rename your installation of Kanboard
  - Choose your own name or allow the default `My Workspace` to be used
+ - Browser bookmarks and browser tabs now include the site name
 
 **Application Metadata**
 - Favicons included for all common devices

@@ -35,10 +35,24 @@
         <title>
             <?php if (isset($page_title)): ?>
                 <?= $this->text->e($page_title) ?>
+                <?php if (!empty($this->task->configModel->get('app_rename'))): ?>
+                    | <?= $this->task->configModel->get('app_rename') ?>
+                <?php else: ?>
+                    | <?= t('My Workspace') ?>
+                <?php endif ?>
             <?php elseif (isset($title)): ?>
                 <?= $this->text->e($title) ?>
+                <?php if (!empty($this->task->configModel->get('app_rename'))): ?>
+                    | <?= $this->task->configModel->get('app_rename') ?>
+                <?php else: ?>
+                    | <?= t('My Workspace') ?>
+                <?php endif ?>
             <?php else: ?>
-                Kanboard
+                <?php if (!empty($this->task->configModel->get('app_rename'))): ?>
+                    | <?= $this->task->configModel->get('app_rename') ?>
+                <?php else: ?>
+                    | <?= t('My Workspace') ?>
+                <?php endif ?>
             <?php endif ?>
         </title>
 
