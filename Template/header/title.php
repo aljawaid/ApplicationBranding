@@ -1,6 +1,6 @@
 <h1 class="header-title">
     <span class="logo">
-        <?= $this->url->link('<img src="' . $this->url->dir() . 'assets/img/workspace-vector-icon-500x500.png" width="40px" style="vertical-align: middle;">', 'DashboardController', 'show', array(), false, '', t('Dashboard')) ?>
+        <?= $this->url->link('<img src="' . $this->url->dir() . 'plugins/ApplicationMetadata/Assets/img/workspace-icon-500x500.png" width="40px" style="vertical-align: middle;">', 'DashboardController', 'show', array(), false, '', t('Dashboard')) ?>
     </span>
     <span class="title">
         <?php if (! empty($project) && ! empty($task)): ?>
