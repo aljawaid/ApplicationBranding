@@ -56,3 +56,20 @@ a:hover { color: var(--pp-red-alt-2) !important; }
 .text-center { text-align: center; }
 
 .relative { position: relative; }
+
+.app-metadata-settings h3 {
+    margin-top: 0;
+}
+
+#AppMetadataSettings h3 {
+    font-weight: 600;
+}
+
+.app-metadata-settings h3 > img {
+    vertical-align: bottom;
+}
+
+.app-rename .form-help {
+    display: inline-block;
+    margin-left: 5px;
+}
