@@ -140,10 +140,17 @@ section.login-logo {
     text-align: right;
 }
 
-.user-remote-ip {
+kbd.user-remote-ip {
     display: block;
     width: fit-content;
     margin: auto;
+    padding: 0.1em 0.3em;
+    font-size: .8em;
+    font-weight: 400;
+    border-radius: var(--border-radius-kbcss);
+    font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    color: initial;
+    background-color: initial;
 }
 
 .user-icon {
