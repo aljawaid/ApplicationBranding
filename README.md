@@ -19,9 +19,9 @@ Features
 Screenshots
 ----------
 
-**title**  
+**Settings**  
 
-![Screenshot Name](../master/Screenshots/screenshot-name.png "Read Screenshot Name")
+![Rename Application](../master/Screenshots/screenshot-settings.png "Settings")
 
 
 Usage
