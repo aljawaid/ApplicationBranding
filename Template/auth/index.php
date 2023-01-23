@@ -79,7 +79,7 @@
 
                 <?= $this->hook->render('template:auth:login-form:after') ?>
 
-                <kbd class="user-remote-ip">Your IP: <?php echo $_SERVER["REMOTE_ADDR"]; ?></kbd>
+                <kbd class="user-remote-ip">Your IP: <?= $_SERVER["REMOTE_ADDR"]; ?></kbd>
             </div>
         </div>
     </div>
@@ -91,6 +91,6 @@
         <?php else: ?>
             <?= t('My Workspace') ?>
         <?php endif ?>
-        2015-<?php echo date("Y"); ?>
+        2015-<?= date("Y"); ?>
     </span>
 </footer>
