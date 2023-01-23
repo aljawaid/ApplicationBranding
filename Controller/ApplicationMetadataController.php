@@ -25,8 +25,8 @@ class ApplicationMetadataController extends \Kanboard\Controller\PluginControlle
 
     public function show()
     {
-        $this->response->html($this->helper->layout->config('applicationMetadata:config/settings', array(
-            'title' => t('Application Metadata').' &#10562; '.t('Settings'),
+        $this->response->html($this->helper->layout->config('applicationMetadata:config/metadata', array(
+            'title' => t('Metadata'),
         )));
     }
 }

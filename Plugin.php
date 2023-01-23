@@ -30,7 +30,7 @@ class Plugin extends Base
         // Extra Page - Routes
         //  - Example: $this->route->addRoute('/my/custom/route', 'myController', 'show', 'PluginNameExampleStudlyCaps');
         //  - Must have the corresponding action in the matching controller
-        $this->route->addRoute('/metadata', 'applicationMetadataController', 'show', 'ApplicationMetadata');
+        $this->route->addRoute('/settings/metadata', 'ApplicationMetadataController', 'show', 'ApplicationMetadata');
 
     }
 
