@@ -65,8 +65,10 @@
 
                         <?php if (isset($captcha) && $captcha): ?>
                             <?= $this->form->label(t('Enter the text below'), 'captcha') ?>
-                            <img src="<?= $this->url->href('CaptchaController', 'image') ?>" alt="Captcha">
-                            <?= $this->form->text('captcha', array(), $errors, array('required'), 'captcha-input') ?>
+                            <img src="<?= $this->url->href('CaptchaController', 'image') ?>" class="captcha-img" alt="Captcha">
+                            <span class="required-wrapper-captcha relative">
+                                <?= $this->form->text('captcha', array(), $errors, array('required', 'placeholder="Required"'), 'captcha-input') ?>
+                            </span>
                         <?php endif ?>
 
                         <?php if (REMEMBER_ME_AUTH): ?>

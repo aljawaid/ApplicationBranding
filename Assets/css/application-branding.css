@@ -212,8 +212,19 @@ input#form-username, input#form-password {
     border-radius: 4px;
 }
 
-.required-wrapper .form-required {
+.required-wrapper .form-required, .required-wrapper-captcha .form-required {
     display: none;
+}
+
+.required-wrapper-captcha {
+    border: 2px inset var(--pp-red-alt-2);
+    height: 30px;
+    display: inline-block;
+    padding-top: 0;
+    padding-bottom: 3px;
+    padding-right: 0;
+    padding-left: 0;
+    border-radius: 4px;
 }
 
 #form-login_message {
@@ -227,4 +238,17 @@ textarea.login-message-textarea {
 
 textarea.login-message-textarea::placeholder {
     color: #4D4D4D;
+}
+
+.login-area .captcha-img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.required-wrapper-captcha > input.captcha-input {
+    height: 30px;
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 4px;
 }
