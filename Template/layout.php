@@ -26,11 +26,24 @@
         <?= $this->hook->asset('css', 'template:layout:css') ?>
         <?= $this->hook->asset('js', 'template:layout:js') ?>
 
-        <link rel="icon" type="image/png" href="<?= $this->url->dir() ?>assets/img/favicon.png">
-        <link rel="apple-touch-icon" href="<?= $this->url->dir() ?>assets/img/touch-icon-iphone.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="<?= $this->url->dir() ?>assets/img/touch-icon-ipad.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="<?= $this->url->dir() ?>assets/img/touch-icon-iphone-retina.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="<?= $this->url->dir() ?>assets/img/touch-icon-ipad-retina.png">
+        <link rel="icon" type="image/png" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/workspace-icon-500x500.png">
+        <link rel="apple-touch-icon" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/touch-icon-iphone.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/apple-touch-icon-ipad.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/touch-icon-iphone-retina.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/touch-icon-ipad-retina.png">
+        <link rel="apple-touch-icon" sizes="57x57" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/apple-icon-72x72-ipad.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/apple-icon-114x114-retina.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/apple-icon-144x144-ipad-retina.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/favicon-16x16.png">
 
         <?php
             $incomingController = $this->app->getRouterController();
