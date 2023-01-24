@@ -136,7 +136,7 @@ section.login-logo {
     float: left;
 }
 
-.reset-password-link {
+a.reset-password-link {
     display: block;
     text-align: right;
 }
