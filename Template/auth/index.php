@@ -104,6 +104,10 @@
         <?php else: ?>
             <?= t('My Workspace') ?>
         <?php endif ?>
-        2015-<?= date("Y"); ?>
+        <?php if (!empty($this->task->configModel->get('copyright_from'))): ?>
+            <?= $this->task->configModel->get('copyright_from') ?>-<?= date("Y"); ?>
+        <?php else: ?>
+            <?= date("Y"); ?>
+        <?php endif ?>
     </span>
 </footer>
