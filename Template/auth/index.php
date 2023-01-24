@@ -41,7 +41,7 @@
                 </p>
 
                 <?php if (! HIDE_LOGIN_FORM): ?>
-                    <form method="post" action="<?= $this->url->href('AuthController', 'check') ?>" class="relative">
+                    <form method="post" class="login-form relative" action="<?= $this->url->href('AuthController', 'check') ?>">
                         <?= $this->form->csrf() ?>
 
                         <?= $this->form->label(t('Username'), 'username') ?>
