@@ -23,9 +23,9 @@ Features
 - Include metadata (for when sharing links)
 - Show Unsplash image background
 
-**New Password Reset Page**
+**New Reset Password Page**
 - Show User IP Address
-- Show user friendly page title
+- Add user friendly page title
 - Show application name and copyright
 - Include metadata (for when sharing links)
 - Show Unsplash image background
@@ -36,6 +36,14 @@ Screenshots
 **Login Page**  
 
 ![Login Page](../master/Screenshots/screenshot-login.png "A new user friendly login page")
+
+**Page Titles**  
+
+![Page Titles](../master/Screenshots/screenshot-browser-tabs.png "Browser tabs and bookmarks contain the page title")
+
+**Page Titles - _Reset Password_**  
+
+![Reset Password](../master/Screenshots/screenshot-browser-tabs-reset-password.png "Reset password page now includes the page title")
 
 **Settings**  
 
