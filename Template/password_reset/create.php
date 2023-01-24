@@ -4,12 +4,12 @@
         <?= $this->form->csrf() ?>
 
         <?= $this->form->label(t('Username'), 'username') ?>
-        <?= $this->form->text('username', $values, $errors, array('autofocus', 'required', 'autocomplete="username"')) ?>
+        <?= $this->form->text('username', $values, $errors, array('autofocus', 'required', 'autocomplete="username" placeholder="Required"')) ?>
         <p class="form-help"><?= t('Your profile must have a valid email address.') ?></p>
 
         <?= $this->form->label(t('Enter the text below'), 'captcha') ?>
         <img src="<?= $this->url->href('CaptchaController', 'image') ?>" alt="Captcha">
-        <?= $this->form->text('captcha', array(), $errors, array('required')) ?>
+        <?= $this->form->text('captcha', array(), $errors, array('required', 'placeholder="Required"')) ?>
 
         <div class="form-actions">
             <button type="submit" class="btn btn-blue"><?= t('Change Password') ?></button>
