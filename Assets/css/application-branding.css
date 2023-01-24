@@ -140,6 +140,12 @@ section.login-logo {
     text-align: right;
 }
 
+.reset-password-link svg {
+    vertical-align: text-bottom;
+    width: 18px;
+    margin-right: 3px;
+}
+
 kbd.user-remote-ip {
     display: block;
     width: fit-content;
