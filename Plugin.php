@@ -52,7 +52,7 @@ class Plugin extends Base
 
     public function getPluginDescription()
     {
-        return t('Rename and rebrand your installation of Kanboard to whatever you choose. By default, this plugin will rename your Kanboard to \'My Workspace\' and add favicons and device logos in the metadata for a better user experience when sharing links.');
+        return t('Rename and rebrand your installation of Kanboard to whatever you choose. By default, this plugin will rename your installation to \'My Workspace\', revamp the login page and add matching favicons and device logos in the metadata for a better user experience. A colorful Unsplash background with corrected page titles gives a more professional look when sharing your Kanboard to new users.');
     }
 
     public function getPluginAuthor()
