@@ -25,13 +25,13 @@
             </div>
             <div class="login-message">
                 <?= $this->form->label(t('Login Message'), 'login_message', array('class=""')) ?>
-                <p class="form-help"><?= t('This message will appear within the form above the username') ?></p>
                 <?= $this->form->textarea('login_message', $values, $errors, array('placeholder="'. t('Use this platform to manage your productivity. Work with tasks inside project boards to track comments, files and activities.') .'"'), 'login-message-textarea') ?>
+                <p class="form-help"><?= t('This message will appear within the form above the username or leave blank for the default message') ?></p>
             </div>
             <div class="app-rename">
                 <?= $this->form->label(t('Copyright From'), 'copyright_from', array('class=""')) ?>
                 <?= $this->form->number('copyright_from', $values, $errors, array('placeholder="2014"')) ?>
-                <p class="form-help"><?= t('If no year is entered, the standard copyright message with the current year is shown') ?></p>
+                <p class="form-help"><?= t('If no year is entered, then the standard copyright message with the current year is shown') ?></p>
             </div>
         </div>
     </fieldset>
