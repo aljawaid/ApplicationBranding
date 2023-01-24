@@ -15,10 +15,10 @@
         <?php endif ?>
     </h3>
     <div class="form-wrapper">
-        <div class="login-area">
-            <div class="form-login">
+        <div class="password-area">
+            <div class="reset-form form-login">
                 <h2><?= t('Reset Password') ?></h2>
-                <form method="post" action="<?= $this->url->href('PasswordResetController', 'save') ?>">
+                <form method="post" class="relative" action="<?= $this->url->href('PasswordResetController', 'save') ?>">
                     <?= $this->form->csrf() ?>
 
                     <?= $this->form->label(t('Username'), 'username') ?>
@@ -30,7 +30,7 @@
                     <?= $this->form->text('captcha', array(), $errors, array('required', 'placeholder="Required"')) ?>
 
                     <div class="form-actions">
-                        <button type="submit" class="btn btn-blue"><?= t('Change Password') ?></button>
+                        <button type="submit" class="btn btn-reset-password"><?= t('Change Password') ?></button>
                     </div>
                 </form>
                 <kbd class="user-remote-ip">Your IP: <?= $_SERVER["REMOTE_ADDR"]; ?></kbd>

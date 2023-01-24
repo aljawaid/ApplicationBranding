@@ -112,7 +112,7 @@ section.login-logo {
     -webkit-text-stroke-color: white;
 }
 
-.login-area .form-login {
+.login-area .form-login, .password-area .reset-form {
     margin: 1em auto;
     padding: 1em;
     border: 1px solid var(--pp-white);
@@ -122,7 +122,7 @@ section.login-logo {
     box-sizing: content-box;
 }
 
-.form-login .warning {
+.form-login .warning, .reset-form .warning {
     font-weight: bold;
     color: var(--pp-red-alt-2);
     text-align: center;
@@ -181,6 +181,13 @@ button.login-btn {
     background-color: white;
     color: var(--pp-green-dark);
     border: 2px outset var(--pp-green-dark);
+}
+
+button.btn-reset-password {
+    border-radius: var(--border-radius-app-branding);
+    background-color: white;
+    color: var(--pp-red-alt-2);
+    border: 2px outset var(--pp-red-alt-2);
 }
 
 input#form-username, input#form-password {
