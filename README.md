@@ -25,6 +25,7 @@ Features
 
 **New Password Reset Page**
 - Show User IP Address
+- Show user friendly page title
 - Show application name and copyright
 - Include metadata (for when sharing links)
 - Show Unsplash image background

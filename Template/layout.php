@@ -32,6 +32,10 @@
         <link rel="apple-touch-icon" sizes="114x114" href="<?= $this->url->dir() ?>assets/img/touch-icon-iphone-retina.png">
         <link rel="apple-touch-icon" sizes="144x144" href="<?= $this->url->dir() ?>assets/img/touch-icon-ipad-retina.png">
 
+        <?php
+            $incomingController = $this->app->getRouterController();
+            $outgoingAction = $this->app->getRouterAction();
+        ?>
         <title>
             <?php if (isset($page_title)): ?>
                 <?= $this->text->e($page_title) ?>
@@ -47,6 +51,15 @@
                 <?php else: ?>
                     | <?= t('My Workspace') ?>
                 <?php endif ?>
+
+            <?php elseif (($incomingController == 'PasswordResetController') && ($outgoingAction =='create')): ?>
+                <?= $this->text->e($title) ?>
+                <?php if (!empty($this->task->configModel->get('app_rename'))): ?>
+                    <?= t('Password Reset') ?> | <?= $this->task->configModel->get('app_rename') ?>
+                <?php else: ?>
+                    <?= t('Password Reset') ?> | <?= t('My Workspace') ?>
+                <?php endif ?>
+
             <?php else: ?>
                 <?php if (!empty($this->task->configModel->get('app_rename'))): ?>
                     | <?= $this->task->configModel->get('app_rename') ?>
