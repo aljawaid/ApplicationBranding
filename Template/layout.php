@@ -44,6 +44,29 @@
         <link rel="icon" type="image/png" sizes="32x32" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="96x96" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/favicon-96x96.png">
         <link rel="icon" type="image/png" sizes="16x16" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="description" content="Use this platform to manage your productivity using tasks inside project boards to track files, comments and activities.">
+        <meta property="og:description" content="Use this platform to manage your productivity using tasks inside project boards to track files, comments and activities." />
+        <?php
+            if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
+                $url = "https://";
+            else
+                $url = "http://";
+            // Append the host(domain name, ip) to the URL.
+            $url.= $_SERVER['HTTP_HOST'];
+            // Append the requested resource location to the URL
+            $url.= $_SERVER['REQUEST_URI'];
+        ?>
+        <meta property="og:url" content="<?php echo $url ?>" />
+        <?php // og:image must be min 300x300px with 'https' and absolute url to png file ?>
+        <meta property="og:image" content="https://<?php echo $_SERVER['HTTP_HOST']; ?>plugins/ApplicationBranding/Assets/img/workspace-icon-500x500.png" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="<?= $this->app->jsLang() ?>" />
+        <meta property="og:locale:alternate" content="en_GB" />
+        <meta property="og:locale:alternate" content="en_US" />
 
         <?php
             $incomingController = $this->app->getRouterController();
