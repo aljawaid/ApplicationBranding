@@ -18,7 +18,13 @@
     <div class="login-wrapper">
         <div class="login-area">
             <div class="form-login">
-                <h4 class="no-top warning"><?= t('AUTHORISED USERS ONLY') ?></h4>
+                <h4 class="no-top warning">
+                    <?php if (!empty($this->task->configModel->get('login_warning'))): ?>
+                        <?= $this->task->configModel->get('login_warning') ?>
+                    <?php else: ?>
+                        <?= t('AUTHORISED USERS ONLY') ?>
+                    <?php endif ?>
+                </h4>
 
                 <?= $this->hook->render('template:auth:login-form:before') ?>
 
