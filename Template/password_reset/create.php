@@ -9,6 +9,7 @@
     <h2><?= t('Reset Password') ?></h2>
     <form method="post" action="<?= $this->url->href('PasswordResetController', 'save') ?>">
         <?= $this->form->csrf() ?>
+    <div class="form-wrapper">
 
         <?= $this->form->label(t('Username'), 'username') ?>
         <?= $this->form->text('username', $values, $errors, array('autofocus', 'required', 'autocomplete="username" placeholder="Required"')) ?>
@@ -23,6 +24,7 @@
         </div>
     </form>
 </div>
+    </div>
 <footer class="copyright">
     <span class="center">&copy;&nbsp;
         <?php if (!empty($this->task->configModel->get('app_rename'))): ?>
