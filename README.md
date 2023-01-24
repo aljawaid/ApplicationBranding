@@ -23,6 +23,12 @@ Features
 - Include metadata (for when sharing links)
 - Show Unsplash image background
 
+**New Password Reset Page**
+- Show User IP Address
+- Show application name and copyright
+- Include metadata (for when sharing links)
+- Show Unsplash image background
+
 Screenshots
 ----------
 
@@ -45,7 +51,7 @@ Compatibility
 #### Other Plugins & Action Plugins
 - _No known issues_
 #### Core Files & Templates
-- `03` Template overrides
+- `06` Template overrides
 - _No database changes_
 
 

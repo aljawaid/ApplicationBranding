@@ -15,6 +15,9 @@ class Plugin extends Base
         $this->template->setTemplateOverride('layout', 'applicationBranding:layout');
         $this->template->setTemplateOverride('header/title', 'applicationBranding:header/title');
         $this->template->setTemplateOverride('auth/index', 'applicationBranding:auth/index');
+        $this->template->setTemplateOverride('password_reset/change', 'applicationBranding:password_reset/change');
+        $this->template->setTemplateOverride('password_reset/create', 'applicationBranding:password_reset/create');
+        $this->template->setTemplateOverride('password_reset/email', 'applicationBranding:password_reset/email');
 
         // CSS - Asset Hook
         //  - Keep filename lowercase
