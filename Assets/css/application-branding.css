@@ -139,6 +139,7 @@ section.login-logo {
 a.reset-password-link {
     display: block;
     text-align: right;
+    color: var(--pp-grey);
 }
 
 .reset-password-link svg {
