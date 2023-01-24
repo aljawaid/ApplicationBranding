@@ -1,5 +1,5 @@
 <div class="form-login">
-    <h2><?= t('Password Reset') ?></h2>
+    <h2><?= t('Reset Password') ?></h2>
     <form method="post" action="<?= $this->url->href('PasswordResetController', 'update', array('token' => $token)) ?>">
         <?= $this->form->csrf() ?>
 
