@@ -132,6 +132,8 @@ section.login-logo {
 .reset-password {
     margin-bottom: 10px;
     margin-top: 10px;
+    width: auto;
+    float: left;
 }
 
 .reset-password-link {
@@ -181,6 +183,7 @@ button.login-btn {
     background-color: white;
     color: var(--pp-green-dark);
     border: 2px outset var(--pp-green-dark);
+    float: right;
 }
 
 button.btn-reset-password {
