@@ -36,6 +36,33 @@
             $incomingController = $this->app->getRouterController();
             $outgoingAction = $this->app->getRouterAction();
         ?>
+
+        <?php if (isset($page_title)): ?>
+            <?php if (!empty($this->task->configModel->get('app_rename'))): ?>
+                <meta property="og:title" content="<?= $this->text->e($page_title) ?> | <?= $this->task->configModel->get('app_rename') ?>" />
+            <?php else: ?>
+                <meta property="og:title" content="<?= $this->text->e($page_title) ?> | <?= t('My Workspace') ?>" />
+            <?php endif ?>
+        <?php elseif (isset($title)): ?>
+            <?php if (!empty($this->task->configModel->get('app_rename'))): ?>
+                <meta property="og:title" content="<?= $this->text->e($title) ?> | <?= $this->task->configModel->get('app_rename') ?>" />
+            <?php else: ?>
+                <meta property="og:title" content="<?= $this->text->e($title) ?> | <?= t('My Workspace') ?>" />
+            <?php endif ?>
+        <?php elseif (($incomingController == 'PasswordResetController') && ($outgoingAction =='create')): ?>
+            <?php if (!empty($this->task->configModel->get('app_rename'))): ?>
+                <meta property="og:title" content="<?= t('Password Reset') ?> | <?= $this->task->configModel->get('app_rename') ?>" />
+            <?php else: ?>
+                <meta property="og:title" content="<?= t('Password Reset') ?> | <?= t('My Workspace') ?>" />
+            <?php endif ?>
+        <?php else: ?>
+            <?php if (!empty($this->task->configModel->get('app_rename'))): ?>
+                <meta property="og:title" content="<?= $this->task->configModel->get('app_rename') ?>" />
+            <?php else: ?>
+                <meta property="og:title" content="<?= t('My Workspace') ?>" />
+            <?php endif ?>
+        <?php endif ?>
+
         <title>
             <?php if (isset($page_title)): ?>
                 <?= $this->text->e($page_title) ?>
@@ -44,6 +71,7 @@
                 <?php else: ?>
                     | <?= t('My Workspace') ?>
                 <?php endif ?>
+
             <?php elseif (isset($title)): ?>
                 <?= $this->text->e($title) ?>
                 <?php if (!empty($this->task->configModel->get('app_rename'))): ?>
@@ -66,10 +94,12 @@
                 <?php else: ?>
                     | <?= t('My Workspace') ?>
                 <?php endif ?>
+
             <?php endif ?>
         </title>
 
         <?= $this->hook->render('template:layout:head') ?>
+
     </head>
     <body data-status-url="<?= $this->url->href('UserAjaxController', 'status') ?>"
           data-login-url="<?= $this->url->href('AuthController', 'login') ?>"
