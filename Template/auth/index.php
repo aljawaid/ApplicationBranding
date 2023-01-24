@@ -75,7 +75,7 @@
 
                         <div class="form-actions">
                             <button type="submit" class="btn login-btn">
-                                <?= t('Sign in') ?>
+                                <?= t('Login') ?>
                                 <img src="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/login.svg" class="login-icon" width="30px" alt="<?= t('Enter Application') ?>" title="<?= t('Enter Application') ?>">
                             </button>
                         </div>
