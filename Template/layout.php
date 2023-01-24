@@ -87,9 +87,9 @@
             <?php endif ?>
         <?php elseif (($incomingController == 'PasswordResetController') && ($outgoingAction =='create')): ?>
             <?php if (!empty($this->task->configModel->get('app_rename'))): ?>
-                <meta property="og:title" content="<?= t('Password Reset') ?> | <?= $this->task->configModel->get('app_rename') ?>" />
+                <meta property="og:title" content="<?= t('Reset Password') ?> | <?= $this->task->configModel->get('app_rename') ?>" />
             <?php else: ?>
-                <meta property="og:title" content="<?= t('Password Reset') ?> | <?= t('My Workspace') ?>" />
+                <meta property="og:title" content="<?= t('Reset Password') ?> | <?= t('My Workspace') ?>" />
             <?php endif ?>
         <?php else: ?>
             <?php if (!empty($this->task->configModel->get('app_rename'))): ?>
@@ -119,9 +119,9 @@
             <?php elseif (($incomingController == 'PasswordResetController') && ($outgoingAction =='create')): ?>
                 <?= $this->text->e($title) ?>
                 <?php if (!empty($this->task->configModel->get('app_rename'))): ?>
-                    <?= t('Password Reset') ?> | <?= $this->task->configModel->get('app_rename') ?>
+                    <?= t('Reset Password') ?> | <?= $this->task->configModel->get('app_rename') ?>
                 <?php else: ?>
-                    <?= t('Password Reset') ?> | <?= t('My Workspace') ?>
+                    <?= t('Reset Password') ?> | <?= t('My Workspace') ?>
                 <?php endif ?>
 
             <?php else: ?>
