@@ -25,8 +25,8 @@
             </div>
             <div class="login-message">
                 <?= $this->form->label(t('Login Message'), 'login_message', array('class=""')) ?>
-                <?= $this->form->text('login_message', $values, $errors, array('placeholder="AUTHORISED USERS ONLY"')) ?>
                 <p class="form-help"><?= t('This message will appear within the form above the username') ?></p>
+                <?= $this->form->textarea('login_message', $values, $errors, array('placeholder="'. t('Use this platform to manage your productivity. Work with tasks inside project boards to track comments, files and activities.') .'"'), 'login-message-textarea') ?>
             </div>
             <div class="app-rename">
                 <?= $this->form->label(t('Copyright From'), 'copyright_from', array('class=""')) ?>
