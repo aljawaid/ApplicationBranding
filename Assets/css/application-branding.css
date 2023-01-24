@@ -240,6 +240,11 @@ textarea.login-message-textarea::placeholder {
     color: #4D4D4D;
 }
 
+form.login-form .form-actions {
+    padding-top: 0;
+    margin-bottom: 60px;
+}
+
 .login-area .captcha-img {
     display: inline-block;
     vertical-align: middle;
