@@ -21,7 +21,7 @@
             <div class="visitor-warning">
                 <?= $this->form->label(t('Visitor Warning'), 'login_warning', array('class=""')) ?>
                 <?= $this->form->text('login_warning', $values, $errors, array('placeholder="AUTHORISED USERS ONLY"')) ?>
-                <p class="form-help"><?= t('By default, this plugin will rename your application to "My Workspace" once installed') ?></p>
+                <p class="form-help"><?= t('Enter a single line title or leave blank for the default title') ?></p>
             </div>
             <div class="login-message">
                 <?= $this->form->label(t('Login Message'), 'login_message', array('class=""')) ?>
