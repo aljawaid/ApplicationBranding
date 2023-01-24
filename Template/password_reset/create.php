@@ -1,3 +1,10 @@
+<style type="text/css">
+    body {
+        background: url(https://source.unsplash.com/random) no-repeat center center fixed;
+        background-size: cover;
+        padding-top: 1px;
+    }
+</style>
 <div class="form-login">
     <h2><?= t('Password Reset') ?></h2>
     <form method="post" action="<?= $this->url->href('PasswordResetController', 'save') ?>">
