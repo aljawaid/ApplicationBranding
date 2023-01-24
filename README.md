@@ -33,6 +33,10 @@ Features
 Screenshots
 ----------
 
+**Login Page**  
+
+![Login Page](../master/Screenshots/screenshot-login.png "A new user friendly login page")
+
 **Settings**  
 
 ![Rename Application](../master/Screenshots/screenshot-settings.png "Settings")
