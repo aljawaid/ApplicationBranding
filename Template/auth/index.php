@@ -32,7 +32,13 @@
                     <p class="alert alert-error"><?= $this->text->e($errors['login']) ?></p>
                 <?php endif ?>
 
-                <p class=""><?= t('Use this platform to manage your productivity. Work with tasks inside project boards to track comments, files and activities.') ?></p>
+                <p class="login-message">
+                    <?php if (!empty($this->task->configModel->get('login_message'))): ?>
+                        <?= $this->task->configModel->get('login_message') ?>
+                    <?php else: ?>
+                        <?= t('Use this platform to manage your productivity. Work with tasks inside project boards to track comments, files and activities.') ?>
+                    <?php endif ?>
+                </p>
 
                 <?php if (! HIDE_LOGIN_FORM): ?>
                     <form method="post" action="<?= $this->url->href('AuthController', 'check') ?>" class="relative">
