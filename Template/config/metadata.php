@@ -9,6 +9,14 @@
     <div class="metadata-form-wrapper">
         <form class="metadata-form panel" method="post" action="<?= $this->url->href('ApplicationBrandingController', 'save', array('redirect' => 'show', 'plugin' => 'ApplicationBranding')) ?>" autocomplete="on">
         <?= $this->form->csrf() ?>
+        <fieldset>
+            <legend><?= t('Site Description') ?></legend>
+            <div class=""></div>
+        </fieldset>
+        <fieldset>
+            <legend><?= t('Device Icons') ?></legend>
+            <div class=""></div>
+        </fieldset>
         </form>
     </div>
 </div>
