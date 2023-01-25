@@ -9,9 +9,14 @@
     <div class="metadata-form-wrapper">
         <form class="metadata-form panel" method="post" action="<?= $this->url->href('ApplicationBrandingController', 'save', array('redirect' => 'show', 'plugin' => 'ApplicationBranding')) ?>" autocomplete="on">
         <?= $this->form->csrf() ?>
-        <fieldset>
-            <legend><?= t('Site Description') ?></legend>
-            <div class=""></div>
+        <fieldset class="site-name-metadata">
+            <legend class=""><?= t('Site Name') ?></legend>
+            <div class="">
+                <p class="">
+                    <?= t('The site name can be changed in the') ?> <?= $this->url->link(t('Application Settings'), 'ConfigController', 'application', array(), false, 'application-link', t('Go to Application Settings'), false, 'AppBrandingSettings') ?>
+                </p>
+            </div>
+        </fieldset>
             <div class="form-actions">
                 <button type="submit" class="btn btn-blue"><?= t('Save Settings') ?></button>
             </div>
