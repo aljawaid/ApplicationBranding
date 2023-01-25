@@ -26,7 +26,7 @@ class ApplicationBrandingController extends \Kanboard\Controller\PluginControlle
     public function show()
     {
         $this->response->html($this->helper->layout->config('applicationBranding:config/metadata', array(
-            'title' => t('Site Metadata'),
+            'title' => t('Application Branding'),
         )));
     }
 }
