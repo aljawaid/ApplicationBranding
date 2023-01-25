@@ -5,4 +5,10 @@
         </svg>
         <?= t('Site Metadata') ?>
     </h2>
+
+<div class="metadata-form-wrapper">
+    <form class="metadata-form panel" method="post" action="<?= $this->url->href('ApplicationBrandingController', 'save', array('redirect' => 'show', 'plugin' => 'ApplicationBranding')) ?>" autocomplete="on">
+    <?= $this->form->csrf() ?>
+    </form>
+</div>
 </div>
