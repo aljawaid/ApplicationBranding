@@ -234,6 +234,7 @@ input#form-username, input#form-password {
     padding-right: 0;
     padding-left: 5px;
     border-radius: var(--border-radius-app-branding-alt);
+    background-color: var(--pp-white);
 }
 
 .required-wrapper .form-required, .required-wrapper-captcha .form-required {
