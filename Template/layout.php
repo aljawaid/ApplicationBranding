@@ -60,7 +60,7 @@
         ?>
         <meta property="og:url" content="<?php echo $url ?>" />
         <?php // og:image must be min 300x300px with 'https' and absolute url to png file ?>
-        <meta property="og:image" content="https://<?php echo $_SERVER['HTTP_HOST']; ?>plugins/ApplicationBranding/Assets/img/workspace-icon-500x500.png" />
+        <meta property="og:image" content="<?= $this->url->base();$this->url->dir() ?>plugins/ApplicationBranding/Assets/img/workspace-icon-500x500.png" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="<?= $this->app->jsLang() ?>" />
         <meta property="og:locale:alternate" content="en_GB" />
