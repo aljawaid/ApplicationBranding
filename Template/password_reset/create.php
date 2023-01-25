@@ -39,9 +39,10 @@
                     <p class="form-help"><?= t('Your profile must have a valid email address') ?></p>
 
                     <?= $this->form->label(t('Enter the text below'), 'captcha') ?>
-                    <img src="<?= $this->url->href('CaptchaController', 'image') ?>" alt="Captcha">
-                    <?= $this->form->text('captcha', array(), $errors, array('required', 'placeholder="Required"')) ?>
-
+                    <img src="<?= $this->url->href('CaptchaController', 'image') ?>" class="captcha-img" alt="Captcha">
+                    <span class="required-wrapper-captcha relative">
+                        <?= $this->form->text('captcha', array(), $errors, array('required', 'placeholder="Required"'), 'captcha-input') ?>
+                    </span>
                     <div class="form-actions">
                         <a href="<?= $this->url->base()?>" class="btn back-btn">
                             <svg width="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
