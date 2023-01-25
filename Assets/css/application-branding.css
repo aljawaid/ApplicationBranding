@@ -288,4 +288,8 @@ form.login-form .form-actions {
     vertical-align: text-top;
     fill: var(--pp-green-dark);
 }
+
+.reset-message {
+    margin-top: 30px;
+}
 }

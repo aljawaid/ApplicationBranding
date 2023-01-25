@@ -19,6 +19,9 @@
             <div class="reset-form form-login">
                 <h2><?= t('Reset Password') ?></h2>
                 <form method="post" class="relative" action="<?= $this->url->href('PasswordResetController', 'save') ?>">
+                <p class="reset-message">
+                    <?= t('A link to change your password will be sent by email to the username registered in the system') ?>
+                </p>
                     <?= $this->form->csrf() ?>
 
                     <?= $this->form->label(t('Username'), 'username') ?>
