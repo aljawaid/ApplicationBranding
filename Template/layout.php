@@ -123,7 +123,6 @@
                 <?php endif ?>
 
             <?php elseif (($incomingController == 'PasswordResetController') && ($outgoingAction =='create')): ?>
-                <?= $this->text->e($title) ?>
                 <?php if (!empty($this->task->configModel->get('app_rename'))): ?>
                     <?= t('Reset Password') ?> | <?= $this->task->configModel->get('app_rename') ?>
                 <?php else: ?>
