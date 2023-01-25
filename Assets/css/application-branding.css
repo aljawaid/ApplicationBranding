@@ -356,4 +356,7 @@ form.form-reset .required-wrapper {
 .metadata-page-header {
     margin: var(--page-margin-app-branding);
 }
+
+#MetadataPage > h2 > svg {
+    vertical-align: bottom;
 }
