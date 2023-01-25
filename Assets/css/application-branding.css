@@ -152,7 +152,7 @@ kbd.user-remote-ip {
     display: block;
     width: fit-content;
     margin: auto;
-    padding: 0.1em 0.3em;
+    padding: .6em .3em 0 0.3em
     font-size: .8em;
     font-weight: 400;
     border-radius: var(--border-radius-kbcss);
