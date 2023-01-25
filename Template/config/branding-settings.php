@@ -3,7 +3,7 @@
         <img src="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/workspace-icon-500x500.png" class="" width="30px" alt="<?= t('Workspace logo') ?>">
         <?= t('Application Branding') ?>
     </h3>
-    <fieldset class="">
+    <fieldset class="app-name-settings">
         <legend class=""><?= t('Application Name') ?></legend>
         <p class=""><?= t('Enter the new name for this application') ?></p>
         <div class="">
@@ -14,7 +14,7 @@
             </div>
         </div>
     </fieldset>
-    <fieldset class="">
+    <fieldset class="login-page-settings">
         <legend class=""><?= t('Login Page') ?></legend>
         <p class=""><?= t('Adjust the settings below to customise the login page') ?></p>
         <div class="">
