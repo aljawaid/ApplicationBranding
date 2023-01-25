@@ -284,6 +284,20 @@ form.login-form .form-actions {
     padding-right: 4px;
     border-radius: var(--border-radius-app-branding-alt);
 
+.reset-form h2.reset-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+
+.reset-title .reset-icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 50px;
+    opacity: .8;
+}
+
 .btn-reset-password svg {
     vertical-align: text-top;
     fill: var(--pp-green-dark);
