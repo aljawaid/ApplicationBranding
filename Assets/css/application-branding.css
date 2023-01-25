@@ -196,6 +196,17 @@ button.btn-reset-password {
     font-size: 1em;
     padding: 4px;
 }
+
+.back-btn, a.back-btn:visited {
+    border-radius: var(--border-radius-app-branding-alt);
+    border: 1px solid var(--pp-grey);
+    color: var(--pp-grey);
+    font-size: 1em;
+    padding: 5px;
+}
+
+.back-btn svg {
+    vertical-align: bottom;
 }
 
 input#form-username, input#form-password {
