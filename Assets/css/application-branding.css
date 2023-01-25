@@ -301,6 +301,7 @@ form.form-reset .form-actions {
 
 form.form-reset .required-wrapper {
     padding-left: 0;
+    background-color: var(--pp-white);
 }
 
 .reset-title .reset-icon {
