@@ -37,6 +37,10 @@ Screenshots
 
 ![Login Page](../master/Screenshots/screenshot-login.png "A new user friendly login page")
 
+**Reset Password Page**  
+
+![Reset Password Page](../master/Screenshots/screenshot-reset.png "A new user friendly reset password page")
+
 **Page Titles**  
 
 ![Page Titles](../master/Screenshots/screenshot-browser-tabs.png "Browser tabs and bookmarks contain the page title")
@@ -53,7 +57,9 @@ Screenshots
 Usage
 -------------
 
-Share the login page or a public task. Note the icon and meta information.
+- Share the login page, reset password page or a public task. Note the icon and meta information.
+- The generic My Workspace icon will show in the top header of the site
+- Browser page titles and tabs will be more consistent
 
 
 Compatibility
