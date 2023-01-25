@@ -72,8 +72,8 @@
         ?>
 
         <?php if (($incomingController == 'PasswordResetController') && ($outgoingAction =='create')): ?>
-            <meta name="description" content="<?= t('Change your password for this platform.') ?>">
-            <meta property="og:description" content="<?= t('Change your password for this platform.') ?>" />
+            <meta name="description" content="<?= t('Change your password for this kanban platform.') ?>">
+            <meta property="og:description" content="<?= t('Change your password for this kanban platform.') ?>" />
         <?php else: ?>
             <meta name="description" content="<?= t('Use this kanban platform to manage your productivity using tasks inside project boards to track files, comments and activities.') ?>">
             <meta property="og:description" content="<?= t('Use this kanban platform to manage your productivity using tasks inside project boards to track files, comments and activities.') ?>" />

@@ -30,7 +30,7 @@
                 </details>
                 <details class="reset-desc">
                     <summary><?= t('Reset Password Page Description') ?></summary>
-                    <p class="reset-desc-text"><?= t('Change your password for this platform.') ?></p>
+                    <p class="reset-desc-text"><?= t('Change your password for this kanban platform.') ?></p>
                 </details>
             </div>
             <div class="form-actions">
