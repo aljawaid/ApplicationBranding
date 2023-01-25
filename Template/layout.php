@@ -48,8 +48,6 @@
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
-        <meta name="description" content="Use this platform to manage your productivity using tasks inside project boards to track files, comments and activities.">
-        <meta property="og:description" content="Use this platform to manage your productivity using tasks inside project boards to track files, comments and activities." />
         <?php
             if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
                 $url = "https://";
@@ -72,6 +70,9 @@
             $incomingController = $this->app->getRouterController();
             $outgoingAction = $this->app->getRouterAction();
         ?>
+
+            <meta name="description" content="<?= t('Use this platform to manage your productivity using tasks inside project boards to track files, comments and activities.') ?>">
+            <meta property="og:description" content="<?= t('Use this platform to manage your productivity using tasks inside project boards to track files, comments and activities.') ?>" />
 
         <?php if (isset($page_title)): ?>
             <?php if (!empty($this->task->configModel->get('app_rename'))): ?>
