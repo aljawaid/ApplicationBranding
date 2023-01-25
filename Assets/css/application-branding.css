@@ -188,10 +188,14 @@ button.login-btn {
 }
 
 button.btn-reset-password {
-    border-radius: var(--border-radius-app-branding);
+    border-radius: var(--border-radius-app-branding-alt);
     background-color: white;
-    color: var(--pp-red-alt-2);
-    border: 2px outset var(--pp-red-alt-2);
+    color: var(--pp-green-dark);
+    border: 2px outset var(--pp-green-dark);
+    float: right;
+    font-size: 1em;
+    padding: 4px;
+}
 }
 
 input#form-username, input#form-password {
@@ -257,4 +261,9 @@ form.login-form .form-actions {
     display: inline-block;
     vertical-align: middle;
     padding-right: 4px;
+
+.btn-reset-password svg {
+    vertical-align: text-top;
+    fill: var(--pp-green-dark);
+}
 }
