@@ -21,8 +21,8 @@
                 <button type="submit" class="btn btn-blue"><?= t('Save Settings') ?></button>
             </div>
         </fieldset>
-        <fieldset>
-            <legend><?= t('Device Icons') ?></legend>
+        <fieldset class="device-icons-metadata">
+            <legend class=""><?= t('Device Icons') ?></legend>
             <div class=""></div>
             <div class="form-actions">
                 <button type="submit" class="btn btn-blue"><?= t('Save Settings') ?></button>
