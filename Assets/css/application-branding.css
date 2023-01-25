@@ -360,3 +360,7 @@ form.form-reset .required-wrapper {
 #MetadataPage > h2 > svg {
     vertical-align: bottom;
 }
+
+fieldset.app-name-settings legend, fieldset.login-page-settings legend, fieldset.site-metadata-settings legend, fieldset.site-name-metadata legend, fieldset.site-desc-metadata legend, fieldset.device-icons-metadata legend {
+    font-weight: 600;
+}
