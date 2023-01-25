@@ -71,8 +71,13 @@
             $outgoingAction = $this->app->getRouterAction();
         ?>
 
+        <?php if (($incomingController == 'PasswordResetController') && ($outgoingAction =='create')): ?>
+            <meta name="description" content="<?= t('Change your password for this platform.') ?>">
+            <meta property="og:description" content="<?= t('Change your password for this platform.') ?>" />
+        <?php else: ?>
             <meta name="description" content="<?= t('Use this platform to manage your productivity using tasks inside project boards to track files, comments and activities.') ?>">
             <meta property="og:description" content="<?= t('Use this platform to manage your productivity using tasks inside project boards to track files, comments and activities.') ?>" />
+        <?php endif ?>
 
         <?php if (isset($page_title)): ?>
             <?php if (!empty($this->task->configModel->get('app_rename'))): ?>
