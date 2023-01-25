@@ -352,4 +352,8 @@ form.form-reset .required-wrapper {
 #form-username:focus:-khtml-autofill, #form-password:focus:-khtml-autofill, #form-captcha:focus:-khtml-autofill {
   -webkit-box-shadow: 0 0 0px 1000px white inset;
 }
+
+.metadata-page-header {
+    margin: var(--page-margin-app-branding);
+}
 }
