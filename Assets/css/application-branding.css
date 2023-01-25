@@ -168,6 +168,13 @@ kbd.user-remote-ip {
     margin-right: 5px;
 }
 
+.form-reset .user-icon {
+    width: 20px;
+    vertical-align: text-bottom;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
 .password-icon {
     width: 24px;
     vertical-align: middle;
