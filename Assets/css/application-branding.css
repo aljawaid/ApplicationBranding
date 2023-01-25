@@ -257,11 +257,11 @@ input#form-username, input#form-password {
     height: 50%;
 }
 
-textarea.login-message-textarea {
+textarea.login-message-textarea, textarea.meta-desc-textarea {
     background: #D8E2F9;
 }
 
-textarea.login-message-textarea::placeholder {
+textarea.login-message-textarea::placeholder, textarea.meta-desc-textarea::placeholder {
     color: #4D4D4D;
 }
 
@@ -368,4 +368,33 @@ a.application-link, a.application-link:visited {
 
 fieldset.app-name-settings legend, fieldset.login-page-settings legend, fieldset.site-metadata-settings legend, fieldset.site-name-metadata legend, fieldset.site-desc-metadata legend, fieldset.device-icons-metadata legend {
     font-weight: 600;
+}
+
+input#form-meta_description {
+    width: 100%;
+}
+
+.generic-desc summary, .reset-desc summary {
+    cursor: pointer;
+}
+
+.generic-desc {
+    margin-top: 15px;
+}
+
+.reset-desc {
+    margin-top: 10px;
+}
+
+.generic-desc p, .reset-desc p {
+    margin: 10px auto;
+    text-align: center;
+}
+
+.generic-desc-text, .reset-desc-text {
+    box-sizing: content-box;
+    border: 2px groove #777;
+    width: fit-content;
+    padding: 2px 5px;
+    background-color: #D3D3D3;
 }

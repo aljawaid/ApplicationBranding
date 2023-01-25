@@ -17,6 +17,22 @@
                 </p>
             </div>
         </fieldset>
+        <fieldset class="site-desc-metadata">
+            <legend class=""><?= t('Site Description') ?></legend>
+            <div class="metadata-wrapper">
+                <p class=""><?= t('The meta description applies across the site except for the \'Reset Password\' page') ?></p>
+                <?= $this->form->label(t('Meta Description'), 'meta_description', array('class="meta-desc"')) ?>
+                <?= $this->form->text('meta_description', $values, $errors, array('placeholder="'. t('Use this kanban platform to manage your productivity using tasks inside project boards to track files, comments and activities.') .'"'), 'meta-desc-text') ?>
+                <p class="form-help"><?= t('The generic description will be used if this field is left empty') ?></p>
+                <details class="generic-desc">
+                    <summary><?= t('Generic Description') ?></summary>
+                    <p class="generic-desc-text"><?= t('Use this kanban platform to manage your productivity using tasks inside project boards to track files, comments and activities.') ?></p>
+                </details>
+                <details class="reset-desc">
+                    <summary><?= t('Reset Password Page Description') ?></summary>
+                    <p class="reset-desc-text"><?= t('Change your password for this platform.') ?></p>
+                </details>
+            </div>
             <div class="form-actions">
                 <button type="submit" class="btn btn-blue"><?= t('Save Settings') ?></button>
             </div>
