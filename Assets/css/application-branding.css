@@ -270,10 +270,17 @@ form.login-form .form-actions {
     margin-bottom: 60px;
 }
 
-.login-area .captcha-img {
+form.form-reset .form-actions {
+    padding-top: 0;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.login-area .captcha-img, .password-area .captcha-img {
     display: inline-block;
     vertical-align: middle;
     border-radius: var(--border-radius-app-branding);
+    height: 37px;
 }
 
 .required-wrapper-captcha > input.captcha-input {
@@ -282,13 +289,19 @@ form.login-form .form-actions {
     display: inline-block;
     vertical-align: middle;
     padding-right: 4px;
+    border: 0;
     border-radius: var(--border-radius-app-branding-alt);
+    padding-bottom: 1px;
+}
 
 .reset-form h2.reset-title {
     margin-top: 0;
     margin-bottom: 10px;
 }
 
+form.form-reset .required-wrapper {
+    padding-left: 0;
+}
 
 .reset-title .reset-icon {
     position: absolute;
