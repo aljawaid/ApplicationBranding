@@ -3,4 +3,5 @@
 <p><?= $this->url->to('PasswordResetController', 'change', array('token' => $token), '', true) ?></p>
 
 <hr>
-Kanboard
+<footer class="copyright">
+</footer>
