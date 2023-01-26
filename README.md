@@ -15,19 +15,19 @@ Features
 
 **Application Metadata**
 - Favicons included for all common devices
-- Include logo in top left corner of the site (header)
+- Include generic logo in the top left corner of the site (header)
 
 **New Login Page**
 - Show User IP Address
 - Show application name and copyright
-- Include metadata (for when sharing links)
+- Include metadata and generic logo (for when sharing links)
 - Show Unsplash image background
 
 **New Reset Password Page**
 - Show User IP Address
 - Add user friendly page title
 - Show application name and copyright
-- Include metadata (for when sharing links)
+- Include metadata and generic logo (for when sharing links)
 - Show Unsplash image background
 
 Screenshots
