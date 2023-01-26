@@ -46,7 +46,9 @@
                 <?php $files = array_diff( scandir('plugins/ApplicationBranding/Assets/img/favicon/'), array('.', '..') ); ?>
                 <?php foreach ($files as $file): ?>
                     <?php if ((!$this->text->contains($file, '.webmanifest')) && (!$this->text->contains($file, '.xml'))): ?>
-                        <li class=""><?= $file ?></li>
+                        <li class="">
+                            <span class="filename"><?= $file ?></span>
+                        </li>
                     <?php endif ?>
                 <?php endforeach ?>
                 </ul>
