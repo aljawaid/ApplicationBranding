@@ -30,6 +30,9 @@ Features
 - Include metadata and generic logo (for when sharing links)
 - Show Unsplash image background
 
+**Reset Password Email**
+- Show application name and copyright
+
 Screenshots
 ----------
 
