@@ -56,6 +56,9 @@ Screenshots
 
 ![Rename Application](../master/Screenshots/screenshot-settings.png "Settings")
 
+**Settings - Metadata**  
+
+![Metadata](../master/Screenshots/screenshot-metadata.png "Metadata")
 
 Usage
 -------------
