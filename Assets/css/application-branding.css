@@ -402,3 +402,12 @@ input#form-meta_description {
 .site-name-wrapper p, .metadata-wrapper p, .icons-wrapper p {
     margin: 5px auto;
 }
+
+ul.icon-list {
+    list-style-type: none;
+}
+
+ul.icon-list li {
+    display: inline-block;
+    width: 400px;
+}
