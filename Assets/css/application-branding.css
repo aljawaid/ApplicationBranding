@@ -398,3 +398,7 @@ input#form-meta_description {
     padding: 2px 5px;
     background-color: #D3D3D3;
 }
+
+.site-name-wrapper p, .metadata-wrapper p, .icons-wrapper p {
+    margin: 5px auto;
+}

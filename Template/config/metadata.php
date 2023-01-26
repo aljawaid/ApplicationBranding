@@ -11,7 +11,7 @@
         <?= $this->form->csrf() ?>
         <fieldset class="site-name-metadata">
             <legend class=""><?= t('Site Name') ?></legend>
-            <div class="">
+            <div class="site-name-wrapper">
                 <p class="">
                     <?= t('The site name can be changed in the') ?> <?= $this->url->link(t('Application Settings'), 'ConfigController', 'application', array(), false, 'application-link', t('Go to Application Settings'), false, 'AppBrandingSettings') ?>
                 </p>
@@ -39,7 +39,7 @@
         </fieldset>
         <fieldset class="device-icons-metadata">
             <legend class=""><?= t('Device Icons') ?></legend>
-            <div class="metadata-wrapper"></div>
+            <div class="icons-wrapper">
             <div class="form-actions">
                 <button type="submit" class="btn btn-blue"><?= t('Save Settings') ?></button>
             </div>
