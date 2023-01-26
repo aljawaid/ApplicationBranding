@@ -33,6 +33,10 @@ Features
 **Reset Password Email**
 - Show application name and copyright
 
+**Change Password Page**
+-
+
+
 Screenshots
 ----------
 
