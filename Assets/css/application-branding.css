@@ -410,4 +410,10 @@ ul.icon-list {
 ul.icon-list li {
     display: inline-block;
     width: 400px;
+    margin-left: 0;
+}
+
+ul.icon-list li .filename {
+    padding: 2px 3px;
+    margin: 0 3px;
 }
