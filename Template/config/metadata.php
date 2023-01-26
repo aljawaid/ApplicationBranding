@@ -40,8 +40,6 @@
         <fieldset class="device-icons-metadata">
             <legend class=""><?= t('Device Icons') ?></legend>
             <div class="icons-wrapper">
-            <div class="form-actions">
-                <button type="submit" class="btn btn-blue"><?= t('Save Settings') ?></button>
             </div>
         </fieldset>
         </form>
