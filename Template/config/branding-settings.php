@@ -37,7 +37,7 @@
     </fieldset>
     <fieldset class="site-metadata-settings">
         <legend class=""><?= t('Site Metadata') ?></legend>
-        <p class=""><?= t('The site description and common device icons can be changed in') ?> <?= $this->url->link(t('Site Metadata'), 'ApplicationBrandingController', 'show', ['plugin' => 'ApplicationBranding'], false, 'application-link', t('Visit page'), false, '') ?></p>
+        <p class=""><?= t('The site description and common device icons are shown in') ?> <?= $this->url->link(t('Site Metadata'), 'ApplicationBrandingController', 'show', ['plugin' => 'ApplicationBranding'], false, 'application-link', t('Visit page'), false, '') ?></p>
     </fieldset>
     <div class="form-actions">
         <button type="submit" class="btn btn-blue" title="<?= t('Saves any changes made on this page') ?>"><?= t('Save Settings') ?></button>
