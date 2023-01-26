@@ -26,11 +26,7 @@
         <?= $this->hook->asset('css', 'template:layout:css') ?>
         <?= $this->hook->asset('js', 'template:layout:js') ?>
 
-        <link rel="icon" type="image/png" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/workspace-icon-500x500.png">
-        <link rel="apple-touch-icon" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/touch-icon-iphone.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/apple-touch-icon-ipad.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/touch-icon-iphone-retina.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/touch-icon-ipad-retina.png">
+        <link rel="shortcut icon" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/favicon.ico">
         <link rel="apple-touch-icon" sizes="57x57" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/apple-icon-60x60.png">
         <link rel="apple-touch-icon" sizes="72x72" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/apple-icon-72x72-ipad.png">
@@ -40,14 +36,23 @@
         <link rel="apple-touch-icon" sizes="144x144" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/apple-icon-144x144-ipad-retina.png">
         <link rel="apple-touch-icon" sizes="152x152" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/apple-icon-152x152.png">
         <link rel="apple-touch-icon" sizes="180x180" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/workspace-icon-500x500.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/favicon-16x16.png">
         <link rel="icon" type="image/png" sizes="32x32" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="96x96" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/favicon-16x16.png">
-        <link rel="manifest" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/manifest.json">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">
+        <link rel="icon" type="image/png" sizes="128x128" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/favicon-128x128.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="196x196" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/favicon-196x196.png">
+        <meta name="msapplication-TileColor" content="#2D89EF">
+        <meta name="msapplication-TileImage" content="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/mstile-144x144.png">
+        <meta name="msapplication-square70x70logo" content="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/mstile-70x70.png">
+        <meta name="msapplication-square150x150logo" content="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/mstile-150x150.png">
+        <meta name="msapplication-wide310x150logo" content="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/mstile-310x150.png">
+        <meta name="msapplication-square310x310logo" content="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/mstile-310x310.png">
+        <meta name="msapplication-config" content="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/browserconfig.xml">
+        <meta name="theme-color" content="#FFFFFF">
+        <link rel="manifest" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/site.webmanifest">
+        <link rel="mask-icon" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/safari-pinned-tab.svg" color="#5BBAD5">
         <?php
             if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
                 $url = "https://";
