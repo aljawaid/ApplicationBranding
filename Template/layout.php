@@ -58,13 +58,13 @@
             // Append the requested resource location to the URL
             $url.= $_SERVER['REQUEST_URI'];
         ?>
-        <meta property="og:url" content="<?php echo $url ?>" />
+        <meta property="og:url" content="<?php echo $url ?>">
         <?php // og:image must be min 300x300px with 'https' and absolute url to png file ?>
-        <meta property="og:image" content="<?= $this->url->base();$this->url->dir() ?>plugins/ApplicationBranding/Assets/img/workspace-icon-500x500.png" />
-        <meta property="og:type" content="website" />
-        <meta property="og:locale" content="<?= $this->app->jsLang() ?>" />
-        <meta property="og:locale:alternate" content="en_GB" />
-        <meta property="og:locale:alternate" content="en_US" />
+        <meta property="og:image" content="<?= $this->url->base();$this->url->dir() ?>plugins/ApplicationBranding/Assets/img/workspace-icon-500x500.png">
+        <meta property="og:type" content="website">
+        <meta property="og:locale" content="<?= $this->app->jsLang() ?>">
+        <meta property="og:locale:alternate" content="en_GB">
+        <meta property="og:locale:alternate" content="en_US">
 
         <?php
             $incomingController = $this->app->getRouterController();
@@ -73,35 +73,35 @@
 
         <?php if (($incomingController == 'PasswordResetController') && ($outgoingAction =='create')): ?>
             <meta name="description" content="<?= t('Change your password for this kanban platform.') ?>">
-            <meta property="og:description" content="<?= t('Change your password for this kanban platform.') ?>" />
+            <meta property="og:description" content="<?= t('Change your password for this kanban platform.') ?>">
         <?php else: ?>
             <meta name="description" content="<?= t('Use this kanban platform to manage your productivity using tasks inside project boards to track files, comments and activities.') ?>">
-            <meta property="og:description" content="<?= t('Use this kanban platform to manage your productivity using tasks inside project boards to track files, comments and activities.') ?>" />
+            <meta property="og:description" content="<?= t('Use this kanban platform to manage your productivity using tasks inside project boards to track files, comments and activities.') ?>">
         <?php endif ?>
 
         <?php if (isset($page_title)): ?>
             <?php if (!empty($this->task->configModel->get('app_rename'))): ?>
-                <meta property="og:title" content="<?= $this->text->e($page_title) ?> | <?= $this->task->configModel->get('app_rename') ?>" />
+                <meta property="og:title" content="<?= $this->text->e($page_title) ?> | <?= $this->task->configModel->get('app_rename') ?>">
             <?php else: ?>
-                <meta property="og:title" content="<?= $this->text->e($page_title) ?> | <?= t('My Workspace') ?>" />
+                <meta property="og:title" content="<?= $this->text->e($page_title) ?> | <?= t('My Workspace') ?>">
             <?php endif ?>
         <?php elseif (isset($title)): ?>
             <?php if (!empty($this->task->configModel->get('app_rename'))): ?>
-                <meta property="og:title" content="<?= $this->text->e($title) ?> | <?= $this->task->configModel->get('app_rename') ?>" />
+                <meta property="og:title" content="<?= $this->text->e($title) ?> | <?= $this->task->configModel->get('app_rename') ?>">
             <?php else: ?>
-                <meta property="og:title" content="<?= $this->text->e($title) ?> | <?= t('My Workspace') ?>" />
+                <meta property="og:title" content="<?= $this->text->e($title) ?> | <?= t('My Workspace') ?>">
             <?php endif ?>
         <?php elseif (($incomingController == 'PasswordResetController') && ($outgoingAction =='create')): ?>
             <?php if (!empty($this->task->configModel->get('app_rename'))): ?>
-                <meta property="og:title" content="<?= t('Reset Password') ?> | <?= $this->task->configModel->get('app_rename') ?>" />
+                <meta property="og:title" content="<?= t('Reset Password') ?> | <?= $this->task->configModel->get('app_rename') ?>">
             <?php else: ?>
-                <meta property="og:title" content="<?= t('Reset Password') ?> | <?= t('My Workspace') ?>" />
+                <meta property="og:title" content="<?= t('Reset Password') ?> | <?= t('My Workspace') ?>">
             <?php endif ?>
         <?php else: ?>
             <?php if (!empty($this->task->configModel->get('app_rename'))): ?>
-                <meta property="og:title" content="<?= $this->task->configModel->get('app_rename') ?>" />
+                <meta property="og:title" content="<?= $this->task->configModel->get('app_rename') ?>">
             <?php else: ?>
-                <meta property="og:title" content="<?= t('My Workspace') ?>" />
+                <meta property="og:title" content="<?= t('My Workspace') ?>">
             <?php endif ?>
         <?php endif ?>
 
