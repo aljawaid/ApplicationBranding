@@ -55,4 +55,21 @@ return array(
     'Visit page' => '',
     'Saves any changes made on this page' => '',
     'Save Settings' => '',
+    //
+    // config/metadata.php
+    //
+    'The site name can be changed in the' => '',
+    'Application Settings' => '',
+    'Go to Application Settings' => '',
+    'Site Description' => '',
+    'The meta description applies across the site except for the \'Reset Password\' page' => '',
+    'Meta Description' => '',
+    'Use this kanban platform to manage your productivity using tasks inside project boards to track files, comments and activities.' => '',
+    'The generic description will be used if this field is left empty' => '',
+    'Generic Description' => '',
+    'Reset Password Page Description' => '',
+    'Change your password for this kanban platform.' => '',
+    'Device Icons' => '',
+    'The images below are used for various devices and become most useful when sharing and saving links. The icons are all based on the generic image included with this plugin.' => '',
+    'Included Icons' => '',
 );
