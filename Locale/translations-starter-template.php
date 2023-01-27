@@ -95,4 +95,8 @@ return array(
     'Enter the text below' => '',
     'Back to Login' => '',
     'Your IP:' => '',
+    //
+    // password_reset/email.php
+    //
+    'Click on the following link to reset your password:' => '',
 );
