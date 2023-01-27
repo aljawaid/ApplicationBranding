@@ -416,4 +416,6 @@ ul.icon-list li {
 ul.icon-list li .filename {
     padding: 2px 3px;
     margin: 0 3px;
+    font-family: Monospace;
+    font-size: 1.1em;
 }
