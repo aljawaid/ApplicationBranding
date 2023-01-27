@@ -18,14 +18,6 @@ return array(
     //
     // CORE OVERRIDES OR 3RD PARTY PLUGIN TRANSLATIONS AFFECTING THIS PLUGIN
     //
-    '' => '',
-    '' => '',
-    '' => '',
-    '' => '',
-    '' => '',
-    '' => '',
-    '' => '',
-    '' => '',
-    '' => '',
-    '' => '',
+    'Settings saved successfully' => '',
+    'Unable to save your settings' => '',
 );
