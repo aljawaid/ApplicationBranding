@@ -33,4 +33,26 @@ return array(
     'Reset Password' => '',
     'Login' => '',
     'Enter Application' => '',
+    //
+    // config/branding-settings.php
+    //
+    'Workspace logo' => '',
+    'Application Name' => '',
+    'Enter the new name for this application' => '',
+    'Site Name' => '',
+    'By default, this plugin will rename your application to "My Workspace" once installed' => '',
+    'Login Page' => '',
+    'Adjust the settings below to customise the login page' => '',
+    'Visitor Warning' => '',
+    'Enter a single line title or leave blank for the default title' => '',
+    'Login Message' => '',
+    'Use this platform to manage your productivity. Work with tasks inside project boards to track comments, files and activities.' => '',
+    'This message will appear within the form above the username or leave blank for the default message' => '',
+    'Copyright From' => '',
+    'If no year is entered, then the standard copyright message with the current year is shown' => '',
+    'Site Metadata' => '',
+    'The site description and common device icons are shown in' => '',
+    'Visit page' => '',
+    'Saves any changes made on this page' => '',
+    'Save Settings' => '',
 );
