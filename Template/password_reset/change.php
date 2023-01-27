@@ -3,10 +3,10 @@
     <form method="post" action="<?= $this->url->href('PasswordResetController', 'update', array('token' => $token)) ?>">
         <?= $this->form->csrf() ?>
 
-        <?= $this->form->label(t('New password'), 'password') ?>
+        <?= $this->form->label(t('New Password'), 'password') ?>
         <?= $this->form->password('password', $values, $errors, ['autocomplete="new-password" placeholder="Required"']) ?>
 
-        <?= $this->form->label(t('Confirmation'), 'confirmation') ?>
+        <?= $this->form->label(t('Confirm New Password'), 'confirmation') ?>
         <?= $this->form->password('confirmation', $values, $errors, ['autocomplete="new-password" placeholder="Required"']) ?>
 
         <div class="form-actions">

@@ -58,7 +58,7 @@
                         </button>
                     </div>
                 </form>
-                <kbd class="user-remote-ip">Your IP: <?= $_SERVER["REMOTE_ADDR"]; ?></kbd>
+                <kbd class="user-remote-ip"><?= t('Your IP:') ?> <?= $_SERVER["REMOTE_ADDR"]; ?></kbd>
             </div>
         </div>
     </div>
