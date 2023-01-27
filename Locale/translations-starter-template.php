@@ -20,4 +20,17 @@ return array(
     //
     'Settings saved successfully' => '',
     'Unable to save your settings' => '',
+    //
+    // auth/index.php
+    //
+    'My Workspace' => '',
+    'AUTHORISED USERS ONLY' => '',
+    'Use this platform to manage your productivity. Work with tasks inside project boards to track comments, files and activities.' => '',
+    'Username' => '',
+    'Password' => '',
+    'Enter the text below' => '',
+    'Remember Me' => '',
+    'Reset Password' => '',
+    'Login' => '',
+    'Enter Application' => '',
 );
