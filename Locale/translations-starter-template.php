@@ -87,4 +87,12 @@ return array(
     'New Password' => '',
     'Confirm New Password' => '',
     'Change Password' => '',
+    //
+    // password_reset/create.php
+    //
+    'A link to change your password will be sent by email to the username registered in the system' => '',
+    'Your profile must have a valid email address' => '',
+    'Enter the text below' => '',
+    'Back to Login' => '',
+    'Your IP:' => '',
 );
