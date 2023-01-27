@@ -81,4 +81,10 @@ return array(
     //
     'Dashboard' => '',
     'Task Limit' => '',
+    //
+    // password_reset/change.php
+    //
+    'New Password' => '',
+    'Confirm New Password' => '',
+    'Change Password' => '',
 );
