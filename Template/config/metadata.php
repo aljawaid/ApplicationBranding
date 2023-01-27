@@ -40,8 +40,10 @@
         <fieldset class="device-icons-metadata">
             <legend class=""><?= t('Device Icons') ?></legend>
             <div class="icons-wrapper">
-                <p class=""><?= t('The images below are used for various devices and become most useful when sharing and saving links. The icons are all based on the generic image included with this plugin.') ?></p>
-                <h4 class=""><?= t('Included Icons') ?></h4>
+                <p class="">
+                    <?= t('The images below are used for various devices and become most useful when sharing and saving links. The icons are all based on the generic image included with this plugin.') ?>
+                </p>
+
                 <?php
                 $files = array_diff( scandir('plugins/ApplicationBranding/Assets/img/favicon/'), array('.', '..') );
                 ?>
@@ -50,6 +52,7 @@
                     <span>(<?= (count($files)-2) ?>)</span>
                 </h4>
                 <ul class="icon-list">
+
                 <?php foreach ($files as $file): ?>
                     <?php if ((!$this->text->contains($file, '.webmanifest')) && (!$this->text->contains($file, '.xml'))): ?>
                         <li class="">
@@ -57,6 +60,7 @@
                         </li>
                     <?php endif ?>
                 <?php endforeach ?>
+
                 </ul>
             </div>
         </fieldset>
