@@ -72,4 +72,8 @@ return array(
     'Device Icons' => '',
     'The images below are used for various devices and become most useful when sharing and saving links. The icons are all based on the generic image included with this plugin.' => '',
     'Included Icons' => '',
+    //
+    // config/sidebar.php
+    //
+    'Site Metadata' => '',
 );
