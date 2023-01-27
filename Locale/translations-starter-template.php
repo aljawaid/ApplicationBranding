@@ -76,4 +76,9 @@ return array(
     // config/sidebar.php
     //
     'Site Metadata' => '',
+    //
+    // header/title.php
+    //
+    'Dashboard' => '',
+    'Task Limit' => '',
 );
