@@ -41,9 +41,9 @@ class ApplicationBrandingController extends \Kanboard\Controller\PluginControlle
 
         if ($this->configModel->save($values)) {
             $this->languageModel->loadCurrentLanguage();
-            $this->flash->success(t('Settings saved successfully.'));
+            $this->flash->success(t('Settings saved successfully'));
         } else {
-            $this->flash->failure(t('Unable to save your settings.'));
+            $this->flash->failure(t('Unable to save your settings'));
         }
 
         $this->response->redirect($this->helper->url->to('ApplicationBrandingController', $redirect, ['plugin' => 'ApplicationBranding']));
