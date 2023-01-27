@@ -42,8 +42,14 @@
             <div class="icons-wrapper">
                 <p class=""><?= t('The images below are used for various devices and become most useful when sharing and saving links. The icons are all based on the generic image included with this plugin.') ?></p>
                 <h4 class=""><?= t('Included Icons') ?></h4>
+                <?php
+                $files = array_diff( scandir('plugins/ApplicationBranding/Assets/img/favicon/'), array('.', '..') );
+                ?>
+
+                <h4 class=""><?= t('Included Icons') ?>
+                    <span>(<?= (count($files)-2) ?>)</span>
+                </h4>
                 <ul class="icon-list">
-                <?php $files = array_diff( scandir('plugins/ApplicationBranding/Assets/img/favicon/'), array('.', '..') ); ?>
                 <?php foreach ($files as $file): ?>
                     <?php if ((!$this->text->contains($file, '.webmanifest')) && (!$this->text->contains($file, '.xml'))): ?>
                         <li class="">
