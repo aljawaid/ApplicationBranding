@@ -15,6 +15,8 @@
     $allPublicProjects = $this->task->db->table('projects')->eq('is_public', 1)->findAll();
     $allCategories = $this->task->db->table('project_has_categories')->count();
     $allActions = $this->task->db->table('actions')->count();
+    $allTasksOpen = $this->task->db->table('tasks')->eq('is_active', 1)->findAll();
+    $allTasksClosed = $this->task->db->table('tasks')->eq('is_active', 0)->findAll();
     $allTasks = $this->task->db->table('tasks')->count();
     $allComments = $this->task->db->table('comments')->count();
     $projectFiles = $this->task->db->table('project_has_files')->count();
@@ -28,6 +30,14 @@
     $linkLabelsCount = count($linkLabels);
     $installedPlugins = $this->task->pluginLoader->getPlugins();
     $installedPluginsCount = count($installedPlugins);
+    $userTimezones = $this->task->db->table('users')->findAllByColumn('timezone');
+    $userDifferentTimezones = array_unique($userTimezones);
+    $userDifferentTimezonesCount = count($userDifferentTimezones);
+    $userLanguages = $this->task->db->table('users')->findAllByColumn('language');
+    $userDifferentLanguages = array_unique($userLanguages);
+    $userDifferentLanguagesCount = count($userDifferentLanguages);
+    $allManagers= $this->task->db->table('users')->eq('role', 'app-manager')->findAll();
+    $allMembers= $this->task->db->table('users')->eq('role', 'app-user')->findAll();
     $userCount = $this->task->db->table('users')->count();
     $activeUserCount = $this->task->db->table('users')->eq('is_active', 1)->findAll();
     $allGroups = $this->task->groupModel->getAll();
