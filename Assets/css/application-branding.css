@@ -19,7 +19,7 @@
     --button-background-delete: #D05C84;
     --link-color-primary: #36C;
     --header-page-margin-app-branding: 5px 15px 10px 15px;
-    --page-margin-app-branding: 0px 15px 0px 15px;
+    --page-margin-app-branding: auto 15px auto 15px;
     --title-margin-app-branding: 0px 15px 0px 15px;
     --border-radius-app-branding: 5px;
     --border-radius-app-branding-alt: 3px;
@@ -422,4 +422,8 @@ ul.icon-list li .filename {
 
 details.license summary {
     cursor: pointer;
+}
+
+.about-page {
+    margin: var(--page-margin-app-branding);
 }
