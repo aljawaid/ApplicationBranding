@@ -155,8 +155,8 @@
                 <strong>Frédéric Guillot</strong> (<a href="https://github.com/kanboard/kanboard/graphs/contributors" target="_blank" rel="noopener noreferrer"><?= t('contributors') ?></a>)
             </li>
             <li class="">
-                <?= t('License:') ?>
-                <strong>MIT</strong>
+                <?= t('License') ?>
+                <a href="#LicenseMIT" title="View License">MIT</a>
             </li>
         </ul>
     </div>
@@ -229,7 +229,7 @@
     <?php endif ?>
 
     <div class="page-header">
-        <h2 class=""><?= t('License') ?></h2>
+        <h2 id="LicenseMIT" class=""><?= t('License') ?></h2>
     </div>
     <div class="panel">
         <details class="license">
