@@ -59,36 +59,36 @@ $allAdmins = $this->task->db->table('users')->eq('role', 'app-admin')->findAll()
     <h2><?= t('Configuration') ?></h2>
 </div>
 <div class="panel">
-    <ul>
-        <li>
+    <ul class="">
+        <li class="">
             <?= t('Application version:') ?>
             <strong><?= APP_VERSION ?></strong>
         </li>
-        <li>
+        <li class="">
             <?= t('PHP version:') ?>
             <strong><?= PHP_VERSION ?></strong>
         </li>
-        <li>
+        <li class="">
             <?= t('PHP SAPI:') ?>
             <strong><?= PHP_SAPI ?></strong>
         </li>
-        <li>
+        <li class="">
             <?= t('HTTP Client:') ?>
             <strong><?= Kanboard\Core\Http\Client::backend() ?></strong>
         </li>
-        <li>
+        <li class="">
             <?= t('OS version:') ?>
             <strong><?= @php_uname('s').' '.@php_uname('r') ?></strong>
         </li>
-        <li>
+        <li class="">
             <?= t('Database driver:') ?>
             <strong><?= DB_DRIVER ?></strong>
         </li>
-        <li>
+        <li class="">
             <?= t('Database version:') ?>
             <strong><?= $this->text->e($db_version) ?></strong>
         </li>
-        <li>
+        <li class="">
             <?= t('Browser:') ?>
             <strong><?= $this->text->e($user_agent) ?></strong>
         </li>
