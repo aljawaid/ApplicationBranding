@@ -124,5 +124,9 @@ $allAdmins = $this->task->db->table('users')->eq('role', 'app-admin')->findAll()
     <h2 class=""><?= t('License') ?></h2>
 </div>
 <div class="panel">
-    <?= nl2br(file_get_contents(ROOT_DIR.DIRECTORY_SEPARATOR.'LICENSE')) ?>
+    <details class="license">
+        <summary>Application License</summary>
+        <br>
+        <?= nl2br(file_get_contents(ROOT_DIR.DIRECTORY_SEPARATOR.'LICENSE')) ?>
+    </details>
 </div>

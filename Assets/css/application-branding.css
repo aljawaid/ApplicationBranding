@@ -419,3 +419,7 @@ ul.icon-list li .filename {
     font-family: Monospace;
     font-size: 1.1em;
 }
+
+details.license summary {
+    cursor: pointer;
+}
