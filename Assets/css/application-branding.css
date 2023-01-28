@@ -111,6 +111,7 @@ section.login-logo {
     font-size: 1.8em;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: white;
+    line-height: 1;
 }
 
 .login-area .form-login, .password-area .reset-form {
