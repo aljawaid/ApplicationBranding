@@ -35,13 +35,14 @@ Features
 - Compatible with [KanboardEmailHistory](https://github.com/aljawaid/KanboardEmailHistory)
 
 **Change Password Page**
--
+- _To be completed_
 
 **New About Page**
 - Professional look and feel application dashboard
   - Add metrics for the Kanboard installation on a global level regardless of projects or tasks.
 - Add new hook
   - `'template:config:about'` is located before the configuration section
+- Include links to the forum
 
 
 Screenshots
