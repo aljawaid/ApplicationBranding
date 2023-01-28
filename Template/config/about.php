@@ -34,6 +34,112 @@
     $allAdmins = $this->task->db->table('users')->eq('role', 'app-admin')->findAll();
     ?>
 
+    <div class="dash-block">
+        <div class="box-row">
+            <div class="box-wrapper back-copper">
+                <div class="box-icon"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></div>
+                <div class="box-title"><?= t('Projects') ?></div>
+                <div class="box-data">
+                    <span class="data-value data-open" title="Open"><?= count($allProjectsOpen) ?></span>
+                    <span class="data-value data-closed" title="Closed"><?= count($allProjectsClosed) ?></span>
+                </div>
+            </div>
+            <div class="box-wrapper back-copper">
+                <div class="box-icon"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></div>
+                <div class="box-title"><?= t('Total Projects') ?></div>
+                <div class="box-data"><span class="data-value"><?= count($allProjects) ?></span></div>
+            </div>
+            <div class="box-wrapper back-copper">
+                <div class="box-icon"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></div>
+                <div class="box-title"><?= t('Personal Projects') ?></div>
+                <div class="box-data"><span class="data-value"><?= count($allPrivateProjects) ?></span></div>
+            </div>
+            <div class="box-wrapper back-copper">
+                <div class="box-icon"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></div>
+                <div class="box-title"><?= t('Public Projects') ?></div>
+                <div class="box-data"><span class="data-value"><?= count($allPublicProjects) ?></span></div>
+            </div>
+            <div class="box-wrapper back-copper">
+                <div class="box-icon"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></div>
+                <div class="box-title">Categories</div>
+                <div class="box-data"><span class="data-value"><?= $allCategories ?></span></div>
+            </div>
+            <div class="box-wrapper back-copper">
+                <div class="box-icon"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></div>
+                <div class="box-title"><?= t('Automatic Actions') ?></div>
+                <div class="box-data"><span class="data-value"><?= $allActions ?></span></div>
+            </div>
+            <div class="box-wrapper back-orange">
+                <div class="box-icon"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></div>
+                <div class="box-title"><?= t('Tasks') ?></div>
+                <div class="box-data"><span class="data-value"><?= $allTasks ?></span></div>
+            </div>
+            <div class="box-wrapper back-orange">
+                <div class="box-icon"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></div>
+                <div class="box-title"><?= t('Comments') ?></div>
+                <div class="box-data"><span class="data-value"><?= $allComments ?></span></div>
+            </div>
+            <div class="box-wrapper back-orange">
+                <div class="box-icon"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></div>
+                <div class="box-title"><?= t('Attachments') ?></div>
+                <div class="box-data"><span class="data-value"><?= $allFiles ?></span></div>
+            </div>
+            <div class="box-wrapper back-purple">
+                <div class="box-icon"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></div>
+                <div class="box-title">Total tags</div>
+                <div class="box-data"><span class="data-value"><?= $allTagsCount ?></span></div>
+            </div>
+            <div class="box-wrapper back-purple">
+                <div class="box-icon"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></div>
+                <div class="box-title"><?= t('Global Tags') ?></div>
+                <div class="box-data"><span class="data-value"><?= $globalTagsCount ?></span></div>
+            </div>
+            <div class="box-wrapper back-purple">
+                <div class="box-icon"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></div>
+                <div class="box-title">Project Tags</div>
+                <div class="box-data"><span class="data-value"><?= $allTagsCount - $globalTagsCount ?></span></div>
+            </div>
+            <div class="box-wrapper back-grey">
+                <div class="box-icon"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></div>
+                <div class="box-title">Link Label Pairs</div>
+                <div class="box-data"><span class="data-value"><?= $linkLabelsCount/2 ?></span></div>
+            </div>
+            <div class="box-wrapper back-grey">
+                <div class="box-icon"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></div>
+                <div class="box-title"><?= t('Link Labels') ?></div>
+                <div class="box-data"><span class="data-value"><?= $linkLabelsCount ?></span></div>
+            </div>
+            <div class="box-wrapper back-green">
+                <div class="box-icon"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></div>
+                <div class="box-title"><?= t('Installed Plugins') ?></div>
+                <div class="box-data"><span class="data-value"><?= $installedPluginsCount ?></span></div>
+            </div>
+            <div class="box-wrapper back-red">
+                <div class="box-icon">
+                    <svg version="1.1" class="user_icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 409.165 409.164" xml:space="preserve">
+                        <g id="" stroke-width="0"></g>
+                        <g id="" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id=""> <g> <g> <path d="M204.583,216.671c50.664,0,91.74-48.075,91.74-107.378c0-82.237-41.074-107.377-91.74-107.377 c-50.668,0-91.74,25.14-91.74,107.377C112.844,168.596,153.916,216.671,204.583,216.671z"></path> <path d="M407.164,374.717L360.88,270.454c-2.117-4.771-5.836-8.728-10.465-11.138l-71.83-37.392 c-1.584-0.823-3.502-0.663-4.926,0.415c-20.316,15.366-44.203,23.488-69.076,23.488c-24.877,0-48.762-8.122-69.078-23.488 c-1.428-1.078-3.346-1.238-4.93-0.415L58.75,259.316c-4.631,2.41-8.346,6.365-10.465,11.138L2.001,374.717 c-3.191,7.188-2.537,15.412,1.75,22.005c4.285,6.592,11.537,10.526,19.4,10.526h362.861c7.863,0,15.117-3.936,19.402-10.527 C409.699,390.129,410.355,381.902,407.164,374.717z"></path> </g> </g> </g>
+                    </svg>
+                </div>
+                <div class="box-title"><?= t('Users') ?></div>
+                <div class="box-data">
+                    <span class="data-value data-active" title="Active"><?= count($activeUserCount) ?></span>
+                    <span class="data-value data-total" title="Total"><?= $userCount ?></span>
+                </div>
+            </div>
+            <div class="box-wrapper back-red">
+                <div class="box-icon"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></div>
+                <div class="box-title"><?= t('User Groups') ?></div>
+                <div class="box-data"><span class="data-value"><?= count($allGroups) ?></span></div>
+            </div>
+            <div class="box-wrapper back-red">
+                <div class="box-icon"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></div>
+                <div class="box-title"><?= t('Administrators') ?></div>
+                <div class="box-data"><span class="data-value"><?= count($allAdmins) ?></span></div>
+            </div>
+        </div>
+    </div>
 
     <div class="page-header">
         <h2 class=""><?= t('Platform') ?></h2>
