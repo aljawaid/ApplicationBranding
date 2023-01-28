@@ -62,6 +62,8 @@ a:hover { color: var(--pp-red-alt-2) !important; }
 
 .no-bottom {margin-bottom: 0;}
 
+.cursor {cursor: pointer;}
+
 #AppBrandingSettings h3 {
     font-weight: 600;
 }
@@ -433,7 +435,7 @@ ul.icon-list li .filename {
 .box-wrapper {
     width: 150px;
     display: inline-block;
-    height: 75px;
+    height: 90px;
     margin: 10px 10px;
     position: relative;
     padding: 2px 5px;
@@ -468,11 +470,16 @@ ul.icon-list li .filename {
     text-shadow: 1px 0px 3px #000;
 }
 
+.box-data {
+    padding-top: 5px;
+    padding-bottom: 8px;
+}
+
 .box-data .data-value {
     font-size: 1.5em;
 }
 
-.data-open, .data-active {
+.data-open, .data-active, .data-project {
     margin-right: 5px;
     background: green;
     padding: 0 4px;
@@ -481,9 +488,16 @@ ul.icon-list li .filename {
     font-weight: 600;
 }
 
-.data-closed, .data-total {
+.data-closed, .data-total, .data-global, .data-disabled {
     margin-left: 5px;
     padding: 0 4px;
+}
+
+.data-totals {
+    position: absolute;
+    bottom: 0;
+    right: 4px;
+    opacity: .6;
 }
 
 .back-orange {
