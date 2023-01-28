@@ -420,6 +420,71 @@ ul.icon-list li .filename {
     font-size: 1.1em;
 }
 
+.dash-block {
+    text-align: center;
+}
+
+.box-row {
+    max-width: 1120px;
+    margin: auto;
+}
+
+.box-wrapper {
+    width: 150px;
+    display: inline-block;
+    height: 75px;
+    margin: 10px 10px;
+    position: relative;
+    padding: 2px 5px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 0px #000;
+    border: 1px solid gray;
+    color: var(--pp-white);
+}
+
+.box-icon {
+    width: fit-content;
+    font-size: 2em;
+    position: absolute;
+    bottom: -6px;
+    padding: 0;
+    margin: 0;
+    left: -2px;
+    opacity: .5;
+}
+
+.box-icon svg {
+    position: relative;
+    width: 28px;
+    left: 5px;
+}
+
+.box-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: .85em;
+    padding: 5px 0;
+    text-shadow: 1px 0px 3px #000;
+}
+
+.box-data .data-value {
+    font-size: 1.5em;
+}
+
+.data-open, .data-active {
+    margin-right: 5px;
+    background: green;
+    padding: 0 4px;
+    border-radius: 3px;
+    color: white;
+    font-weight: 600;
+}
+
+.data-closed, .data-total {
+    margin-left: 5px;
+    padding: 0 4px;
+}
+
 details.license summary {
     cursor: pointer;
 }
