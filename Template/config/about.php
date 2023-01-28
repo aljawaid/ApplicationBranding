@@ -34,7 +34,7 @@ $allAdmins = $this->task->db->table('users')->eq('role', 'app-admin')->findAll()
 ?>
 
 <div class="page-header">
-    <h2><?= t('About') ?></h2>
+    <h2><?= t('Platform') ?></h2>
 </div>
 <div class="panel">
     <ul>
