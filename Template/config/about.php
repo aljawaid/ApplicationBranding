@@ -34,19 +34,19 @@ $allAdmins = $this->task->db->table('users')->eq('role', 'app-admin')->findAll()
 ?>
 
 <div class="page-header">
-    <h2><?= t('Platform') ?></h2>
+    <h2 class=""><?= t('Platform') ?></h2>
 </div>
 <div class="panel">
-    <ul>
-        <li>
+    <ul class="">
+        <li class="">
             <?= t('Official website:') ?>
             <a href="https://kanboard.org/" target="_blank" rel="noopener noreferrer">https://kanboard.org/</a>
         </li>
-        <li>
+        <li class="">
             <?= t('Author:') ?>
             <strong>Frédéric Guillot</strong> (<a href="https://github.com/kanboard/kanboard/graphs/contributors" target="_blank" rel="noopener noreferrer"><?= t('contributors') ?></a>)
         </li>
-        <li>
+        <li class="">
             <?= t('License:') ?>
             <strong>MIT</strong>
         </li>
