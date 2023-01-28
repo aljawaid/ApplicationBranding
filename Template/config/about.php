@@ -52,12 +52,8 @@
                 <div class="box-data">
                     <span class="data-value data-open" title="Open"><?= count($allProjectsOpen) ?></span>
                     <span class="data-value data-closed" title="Closed"><?= count($allProjectsClosed) ?></span>
+                    <span class="data-value data-totals cursor" title="Total Projects"><?= count($allProjects) ?></span>
                 </div>
-            </div>
-            <div class="box-wrapper back-copper">
-                <div class="box-icon"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></div>
-                <div class="box-title"><?= t('Total Projects') ?></div>
-                <div class="box-data"><span class="data-value"><?= count($allProjects) ?></span></div>
             </div>
             <div class="box-wrapper back-copper">
                 <div class="box-icon"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></div>
@@ -79,10 +75,19 @@
                 <div class="box-title"><?= t('Automatic Actions') ?></div>
                 <div class="box-data"><span class="data-value"><?= $allActions ?></span></div>
             </div>
+            <div class="box-wrapper back-green">
+                <div class="box-icon"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></div>
+                <div class="box-title"><?= t('Plugins') ?></div>
+                <div class="box-data"><span class="data-value"><?= $installedPluginsCount ?></span></div>
+            </div>
             <div class="box-wrapper back-orange">
                 <div class="box-icon"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></div>
                 <div class="box-title"><?= t('Tasks') ?></div>
-                <div class="box-data"><span class="data-value"><?= $allTasks ?></span></div>
+                <div class="box-data">
+                    <span class="data-value data-open" title="Open Tasks"><?= count($allTasksOpen) ?></span>
+                    <span class="data-value data-closed" title="Closed Tasks"><?= count($allTasksClosed) ?></span>
+                    <span class="data-value data-totals cursor" title="Total Tasks"><?= $allTasks ?></span>
+                </div>
             </div>
             <div class="box-wrapper back-orange">
                 <div class="box-icon"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></div>
@@ -96,33 +101,35 @@
             </div>
             <div class="box-wrapper back-purple">
                 <div class="box-icon"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></div>
-                <div class="box-title">Total tags</div>
-                <div class="box-data"><span class="data-value"><?= $allTagsCount ?></span></div>
-            </div>
-            <div class="box-wrapper back-purple">
-                <div class="box-icon"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></div>
-                <div class="box-title"><?= t('Global Tags') ?></div>
-                <div class="box-data"><span class="data-value"><?= $globalTagsCount ?></span></div>
-            </div>
-            <div class="box-wrapper back-purple">
-                <div class="box-icon"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></div>
-                <div class="box-title">Project Tags</div>
-                <div class="box-data"><span class="data-value"><?= $allTagsCount - $globalTagsCount ?></span></div>
-            </div>
-            <div class="box-wrapper back-grey">
-                <div class="box-icon"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></div>
-                <div class="box-title">Link Label Pairs</div>
-                <div class="box-data"><span class="data-value"><?= $linkLabelsCount/2 ?></span></div>
+                <div class="box-title">Tags</div>
+                <div class="box-data">
+                    <span class="data-value data-project" title="Project Tags"><?= $allTagsCount - $globalTagsCount ?></span>
+                    <span class="data-value data-global" title="<?= t('Global Tags') ?>"><?= $globalTagsCount ?></span>
+                    <span class="data-value data-totals" title="Total Tags"><?= $allTagsCount ?></span>
+                </div>
             </div>
             <div class="box-wrapper back-grey">
                 <div class="box-icon"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></div>
                 <div class="box-title"><?= t('Link Labels') ?></div>
-                <div class="box-data"><span class="data-value"><?= $linkLabelsCount ?></span></div>
+                <div class="box-data">
+                    <span class="data-value" title="Link Label Pairs"><?= $linkLabelsCount/2 ?></span>
+                    <span class="data-value data-totals" title="Total Links"><?= $linkLabelsCount ?></span>
+                </div>
             </div>
-            <div class="box-wrapper back-green">
+            <div class="box-wrapper back-red">
                 <div class="box-icon"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></div>
-                <div class="box-title"><?= t('Installed Plugins') ?></div>
-                <div class="box-data"><span class="data-value"><?= $installedPluginsCount ?></span></div>
+                <div class="box-title"><?= t('User Groups') ?></div>
+                <div class="box-data"><span class="data-value"><?= count($allGroups) ?></span></div>
+            </div>
+            <div class="box-wrapper back-red">
+                <div class="box-icon"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></div>
+                <div class="box-title"><?= t('User Timezones') ?></div>
+                <div class="box-data"><span class="data-value"><?= $userDifferentTimezonesCount-1 ?></span></div>
+            </div>
+            <div class="box-wrapper back-red">
+                <div class="box-icon"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></div>
+                <div class="box-title"><?= t('User Languages') ?></div>
+                <div class="box-data"><span class="data-value"><?= $userDifferentLanguagesCount-1 ?></span></div>
             </div>
             <div class="box-wrapper back-red">
                 <div class="box-icon">
@@ -134,14 +141,20 @@
                 </div>
                 <div class="box-title"><?= t('Users') ?></div>
                 <div class="box-data">
-                    <span class="data-value data-active" title="Active"><?= count($activeUserCount) ?></span>
-                    <span class="data-value data-total" title="Total"><?= $userCount ?></span>
+                    <span class="data-value data-active" title="Active Users"><?= count($activeUserCount) ?></span>
+                    <span class="data-value data-disabled" title="Disabled Users"><?= ($userCount - count($activeUserCount)) ?></span>
+                    <span class="data-value data-totals" title="Total Users"><?= $userCount ?></span>
                 </div>
             </div>
             <div class="box-wrapper back-red">
                 <div class="box-icon"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></div>
-                <div class="box-title"><?= t('User Groups') ?></div>
-                <div class="box-data"><span class="data-value"><?= count($allGroups) ?></span></div>
+                <div class="box-title"><?= t('Members') ?></div>
+                <div class="box-data"><span class="data-value"><?= count($allMembers) ?></span></div>
+            </div>
+            <div class="box-wrapper back-red">
+                <div class="box-icon"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></div>
+                <div class="box-title"><?= t('Managers') ?></div>
+                <div class="box-data"><span class="data-value"><?= count($allManagers) ?></span></div>
             </div>
             <div class="box-wrapper back-red">
                 <div class="box-icon"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></div>
