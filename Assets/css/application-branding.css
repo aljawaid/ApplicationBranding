@@ -485,6 +485,42 @@ ul.icon-list li .filename {
     padding: 0 4px;
 }
 
+.back-orange {
+    background: linear-gradient(323deg, rgb(156, 110, 11) 0.00%, rgb(255, 128, 0) 98.67%);
+    -moz-background: linear-gradient(323deg, rgb(156, 110, 11) 0.00%, rgb(255, 128, 0) 98.67%);
+    -webkit-background: linear-gradient(323deg, rgb(156, 110, 11) 0.00%, rgb(255, 128, 0) 98.67%);
+}
+
+.back-copper {
+    background: linear-gradient(327deg, rgb(114, 43, 54) 0.00%, rgb(238, 178, 123) 100.00%);
+    -moz-background: linear-gradient(327deg, rgb(114, 43, 54) 0.00%, rgb(238, 178, 123) 100.00%);
+    -webkit-background: linear-gradient(327deg, rgb(114, 43, 54) 0.00%, rgb(238, 178, 123) 100.00%);
+}
+
+.back-grey {
+    background: linear-gradient(162deg, rgb(178, 197, 217) 0.00%, rgb(69, 92, 114) 100.00%);
+    -moz-background: linear-gradient(162deg, rgb(178, 197, 217) 0.00%, rgb(69, 92, 114) 100.00%);
+    -webkit-background: linear-gradient(162deg, rgb(178, 197, 217) 0.00%, rgb(69, 92, 114) 100.00%);
+}
+
+.back-red {
+    background: linear-gradient(307deg, rgb(84, 0, 15) 0.00%, rgb(131, 38, 44) 43.73%, rgb(207, 101, 91) 100.00%);
+    -moz-background: linear-gradient(307deg, rgb(84, 0, 15) 0.00%, rgb(131, 38, 44) 43.73%, rgb(207, 101, 91) 100.00%);
+    -webkit-background: linear-gradient(307deg, rgb(84, 0, 15) 0.00%, rgb(131, 38, 44) 43.73%, rgb(207, 101, 91) 100.00%);
+}
+
+.back-green {
+    background: linear-gradient(156deg, rgb(210, 255, 31) 0.00%, rgb(51, 115, 16) 81.57%);
+    -moz-background: linear-gradient(156deg, rgb(210, 255, 31) 0.00%, rgb(51, 115, 16) 81.57%);
+    -webkit-background: linear-gradient(156deg, rgb(210, 255, 31) 0.00%, rgb(51, 115, 16) 81.57%);
+}
+
+.back-purple {
+    background: linear-gradient(156deg, rgb(227, 138, 237) 0.00%, rgb(90, 16, 115) 81.57%);
+    -moz-background: linear-gradient(156deg, rgb(227, 138, 237) 0.00%, rgb(90, 16, 115) 81.57%);
+    -webkit-background: linear-gradient(156deg, rgb(227, 138, 237) 0.00%, rgb(90, 16, 115) 81.57%);
+}
+
 details.license summary {
     cursor: pointer;
 }
