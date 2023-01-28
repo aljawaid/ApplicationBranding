@@ -1,3 +1,10 @@
+<h2 class="app-header">
+    <?php if (!empty($this->task->configModel->get('app_rename'))): ?>
+        <?= $this->task->configModel->get('app_rename') ?> <?= t('Dashboard') ?>
+    <?php else: ?>
+        <?= t('My Workspace Dashboard') ?>
+    <?php endif ?>
+</h2>
 <div class="page-header">
     <h2><?= t('About') ?></h2>
 </div>
