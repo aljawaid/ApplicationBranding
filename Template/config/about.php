@@ -18,6 +18,8 @@
     </ul>
 </div>
 
+<?= $this->hook->render('template:config:about') ?>
+
 <div class="page-header">
     <h2><?= t('Configuration') ?></h2>
 </div>

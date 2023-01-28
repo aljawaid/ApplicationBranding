@@ -36,6 +36,11 @@ Features
 **Change Password Page**
 -
 
+**New About Page**
+- Professional look and feel
+- Add new hook
+  - `'template:config:about'` is located before the configuration section
+
 
 Screenshots
 ----------
