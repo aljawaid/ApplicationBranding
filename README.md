@@ -32,6 +32,7 @@ Features
 
 **Reset Password Email**
 - Show application name and copyright
+- Compatible with [KanboardEmailHistory](https://github.com/aljawaid/KanboardEmailHistory)
 
 **Change Password Page**
 -
