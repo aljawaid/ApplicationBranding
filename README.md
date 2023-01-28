@@ -38,11 +38,12 @@ Features
 - _To be completed_
 
 **New About Page**
-- Professional look and feel application dashboard
-  - Add metrics for the Kanboard installation on a global level regardless of projects or tasks.
+- New professional look and feel application dashboard for Admins
+  - Add metrics for your Kanboard installation on a global level regardless of projects or tasks.
+  - Show different types of metrics
 - Add new hook
   - `'template:config:about'` is located before the configuration section
-- Include links to the forum
+- Include relevant links to Kanboard channels in the revamped _Platform_ section
 
 
 Screenshots
