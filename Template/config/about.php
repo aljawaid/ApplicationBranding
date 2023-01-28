@@ -5,6 +5,34 @@
         <?= t('My Workspace Dashboard') ?>
     <?php endif ?>
 </h2>
+
+<?php
+$allProjectsOpen = $this->task->projectModel->getListByStatus(1);
+$allProjectsClosed = $this->task->projectModel->getListByStatus(0);
+$allProjects = $this->task->projectModel->getAll();
+$allPrivateProjects = $this->task->db->table('projects')->eq('is_private', 1)->findAll();
+$allPublicProjects = $this->task->db->table('projects')->eq('is_public', 1)->findAll();
+$allCategories = $this->task->db->table('project_has_categories')->count();
+$allActions = $this->task->db->table('actions')->count();
+$allTasks = $this->task->db->table('tasks')->count();
+$allComments = $this->task->db->table('comments')->count();
+$projectFiles = $this->task->db->table('project_has_files')->count();
+$taskFiles = $this->task->db->table('task_has_files')->count();
+$allFiles = ($projectFiles + $taskFiles);
+$allTags = $this->task->tagModel->getAll();
+$allTagsCount = count($allTags);
+$globalTags = $this->model->tagModel->getAllByProject(0);
+$globalTagsCount = count($globalTags);
+$linkLabels = $this->task->linkModel->getAll();
+$linkLabelsCount = count($linkLabels);
+$installedPlugins = $this->task->pluginLoader->getPlugins();
+$installedPluginsCount = count($installedPlugins);
+$userCount = $this->task->db->table('users')->count();
+$activeUserCount = $this->task->db->table('users')->eq('is_active', 1)->findAll();
+$allGroups = $this->task->groupModel->getAll();
+$allAdmins = $this->task->db->table('users')->eq('role', 'app-admin')->findAll();
+?>
+
 <div class="page-header">
     <h2><?= t('About') ?></h2>
 </div>
