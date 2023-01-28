@@ -97,22 +97,22 @@ $allAdmins = $this->task->db->table('users')->eq('role', 'app-admin')->findAll()
 
 <?php if (DB_DRIVER === 'sqlite'): ?>
     <div class="page-header">
-        <h2><?= t('Database') ?></h2>
+        <h2 class=""><?= t('Database') ?></h2>
     </div>
     <div class="panel">
-        <ul>
-            <li>
+        <ul class="">
+            <li class="">
                 <?= t('Database size:') ?>
                 <strong><?= $this->text->bytes($db_size) ?></strong>
             </li>
-            <li>
+            <li class="">
                 <?= $this->url->link(t('Download the database'), 'ConfigController', 'downloadDb', array(), true) ?>&nbsp;
                 <?= t('(Gzip compressed Sqlite file)') ?>
             </li>
-            <li>
+            <li class="">
                 <?= $this->url->link(t('Upload the database'), 'ConfigController', 'uploadDb', array(), false, 'js-modal-medium') ?>
             </li>
-            <li>
+            <li class="">
                 <?= $this->url->link(t('Optimize the database'), 'ConfigController', 'optimizeDb', array(), true) ?>&nbsp;
                 <?= t('(VACUUM command)') ?>
             </li>
