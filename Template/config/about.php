@@ -223,26 +223,6 @@
         </div>
     </div>
 
-    <div class="page-header">
-        <h2 class=""><?= t('Platform') ?></h2>
-    </div>
-    <div class="panel">
-        <ul class="">
-            <li class="">
-                <?= t('Official website:') ?>
-                <a href="https://kanboard.org/" target="_blank" rel="noopener noreferrer">https://kanboard.org/</a>
-            </li>
-            <li class="">
-                <?= t('Author:') ?>
-                <strong>Frédéric Guillot</strong> (<a href="https://github.com/kanboard/kanboard/graphs/contributors" target="_blank" rel="noopener noreferrer"><?= t('contributors') ?></a>)
-            </li>
-            <li class="">
-                <?= t('License') ?>
-                <a href="#LicenseMIT" title="View License">MIT</a>
-            </li>
-        </ul>
-    </div>
-
     <?= $this->hook->render('template:config:about') ?>
 
     <div class="page-header">
@@ -309,6 +289,30 @@
             </ul>
         </div>
     <?php endif ?>
+
+    <div class="page-header">
+        <h2 class=""><?= t('Platform') ?></h2>
+    </div>
+    <div class="panel">
+        <ul class="">
+            <li class="">
+                <?= t('Website') ?>
+                <a href="https://kanboard.org/" target="_blank" rel="noopener noreferrer">https://kanboard.org/</a>
+            </li>
+            <li>Forum</li>
+            <li>Docs</li>
+            <li>Contributors <a href="https://github.com/kanboard/kanboard/graphs/contributors" target="_blank" rel="noopener noreferrer"><?= t('contributors') ?></a></li>
+            <li>Plugins https://kanboard.org/plugins.html</li>
+            <li class="">
+                <?= t('Author') ?>
+                Frédéric Guillot
+            </li>
+            <li class="">
+                <?= t('License') ?>
+                <a href="#LicenseMIT" title="View License">MIT</a>
+            </li>
+        </ul>
+    </div>
 
     <div class="page-header">
         <h2 id="LicenseMIT" class=""><?= t('License') ?></h2>
