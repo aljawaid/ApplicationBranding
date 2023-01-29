@@ -39,7 +39,7 @@ Features
 
 **New About Page**
 - New professional look and feel application dashboard for Admins
-  - Add metrics for your Kanboard installation on a global level regardless of projects or tasks.
+  - Add metrics for your Kanboard installation on a global level regardless of projects or tasks
   - Show different types of metrics
 - Add new hook
   - `'template:config:about'` is located before the configuration section
@@ -72,6 +72,11 @@ Screenshots
 **Settings - Metadata**  
 
 ![Metadata](../master/Screenshots/screenshot-metadata.png "Metadata")
+
+**About - Admin Dashboard**  
+
+![Admin Dashboard](../master/Screenshots/screenshot-admin-dashboard.png "Admin Dashboard")
+
 
 Usage
 -------------
