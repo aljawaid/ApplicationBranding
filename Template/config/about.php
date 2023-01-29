@@ -62,27 +62,27 @@
             <div class="box-wrapper back-copper">
                 <div class="box-icon"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></div>
                 <div class="box-title"><?= t('Personal Projects') ?></div>
-                <div class="box-data"><span class="data-value"><?= count($allPrivateProjects) ?></span></div>
+                <div class="box-data"><span class="data-value bold"><?= count($allPrivateProjects) ?></span></div>
             </div>
             <div class="box-wrapper back-copper">
                 <div class="box-icon"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></div>
                 <div class="box-title"><?= t('Public Projects') ?></div>
-                <div class="box-data"><span class="data-value"><?= count($allPublicProjects) ?></span></div>
+                <div class="box-data"><span class="data-value bold"><?= count($allPublicProjects) ?></span></div>
             </div>
             <div class="box-wrapper back-copper">
                 <div class="box-icon"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></div>
                 <div class="box-title">Categories</div>
-                <div class="box-data"><span class="data-value"><?= $allCategories ?></span></div>
+                <div class="box-data"><span class="data-value bold"><?= $allCategories ?></span></div>
             </div>
             <div class="box-wrapper back-copper">
                 <div class="box-icon"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></div>
                 <div class="box-title"><?= t('Automatic Actions') ?></div>
-                <div class="box-data"><span class="data-value"><?= $allActions ?></span></div>
+                <div class="box-data"><span class="data-value bold"><?= $allActions ?></span></div>
             </div>
             <div class="box-wrapper back-green">
                 <div class="box-icon"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></div>
                 <div class="box-title"><?= t('Plugins') ?></div>
-                <div class="box-data"><span class="data-value"><?= $installedPluginsCount ?></span></div>
+                <div class="box-data"><span class="data-value bold"><?= $installedPluginsCount ?></span></div>
             </div>
             <div class="box-wrapper back-orange">
                 <div class="box-icon"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></div>
@@ -96,12 +96,12 @@
             <div class="box-wrapper back-orange">
                 <div class="box-icon"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></div>
                 <div class="box-title"><?= t('Comments') ?></div>
-                <div class="box-data"><span class="data-value"><?= $allComments ?></span></div>
+                <div class="box-data"><span class="data-value bold"><?= $allComments ?></span></div>
             </div>
             <div class="box-wrapper back-orange">
                 <div class="box-icon"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></div>
                 <div class="box-title"><?= t('Attachments') ?></div>
-                <div class="box-data"><span class="data-value"><?= $allFiles ?></span></div>
+                <div class="box-data"><span class="data-value bold"><?= $allFiles ?></span></div>
             </div>
             <div class="box-wrapper back-purple">
                 <div class="box-icon"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></div>
@@ -116,24 +116,24 @@
                 <div class="box-icon"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></div>
                 <div class="box-title"><?= t('Link Labels') ?></div>
                 <div class="box-data">
-                    <span class="data-value" title="Link Label Pairs"><?= $linkLabelsCount/2 ?></span>
+                    <span class="data-value bold" title="Link Label Pairs"><?= $linkLabelsCount/2 ?></span>
                     <span class="data-value data-totals" title="Total Links"><?= $linkLabelsCount ?></span>
                 </div>
             </div>
             <div class="box-wrapper back-red">
                 <div class="box-icon"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></div>
                 <div class="box-title"><?= t('User Groups') ?></div>
-                <div class="box-data"><span class="data-value"><?= count($allGroups) ?></span></div>
+                <div class="box-data"><span class="data-value bold"><?= count($allGroups) ?></span></div>
             </div>
             <div class="box-wrapper back-red">
                 <div class="box-icon"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></div>
                 <div class="box-title"><?= t('User Timezones') ?></div>
-                <div class="box-data"><span class="data-value"><?= $userDifferentTimezonesCount-1 ?></span></div>
+                <div class="box-data"><span class="data-value bold"><?= $userDifferentTimezonesCount-1 ?></span></div>
             </div>
             <div class="box-wrapper back-red">
                 <div class="box-icon"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></div>
                 <div class="box-title"><?= t('User Languages') ?></div>
-                <div class="box-data"><span class="data-value"><?= $userDifferentLanguagesCount-1 ?></span></div>
+                <div class="box-data"><span class="data-value bold"><?= $userDifferentLanguagesCount-1 ?></span></div>
             </div>
             <div class="box-wrapper back-red">
                 <div class="box-icon">
@@ -153,17 +153,17 @@
             <div class="box-wrapper back-red">
                 <div class="box-icon"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></div>
                 <div class="box-title"><?= t('Members') ?></div>
-                <div class="box-data"><span class="data-value"><?= count($allMembers) ?></span></div>
+                <div class="box-data"><span class="data-value bold"><?= count($allMembers) ?></span></div>
             </div>
             <div class="box-wrapper back-red">
                 <div class="box-icon"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></div>
                 <div class="box-title"><?= t('Managers') ?></div>
-                <div class="box-data"><span class="data-value"><?= count($allManagers) ?></span></div>
+                <div class="box-data"><span class="data-value bold"><?= count($allManagers) ?></span></div>
             </div>
             <div class="box-wrapper back-red">
                 <div class="box-icon"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></div>
                 <div class="box-title"><?= t('Administrators') ?></div>
-                <div class="box-data"><span class="data-value"><?= count($allAdmins) ?></span></div>
+                <div class="box-data"><span class="data-value bold"><?= count($allAdmins) ?></span></div>
             </div>
         </div>
     </div>
