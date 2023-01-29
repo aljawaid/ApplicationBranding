@@ -70,7 +70,7 @@
                 <div class="box-data"><span class="data-value bold"><?= count($allPublicProjects) ?></span></div>
             </div>
             <div class="box-wrapper back-copper">
-                <div class="box-icon"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></div>
+                <div class="box-icon"><i class="fa fa-fw fa-folder-open" aria-hidden="true"></i></div>
                 <div class="box-title">Categories</div>
                 <div class="box-data"><span class="data-value bold"><?= $allCategories ?></span></div>
             </div>
