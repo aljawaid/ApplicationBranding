@@ -468,6 +468,12 @@ ul.icon-list li .filename {
     height: 34px;
     bottom: -5px;
 }
+
+.box-icon svg.members_icon {
+    width: 34px;
+    height: 34px;
+    bottom: -4px;
+}
 .box-icon svg.kanban-icon {
     width: 32px;
     height: 32px;
