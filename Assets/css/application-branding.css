@@ -508,6 +508,8 @@ ul.icon-list li .filename {
 
 .box-icon .fa-folder-open {
     margin-left: 1px;
+    bottom: 3px;
+    position: absolute;
 }
 
 .box-icon i {
