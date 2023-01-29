@@ -469,6 +469,12 @@ ul.icon-list li .filename {
     bottom: -5px;
 }
 
+.box-icon svg.user_icon {
+    width: 30px;
+    height: 30px;
+    bottom: -1px;
+}
+
 .box-icon svg.members_icon {
     width: 34px;
     height: 34px;
