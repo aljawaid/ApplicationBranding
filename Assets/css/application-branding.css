@@ -449,17 +449,58 @@ ul.icon-list li .filename {
     width: fit-content;
     font-size: 2em;
     position: absolute;
-    bottom: -6px;
+    bottom: -2px;
     padding: 0;
     margin: 0;
-    left: -2px;
+    left: 2px;
     opacity: .5;
 }
 
 .box-icon svg {
     position: relative;
     width: 28px;
+    height: 28px;
     left: 5px;
+}
+
+
+.box-icon svg.aa-icon-faded {
+    opacity: .6;
+    vertical-align: middle;
+    width: 34px;
+    height: 34px;
+    left: 3px;
+}
+
+.box-icon svg.project_tags {
+    width: 34px;
+    height: 34px;
+    left: 2px;
+    bottom: -4px;
+}
+
+.box-icon .fa-comments-o {
+    font-size: 1.1em;
+}
+
+.box-icon .bi-plugin {
+    position: absolute;
+    bottom: 6px;
+    left: 3px;
+}
+
+.box-icon .fa-file {
+    position: absolute;
+    bottom: 7px;
+    font-size: .85em;
+}
+
+.box-icon .fa-folder-open {
+    margin-left: 1px;
+}
+
+.box-icon i {
+    font-size: .9em;
 }
 
 .box-title {
@@ -476,7 +517,7 @@ ul.icon-list li .filename {
 }
 
 .box-data .data-value {
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 .data-open, .data-active, .data-project {
@@ -542,4 +583,8 @@ details.license summary {
 
 .about-page {
     margin: var(--page-margin-app-branding);
+}
+
+.bold {
+    font-weight: 600;
 }
