@@ -98,7 +98,7 @@
                 <div class="box-data"><span class="data-value bold"><?= $installedPluginsCount ?></span></div>
             </div>
             <div class="box-wrapper back-orange">
-                <div class="box-icon"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></div>
+                <div class="box-icon"><i class="fa fa-fw fa-sticky-note" aria-hidden="true"></i></div>
                 <div class="box-title"><?= t('Tasks') ?></div>
                 <div class="box-data">
                     <span class="data-value data-open" title="Open Tasks"><?= count($allTasksOpen) ?></span>
