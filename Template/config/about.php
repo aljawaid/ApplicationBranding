@@ -134,7 +134,7 @@
                 </div>
             </div>
             <div class="box-wrapper back-grey">
-                <div class="box-icon"><i class="fa fa-fw fa-folder" aria-hidden="true"></i></div>
+                <div class="box-icon"><i class="fa fa-fw fa-link" aria-hidden="true"></i></div>
                 <div class="box-title"><?= t('Link Labels') ?></div>
                 <div class="box-data">
                     <span class="data-value bold" title="Link Label Pairs"><?= $linkLabelsCount/2 ?></span>
