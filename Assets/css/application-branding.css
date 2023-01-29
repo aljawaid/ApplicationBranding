@@ -463,6 +463,12 @@ ul.icon-list li .filename {
     left: 5px;
 }
 
+.box-icon svg.kanban-icon {
+    width: 32px;
+    height: 32px;
+    bottom: -5px;
+    left: 3px;
+}
 
 .box-icon svg.aa-icon-faded {
     opacity: .6;
