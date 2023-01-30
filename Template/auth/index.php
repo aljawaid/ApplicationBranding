@@ -93,7 +93,11 @@
 
                 <?= $this->hook->render('template:auth:login-form:after') ?>
 
-                <kbd class="user-remote-ip"><?= t('Your IP:') ?> <?= $_SERVER["REMOTE_ADDR"]; ?></kbd>
+                <?php if ($_SERVER["REMOTE_ADDR"] == '127.0.0.1'): ?>
+                    <kbd class="user-remote-ip"><?= t('Your IP:') ?> <i>localhost</i> ?></kbd>
+                <?php else: ?>
+                    <kbd class="user-remote-ip"><?= t('Your IP:') ?> <?= $_SERVER["REMOTE_ADDR"]; ?></kbd>
+                <?php endif ?>
             </div>
         </div>
     </div>
