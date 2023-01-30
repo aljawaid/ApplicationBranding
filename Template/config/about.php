@@ -54,9 +54,9 @@
                 </div>
                 <div class="box-title"><?= t('Projects') ?></div>
                 <div class="box-data">
-                    <span class="data-value data-open" title="Open"><?= count($allProjectsOpen) ?></span>
-                    <span class="data-value data-closed" title="Closed"><?= count($allProjectsClosed) ?></span>
-                    <span class="data-value data-totals cursor" title="Total Projects"><?= count($allProjects) ?></span>
+                    <span class="data-value data-open" title="<?= t('Open Projects') ?>"><?= count($allProjectsOpen) ?></span>
+                    <span class="data-value data-closed" title="<?= t('Closed Projects') ?>"><?= count($allProjectsClosed) ?></span>
+                    <span class="data-value data-totals cursor" title="<?= t('Total Projects') ?>"><?= count($allProjects) ?></span>
                 </div>
             </div>
             <div class="box-wrapper back-copper">
@@ -80,7 +80,7 @@
             </div>
             <div class="box-wrapper back-copper">
                 <div class="box-icon"><i class="fa fa-fw fa-folder-open" aria-hidden="true"></i></div>
-                <div class="box-title">Categories</div>
+                <div class="box-title"><?= t('Categories') ?></div>
                 <div class="box-data"><span class="data-value bold"><?= $allCategories ?></span></div>
             </div>
             <div class="box-wrapper back-copper">
@@ -110,9 +110,9 @@
                 <div class="box-icon"><i class="fa fa-fw fa-sticky-note" aria-hidden="true"></i></div>
                 <div class="box-title"><?= t('Tasks') ?></div>
                 <div class="box-data">
-                    <span class="data-value data-open" title="Open Tasks"><?= count($allTasksOpen) ?></span>
-                    <span class="data-value data-closed" title="Closed Tasks"><?= count($allTasksClosed) ?></span>
-                    <span class="data-value data-totals cursor" title="Total Tasks"><?= $allTasks ?></span>
+                    <span class="data-value data-open" title="<?= t('Open Tasks') ?>"><?= count($allTasksOpen) ?></span>
+                    <span class="data-value data-closed" title="<?= t('Closed Tasks') ?>"><?= count($allTasksClosed) ?></span>
+                    <span class="data-value data-totals cursor" title="<?= t('Total Tasks') ?>"><?= $allTasks ?></span>
                 </div>
             </div>
             <div class="box-wrapper back-orange">
@@ -135,19 +135,19 @@
                         </g>
                     </svg>
                 </div>
-                <div class="box-title">Tags</div>
+                <div class="box-title"><?= t('Tags') ?></div>
                 <div class="box-data">
-                    <span class="data-value data-project" title="Project Tags"><?= $allTagsCount - $globalTagsCount ?></span>
+                    <span class="data-value data-project" title="<?= t('Project Tags') ?>"><?= $allTagsCount - $globalTagsCount ?></span>
                     <span class="data-value data-global" title="<?= t('Global Tags') ?>"><?= $globalTagsCount ?></span>
-                    <span class="data-value data-totals" title="Total Tags"><?= $allTagsCount ?></span>
+                    <span class="data-value data-totals" title="<?= t('Total Tags') ?>"><?= $allTagsCount ?></span>
                 </div>
             </div>
             <div class="box-wrapper back-grey">
                 <div class="box-icon"><i class="fa fa-fw fa-link" aria-hidden="true"></i></div>
                 <div class="box-title"><?= t('Link Labels') ?></div>
                 <div class="box-data">
-                    <span class="data-value bold" title="Link Label Pairs"><?= $linkLabelsCount/2 ?></span>
-                    <span class="data-value data-totals" title="Total Links"><?= $linkLabelsCount ?></span>
+                    <span class="data-value bold" title="<?= t('Link Label Pairs') ?>"><?= $linkLabelsCount/2 ?></span>
+                    <span class="data-value data-totals" title="<?= t('Total Links') ?>"><?= $linkLabelsCount ?></span>
                 </div>
             </div>
             <div class="box-wrapper back-red">
@@ -188,9 +188,9 @@
                 </div>
                 <div class="box-title"><?= t('Users') ?></div>
                 <div class="box-data">
-                    <span class="data-value data-active" title="Active Users"><?= count($activeUserCount) ?></span>
-                    <span class="data-value data-disabled" title="Disabled Users"><?= ($userCount - count($activeUserCount)) ?></span>
-                    <span class="data-value data-totals" title="Total Users"><?= $userCount ?></span>
+                    <span class="data-value data-active" title="<?= t('Active Users') ?>"><?= count($activeUserCount) ?></span>
+                    <span class="data-value data-disabled" title="<?= t('Disabled Users') ?>"><?= ($userCount - count($activeUserCount)) ?></span>
+                    <span class="data-value data-totals" title="<?= t('Total Users') ?>"><?= $userCount ?></span>
                 </div>
             </div>
             <div class="box-wrapper back-red">
@@ -231,19 +231,19 @@
     <div class="panel relative">
         <ul class="config-details">
             <li class="config-details-item">
-                <span class="config-details-name"><?= t('Application Version:') ?></span>
+                <span class="config-details-name"><?= t('Application Version') ?></span>
                 <span class="config-details-value"><?= APP_VERSION ?></span>
             </li>
             <li class="config-details-item">
-                <span class="config-details-name"><?= t('PHP Version:') ?></span>
+                <span class="config-details-name"><?= t('PHP Version') ?></span>
                 <span class="config-details-value"><?= PHP_VERSION ?></span>
             </li>
             <li class="config-details-item">
-                <span class="config-details-name"><?= t('PHP SAPI:') ?></span>
+                <span class="config-details-name"><?= t('PHP SAPI') ?></span>
                 <span class="config-details-value"><?= PHP_SAPI ?></span>
             </li>
             <li class="config-details-item">
-                <span class="config-details-name"><?= t('HTTP Client:') ?></span>
+                <span class="config-details-name"><?= t('HTTP Client') ?></span>
                 <span class="config-details-value"><?= Kanboard\Core\Http\Client::backend() ?></span>
             </li>
             <li class="config-details-item">
@@ -280,18 +280,18 @@
         <div class="panel">
             <ul class="">
                 <li class="">
-                    <?= t('Database size:') ?>
+                    <?= t('Database Size') ?>
                     <strong><?= $this->text->bytes($db_size) ?></strong>
                 </li>
                 <li class="">
-                    <?= $this->url->link(t('Download the database'), 'ConfigController', 'downloadDb', array(), true) ?>&nbsp;
-                    <?= t('(Gzip compressed Sqlite file)') ?>
+                    <?= $this->url->link(t('Download Database'), 'ConfigController', 'downloadDb', array(), true) ?>&nbsp;
+                    <?= t('(Gzip compressed SQLite file)') ?>
                 </li>
                 <li class="">
-                    <?= $this->url->link(t('Upload the database'), 'ConfigController', 'uploadDb', array(), false, 'js-modal-medium') ?>
+                    <?= $this->url->link(t('Upload Database'), 'ConfigController', 'uploadDb', array(), false, 'js-modal-medium') ?>
                 </li>
                 <li class="">
-                    <?= $this->url->link(t('Optimize the database'), 'ConfigController', 'optimizeDb', array(), true) ?>&nbsp;
+                    <?= $this->url->link(t('Optimize Database'), 'ConfigController', 'optimizeDb', array(), true) ?>&nbsp;
                     <?= t('(VACUUM command)') ?>
                 </li>
             </ul>
@@ -368,7 +368,7 @@
     </div>
     <div class="panel">
         <details class="license">
-            <summary>Application License</summary>
+            <summary><?= t('Application License') ?></summary>
             <br>
             <?= nl2br(file_get_contents(ROOT_DIR.DIRECTORY_SEPARATOR.'LICENSE')) ?>
         </details>
