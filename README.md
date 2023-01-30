@@ -2,7 +2,7 @@
 
 #### _Plugin for [Kanboard](https://github.com/fguillot/kanboard "Kanboard - Kanban Project Management Software")_
 
-Rename and rebrand your installation of Kanboard to whatever you choose. By default, this plugin will rename your installation to \'My Workspace\', revamp the login page and add matching favicons and device logos in the metadata for a better user experience. A colorful Unsplash background with corrected page titles gives a more professional look when sharing your Kanboard to new users.
+This plugin will rename your installation to \'My Workspace\', and include matching device icons in the site metadata for a better user experience. A revamped login page, with a new Admin Dashboard showing global installation activity data with corrected page titles will give a more professional appeal across the site and when sharing links.
 
 
 Features
