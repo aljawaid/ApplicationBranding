@@ -299,27 +299,26 @@
     <?php endif ?>
 
     <div class="app-header">
-        <h2 class=""><?= t('Platform') ?></h2>
+        <h2 class=""><?= t('Application Platform') ?></h2>
     </div>
-    <div class="panel">
-        <ul class="">
-            <li class="">
-                <?= t('Website') ?>
-                <a href="https://kanboard.org/" target="_blank" rel="noopener noreferrer">https://kanboard.org/</a>
-            </li>
-            <li>Forum</li>
-            <li>Docs</li>
-            <li>Contributors <a href="https://github.com/kanboard/kanboard/graphs/contributors" target="_blank" rel="noopener noreferrer"><?= t('contributors') ?></a></li>
-            <li>Plugins https://kanboard.org/plugins.html</li>
-            <li class="">
-                <?= t('Author') ?>
-                Frédéric Guillot
-            </li>
-            <li class="">
-                <?= t('License') ?>
-                <a href="#LicenseMIT" title="View License">MIT</a>
-            </li>
-        </ul>
+    <div class="panel relative">
+        <div class="channels-list">
+            <div class="channels-wrapper">
+                <a href="https://kanboard.org" class="channels-btn" title="<?= t('Opens in a new window') ?>" rel="noopener noreferrer" target="_blank"><?= t('Website') ?></a>
+            </div>
+            <div class="channels-wrapper">
+                <a href="https://kanboard.discourse.group" class="channels-btn" title="<?= t('Opens in a new window') ?>" rel="noopener noreferrer" target="_blank"><?= t('Forum') ?></a>
+            </div>
+            <div class="channels-wrapper">
+                <a href="https://docs.kanboard.org" class="channels-btn" title="<?= t('Opens in a new window') ?>" rel="noopener noreferrer" target="_blank"><?= t('Documentation') ?></a>
+            </div>
+            <div class="channels-wrapper">
+                <a href="https://kanboard.org/plugins.html" class="channels-btn" title="<?= t('Opens in a new window') ?>" rel="noopener noreferrer" target="_blank"><?= t('Plugins') ?></a>
+            </div>
+            <div class="channels-wrapper">
+                <a href="https://github.com/kanboard/kanboard/" class="channels-btn" title="<?= t('Opens in a new window') ?>" rel="noopener noreferrer" target="_blank"><?= t('Source Code') ?></a>
+            </div>
+        </div>
     </div>
 
     <div class="app-header">
