@@ -647,6 +647,37 @@ details.license summary {
     font-weight: 600;
 }
 
+.kb-info-btn {
+    position: absolute;
+    right: 6px;
+    bottom: 6px;
+}
+
+.kb-info-btn a {
+    font-size: 1em;
+    background: var(--blue-border-gradient-match);
+    border-radius: var(--border-radius-app-branding-alt);
+    color: var(--pp-white);
+    transition: var(--transition-app-branding);
+}
+
+.kb-info-btn a:visited {
+    color: var(--pp-white);
+}
+
+.kb-info-btn a:hover, .kb-info-btn a:focus {
+    border-color: var(--blue-border-gradient-match);
+    background: var(--pp-white);
+    color: var(--pp-red-alt-2);
+}
+
+.kb-support-btn svg {
+    vertical-align: sub;
+    margin-right: 5px;
+    width: 18px;
+    height: 18px;
+}
+
 .about-page > .panel {
     padding: 8px 10px 8px 10px;
 }

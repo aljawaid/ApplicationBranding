@@ -44,6 +44,7 @@ Features
 - Add new hook
   - `'template:config:about'` is located before the configuration section
 - Include relevant links to Kanboard channels in the revamped _Platform_ section
+- Show button for direct link to detailed configuration from [KanboardSupport](https://github.com/aljawaid/KanboardSupport) (if installed)
 
 
 Manual Edits _(Optional)_
@@ -117,7 +118,7 @@ Compatibility
 - Requires [Kanboard](https://github.com/fguillot/kanboard "Kanboard - Kanban Project Management Software") ≥`1.2.20`
 
 #### Other Plugins & Action Plugins
-- Compatible with [KanboardEmailHistory](https://github.com/aljawaid/KanboardEmailHistory), [AutomaticActionUX](https://github.com/aljawaid/AutomaticActionUX), [PluginManager](https://github.com/aljawaid/PluginManager), [TagManager](https://github.com/aljawaid/TagManager)
+- Compatible with [KanboardEmailHistory](https://github.com/aljawaid/KanboardEmailHistory), [AutomaticActionUX](https://github.com/aljawaid/AutomaticActionUX), [PluginManager](https://github.com/aljawaid/PluginManager), [TagManager](https://github.com/aljawaid/TagManager), [KanboardSupport](https://github.com/aljawaid/KanboardSupport)
 #### Core Files & Templates
 - `07` Template overrides
 - _No database changes_
