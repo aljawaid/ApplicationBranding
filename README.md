@@ -43,7 +43,7 @@ Features
   - Show different types of metrics
 - Add new hook
   - `'template:config:about'` is located before the configuration section
-- Include relevant links to Kanboard channels in the revamped _Platform_ section
+- Include relevant links to Kanboard channels in the revamped _Application Platform_ section
 - Show button for direct link to detailed configuration from [KanboardSupport](https://github.com/aljawaid/KanboardSupport) (if installed)
 
 
@@ -107,6 +107,7 @@ Screenshots
 Usage
 -------------
 
+- The Admin Dashboard is shown in `Settings` &#10562; `About`
 - Share the login page, reset password page or a public task. Note the icon and meta information.
 - The generic My Workspace icon will show in the top header of the site
 - Browser page titles and tabs will be more consistent
