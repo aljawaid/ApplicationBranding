@@ -646,3 +646,7 @@ details.license summary {
 .bold {
     font-weight: 600;
 }
+
+.about-page > .panel {
+    padding: 8px 10px 8px 10px;
+}
