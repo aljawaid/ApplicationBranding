@@ -681,3 +681,12 @@ details.license summary {
 .about-page > .panel {
     padding: 8px 10px 8px 10px;
 }
+
+.config-details-name {
+    width: 150px;
+    display: inline-block;
+}
+
+.config-details-value {
+    font-weight: 600;
+}

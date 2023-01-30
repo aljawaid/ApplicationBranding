@@ -231,36 +231,36 @@
     <div class="panel relative">
         <ul class="config-details">
             <li class="config-details-item">
-                <?= t('Application version:') ?>
-                <strong><?= APP_VERSION ?></strong>
+                <span class="config-details-name"><?= t('Application Version:') ?></span>
+                <span class="config-details-value"><?= APP_VERSION ?></span>
             </li>
             <li class="config-details-item">
-                <?= t('PHP version:') ?>
-                <strong><?= PHP_VERSION ?></strong>
+                <span class="config-details-name"><?= t('PHP Version:') ?></span>
+                <span class="config-details-value"><?= PHP_VERSION ?></span>
             </li>
             <li class="config-details-item">
-                <?= t('PHP SAPI:') ?>
-                <strong><?= PHP_SAPI ?></strong>
+                <span class="config-details-name"><?= t('PHP SAPI:') ?></span>
+                <span class="config-details-value"><?= PHP_SAPI ?></span>
             </li>
             <li class="config-details-item">
-                <?= t('HTTP Client:') ?>
-                <strong><?= Kanboard\Core\Http\Client::backend() ?></strong>
+                <span class="config-details-name"><?= t('HTTP Client:') ?></span>
+                <span class="config-details-value"><?= Kanboard\Core\Http\Client::backend() ?></span>
             </li>
             <li class="config-details-item">
-                <?= t('OS version:') ?>
-                <strong><?= @php_uname('s').' '.@php_uname('r') ?></strong>
+                <span class="config-details-name"><abbr title="<?= t('Server Operating System') ?>"><?= t('Server OS') ?></abbr></span>
+                <span class="config-details-value"><?= @php_uname('s').' '.@php_uname('r') ?></span>
             </li>
             <li class="config-details-item">
-                <?= t('Database driver:') ?>
-                <strong><?= DB_DRIVER ?></strong>
+                <span class="config-details-name"><?= t('Database Driver') ?></span>
+                <span class="config-details-value"><?= DB_DRIVER ?></span>
             </li>
             <li class="config-details-item">
-                <?= t('Database version:') ?>
-                <strong><?= $this->text->e($db_version) ?></strong>
+                <span class="config-details-name"><?= t('Database Version') ?></span>
+                <span class="config-details-value"><?= $this->text->e($db_version) ?></span>
             </li>
             <li class="config-details-item">
-                <?= t('Browser:') ?>
-                <strong><?= $this->text->e($user_agent) ?></strong>
+                <span class="config-details-name"><?= t('Browser') ?></span>
+                <span class="config-details-value"><?= $this->text->e($user_agent) ?></span>
             </li>
         </ul>
         <?php if (file_exists('plugins/KanboardSupport')): ?>
