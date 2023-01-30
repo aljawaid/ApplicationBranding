@@ -690,3 +690,63 @@ details.license summary {
 .config-details-value {
     font-weight: 600;
 }
+
+.channels-wrapper {
+    display: inline-block;
+    margin: 5px 15px 5px 5px;
+}
+
+.icon-wrapper {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background: var(--pp-white);
+    text-align: center;
+    border-radius: 16px;
+    padding: 4px;
+    border: 2px inset #d40000;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.icon-wrapper-gh {
+    position: relative;
+    width: 26px;
+    height: 26px;
+    background: var(--pp-white);
+    text-align: center;
+    border-radius: 16px;
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: bottom;
+}
+
+.icon-wrapper svg.kanboard-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: bottom;
+}
+
+.icon-wrapper-gh svg.bi-github {
+    width: 27px;
+    height: 32px;
+    vertical-align: text-bottom;
+    color: var(--pp-grey);
+}
+
+.wrapper-docs {
+    border-color: var(--pp-black);
+}
+
+.wrapper-plugins {
+    border-color: var(--pp-grey);
+}
+
+.wrapper-plugins svg {
+    filter: grayscale(100%);
+}
+
+.wrapper-forum {
+    border-style: dashed;
+    border-color: var(--pp-black);
+}
