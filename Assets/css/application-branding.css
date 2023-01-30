@@ -156,7 +156,7 @@ kbd.user-remote-ip {
     display: block;
     width: fit-content;
     margin: auto;
-    padding: .6em .3em 0 0.3em
+    padding: .6em .3em 0 0.3em;
     font-size: .8em;
     font-weight: 400;
     border-radius: var(--border-radius-kbcss);
@@ -325,35 +325,35 @@ form.form-reset .required-wrapper {
 }
 
 #form-username:-webkit-autofill, #form-password:-webkit-autofill, #form-captcha:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  -webkit-box-shadow: 0 0 0 1000px white inset;
 }
 
 #form-username:-moz-autofill, #form-password:-moz-autofill, #form-captcha:-moz-autofill {
-  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  -webkit-box-shadow: 0 0 0 1000px white inset;
 }
 
 #form-username:-o-autofill, #form-password:-o-autofill, #form-captcha:-o-autofill {
-  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  -webkit-box-shadow: 0 0 0 1000px white inset;
 }
 
 #form-username:-khtml-autofill, #form-password:-khtml-autofill, #form-captcha:-khtml-autofill {
-  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  -webkit-box-shadow: 0 0 0 1000px white inset;
 }
 
 #form-username:focus:-webkit-autofill, #form-password:focus:-webkit-autofill, #form-captcha:focus:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  -webkit-box-shadow: 0 0 0 1000px white inset;
 }
 
 #form-username:focus:-moz-autofill, #form-password:focus:-moz-autofill, #form-captcha:focus:-moz-autofill {
-  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  -webkit-box-shadow: 0 0 0 1000px white inset;
 }
 
 #form-username:focus:-o-autofill, #form-password:focus:-o-autofill, #form-captcha:focus:-o-autofill {
-  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  -webkit-box-shadow: 0 0 0 1000px white inset;
 }
 
 #form-username:focus:-khtml-autofill, #form-password:focus:-khtml-autofill, #form-captcha:focus:-khtml-autofill {
-  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  -webkit-box-shadow: 0 0 0 1000px white inset;
 }
 
 .metadata-page-header {
@@ -440,8 +440,8 @@ ul.icon-list li .filename {
     position: relative;
     padding: 2px 5px;
     border-radius: 5px;
-    box-shadow: 1px 1px 5px 0px #000;
-    border: 1px solid gray;
+    box-shadow: 1px 1px 5px 0 var(--pp-black);
+    border: 1px solid var(--pp-grey);
     color: var(--pp-white);
 }
 
@@ -566,7 +566,7 @@ ul.icon-list li .filename {
     text-transform: uppercase;
     font-size: .8em;
     padding: 5px 0;
-    text-shadow: 1px 0px 3px #000;
+    text-shadow: 1px 0 3px var(--pp-black);
 }
 
 .box-data {
