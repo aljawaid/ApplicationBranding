@@ -225,40 +225,40 @@
 
     <?= $this->hook->render('template:config:about') ?>
 
-    <div class="page-header">
+    <div class="app-header">
         <h2><?= t('Configuration') ?></h2>
     </div>
-        <ul class="">
-            <li class="">
     <div class="panel relative">
+        <ul class="config-details">
+            <li class="config-details-item">
                 <?= t('Application version:') ?>
                 <strong><?= APP_VERSION ?></strong>
             </li>
-            <li class="">
+            <li class="config-details-item">
                 <?= t('PHP version:') ?>
                 <strong><?= PHP_VERSION ?></strong>
             </li>
-            <li class="">
+            <li class="config-details-item">
                 <?= t('PHP SAPI:') ?>
                 <strong><?= PHP_SAPI ?></strong>
             </li>
-            <li class="">
+            <li class="config-details-item">
                 <?= t('HTTP Client:') ?>
                 <strong><?= Kanboard\Core\Http\Client::backend() ?></strong>
             </li>
-            <li class="">
+            <li class="config-details-item">
                 <?= t('OS version:') ?>
                 <strong><?= @php_uname('s').' '.@php_uname('r') ?></strong>
             </li>
-            <li class="">
+            <li class="config-details-item">
                 <?= t('Database driver:') ?>
                 <strong><?= DB_DRIVER ?></strong>
             </li>
-            <li class="">
+            <li class="config-details-item">
                 <?= t('Database version:') ?>
                 <strong><?= $this->text->e($db_version) ?></strong>
             </li>
-            <li class="">
+            <li class="config-details-item">
                 <?= t('Browser:') ?>
                 <strong><?= $this->text->e($user_agent) ?></strong>
             </li>
@@ -274,7 +274,7 @@
     </div>
 
     <?php if (DB_DRIVER === 'sqlite'): ?>
-        <div class="page-header">
+        <div class="app-header">
             <h2 class=""><?= t('Database') ?></h2>
         </div>
         <div class="panel">
@@ -298,7 +298,7 @@
         </div>
     <?php endif ?>
 
-    <div class="page-header">
+    <div class="app-header">
         <h2 class=""><?= t('Platform') ?></h2>
     </div>
     <div class="panel">
@@ -322,7 +322,7 @@
         </ul>
     </div>
 
-    <div class="page-header">
+    <div class="app-header">
         <h2 id="LicenseMIT" class=""><?= t('License') ?></h2>
     </div>
     <div class="panel">
