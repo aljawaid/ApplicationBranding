@@ -30,6 +30,11 @@ Features
 - Include metadata and generic logo (for when sharing links)
 - Show Unsplash image background
 
+**New 2FA Page**
+- A complete revamp of the two factor code check page which shows after login
+- Added links to cancel the check by returning to the login page, unlocking the default login-lock behaviour
+- Added `domain.com/security-check` for when url rewriting is enabled
+
 **Reset Password Email**
 - Show application name and copyright
 - Compatible with [KanboardEmailHistory](https://github.com/aljawaid/KanboardEmailHistory)
