@@ -121,7 +121,7 @@ Compatibility
 #### Other Plugins & Action Plugins
 - Compatible with [KanboardEmailHistory](https://github.com/aljawaid/KanboardEmailHistory), [AutomaticActionUX](https://github.com/aljawaid/AutomaticActionUX), [PluginManager](https://github.com/aljawaid/PluginManager), [TagManager](https://github.com/aljawaid/TagManager), [KanboardSupport](https://github.com/aljawaid/KanboardSupport)
 #### Core Files & Templates
-- `07` Template overrides
+- `08` Template overrides
 - _No database changes_
 
 
