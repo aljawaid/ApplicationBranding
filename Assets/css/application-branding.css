@@ -750,3 +750,12 @@ details.license summary {
     border-style: dashed;
     border-color: var(--pp-black);
 }
+
+.otp-icon {
+    position: absolute;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    bottom: 0;
+    opacity: .5;
+}
