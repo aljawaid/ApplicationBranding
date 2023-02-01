@@ -6,7 +6,7 @@
     }
 </style>
 <section class="login-logo">
-    <img src="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/workspace-icon-500x500.png" class="ws-logo">
+    <img src="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/workspace-icon-500x500.png" class="ws-logo" alt="<?= t('Workspace logo') ?>">
     <h3 class="no-top no-bottom login-title">
         <?php if (!empty($this->task->configModel->get('app_rename'))): ?>
             <?= strtoupper($this->task->configModel->get('app_rename')) ?>
