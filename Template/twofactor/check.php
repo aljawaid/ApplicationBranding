@@ -25,6 +25,8 @@
                     <?= $this->form->csrf() ?>
                     <?= $this->form->label(t('Authentication Code'), 'code') ?>
                     <?= $this->form->text('code', array(), array(), array('placeholder="123456"', 'autofocus', 'autocomplete="one-time-code"', 'pattern="[0-9]*"', 'inputmode="numeric"'), 'form-numeric') ?>
+                    <span class="required-wrapper-otp relative">
+                    </span>
                     <div class="form-actions">
                         <button type="submit" class="btn btn-blue"><?= t('Verify') ?></button>
                         <button type="button" class="btn btn-blue back-btn"><?= $this->url->link(t('Cancel'), 'AuthController', 'logout', array(), false, 'logout-button', t('Logout')) ?></button>
