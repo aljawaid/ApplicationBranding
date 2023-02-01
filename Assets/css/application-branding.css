@@ -220,6 +220,13 @@ button.btn-reset-password {
     vertical-align: bottom;
 }
 
+button.verify-btn {
+    border-radius: var(--border-radius-app-branding-alt);
+    background-color: white;
+    color: var(--pp-green-dark);
+    border: 2px outset var(--pp-green-dark);
+}
+
 input#form-username, input#form-password {
     width: 250px;
     padding-left: 15px;
