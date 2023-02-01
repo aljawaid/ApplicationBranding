@@ -25,6 +25,10 @@ class Plugin extends Base
         //  - Keep filename lowercase
         $this->hook->on('template:layout:css', array('template' => 'plugins/ApplicationBranding/Assets/css/application-branding.css'));
 
+        // JS - Asset Hook
+        //  - Keep filename lowercase
+        $this->hook->on('template:layout:js', array('template' => 'plugins/ApplicationBranding/Assets/js/application-branding.js'));
+
         // Views - Template Hook
         //  - Override name should start lowercase e.g. pluginNameExampleCamelCase
         $this->template->hook->attach('template:config:application', 'applicationBranding:config/branding-settings');
