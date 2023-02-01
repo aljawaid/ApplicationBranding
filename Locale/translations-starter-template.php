@@ -20,6 +20,7 @@ return array(
     //
     'Settings saved successfully' => '',
     'Unable to save your settings' => '',
+    'Check two factor authentication code' => '',
     //
     // auth/index.php
     //
