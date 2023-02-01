@@ -116,7 +116,7 @@ section.login-logo {
     line-height: 1;
 }
 
-.login-area .form-login, .password-area .reset-form {
+.login-area .form-login, .password-area .reset-form, .otp-area .otp-form {
     margin: 1em auto;
     padding: 1em;
     border: 1px solid var(--pp-white);
@@ -320,7 +320,7 @@ form.form-reset .required-wrapper {
     fill: var(--pp-green-dark);
 }
 
-.reset-message {
+.reset-message, .otp-message {
     margin-top: 30px;
 }
 
