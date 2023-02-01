@@ -333,8 +333,14 @@ form.form-reset .required-wrapper {
     fill: var(--pp-green-dark);
 }
 
-.reset-message, .otp-message {
+.reset-message {
     margin-top: 30px;
+}
+
+.otp-message {
+    margin-top: 20px;
+    font-size: .9em;
+    margin-bottom: 20px;
 }
 
 #form-username:-webkit-autofill, #form-password:-webkit-autofill, #form-captcha:-webkit-autofill {
