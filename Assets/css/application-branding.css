@@ -310,9 +310,13 @@ form.form-reset .form-actions {
     padding-bottom: 1px;
 }
 
-.reset-form h2.reset-title {
+.reset-form h2.reset-title, .otp-form h2.otp-title {
     margin-top: 0;
     margin-bottom: 10px;
+}
+
+.otp-title {
+    text-align: center;
 }
 
 form.form-reset .required-wrapper {
