@@ -20,7 +20,9 @@
         <fieldset class="site-desc-metadata">
             <legend class=""><?= t('Site Description') ?></legend>
             <div class="metadata-wrapper">
-                <p class=""><?= t('The meta description applies across the site except for the \'Reset Password\' page') ?></p>
+                <p class="">
+                    <?= e('The meta description applies across the site except for the %s page.', $this->url->link(t('Reset Password'), 'PasswordResetController', 'create', array(), false, 'application-link', t('Opens in a new window'), true)) ?>
+                </p>
                 <?= $this->form->label(t('Meta Description'), 'meta_description', array('class="meta-desc"')) ?>
                 <?= $this->form->text('meta_description', $values, $errors, array('placeholder="'. t('Use this kanban platform to manage your productivity using tasks inside project boards to track files, comments and activities.') .'"'), 'meta-desc-text') ?>
                 <p class="form-help"><?= t('The generic description will be used if this field is left empty') ?></p>

@@ -128,7 +128,7 @@ return array(
     'Application Settings' => '',
     'Go to Application Settings' => '',
     'Site Description' => '',
-    'The meta description applies across the site except for the \'Reset Password\' page' => '',
+    'The meta description applies across the site except for the %s page.' => '',
     'Meta Description' => '',
     'Use this kanban platform to manage your productivity using tasks inside project boards to track files, comments and activities.' => '',
     'The generic description will be used if this field is left empty' => '',
