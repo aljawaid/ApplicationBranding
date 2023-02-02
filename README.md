@@ -17,6 +17,10 @@ Features
 - Favicons included for all common devices
 - Include generic logo in the top left corner of the site (header)
 
+**Manual Edits**
+- Added `domain.com/manual-edits` for easier bookmarks and direct links (if url rewriting is enabled)
+- Show list of manual changes required for complete rebranding
+
 **New Login Page**
 - Show User IP Address
 - Show application name and copyright

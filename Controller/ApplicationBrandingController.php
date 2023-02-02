@@ -30,6 +30,13 @@ class ApplicationBrandingController extends \Kanboard\Controller\PluginControlle
         )));
     }
 
+    public function manualEdits()
+    {
+        $this->response->html($this->helper->layout->config('applicationBranding:config/manual-edits', array(
+            'title' => t('Application Branding'),
+        )));
+    }
+
     /**
      * Save settings
      *
