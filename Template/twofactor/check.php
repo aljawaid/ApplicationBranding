@@ -28,8 +28,8 @@
                         <?= $this->form->text('code', array(), array(), array('placeholder="XXXXXX"', 'autofocus', 'autocomplete="one-time-code"', 'pattern="[0-9]*"', 'inputmode="numeric"'), 'form-numeric otp-field') ?>
                     </span>
                     <div class="form-actions">
-                        <button type="submit" class="btn verify-btn"><?= t('Verify') ?></button>
                         <button type="button" class="btn btn-blue back-btn"><?= $this->url->link(t('Cancel'), 'AuthController', 'logout', array(), false, 'logout-button', t('Logout')) ?></button>
+                        <button type="submit" class="btn verify-btn"><?= t('Verify') ?> &#10004;</button>
                     </div>
                 </form>
                 <?php if ($_SERVER["REMOTE_ADDR"] == '127.0.0.1'): ?>
