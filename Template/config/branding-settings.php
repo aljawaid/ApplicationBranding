@@ -42,4 +42,10 @@
         <legend class=""><?= t('Site Metadata') ?></legend>
         <p class=""><?= t('The site description and common device icons are shown in') ?> <?= $this->url->link(t('Site Metadata'), 'ApplicationBrandingController', 'show', ['plugin' => 'ApplicationBranding'], false, 'application-link', t('Visit page'), false, '') ?></p>
     </fieldset>
+    <fieldset class="site-metadata-settings">
+        <legend class=""><?= t('Manual Edits') ?></legend>
+        <p class="">
+            <?= e('For total application rebranding, a few manual changes are required to be made to core files. Follow the suggestions in the %s section to learn more.', $this->url->link(t('Manual Edits'), 'ApplicationBrandingController', 'manualEdits', ['plugin' => 'ApplicationBranding'], false, 'application-link', t('Visit page'), false, '')) ?>
+        </p>
+    </fieldset>
 </fieldset>
