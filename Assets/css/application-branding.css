@@ -804,3 +804,8 @@ input#form-code:focus {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 }
+
+kbd.user-remote-ip.mt-20 {
+    margin-top: 20px;
+    display: inline-block;
+}
