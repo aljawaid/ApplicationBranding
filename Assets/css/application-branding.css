@@ -127,7 +127,7 @@ section.login-logo {
 }
 
 .form-login .warning, .reset-form .warning {
-    font-weight: bold;
+    font-weight: 600;
     color: var(--pp-red-alt-2);
     text-align: center;
     margin-bottom: 15px;
@@ -192,7 +192,7 @@ kbd.user-remote-ip {
 
 button.login-btn {
     border-radius: var(--border-radius-app-branding-alt);
-    background-color: white;
+    background-color: var(--pp-white);
     color: var(--pp-green-dark);
     border: 2px outset var(--pp-green-dark);
     float: right;
@@ -200,20 +200,18 @@ button.login-btn {
 
 button.btn-reset-password {
     border-radius: var(--border-radius-app-branding-alt);
-    background-color: white;
+    background-color: var(--pp-white);
     color: var(--pp-green-dark);
     border: 2px outset var(--pp-green-dark);
     float: right;
     font-size: 1em;
-    padding: 4px;
 }
 
 .back-btn, a.back-btn:visited {
     border-radius: var(--border-radius-app-branding-alt);
-    border: 1px solid var(--pp-grey);
+    border: 2px solid var(--pp-grey);
     color: var(--pp-grey);
     font-size: 1em;
-    padding: 5px;
 }
 
 .back-btn svg {
@@ -315,8 +313,9 @@ form.form-reset .form-actions {
     margin-bottom: 10px;
 }
 
-.otp-title {
+h2.otp-title {
     text-align: center;
+    font-weight: 600;
 }
 
 form.form-reset .required-wrapper {
