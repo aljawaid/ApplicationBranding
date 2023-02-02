@@ -393,10 +393,6 @@ form.form-reset .required-wrapper {
     margin: var(--page-margin-app-branding);
 }
 
-#MetadataPage > h2 > svg {
-    vertical-align: bottom;
-}
-
 a.application-link, a.application-link:visited {
     font-weight: 600;
     text-decoration: none;
@@ -819,4 +815,9 @@ input#form-code:focus {
 kbd.user-remote-ip.mt-20 {
     margin-top: 20px;
     display: inline-block;
+}
+
+.manual-edits-icon, .metadata-html-icon {
+    vertical-align: bottom;
+    color: var(--pp-grey);
 }
