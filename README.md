@@ -33,8 +33,11 @@ Features
 - Move your mouse over the username and captcha fields to automatically select and save time
 
 **New 2FA Page**
+- Show User IP Address
+- Add user friendly page title
+- Include metadata and generic logo (for style consistency)
 - A complete revamp of the two factor code check page which shows after login
-- Added links to cancel the check by returning to the login page, unlocking the default login-lock behaviour
+- Added links to cancel the security check by returning to the login page, unlocking the default login-lock behaviour
 - Added `domain.com/security-check` for when url rewriting is enabled
 - Move your mouse over the password field to automatically select and save time
 
