@@ -26,7 +26,7 @@ Features
 - Show application name and copyright
 - Include metadata and generic logo (for when sharing links)
 - Show Unsplash image background
-- Move your mouse over the username and password fields to automatically select and save time
+- Move your mouse over the username and password fields to automatically save time selecting the field
 
 **New Reset Password Page**
 - Show User IP Address
@@ -34,7 +34,7 @@ Features
 - Show application name and copyright
 - Include metadata and generic logo (for when sharing links)
 - Show Unsplash image background
-- Move your mouse over the username and captcha fields to automatically select and save time
+- Move your mouse over the username and captcha fields to automatically save time selecting the field
 
 **New 2FA Page**
 - Show User IP Address
@@ -42,8 +42,8 @@ Features
 - Include metadata and generic logo (for style consistency)
 - A complete revamp of the two factor code check page which shows after login
 - Added links to cancel the security check by returning to the login page, unlocking the default login-lock behaviour
-- Added `domain.com/security-check` for when url rewriting is enabled
-- Move your mouse over the password field to automatically select and save time
+- Added `domain.com/security-check` for easier bookmarks and direct links (if url rewriting is enabled)
+- Move your mouse over the password field to automatically save time selecting the field
 
 **Reset Password Email**
 - Show application name and copyright
