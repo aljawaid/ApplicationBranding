@@ -40,7 +40,9 @@
     </fieldset>
     <fieldset class="site-metadata-settings">
         <legend class=""><?= t('Site Metadata') ?></legend>
-        <p class=""><?= t('The site description and common device icons are shown in') ?> <?= $this->url->link(t('Site Metadata'), 'ApplicationBrandingController', 'show', ['plugin' => 'ApplicationBranding'], false, 'application-link', t('Visit page'), false, '') ?></p>
+        <p class="">
+            <?= e('The site description and common device icons are shown in the %s section.', $this->url->link(t('Site Metadata'), 'ApplicationBrandingController', 'show', ['plugin' => 'ApplicationBranding'], false, 'application-link', t('Visit page'), false, '')) ?>
+        </p>
     </fieldset>
     <fieldset class="site-metadata-settings">
         <legend class=""><?= t('Manual Edits') ?></legend>

@@ -106,7 +106,7 @@ return array(
     //'Copyright From' => '',
     //'If no year is entered, then the standard copyright message with the current year is shown' => '',
     //'Site Metadata' => '',
-    //'The site description and common device icons are shown in' => '',
+    //'The site description and common device icons are shown in the %s section.' => '',
     //'Visit page' => '',
     //'Saves any changes made on this page' => '',
     //'Save Settings' => '',
