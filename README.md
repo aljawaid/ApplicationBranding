@@ -90,6 +90,10 @@ Screenshots
 
 ![Login Page](../master/Screenshots/screenshot-login.png "A new user friendly login page")
 
+**2FA Security Check Page**  
+
+![TOTP  Page](../master/Screenshots/screenshot-otp.png "A new user friendly two-factor security check page")
+
 **Reset Password Page**  
 
 ![Reset Password Page](../master/Screenshots/screenshot-reset.png "A new user friendly reset password page")
