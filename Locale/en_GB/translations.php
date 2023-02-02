@@ -154,4 +154,14 @@ return array(
     // password_reset/email.php
     //
     //'Click on the following link to reset your password:' => '',
+    //
+    // twofactor/check.php
+    //
+    //'Authentication' => '',
+    //'Time-based One-Time Password' => '',
+    //'Open the two-factor authenticator app on your mobile device to view your authentication code' => '',
+    //'Authentication Code' => '',
+    //'Verify' => '',
+    //'Cancel' => '',
+    //'Logout' => '',
 );
