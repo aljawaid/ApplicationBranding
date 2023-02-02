@@ -42,6 +42,7 @@ class Plugin extends Base
         //  - Must have the corresponding action in the matching controller
         $this->route->addRoute('/settings/metadata', 'ApplicationBrandingController', 'show', 'ApplicationBranding');
         $this->route->addRoute('/security-check', 'TwoFactorController', 'code');
+        $this->route->addRoute('/settings/manual-edits', 'ApplicationBrandingController', 'manualEdits', 'ApplicationBranding');
 
     }
 
