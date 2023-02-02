@@ -110,6 +110,8 @@ return array(
     //'Visit page' => '',
     //'Saves any changes made on this page' => '',
     //'Save Settings' => '',
+    //'Manual Edits' => '',
+    //'For total application rebranding, a few manual changes are required to be made to core files. Follow the suggestions in the %s section to learn more.' => '',
     //
     // config/metadata.php
     //
