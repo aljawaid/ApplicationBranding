@@ -124,7 +124,7 @@ return array(
     //
     // config/metadata.php
     //
-    'The site name can be changed in the' => '',
+    'The site name can be changed in the %s.' => '',
     'Application Settings' => '',
     'Go to Application Settings' => '',
     'Site Description' => '',
