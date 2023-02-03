@@ -825,3 +825,82 @@ kbd.user-remote-ip.mt-20 {
 span.section-desc > svg.manual-edits-icon, span.section-desc > svg.metadata-html-icon {
     vertical-align: middle;
 }
+
+.edits-page-desc {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+section.m-edit-section {
+    margin-bottom: 3em;
+}
+
+h3.m-edit-title {
+    font-weight: 600;
+}
+
+p.m-edit-desc {
+    margin-bottom: 5px;
+}
+
+.m-edit-codeblock {
+    margin: 15px;
+    border: 1px solid var(--blue-icon-dark);
+    padding: 15px 10px 20px 10px;
+    border-radius: var(--border-radius-app-branding-alt);
+    line-height: 2;
+}
+
+.m-edit-codeblock svg {
+    width: 24px;
+    height: 24px;
+    vertical-align: sub;
+}
+
+.m-edit-codeblock svg:first-of-type {
+    color: red;
+}
+
+.m-edit-codeblock svg:last-of-type {
+    color: green;
+}
+
+.m-edit-codeblock i {
+    font-size: 1em;
+}
+
+.m-edit-codeblock a {
+    font-weight: 600;
+}
+
+.m-edit-codeblock kbd {
+    padding: 0 0.3em 0.19em 0.3em;
+    font-size: initial;
+    color: initial;
+    background-color: #cbd1d5;
+    border-radius: var(--border-radius-app-branding-alt);
+    font-family: Monospace;
+    letter-spacing: 0.05rem;
+    font-weight: normal;
+}
+
+.m-edit-codeblock code.edit-code {
+    padding: 12px;
+    overflow: auto;
+    font-size: 95%;
+    line-height: 1.45;
+    background-color: #E7ECF0;
+    border-radius: var(--border-radius-app-branding);
+    color: initial;
+    display: block;
+    font-family: Monospace;
+    letter-spacing: 0.06rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.lead {
+    font-style: italic;
+    font-weight: normal;
+    margin-left: 10px;
+}
