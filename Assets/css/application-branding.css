@@ -904,3 +904,8 @@ p.m-edit-desc {
     font-weight: normal;
     margin-left: 10px;
 }
+
+svg.chev-link {
+    width: 16px;
+    height: 16px;
+}
