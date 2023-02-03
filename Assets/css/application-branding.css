@@ -858,11 +858,11 @@ p.m-edit-desc {
 }
 
 .m-edit-codeblock svg:first-of-type {
-    color: red;
+    color: var(--pp-red);
 }
 
 .m-edit-codeblock svg:last-of-type {
-    color: green;
+    color: var(--pp-green);
 }
 
 .m-edit-codeblock i {
