@@ -62,31 +62,6 @@ Features
 - Show button for direct link to detailed configuration from [KanboardSupport](https://github.com/aljawaid/KanboardSupport) (if installed)
 
 
-Manual Edits _(Optional)_
-------------
-
-#### Changing the Application Name in the Automated Emails
-Automated emails received via cronjob can be adjusted to your preferred application name only by editing the core code.  
-- Rename the application in the email FROM name when a username is not used
-  - _Change_ [Line 71 in `/app/Core/Mail/Client.php`](https://github.com/kanboard/kanboard/blob/3e0ae739fd549710c1beb53b40c9b2e6d1856c3e/app/Core/Mail/Client.php#L71):
-  ```php
-  $author = 'Kanboard';
-  ```
-  _to:_
-  ```php
-  $author = 'My Workspace';
-  ```
-- Rename the application in the translation string where a username is used
-  - _Change the translation string value for:_
-  ```php
-  '%s via Kanboard'
-  ```
-  _to:_
-  ```php
-  '%s via My Workspace'
-  ```
-
-
 Screenshots
 ----------
 
