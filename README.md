@@ -93,6 +93,10 @@ Screenshots
 
 ![Metadata](../master/Screenshots/screenshot-metadata.png "Metadata")
 
+**Settings - Manual Edits**  
+
+![Manual Edits](../master/Screenshots/screenshot-manual-edits.png "Manual Edits Page")
+
 **About - Admin Dashboard**  
 
 ![Admin Dashboard](../master/Screenshots/screenshot-admin-dashboard.png "Admin Dashboard")
