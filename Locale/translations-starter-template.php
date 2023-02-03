@@ -122,6 +122,21 @@ return array(
     'Manual Edits' => '',
     'For total application rebranding, a few manual changes are required to be made to core files. Follow the suggestions in the %s section to learn more.' => '',
     //
+    // config/manual-edits.php
+    //
+    'To gain complete control over rebranding this application, some manual changes are required which are out of scope for Kanboard plugins. Following the simple changes below ensures your Kanboard installation is consistently named to your preferences.' => '',
+    'Changing the Application Name in the Automated Emails' => '',
+    'Optional' => '',
+    'Automated emails received via cronjob can be adjusted to your preferred application name by completing the following:' => '',
+    'Change the application name' => '',
+    'Change from' => '',
+    'Line' => '',
+    'in' => '',
+    'Change to' => '',
+    'Change the application name in the translation string when a username is used' => '',
+    'Changing the Application Name in the 2FA Security Page' => '',
+    'If your application uses, or any of your users have two-factor security enabled, complete the changes below. Your new application name will show in mobile authenticator apps which users use to login.' => '',
+    //
     // config/metadata.php
     //
     'The site name can be changed in the %s.' => '',
