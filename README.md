@@ -65,7 +65,7 @@ Features
 
 **Reset Password Email**
 - Show application name and copyright
-- [KanboardEmailHistory](https://github.com/aljawaid/KanboardEmailHistory) COmpatibility:
+- [KanboardEmailHistory](https://github.com/aljawaid/KanboardEmailHistory) Compatibility:
   - The footer of the email shows the new application name and copyright year(s)
 
 **Change Password Page**

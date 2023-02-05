@@ -33,7 +33,7 @@
                     </div>
                 </form>
                 <?php if ($_SERVER["REMOTE_ADDR"] == '127.0.0.1'): ?>
-                    <kbd class="user-remote-ip"><?= t('Your IP:') ?> <i><abbr title="127.0.0.1">localhost</abbr></i> ?></kbd>
+                    <kbd class="user-remote-ip"><?= t('Your IP:') ?> <i><abbr title="127.0.0.1">localhost</abbr></i></kbd>
                 <?php else: ?>
                     <kbd class="user-remote-ip mt-20"><?= t('Your IP:') ?> <?= $_SERVER["REMOTE_ADDR"]; ?></kbd>
                 <?php endif ?>
