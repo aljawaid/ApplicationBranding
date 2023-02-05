@@ -909,3 +909,20 @@ svg.chev-link {
     width: 16px;
     height: 16px;
 }
+
+fieldset.settings-subsection legend {
+    font-size: 1em;
+    margin: 0 10px;
+    padding: 0 10px;
+}
+
+.unsplash label {
+    display: inline-block;
+    margin-right: 40px;
+    margin-bottom: 10px;
+}
+
+.visitor-warning .form-help, .app-copyright .form-help {
+    display: inline-block;
+    margin-left: 5px;
+}

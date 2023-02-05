@@ -39,7 +39,7 @@ Features
 - Show User IP Address
 - Show application name and copyright
 - Include metadata and generic logo (for when sharing links)
-- Show Unsplash image background
+- Show Unsplash random image as background or use plain white
 - Faster login switching between users by hovering over the username and password fields
 - [Customizer](https://github.com/creecros/Customizer) Compatibility:
   - After installing this plugin, Customizer shows the Custom Note feature retaining its hook (`'template:auth:login-form:newbox'`)
@@ -49,7 +49,7 @@ Features
 - Add user friendly page title
 - Show application name and copyright
 - Include application metadata and generic logo (for when sharing links)
-- Show Unsplash image background
+- Show Unsplash random image as background or use plain white
 - Move your mouse over the username and captcha fields to automatically save time selecting the field
 - [Customizer](https://github.com/creecros/Customizer) Compatibility:
   - After installing this plugin, Customizer will use the meta tags and page title

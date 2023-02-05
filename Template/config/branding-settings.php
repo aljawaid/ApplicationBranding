@@ -18,6 +18,13 @@
         <legend class=""><?= t('Login Page') ?></legend>
         <p class=""><?= t('Adjust the settings below to customise the login page') ?></p>
         <fieldset class="settings-subsection">
+            <legend class=""><?= t('Unsplash Background') ?></legend>
+            <div class="settings-radio-options unsplash">
+                <?= $this->form->radio('use_unsplash', t('Use Unsplash Random Background'), 'allow_usage', true, isset($values['use_unsplash']) && $values['use_unsplash'] == 'allow_usage') ?>
+                <?= $this->form->radio('use_unsplash', t('Plain White Background'), 'dont_allow_usage', isset($values['use_unsplash']) && $values['use_unsplash'] == 'dont_allow_usage') ?>
+            </div>
+        </fieldset>
+        <fieldset class="settings-subsection">
             <legend><?= t('Login Title') ?></legend>
             <div class="visitor-warning">
                 <?= $this->form->label(t('Visitor Warning'), 'login_warning', array('class=""')) ?>

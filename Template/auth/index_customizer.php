@@ -1,11 +1,12 @@
-<style type="text/css">
-    body {
-        background: url(https://source.unsplash.com/random) no-repeat center center fixed;
-        background-size: cover;
-        padding-top: 1px;
-    }
-</style>
-
+<?php if ($this->task->configModel->get('use_unsplash', '') == 'allow_usage'): ?>
+    <style type="text/css">
+        body {
+            background: url(https://source.unsplash.com/random) no-repeat center center fixed;
+            background-size: cover;
+            padding-top: 1px;
+        }
+    </style>
+<?php endif ?>
 <section class="login-logo center-login">
     <img src="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/workspace-icon-500x500.png" class="ws-logo" alt="<?= t('Workspace logo') ?>">
     <h3 class="no-top no-bottom login-title">
