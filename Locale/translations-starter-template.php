@@ -112,7 +112,7 @@ return array(
     'Login Message' => '',
     'Use this platform to manage your productivity. Work with tasks inside project boards to track comments, files and activities.' => '',
     'This message will appear within the form above the username or leave blank for the default message' => '',
-    'Copyright From' => '',
+    'From Year' => '',
     'Leave blank to show only the current year' => '',
     'Site Metadata' => '',
     'The site description and common device icons are shown in the %s section.' => '',

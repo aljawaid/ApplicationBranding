@@ -29,7 +29,7 @@
                 <p class="form-help"><?= t('This message will appear within the form above the username or leave blank for the default message') ?></p>
             </div>
             <div class="app-rename">
-                <?= $this->form->label(t('Copyright From'), 'copyright_from', array('class=""')) ?>
+                <?= $this->form->label(t('From Year'), 'copyright_from', array('class=""')) ?>
                 <?= $this->form->number('copyright_from', $values, $errors, array('placeholder="2014"')) ?>
                 <p class="form-help"><?= t('Leave blank to show only the current year') ?></p>
             </div>
