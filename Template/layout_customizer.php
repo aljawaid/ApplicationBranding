@@ -26,33 +26,61 @@
         <?= $this->hook->asset('css', 'template:layout:css') ?>
         <?= $this->hook->asset('js', 'template:layout:js') ?>
 
-        <link rel="shortcut icon" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/favicon.ico">
-        <link rel="apple-touch-icon" sizes="57x57" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/apple-icon-72x72-ipad.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/apple-icon-114x114-retina.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/apple-icon-144x144-ipad-retina.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/workspace-icon-500x500.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/favicon-16x16.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="128x128" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/favicon-128x128.png">
-        <link rel="icon" type="image/png" sizes="192x192" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="196x196" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/favicon-196x196.png">
-        <meta name="msapplication-TileColor" content="#2D89EF">
-        <meta name="msapplication-TileImage" content="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/mstile-144x144.png">
-        <meta name="msapplication-square70x70logo" content="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/mstile-70x70.png">
-        <meta name="msapplication-square150x150logo" content="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/mstile-150x150.png">
-        <meta name="msapplication-wide310x150logo" content="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/mstile-310x150.png">
-        <meta name="msapplication-square310x310logo" content="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/mstile-310x310.png">
-        <meta name="msapplication-config" content="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/browserconfig.xml">
-        <meta name="theme-color" content="#FFFFFF">
-        <link rel="manifest" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/site.webmanifest">
-        <link rel="mask-icon" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/safari-pinned-tab.svg" color="#5BBAD5">
+        <?php if (null !== $this->task->customizerFileModel->getByType(2)) : ?>
+            <link rel="icon" type="image/png" href="<?= $this->url->href('CustomizerFileController', 'image', array('plugin' => 'customizer', 'file_id' => $this->task->customizerFileModel->getIdByType(2))) ?>">
+            <link rel="apple-touch-icon" sizes="57x57" href="<?= $this->url->href('CustomizerFileController', 'image', array('plugin' => 'customizer', 'file_id' => $this->task->customizerFileModel->getIdByType(2))) ?>">
+            <link rel="apple-touch-icon" sizes="60x60" href="<?= $this->url->href('CustomizerFileController', 'image', array('plugin' => 'customizer', 'file_id' => $this->task->customizerFileModel->getIdByType(2))) ?>">
+            <link rel="apple-touch-icon" sizes="72x72" href="<?= $this->url->href('CustomizerFileController', 'image', array('plugin' => 'customizer', 'file_id' => $this->task->customizerFileModel->getIdByType(2))) ?>">
+            <link rel="apple-touch-icon" sizes="76x76" href="<?= $this->url->href('CustomizerFileController', 'image', array('plugin' => 'customizer', 'file_id' => $this->task->customizerFileModel->getIdByType(2))) ?>">
+            <link rel="apple-touch-icon" sizes="114x114" href="<?= $this->url->href('CustomizerFileController', 'image', array('plugin' => 'customizer', 'file_id' => $this->task->customizerFileModel->getIdByType(2))) ?>">
+            <link rel="apple-touch-icon" sizes="144x144" href="<?= $this->url->href('CustomizerFileController', 'image', array('plugin' => 'customizer', 'file_id' => $this->task->customizerFileModel->getIdByType(2))) ?>">
+            <link rel="apple-touch-icon" sizes="120x120" href="<?= $this->url->href('CustomizerFileController', 'image', array('plugin' => 'customizer', 'file_id' => $this->task->customizerFileModel->getIdByType(2))) ?>">
+            <link rel="apple-touch-icon" sizes="144x144" href="<?= $this->url->href('CustomizerFileController', 'image', array('plugin' => 'customizer', 'file_id' => $this->task->customizerFileModel->getIdByType(2))) ?>">
+            <link rel="apple-touch-icon" sizes="152x152" href="<?= $this->url->href('CustomizerFileController', 'image', array('plugin' => 'customizer', 'file_id' => $this->task->customizerFileModel->getIdByType(2))) ?>">
+            <link rel="apple-touch-icon" sizes="180x180" href="<?= $this->url->href('CustomizerFileController', 'image', array('plugin' => 'customizer', 'file_id' => $this->task->customizerFileModel->getIdByType(2))) ?>">
+            <link rel="icon" type="image/png" href="<?= $this->url->href('CustomizerFileController', 'image', array('plugin' => 'customizer', 'file_id' => $this->task->customizerFileModel->getIdByType(2))) ?>">
+            <link rel="icon" type="image/png" sizes="16x16" href="<?= $this->url->href('CustomizerFileController', 'image', array('plugin' => 'customizer', 'file_id' => $this->task->customizerFileModel->getIdByType(2))) ?>">
+            <link rel="icon" type="image/png" sizes="32x32" href="<?= $this->url->href('CustomizerFileController', 'image', array('plugin' => 'customizer', 'file_id' => $this->task->customizerFileModel->getIdByType(2))) ?>">
+            <link rel="icon" type="image/png" sizes="96x96" href="<?= $this->url->href('CustomizerFileController', 'image', array('plugin' => 'customizer', 'file_id' => $this->task->customizerFileModel->getIdByType(2))) ?>">
+            <link rel="icon" type="image/png" sizes="128x128" href="<?= $this->url->href('CustomizerFileController', 'image', array('plugin' => 'customizer', 'file_id' => $this->task->customizerFileModel->getIdByType(2))) ?>">
+            <link rel="icon" type="image/png" sizes="192x192" href="<?= $this->url->href('CustomizerFileController', 'image', array('plugin' => 'customizer', 'file_id' => $this->task->customizerFileModel->getIdByType(2))) ?>">
+            <link rel="icon" type="image/png" sizes="196x196" href="<?= $this->url->href('CustomizerFileController', 'image', array('plugin' => 'customizer', 'file_id' => $this->task->customizerFileModel->getIdByType(2))) ?>">
+            <meta name="msapplication-TileColor" content="#2D89EF">
+            <meta name="msapplication-TileImage" content="<?= $this->url->href('CustomizerFileController', 'image', array('plugin' => 'customizer', 'file_id' => $this->task->customizerFileModel->getIdByType(2))) ?>">
+            <meta name="msapplication-square70x70logo" content="<?= $this->url->href('CustomizerFileController', 'image', array('plugin' => 'customizer', 'file_id' => $this->task->customizerFileModel->getIdByType(2))) ?>">
+            <meta name="msapplication-square150x150logo" content="<?= $this->url->href('CustomizerFileController', 'image', array('plugin' => 'customizer', 'file_id' => $this->task->customizerFileModel->getIdByType(2))) ?>">
+            <meta name="msapplication-wide310x150logo" content="<?= $this->url->href('CustomizerFileController', 'image', array('plugin' => 'customizer', 'file_id' => $this->task->customizerFileModel->getIdByType(2))) ?>">
+            <meta name="msapplication-square310x310logo" content="<?= $this->url->href('CustomizerFileController', 'image', array('plugin' => 'customizer', 'file_id' => $this->task->customizerFileModel->getIdByType(2))) ?>">
+            <meta name="theme-color" content="#FFFFFF">
+        <?php else: ?>
+            <link rel="icon" type="image/x-icon" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/favicon.ico">
+            <link rel="apple-touch-icon" sizes="57x57" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/apple-icon-57x57.png">
+            <link rel="apple-touch-icon" sizes="60x60" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/apple-icon-60x60.png">
+            <link rel="apple-touch-icon" sizes="72x72" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/apple-icon-72x72-ipad.png">
+            <link rel="apple-touch-icon" sizes="76x76" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/apple-icon-76x76.png">
+            <link rel="apple-touch-icon" sizes="114x114" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/apple-icon-114x114-retina.png">
+            <link rel="apple-touch-icon" sizes="120x120" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/apple-icon-120x120.png">
+            <link rel="apple-touch-icon" sizes="144x144" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/apple-icon-144x144-ipad-retina.png">
+            <link rel="apple-touch-icon" sizes="152x152" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/apple-icon-152x152.png">
+            <link rel="apple-touch-icon" sizes="180x180" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/apple-icon-180x180.png">
+            <link rel="icon" type="image/png" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/workspace-icon-500x500.png">
+            <link rel="icon" type="image/png" sizes="16x16" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/favicon-16x16.png">
+            <link rel="icon" type="image/png" sizes="32x32" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/favicon-32x32.png">
+            <link rel="icon" type="image/png" sizes="96x96" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/favicon-96x96.png">
+            <link rel="icon" type="image/png" sizes="128x128" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/favicon-128x128.png">
+            <link rel="icon" type="image/png" sizes="192x192" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/android-icon-192x192.png">
+            <link rel="icon" type="image/png" sizes="196x196" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/favicon-196x196.png">
+            <meta name="msapplication-TileColor" content="#2D89EF">
+            <meta name="msapplication-TileImage" content="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/mstile-144x144.png">
+            <meta name="msapplication-square70x70logo" content="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/mstile-70x70.png">
+            <meta name="msapplication-square150x150logo" content="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/mstile-150x150.png">
+            <meta name="msapplication-wide310x150logo" content="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/mstile-310x150.png">
+            <meta name="msapplication-square310x310logo" content="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/mstile-310x310.png">
+            <meta name="msapplication-config" content="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/browserconfig.xml">
+            <meta name="theme-color" content="#FFFFFF">
+            <link rel="manifest" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/site.webmanifest">
+            <link rel="mask-icon" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/safari-pinned-tab.svg" color="#5BBAD5">
+        <?php endif ?>
         <?php
             if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
                 $url = "https://";
@@ -64,8 +92,13 @@
             $url.= $_SERVER['REQUEST_URI'];
         ?>
         <meta property="og:url" content="<?php echo $url ?>">
-        <?php // og:image must be min 300x300px with 'https' and absolute url to png file ?>
-        <meta property="og:image" content="<?= $this->url->base();$this->url->dir() ?>plugins/ApplicationBranding/Assets/img/workspace-icon-500x500.png">
+        <?php if (null !== $this->task->customizerFileModel->getByType(2)) : ?>
+            <?php // og:image must be min 300x300px with 'https' and absolute url to png file ?>
+            <meta property="og:image" content="<?= $this->url->href('CustomizerFileController', 'image', array('plugin' => 'customizer', 'file_id' => $this->task->customizerFileModel->getIdByType(2))) ?>">
+        <?php else: ?>
+            <?php // og:image must be min 300x300px with 'https' and absolute url to png file ?>
+            <meta property="og:image" content="<?= $this->url->base();$this->url->dir() ?>plugins/ApplicationBranding/Assets/img/workspace-icon-500x500.png">
+        <?php endif ?>
         <meta property="og:type" content="website">
         <meta property="og:locale" content="<?= $this->app->jsLang() ?>">
         <meta property="og:locale:alternate" content="en_GB">
