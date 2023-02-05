@@ -26,7 +26,7 @@
         <?= $this->hook->asset('css', 'template:layout:css') ?>
         <?= $this->hook->asset('js', 'template:layout:js') ?>
 
-        <link rel="shortcut icon" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/favicon.ico">
+        <link rel="icon" type="image/x-icon" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/favicon.ico">
         <link rel="apple-touch-icon" sizes="57x57" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/apple-icon-60x60.png">
         <link rel="apple-touch-icon" sizes="72x72" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/apple-icon-72x72-ipad.png">
