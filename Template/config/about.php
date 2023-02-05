@@ -233,6 +233,8 @@
             <li class="config-details-item">
                 <span class="config-details-name"><?= t('Application Version') ?></span>
                 <span class="config-details-value"><?= APP_VERSION ?></span>
+                <?php $installDate = date("d F Y", filemtime(APP_DIR)); ?>
+                <span class="install-date" title=""><i><?= t('Installed on') ?> <?= $installDate ?></i></span>
             </li>
             <li class="config-details-item">
                 <span class="config-details-name"><?= t('PHP Version') ?></span>

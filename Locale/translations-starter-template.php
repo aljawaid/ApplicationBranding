@@ -72,6 +72,7 @@ return array(
     'Administrators' => '',
     'Configuration' => '',
     'Application Version' => '',
+    'Installed on' => '',
     'PHP Version' => '',
     'PHP SAPI' => '',
     'HTTP Client' => '',
