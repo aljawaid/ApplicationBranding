@@ -10,16 +10,30 @@ Features
 
 **Rename Application**
 - Rename your installation of Kanboard
- - Choose your own name or allow the default `My Workspace` to be used
- - Browser bookmarks and browser tabs now include the site name
+ - Choose your own site name or use the default `My Workspace`
+ - Browser bookmarks and browser tabs now include the site name (overriding the default Kanboard behaviour)
+- [Customizer](https://github.com/creecros/Customizer) Compatibility:
+  - Browser bookmarks and browser tabs now include the site name (overriding the default Kanboard behaviour)
 
 **Application Metadata**
-- Favicons included for all common devices
+- Added both HTML and OpenGraph meta tags
+- Added the `meta description` tag to show when sharing links on devices
+- 30 Favicons included for all common devices (including Android, Apple, Microsoft, WhatsApp)
+  - 26 more favicons than Kanboard!
 - Include generic logo in the top left corner of the site (header)
+- [Customizer](https://github.com/creecros/Customizer) Compatibility:
+  - After installing this plugin, Customizer will also show all 30 favicons
+  - Customizer will also use the `meta description`
+  - Image must be minimum 300px x 300px for OpenGraph (Meta, WhatsApp) sharing to work correctly
+
+**Site Logo**
+- A new 'man on a workdesk' icon is used as the site logo, matching the favicons
+- [Customizer](https://github.com/creecros/Customizer) Compatibility:
+  - After installing this plugin, Customizer will override the 'man on a workdesk' logo according to the user settings
 
 **Manual Edits**
 - Added `domain.com/manual-edits` for easier bookmarks and direct links (if url rewriting is enabled)
-- Show list of manual changes required for complete rebranding
+- Show a comprehensive list of manual changes required for complete Kanboard rebranding
 
 **New Login Page**
 - Show User IP Address
@@ -27,19 +41,23 @@ Features
 - Include metadata and generic logo (for when sharing links)
 - Show Unsplash image background
 - Move your mouse over the username and password fields to automatically save time selecting the field
+- [Customizer](https://github.com/creecros/Customizer) Compatibility:
+  - After installing this plugin, Customizer shows the Custom Note feature retaining its hook (`'template:auth:login-form:newbox'`)
 
 **New Reset Password Page**
 - Show User IP Address
 - Add user friendly page title
 - Show application name and copyright
-- Include metadata and generic logo (for when sharing links)
+- Include application metadata and generic logo (for when sharing links)
 - Show Unsplash image background
 - Move your mouse over the username and captcha fields to automatically save time selecting the field
+- [Customizer](https://github.com/creecros/Customizer) Compatibility:
+  - After installing this plugin, Customizer will use the meta tags and page title
 
 **New 2FA Page**
 - Show User IP Address
 - Add user friendly page title
-- Include metadata and generic logo (for style consistency)
+- Include application metadata and generic logo (for code structure and style consistency)
 - A complete revamp of the two factor code check page which shows after login
 - Added links to cancel the security check by returning to the login page, unlocking the default login-lock behaviour
 - Added `domain.com/security-check` for easier bookmarks and direct links (if url rewriting is enabled)
@@ -117,7 +135,7 @@ Compatibility
 - Requires [Kanboard](https://github.com/fguillot/kanboard "Kanboard - Kanban Project Management Software") ≥`1.2.20`
 
 #### Other Plugins & Action Plugins
-- Compatible with [KanboardEmailHistory](https://github.com/aljawaid/KanboardEmailHistory), [AutomaticActionUX](https://github.com/aljawaid/AutomaticActionUX), [PluginManager](https://github.com/aljawaid/PluginManager), [TagManager](https://github.com/aljawaid/TagManager), [KanboardSupport](https://github.com/aljawaid/KanboardSupport)
+- Compatible with [KanboardEmailHistory](https://github.com/aljawaid/KanboardEmailHistory), [AutomaticActionUX](https://github.com/aljawaid/AutomaticActionUX), [PluginManager](https://github.com/aljawaid/PluginManager), [TagManager](https://github.com/aljawaid/TagManager), [KanboardSupport](https://github.com/aljawaid/KanboardSupport), [Customizer](https://github.com/creecros/Customizer)
 #### Core Files & Templates
 - `08` Template overrides
 - _No database changes_
