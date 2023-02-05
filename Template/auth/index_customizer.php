@@ -101,6 +101,9 @@
             </div>
         </div>
     </div>
+
+    <?= $this->hook->render('template:auth:login-form:newbox') ?>
+
 </section>
 <footer class="copyright">
     <span class="center">&copy;&nbsp;
