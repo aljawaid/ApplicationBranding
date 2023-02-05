@@ -31,7 +31,7 @@
             <div class="app-rename">
                 <?= $this->form->label(t('Copyright From'), 'copyright_from', array('class=""')) ?>
                 <?= $this->form->number('copyright_from', $values, $errors, array('placeholder="2014"')) ?>
-                <p class="form-help"><?= t('If no year is entered, then the standard copyright message with the current year is shown') ?></p>
+                <p class="form-help"><?= t('Leave blank to show only the current year') ?></p>
             </div>
         </div>
         <div class="form-actions">
