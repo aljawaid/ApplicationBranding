@@ -40,7 +40,7 @@ Features
 - Show application name and copyright
 - Include metadata and generic logo (for when sharing links)
 - Show Unsplash image background
-- Move your mouse over the username and password fields to automatically save time selecting the field
+- Faster login switching between users by hovering over the username and password fields
 - [Customizer](https://github.com/creecros/Customizer) Compatibility:
   - After installing this plugin, Customizer shows the Custom Note feature retaining its hook (`'template:auth:login-form:newbox'`)
 
@@ -65,7 +65,8 @@ Features
 
 **Reset Password Email**
 - Show application name and copyright
-- Compatible with [KanboardEmailHistory](https://github.com/aljawaid/KanboardEmailHistory)
+- [KanboardEmailHistory](https://github.com/aljawaid/KanboardEmailHistory) COmpatibility:
+  - The footer of the email shows the new application name and copyright year(s)
 
 **Change Password Page**
 - _To be completed_
@@ -77,7 +78,8 @@ Features
 - Add new hook
   - `'template:config:about'` is located before the configuration section
 - Include relevant links to Kanboard channels in the revamped _Application Platform_ section
-- Show button for direct link to detailed configuration from [KanboardSupport](https://github.com/aljawaid/KanboardSupport) (if installed)
+- [KanboardSupport](https://github.com/aljawaid/KanboardSupport) Compatibility:
+  - Show button for direct link to detailed configuration
 
 
 Screenshots
