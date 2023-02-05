@@ -17,21 +17,30 @@
     <fieldset class="login-page-settings">
         <legend class=""><?= t('Login Page') ?></legend>
         <p class=""><?= t('Adjust the settings below to customise the login page') ?></p>
+        <fieldset class="settings-subsection">
+            <legend><?= t('Login Title') ?></legend>
             <div class="visitor-warning">
                 <?= $this->form->label(t('Visitor Warning'), 'login_warning', array('class=""')) ?>
                 <?= $this->form->text('login_warning', $values, $errors, array('placeholder="' . t('AUTHORISED USERS ONLY') . '"')) ?>
                 <p class="form-help"><?= t('Enter a single line title or leave blank for the default title') ?></p>
             </div>
+        </fieldset>
+        <fieldset class="settings-subsection">
+            <legend><?= t('Login Text') ?></legend>
             <div class="login-message">
                 <?= $this->form->label(t('Login Message'), 'login_message', array('class=""')) ?>
                 <?= $this->form->textarea('login_message', $values, $errors, array('placeholder="'. t('Use this platform to manage your productivity. Work with tasks inside project boards to track comments, files and activities.') .'"'), 'login-message-textarea') ?>
                 <p class="form-help"><?= t('This message will appear within the form above the username or leave blank for the default message') ?></p>
             </div>
+        </fieldset>
+        <fieldset class="settings-subsection">
+            <legend><?= t('Copyright') ?></legend>
             <div class="app-copyright">
                 <?= $this->form->label(t('From Year'), 'copyright_from', array('class=""')) ?>
                 <?= $this->form->number('copyright_from', $values, $errors, array('placeholder="2014"')) ?>
                 <p class="form-help"><?= t('Leave blank to show only the current year') ?></p>
             </div>
+        </fieldset>
         <div class="form-actions">
             <button type="submit" class="btn btn-blue" title="<?= t('Saves any changes made on this page') ?>"><?= t('Save Settings') ?></button>
         </div>
