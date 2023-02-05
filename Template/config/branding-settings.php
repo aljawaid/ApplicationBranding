@@ -20,7 +20,7 @@
         <div class="">
             <div class="visitor-warning">
                 <?= $this->form->label(t('Visitor Warning'), 'login_warning', array('class=""')) ?>
-                <?= $this->form->text('login_warning', $values, $errors, array('placeholder="AUTHORISED USERS ONLY"')) ?>
+                <?= $this->form->text('login_warning', $values, $errors, array('placeholder="' . t('AUTHORISED USERS ONLY') . '"')) ?>
                 <p class="form-help"><?= t('Enter a single line title or leave blank for the default title') ?></p>
             </div>
             <div class="login-message">
