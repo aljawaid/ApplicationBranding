@@ -597,6 +597,34 @@ ul.icon-list li .filename {
     top: 3px;
 }
 
+.box-icon .template-manager-icon {
+    width: 32px;
+    height: 32px;
+    top: 5px;
+    left: 0;
+}
+
+.box-icon .description-icon {
+    width: 32px;
+    height: 32px;
+    top: 3px;
+    left: 2px;
+}
+
+.box-icon .comment-templates-icon {
+    width: 32px;
+    height: 32px;
+    top: 3px;
+    left: 2px;
+}
+
+.box-icon .globe-icon {
+    width: 32px;
+    height: 32px;
+    top: 3px;
+    left: 2px;
+}
+
 .box-title {
     font-weight: bold;
     text-transform: uppercase;
@@ -669,6 +697,10 @@ ul.icon-list li .filename {
     background: linear-gradient(156deg, rgb(227, 138, 237) 0.00%, rgb(90, 16, 115) 81.57%);
     -moz-background: linear-gradient(156deg, rgb(227, 138, 237) 0.00%, rgb(90, 16, 115) 81.57%);
     -webkit-background: linear-gradient(156deg, rgb(227, 138, 237) 0.00%, rgb(90, 16, 115) 81.57%);
+}
+
+.back-deep-green {
+    background: linear-gradient(202deg, rgb(13, 179, 136) 0.00%, rgb(0, 72, 95) 100.00%);
 }
 
 details.license summary {

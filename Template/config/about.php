@@ -172,6 +172,82 @@
                 <div class="box-title"><?= t('External Links') ?></div>
                 <div class="box-data"><span class="data-value bold"><?= $externalLinks ?></span></div>
             </div>
+            <?php if (file_exists('plugins/TemplateManager')): ?>
+                <div class="box-wrapper back-deep-green">
+                    <div class="box-icon">
+                        <svg width="28px" height="28px" class="template-manager-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <g stroke-width="0"/>
+                            <g stroke-linecap="round" stroke-linejoin="round"/>
+                            <g>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3 3V9H21V3H3ZM19 5H5V7H19V5Z" fill="white"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3 11V21H11V11H3ZM9 13H5V19H9V13Z" fill="white"/>
+                                <path d="M21 11H13V13H21V11Z" fill="white"/>
+                                <path d="M13 15H21V17H13V15Z" fill="white"/>
+                                <path d="M21 19H13V21H21V19Z" fill="white"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="box-title"><?= t('Templates') ?></div>
+                    <div class="box-data"><span class="data-value bold"><?= $allTemplates ?></span></div>
+                </div>
+                <div class="box-wrapper back-deep-green">
+                    <div class="box-icon">
+                        <svg width="28px" height="28px" class="description-icon" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+                            <g stroke-width="0"/>
+                            <g stroke-linecap="round" stroke-linejoin="round"/>
+                            <g>
+                                <g>
+                                    <path d="M256,0C114.609,0,0,114.609,0,256s114.609,256,256,256s256-114.609,256-256S397.391,0,256,0z M256,472 c-119.297,0-216-96.703-216-216S136.703,40,256,40s216,96.703,216,216S375.297,472,256,472z"/>
+                                    <path fill="white" d="M320,128H160v256h192V164.578L320,128z M176,368V144h128v32h32v192H176z"/>
+                                    <rect fill="white" x="192" y="272" width="128" height="16"/>
+                                    <rect fill="white" x="192" y="240" width="128" height="16"/>
+                                    <rect fill="white" x="192" y="192" width="64" height="16"/>
+                                    <rect fill="white" x="192" y="160" width="32" height="16"/>
+                                    <rect fill="white" x="192" y="304" width="128" height="16"/>
+                                    <rect fill="white" x="192" y="336" width="128" height="16"/>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="box-title"><?= t('Task Templates') ?></div>
+                    <div class="box-data"><span class="data-value bold"><?= $allTaskTemplates ?></span></div>
+                </div>
+                <div class="box-wrapper back-deep-green">
+                    <div class="box-icon">
+                        <svg width="64px" height="64px" class="comment-templates-icon" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+                            <g stroke-width="0"/>
+                            <g stroke-linecap="round" stroke-linejoin="round"/>
+                            <g>
+                                <g>
+                                    <path d="M256,0C114.609,0,0,114.609,0,256s114.609,256,256,256s256-114.609,256-256S397.391,0,256,0z M256,472 c-119.297,0-216-96.703-216-216S136.703,40,256,40s216,96.703,216,216S375.297,472,256,472z"/>
+                                    <path fill="white" d="M310.875,254.734c-40.438,0-73.172,22.078-73.172,49.234c0,12.094,10.172,25.875,20.922,34.469L248.188,368l31.703-19.469 c9.453,2.969,19.891,4.656,30.984,4.656c40.391,0,73.125-22,73.125-49.219C384,276.812,351.266,254.734,310.875,254.734z"/>
+                                    <path fill="white" d="M256,144c-70.688,0-128,40.234-128,89.891c0,22.062,17.781,47.234,36.562,62.922l-18.266,53.969l55.547-35.562 c7.25,2.375,14.938,4.25,22.844,5.656c-3.234-6.344-5.25-12.938-5.25-19.125c0-35.484,40.938-64.219,91.438-64.219 c27.062,0,51.188,8.422,67.938,21.578c3.312-8,5.188-16.469,5.188-25.219C384,184.234,326.688,144,256,144z"/>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="box-title"><?= t('Comment Templates') ?></div>
+                    <div class="box-data"><span class="data-value bold"><?= $allCommentTemplates ?></span></div>
+                </div>
+                <div class="box-wrapper back-deep-green">
+                    <div class="box-icon">
+                        <svg width="28px" height="28px" class="globe-icon" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+                            <g stroke-width="0"/>
+                            <g stroke-linecap="round" stroke-linejoin="round"/>
+                            <g>
+                                <g stroke="white">
+                                    <path d="M256,0C114.609,0,0,114.609,0,256s114.609,256,256,256s256-114.609,256-256S397.391,0,256,0z M256,472 c-119.297,0-216-96.703-216-216S136.703,40,256,40s216,96.703,216,216S375.297,472,256,472z"/>
+                                    <path d="M288,128c-53.016,0-96,42.984-96,96c0,0.531,0.047,1.047,0.062,1.609C155.531,232.984,128,265.266,128,304 c0,44.188,35.797,80,80,80c38.719,0,71.016-27.531,78.422-64.094c0.531,0.016,1.047,0.094,1.578,0.094c53.016,0,96-42.984,96-96 S341.016,128,288,128z M208,368c-35.281,0-64-28.719-64-64c0-30.359,21.281-55.734,49.719-62.25 c7.25,38.766,37.766,69.281,76.531,76.531C263.719,346.719,238.344,368,208,368z"/>
+                                    <path fill="white" d="M209.672,240.156 c33.906,0.875,61.297,28.234,62.156,62.203C240.688,295.922,216.047,271.344,209.672,240.156z M288,304c0-44.172-35.797-80-80-80 c0-44.109,35.906-80,80-80s80,35.891,80,80S332.094,304,288,304z"/>
+                                    <path d="M160,224c17.656,0,32-14.344,32-32s-14.344-32-32-32s-32,14.344-32,32S142.344,224,160,224z M160,176 c8.812,0,16,7.188,16,16s-7.188,16-16,16s-16-7.188-16-16S151.188,176,160,176z"/>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="box-title"><?= t('Global Templates') ?></div>
+                    <div class="box-data"><span class="data-value bold"><?= $allGlobalTemplates ?></span></div>
+                </div>
+            <?php endif ?>
             <div class="box-wrapper back-red">
                 <div class="box-icon">
                     <svg version="1.1" class="users_icon" fill="currentColor" width="18px" height="18px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 465.888 465.888" xml:space="preserve">
