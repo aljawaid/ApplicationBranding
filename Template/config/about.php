@@ -42,6 +42,7 @@
     $activeUserCount = $this->task->db->table('users')->eq('is_active', 1)->findAll();
     $allGroups = $this->task->groupModel->getAll();
     $allAdmins = $this->task->db->table('users')->eq('role', 'app-admin')->findAll();
+    $externalLinks = $this->task->db->table('task_has_external_links')->count();
     ?>
 
     <div class="dash-block">
