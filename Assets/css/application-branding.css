@@ -590,6 +590,13 @@ ul.icon-list li .filename {
     font-size: .9em;
 }
 
+.box-icon .ext-links {
+    width: 30px;
+    height: 30px;
+    left: 2px;
+    top: 3px;
+}
+
 .box-title {
     font-weight: bold;
     text-transform: uppercase;

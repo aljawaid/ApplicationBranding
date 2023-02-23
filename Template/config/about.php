@@ -157,6 +157,21 @@
                     <span class="data-value data-totals" title="<?= t('Total Links') ?>"><?= $linkLabelsCount ?></span>
                 </div>
             </div>
+            <div class="box-wrapper back-grey">
+                <div class="box-icon">
+                    <svg width="28px" height="28px" class="ext-links" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+                        <g stroke-width="0"></g>
+                        <g stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g>
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </g>
+                    </svg>
+                </div>
+                <div class="box-title"><?= t('External Links') ?></div>
+                <div class="box-data"><span class="data-value bold"><?= $externalLinks ?></span></div>
+            </div>
             <div class="box-wrapper back-red">
                 <div class="box-icon">
                     <svg version="1.1" class="users_icon" fill="currentColor" width="18px" height="18px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 465.888 465.888" xml:space="preserve">
