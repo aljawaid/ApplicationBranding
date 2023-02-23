@@ -75,6 +75,7 @@ Features
 - New professional look and feel application dashboard for Admins
   - Add metrics for your Kanboard installation on a global level regardless of projects or tasks
   - Show different types of metrics
+  - Show template counts from [TemplateManager](https://github.com/aljawaid/TemplateManager) _(if installed)_
 - Add new hook
   - `'template:config:about'` is located before the configuration section
 - Include relevant links to Kanboard channels in the revamped _Application Platform_ section
@@ -137,7 +138,7 @@ Compatibility
 - Requires [Kanboard](https://github.com/fguillot/kanboard "Kanboard - Kanban Project Management Software") ≥`1.2.20`
 
 #### Other Plugins & Action Plugins
-- Compatible with [KanboardEmailHistory](https://github.com/aljawaid/KanboardEmailHistory), [AutomaticActionUX](https://github.com/aljawaid/AutomaticActionUX), [PluginManager](https://github.com/aljawaid/PluginManager), [TagManager](https://github.com/aljawaid/TagManager), [KanboardSupport](https://github.com/aljawaid/KanboardSupport), [Customizer](https://github.com/creecros/Customizer)
+- Compatible with [KanboardEmailHistory](https://github.com/aljawaid/KanboardEmailHistory), [AutomaticActionUX](https://github.com/aljawaid/AutomaticActionUX), [PluginManager](https://github.com/aljawaid/PluginManager), [TagManager](https://github.com/aljawaid/TagManager), [KanboardSupport](https://github.com/aljawaid/KanboardSupport), [Customizer](https://github.com/creecros/Customizer), [TemplateManager](https://github.com/aljawaid/TemplateManager)
 #### Core Files & Templates
 - `08` Template overrides
 - _No database changes_
