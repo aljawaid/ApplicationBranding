@@ -1,6 +1,17 @@
 # Changelog
 
 
+## v3.0
+
+### What's Changed
+
+_(most recent changes are listed on top):_
+- NEW: Add TemplateManager Compatibility - show template counts in the Admin Dashboard
+- NEW: Show External Links Count in Admin Dashboard
+- NEW: Show Installation Date of Kanboard - based on the date modified of the `/app` (`APP_DIR`) folder
+- Update translations
+
+
 ## v2.0
 
 ### What's Changed
