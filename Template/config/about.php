@@ -43,6 +43,12 @@
     $allGroups = $this->task->groupModel->getAll();
     $allAdmins = $this->task->db->table('users')->eq('role', 'app-admin')->findAll();
     $externalLinks = $this->task->db->table('task_has_external_links')->count();
+    if (file_exists('plugins/TemplateManager')) {
+        $allTaskTemplates = $this->task->db->table('predefined_task_descriptions')->count();
+        $allCommentTemplates = $this->task->db->table('comment_templates')->count();
+        $allGlobalTemplates = $this->task->db->table('global_templates')->count();
+        $allTemplates = ($allTaskTemplates + $allCommentTemplates + $allGlobalTemplates);
+    }
     ?>
 
     <div class="dash-block">
