@@ -51,6 +51,10 @@ class Plugin extends Base
         $this->route->addRoute('/security-check', 'TwoFactorController', 'code');
         $this->route->addRoute('/settings/manual-edits', 'ApplicationBrandingController', 'manualEdits', 'ApplicationBranding');
 
+        // Helper
+        //  - Example: $this->helper->register('helperClassNameCamelCase', '\Kanboard\Plugin\PluginNameExampleStudlyCaps\Helper\HelperNameExampleStudlyCaps');
+        //  - Add each Helper in the 'use' section at the top of this file
+        $this->helper->register('applicationBrandingHelper', '\Kanboard\Plugin\ApplicationBranding\Helper\ApplicationBrandingHelper');
     }
 
     public function onStartup()
