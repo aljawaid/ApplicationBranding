@@ -169,6 +169,7 @@ kbd.user-remote-ip {
     width: 20px;
     vertical-align: text-bottom;
     margin-right: 5px;
+    pointer-events: none;
 }
 
 .form-reset .user-icon {
@@ -183,11 +184,13 @@ kbd.user-remote-ip {
     vertical-align: middle;
     margin-right: 2px;
     margin-top: -3px;
+    pointer-events: none;
 }
 
 .login-icon {
     width: 26px;
     vertical-align: text-top;
+    pointer-events: none;
 }
 
 button.login-btn {
@@ -345,6 +348,7 @@ form.form-reset .required-wrapper {
 .btn-reset-password svg {
     vertical-align: text-top;
     fill: var(--pp-green-dark);
+    pointer-events: none;
 }
 
 .reset-message {
