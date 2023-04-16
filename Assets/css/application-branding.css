@@ -52,7 +52,7 @@ a:hover { color: var(--pp-red-alt-2) !important; }
 
 .display-none, .d-none { display: none !important; }
 
-.font-weight-bold { font-weight: bold; }
+.font-weight-bold, .bold { font-weight: bold; }
 
 .center, .text-center { text-align: center; }
 
@@ -108,7 +108,7 @@ section.login-logo {
 
 .login-title {
     text-align: center;
-    font-weight: bold;
+    font-weight: 600;
     text-transform: full-width;
     font-size: 1.8em;
     -webkit-text-stroke-width: 1px;
@@ -634,7 +634,7 @@ ul.icon-list li .filename {
 }
 
 .box-title {
-    font-weight: bold;
+    font-weight: 600;
     text-transform: uppercase;
     font-size: .8em;
     padding: 5px 0;
@@ -717,10 +717,6 @@ details.license summary {
 
 .about-page {
     margin: var(--page-margin-app-branding);
-}
-
-.bold {
-    font-weight: 600;
 }
 
 .kb-info-btn {
