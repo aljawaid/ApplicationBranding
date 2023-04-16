@@ -289,8 +289,12 @@ textarea.login-message-textarea, textarea.meta-desc-textarea {
     background: #D8E2F9;
 }
 
-textarea.login-message-textarea::placeholder, textarea.meta-desc-textarea::placeholder {
-    color: #4D4D4D;
+.username-input::placeholder, .username-input::-webkit-input-placeholder, .password-input::placeholder, .password-input::-webkit-input-placeholder, .captcha-input::placeholder, .captcha-input::-webkit-input-placeholder, #form-username::placeholder, #form-username::-webkit-input-placeholder {
+    color: #4D4D4D !important;
+}
+
+textarea.login-message-textarea::placeholder, textarea.login-message-textarea::-webkit-input-placeholder, textarea.meta-desc-textarea::placeholder, textarea.meta-desc-textarea::-webkit-input-placeholder {
+    color: #4D4D4D !important;
 }
 
 form.login-form .form-actions {
