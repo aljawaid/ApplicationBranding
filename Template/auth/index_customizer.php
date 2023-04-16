@@ -1,7 +1,7 @@
 <?php if ($this->task->configModel->get('use_unsplash', '') == 'allow_usage'): ?>
     <style type="text/css">
         body {
-            background: url(https://source.unsplash.com/random) no-repeat center center fixed;
+            background: url(https://source.unsplash.com/featured) no-repeat center center fixed;
             background-size: cover;
             padding-top: 1px;
         }
