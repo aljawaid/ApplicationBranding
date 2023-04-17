@@ -1,6 +1,20 @@
 # Changelog
 
 
+## v3.1
+
+### What's Changed
+
+_(most recent changes are listed on top):_
+- FIX: Password Reset Styling
+- FIX: CSS `font-weight` Property
+- FIX: Placeholder Text Color
+- FIX: SVG Inside Anchors
+- FIX: Switch Unsplash Collection - switch from `random` to `featured`
+- FIX: Switch Unsplash Collection - switch from `random` to `featured`
+- FIX: Documentation URL was Hardcoded - thanks @alfredbuehler - fixes #10
+
+
 ## v3.0
 
 ### What's Changed
