@@ -1,13 +1,12 @@
 # ApplicationBranding
-
-#### _Plugin for [Kanboard](https://github.com/fguillot/kanboard "Kanboard - Kanban Project Management Software")_
+![GitHub All Releases](https://img.shields.io/github/downloads/aljawaid/ApplicationBranding/total?style=for-the-badge "GitHub All Downloads")
+#### _Plugin for [Kanboard](https://github.com/kanboard/kanboard "Kanboard - Kanban Project Management Software")_
 
 This plugin will rename your installation to \'My Workspace\' and include matching device icons in the site metadata for a better user experience. A revamped login page, with a new Admin Dashboard showing global installation activity data with corrected page titles will give a more professional appeal across the site and when sharing links.
 
 
 Features
 -------------
-
 **Rename Application**
 - Rename your installation of Kanboard
  - Choose your own site name or use the default `My Workspace`
@@ -125,7 +124,6 @@ Screenshots
 
 Usage
 -------------
-
 - The Admin Dashboard is shown in `Settings` &#10562; `About`
 - Share the login page, reset password page or a public task. Note the icon and meta information.
 - The generic My Workspace icon will show in the top header of the site
@@ -134,8 +132,7 @@ Usage
 
 Compatibility
 -------------
-
-- Requires [Kanboard](https://github.com/fguillot/kanboard "Kanboard - Kanban Project Management Software") ≥`1.2.20`
+- Requires [Kanboard](https://github.com/kanboard/kanboard "Kanboard - Kanban Project Management Software") ≥`1.2.20`
 
 #### Other Plugins & Action Plugins
 - Compatible with [KanboardEmailHistory](https://github.com/aljawaid/KanboardEmailHistory), [AutomaticActionUX](https://github.com/aljawaid/AutomaticActionUX), [PluginManager](https://github.com/aljawaid/PluginManager), [TagManager](https://github.com/aljawaid/TagManager), [KanboardSupport](https://github.com/aljawaid/KanboardSupport), [Customizer](https://github.com/creecros/Customizer), [TemplateManager](https://github.com/aljawaid/TemplateManager)
@@ -146,7 +143,6 @@ Compatibility
 
 Changelog
 ---------
-
 Read the full [**Changelog**](../master/changelog.md "See changes")
  
 
@@ -157,14 +153,12 @@ Installation
 
 Translations
 ------------
-
 - English (UK)
-- _Contributors welcome_
 - _Starter template available_
+
 
 Authors & Contributors
 ----------------------
-
 - [@aljawaid](https://github.com/aljawaid) - Author
 - _Contributors welcome_
 
