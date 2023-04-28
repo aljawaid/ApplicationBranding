@@ -1,12 +1,11 @@
 # ApplicationBranding
-![GitHub All Releases](https://img.shields.io/github/downloads/aljawaid/ApplicationBranding/total?style=for-the-badge "GitHub All Downloads")
-#### _Plugin for [Kanboard](https://github.com/kanboard/kanboard "Kanboard - Kanban Project Management Software")_
+![GitHub All Releases](https://img.shields.io/github/downloads/aljawaid/ApplicationBranding/total?style=for-the-badge "GitHub All Downloads") - **_A Plugin for [Kanboard](https://github.com/kanboard/kanboard "Kanboard - Kanban Project Management Software")_**
 
 This plugin will rename your installation to \'My Workspace\' and include matching device icons in the site metadata for a better user experience. A revamped login page, with a new Admin Dashboard showing global installation activity data with corrected page titles will give a more professional appeal across the site and when sharing links.
 
 
-Features
--------------
+## Features
+
 **Rename Application**
 - Rename your installation of Kanboard
  - Choose your own site name or use the default `My Workspace`
@@ -82,8 +81,7 @@ Features
   - Show button for direct link to detailed configuration
 
 
-Screenshots
-----------
+## Screenshots
 
 **Login Page**  
 
@@ -122,47 +120,50 @@ Screenshots
 ![Admin Dashboard](../master/Screenshots/screenshot-admin-dashboard.png "Admin Dashboard")
 
 
-Usage
--------------
+## Usage
+
 - The Admin Dashboard is shown in `Settings` &#10562; `About`
 - Share the login page, reset password page or a public task. Note the icon and meta information.
 - The generic My Workspace icon will show in the top header of the site
 - Browser page titles and tabs will be more consistent
 
 
-Compatibility
--------------
-- Requires [Kanboard](https://github.com/kanboard/kanboard "Kanboard - Kanban Project Management Software") ≥`1.2.20`
+## Installation & Compatibility
 
-#### Other Plugins & Action Plugins
-- Compatible with [KanboardEmailHistory](https://github.com/aljawaid/KanboardEmailHistory), [AutomaticActionUX](https://github.com/aljawaid/AutomaticActionUX), [PluginManager](https://github.com/aljawaid/PluginManager), [TagManager](https://github.com/aljawaid/TagManager), [KanboardSupport](https://github.com/aljawaid/KanboardSupport), [Customizer](https://github.com/creecros/Customizer), [TemplateManager](https://github.com/aljawaid/TemplateManager)
-#### Core Files & Templates
-- `08` Template overrides
-- _No database changes_
+<details>
+    <summary><strong>Installation</strong></summary>
 
-
-Changelog
----------
-Read the full [**Changelog**](../master/changelog.md "See changes")
- 
-
-Installation
-------------
 - Install via the **[Kanboard](https://github.com/kanboard/kanboard "Kanboard - Kanban Project Management Software") Plugin Directory** or see [INSTALL.md](../master/INSTALL.md)
+- Read the full [**Changelog**](../master/changelog.md "See changes") to see the latest updates
 
+</details>
+<details>
+    <summary><strong>Compatibility</strong></summary>
 
-Translations
-------------
+- Requires [Kanboard](https://github.com/kanboard/kanboard "Kanboard - Kanban Project Management Software") ≥`1.2.20`
+- **Other Plugins & Action Plugins**
+  - _No known issues_
+  - Compatible with [KanboardEmailHistory](https://github.com/aljawaid/KanboardEmailHistory), [AutomaticActionUX](https://github.com/aljawaid/AutomaticActionUX), [PluginManager](https://github.com/aljawaid/PluginManager), [TagManager](https://github.com/aljawaid/TagManager), [KanboardSupport](https://github.com/aljawaid/KanboardSupport), [Customizer](https://github.com/creecros/Customizer), [TemplateManager](https://github.com/aljawaid/TemplateManager)
+- **Core Files & Templates**
+  - `08` Template overrides
+  - _No database changes_
+
+</details>
+<details>
+    <summary><strong>Translations</strong></summary>
+
 - English (UK)
 - _Starter template available_
 
+</details>
 
-Authors & Contributors
-----------------------
+
+## Authors & Contributors
+
 - [@aljawaid](https://github.com/aljawaid) - Author
 - _Contributors welcome_
 
 
-License
--------
+## License
+
 - This project is distributed under the [MIT License](../master/LICENSE "Read The MIT license")
