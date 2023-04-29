@@ -1,8 +1,10 @@
-# ApplicationBranding
+<h1 name="readme-top">ApplicationBranding</h1>
+
 ![GitHub All Releases](https://img.shields.io/github/downloads/aljawaid/ApplicationBranding/total?style=for-the-badge "GitHub All Downloads") - **_A plugin for [Kanboard](https://github.com/kanboard/kanboard "Kanboard - Kanban Project Management Software")_**
 
 This plugin will rename your installation to \'My Workspace\' and include matching device icons in the site metadata for a better user experience. A revamped login page, with a new Admin Dashboard showing global installation activity data with corrected page titles will give a more professional appeal across the site and when sharing links.
 
+<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>]</p>
 
 ## Features
 
@@ -80,6 +82,7 @@ This plugin will rename your installation to \'My Workspace\' and include matchi
 - [KanboardSupport](https://github.com/aljawaid/KanboardSupport) Compatibility:
   - Show button for direct link to detailed configuration
 
+<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
 
 ## Screenshots
 
@@ -119,6 +122,7 @@ This plugin will rename your installation to \'My Workspace\' and include matchi
 
 ![Admin Dashboard](../master/Screenshots/screenshot-admin-dashboard.png "Admin Dashboard")
 
+<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
 
 ## Usage
 
@@ -127,6 +131,7 @@ This plugin will rename your installation to \'My Workspace\' and include matchi
 - The generic My Workspace icon will show in the top header of the site
 - Browser page titles and tabs will be more consistent
 
+<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
 
 ## Installation & Compatibility
 
@@ -157,13 +162,18 @@ This plugin will rename your installation to \'My Workspace\' and include matchi
 
 </details>
 
+<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
 
 ## Authors & Contributors
 
 - [@aljawaid](https://github.com/aljawaid) - Author
 - _Contributors welcome_
 
+<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
 
 ## License
 
 - This project is distributed under the [MIT License](../master/LICENSE "Read The MIT license")
+
+<a name="readme-bottom"></a>
+<p align="right">[<a href="#readme-top">&#8593; Top</a>]</p>
