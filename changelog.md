@@ -3,8 +3,6 @@
 
 ## v3.1
 
-### What's Changed
-
 _(most recent changes are listed on top):_
 - FIX: Password Reset Styling
 - FIX: CSS `font-weight` Property
@@ -17,8 +15,6 @@ _(most recent changes are listed on top):_
 
 ## v3.0
 
-### What's Changed
-
 _(most recent changes are listed on top):_
 - NEW: Add TemplateManager Compatibility - show template counts in the Admin Dashboard
 - NEW: Show External Links Count in Admin Dashboard
@@ -27,8 +23,6 @@ _(most recent changes are listed on top):_
 
 
 ## v2.0
-
-### What's Changed
 
 _(most recent changes are listed on top):_
 - FIX: Typos
@@ -39,7 +33,7 @@ _(most recent changes are listed on top):_
 - FIX: Translation wording
 - FIX: Missing translation
 - Customizer Compatibility - Add functionality - thanks @axb21
-- Customizer Compatibility - Add hook for Custom Note feature - relates to https://github.com/creecros/Customizer/issues/141
+- Customizer Compatibility - Add hook for Custom Note feature - relates to [Customizer Issue 141](https://github.com/creecros/Customizer/issues/141)
 - FIX: HTML5 Standard for `rel`
 - Add Better Link
 - Remove Manual Edits Section from README.md
@@ -71,8 +65,6 @@ _(most recent changes are listed on top):_
 
 
 ## v1.0
-
-### What's Changed
 
 _(most recent changes are listed on top):_
 - Initial release
