@@ -758,7 +758,7 @@ details.license summary {
     text-align: center;
     border-radius: 16px;
     padding: 4px;
-    border: 2px inset #d40000;
+    border: 2px inset #D40000;
     display: inline-block;
     margin-right: 5px;
 }
@@ -902,9 +902,9 @@ p.m-edit-desc {
     padding: 0 .3em .19em .3em;
     font-size: initial;
     color: initial;
-    background-color: #cbd1d5;
+    background-color: #CBD1D5;
     border-radius: var(--border-radius-app-branding-alt);
-    font-family: Monospace;
+    font-family: monospace;
     letter-spacing: .05rem;
     font-weight: normal;
 }
