@@ -18,7 +18,7 @@
         <?= $this->asset->css('assets/css/print.min.css', true, 'print') ?>
         <?= $this->asset->customCss() ?>
 
-        <?php if (! isset($not_editable)): ?>
+        <?php if (!isset($not_editable)): ?>
             <?= $this->asset->js('assets/js/vendor.min.js') ?>
             <?= $this->asset->js('assets/js/app.min.js') ?>
         <?php endif ?>
@@ -26,7 +26,7 @@
         <?= $this->hook->asset('css', 'template:layout:css') ?>
         <?= $this->hook->asset('js', 'template:layout:js') ?>
 
-        <?php if (null !== $this->task->customizerFileModel->getByType(2)) : ?>
+        <?php if (null !== $this->task->customizerFileModel->getByType(2)): ?>
             <link rel="icon" type="image/png" href="<?= $this->url->href('CustomizerFileController', 'image', array('plugin' => 'customizer', 'file_id' => $this->task->customizerFileModel->getIdByType(2))) ?>">
             <link rel="apple-touch-icon" sizes="57x57" href="<?= $this->url->href('CustomizerFileController', 'image', array('plugin' => 'customizer', 'file_id' => $this->task->customizerFileModel->getIdByType(2))) ?>">
             <link rel="apple-touch-icon" sizes="60x60" href="<?= $this->url->href('CustomizerFileController', 'image', array('plugin' => 'customizer', 'file_id' => $this->task->customizerFileModel->getIdByType(2))) ?>">
@@ -82,17 +82,17 @@
             <link rel="mask-icon" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/safari-pinned-tab.svg" color="#5BBAD5">
         <?php endif ?>
         <?php
-            if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
-                $url = "https://";
-            else
-                $url = "http://";
+        if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
+            $url = "https://";
+        else
+            $url = "http://";
             // Append the host(domain name, ip) to the URL.
-            $url.= $_SERVER['HTTP_HOST'];
+            $url. = $_SERVER['HTTP_HOST'];
             // Append the requested resource location to the URL
-            $url.= $_SERVER['REQUEST_URI'];
+            $url. = $_SERVER['REQUEST_URI'];
         ?>
         <meta property="og:url" content="<?php echo $url ?>">
-        <?php if (null !== $this->task->customizerFileModel->getByType(2)) : ?>
+        <?php if (null !== $this->task->customizerFileModel->getByType(2)): ?>
             <?php // og:image must be min 300x300px with 'https' and absolute url to png file ?>
             <meta property="og:image" content="<?= $this->url->href('CustomizerFileController', 'image', array('plugin' => 'customizer', 'file_id' => $this->task->customizerFileModel->getIdByType(2))) ?>">
         <?php else: ?>
@@ -109,7 +109,7 @@
             $outgoingAction = $this->app->getRouterAction();
         ?>
 
-        <?php if (($incomingController == 'PasswordResetController') && ($outgoingAction =='create')): ?>
+        <?php if (($incomingController == 'PasswordResetController') && ($outgoingAction == 'create')): ?>
             <meta name="description" content="<?= t('Change your password for this kanban platform.') ?>">
             <meta property="og:description" content="<?= t('Change your password for this kanban platform.') ?>">
         <?php else: ?>
@@ -129,7 +129,7 @@
             <?php else: ?>
                 <meta property="og:title" content="<?= $this->text->e($title) ?> | <?= t('My Workspace') ?>">
             <?php endif ?>
-        <?php elseif (($incomingController == 'PasswordResetController') && ($outgoingAction =='create')): ?>
+        <?php elseif (($incomingController == 'PasswordResetController') && ($outgoingAction == 'create')): ?>
             <?php if (!empty($this->task->configModel->get('app_rename'))): ?>
                 <meta property="og:title" content="<?= t('Reset Password') ?> | <?= $this->task->configModel->get('app_rename') ?>">
             <?php else: ?>
@@ -160,7 +160,7 @@
                     | <?= t('My Workspace') ?>
                 <?php endif ?>
 
-            <?php elseif (($incomingController == 'PasswordResetController') && ($outgoingAction =='create')): ?>
+            <?php elseif (($incomingController == 'PasswordResetController') && ($outgoingAction == 'create')): ?>
                 <?php if (!empty($this->task->configModel->get('app_rename'))): ?>
                     <?= t('Reset Password') ?> | <?= $this->task->configModel->get('app_rename') ?>
                 <?php else: ?>

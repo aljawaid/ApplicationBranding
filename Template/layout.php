@@ -18,7 +18,7 @@
         <?= $this->asset->css('assets/css/print.min.css', true, 'print') ?>
         <?= $this->asset->customCss() ?>
 
-        <?php if (! isset($not_editable)): ?>
+        <?php if (!isset($not_editable)): ?>
             <?= $this->asset->js('assets/js/vendor.min.js') ?>
             <?= $this->asset->js('assets/js/app.min.js') ?>
         <?php endif ?>
@@ -54,14 +54,14 @@
         <link rel="manifest" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/site.webmanifest">
         <link rel="mask-icon" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/safari-pinned-tab.svg" color="#5BBAD5">
         <?php
-            if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
+            if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
                 $url = "https://";
             else
                 $url = "http://";
             // Append the host(domain name, ip) to the URL.
-            $url.= $_SERVER['HTTP_HOST'];
+            $url .= $_SERVER['HTTP_HOST'];
             // Append the requested resource location to the URL
-            $url.= $_SERVER['REQUEST_URI'];
+            $url .= $_SERVER['REQUEST_URI'];
         ?>
         <meta property="og:url" content="<?php echo $url ?>">
         <?php // og:image must be min 300x300px with 'https' and absolute url to png file ?>
@@ -76,7 +76,7 @@
             $outgoingAction = $this->app->getRouterAction();
         ?>
 
-        <?php if (($incomingController == 'PasswordResetController') && ($outgoingAction =='create')): ?>
+        <?php if (($incomingController == 'PasswordResetController') && ($outgoingAction == 'create')): ?>
             <meta name="description" content="<?= t('Change your password for this kanban platform.') ?>">
             <meta property="og:description" content="<?= t('Change your password for this kanban platform.') ?>">
         <?php else: ?>
@@ -96,7 +96,7 @@
             <?php else: ?>
                 <meta property="og:title" content="<?= $this->text->e($title) ?> | <?= t('My Workspace') ?>">
             <?php endif ?>
-        <?php elseif (($incomingController == 'PasswordResetController') && ($outgoingAction =='create')): ?>
+        <?php elseif (($incomingController == 'PasswordResetController') && ($outgoingAction == 'create')): ?>
             <?php if (!empty($this->task->configModel->get('app_rename'))): ?>
                 <meta property="og:title" content="<?= t('Reset Password') ?> | <?= $this->task->configModel->get('app_rename') ?>">
             <?php else: ?>
@@ -127,7 +127,7 @@
                     | <?= t('My Workspace') ?>
                 <?php endif ?>
 
-            <?php elseif (($incomingController == 'PasswordResetController') && ($outgoingAction =='create')): ?>
+            <?php elseif (($incomingController == 'PasswordResetController') && ($outgoingAction == 'create')): ?>
                 <?php if (!empty($this->task->configModel->get('app_rename'))): ?>
                     <?= t('Reset Password') ?> | <?= $this->task->configModel->get('app_rename') ?>
                 <?php else: ?>
