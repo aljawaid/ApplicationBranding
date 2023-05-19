@@ -14,13 +14,13 @@
     --pp-green-dark: #055D20;
     --pp-orange: #FF6500;
     --blue-icon-dark: #034CA6;
-    --button-blue-gradient: linear-gradient(to bottom, #7892c2 80%, #476e9e 100%);
+    --button-blue-gradient: linear-gradient(to bottom, #7892C2 80%, #476E9E 100%);
     --blue-border-gradient-match: #476E9E;
     --button-background-delete: #D05C84;
-    --link-color-primary: #36C;
+    --link-color-primary: #3366CC;
     --header-page-margin-app-branding: 5px 15px 10px 15px;
     --page-margin-app-branding: auto 15px auto 15px;
-    --title-margin-app-branding: 0px 15px 0px 15px;
+    --title-margin-app-branding: 0 15px 0 15px;
     --border-radius-app-branding: 5px;
     --border-radius-app-branding-alt: 3px;
     --panel-background-app-branding: #EEEEEE;
@@ -40,17 +40,7 @@
 .pp-dark-green { color: var(--pp-green-dark); fill: var(--pp-green-dark); }
 .pp-orange { color: var(--pp-orange); fill: var(--pp-orange); }
 
-/*
-a, details, summary, i, img, table, tr, svg, figure, button {
-    transition: var(--transition-app-metadata);
-}
-*/
-
-/*
-a:hover { color: var(--pp-red-alt-2) !important; }
-*/
-
-.display-none, .d-none { display: none !important; }
+.display-none, .d-none { display: none; }
 
 .font-weight-bold, .bold { font-weight: bold; }
 
@@ -81,7 +71,6 @@ a:hover { color: var(--pp-red-alt-2) !important; }
     margin-left: 5px;
 }
 
-
 .ws-logo {
     display: block;
     margin: 0 auto 1.5em auto;
@@ -90,7 +79,7 @@ a:hover { color: var(--pp-red-alt-2) !important; }
 
 footer.copyright {
     font-size: .8em;
-    background-color: #ffffff96;
+    background-color: #FFFFFF96;
     letter-spacing: 1px;
     padding: 3px;
     text-align: center;
@@ -121,8 +110,8 @@ section.login-logo {
     padding: 1em;
     border: 1px solid var(--pp-white);
     border-radius: var(--border-radius-app-branding);
-    background-color: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.78);
+    background-color: rgba(255, 255, 255, .8);
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, .78);
     box-sizing: content-box;
 }
 
@@ -157,11 +146,11 @@ kbd.user-remote-ip {
     display: block;
     width: fit-content;
     margin: auto;
-    padding: .6em .3em 0 0.3em;
+    padding: .6em .3em 0 .3em;
     font-size: .8em;
-    font-weight: 400;
+    font-weight: normal;
     border-radius: var(--border-radius-kbcss);
-    font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     color: initial;
     background-color: initial;
 }
@@ -248,10 +237,7 @@ input#form-username, input#form-password {
     border: 2px inset var(--pp-red-alt-2);
     height: 30px;
     display: inline-block;
-    padding-top: 0;
-    padding-bottom: 3px;
-    padding-right: 0;
-    padding-left: 5px;
+    padding: 0 0 3px 5px;
     border-radius: var(--border-radius-app-branding-alt);
     background-color: var(--pp-white);
 }
@@ -264,10 +250,7 @@ input#form-username, input#form-password {
     border: 2px inset var(--pp-red-alt-2);
     height: 30px;
     display: inline-block;
-    padding-top: 0;
-    padding-bottom: 3px;
-    padding-right: 0;
-    padding-left: 0;
+    padding: 0 0 3px 0;
     border-radius: 4px;
 }
 
@@ -275,10 +258,7 @@ input#form-username, input#form-password {
     border: 2px inset var(--pp-red-alt-2);
     height: 30px;
     display: inline-block;
-    padding-top: 0;
-    padding-bottom: 3px;
-    padding-right: 0;
-    padding-left: 0;
+    padding: 0 0 3px 0;
     border-radius: 4px;
 }
 
@@ -435,7 +415,7 @@ input#form-meta_description {
 
 .generic-desc-text, .reset-desc-text {
     box-sizing: content-box;
-    border: 2px groove #777;
+    border: 2px groove #777777;
     width: fit-content;
     padding: 2px 5px;
     background-color: #D3D3D3;
@@ -458,7 +438,7 @@ ul.icon-list li {
 ul.icon-list li .filename {
     padding: 2px 3px;
     margin: 0 3px;
-    font-family: Monospace;
+    font-family: monospace;
     font-size: 1.1em;
 }
 
@@ -674,43 +654,43 @@ ul.icon-list li .filename {
 }
 
 .back-orange {
-    background: linear-gradient(323deg, rgb(156, 110, 11) 0.00%, rgb(255, 128, 0) 98.67%);
-    -moz-background: linear-gradient(323deg, rgb(156, 110, 11) 0.00%, rgb(255, 128, 0) 98.67%);
-    -webkit-background: linear-gradient(323deg, rgb(156, 110, 11) 0.00%, rgb(255, 128, 0) 98.67%);
+    background: linear-gradient(323deg, rgb(156, 110, 11) 0%, rgb(255, 128, 0) 98.67%);
+    -moz-background: linear-gradient(323deg, rgb(156, 110, 11) 0%, rgb(255, 128, 0) 98.67%);
+    -webkit-background: linear-gradient(323deg, rgb(156, 110, 11) 0%, rgb(255, 128, 0) 98.67%);
 }
 
 .back-copper {
-    background: linear-gradient(327deg, rgb(114, 43, 54) 0.00%, rgb(238, 178, 123) 100.00%);
-    -moz-background: linear-gradient(327deg, rgb(114, 43, 54) 0.00%, rgb(238, 178, 123) 100.00%);
-    -webkit-background: linear-gradient(327deg, rgb(114, 43, 54) 0.00%, rgb(238, 178, 123) 100.00%);
+    background: linear-gradient(327deg, rgb(114, 43, 54) 0%, rgb(238, 178, 123) 100.00%);
+    -moz-background: linear-gradient(327deg, rgb(114, 43, 54) 0%, rgb(238, 178, 123) 100.00%);
+    -webkit-background: linear-gradient(327deg, rgb(114, 43, 54) 0%, rgb(238, 178, 123) 100.00%);
 }
 
 .back-grey {
-    background: linear-gradient(162deg, rgb(178, 197, 217) 0.00%, rgb(69, 92, 114) 100.00%);
-    -moz-background: linear-gradient(162deg, rgb(178, 197, 217) 0.00%, rgb(69, 92, 114) 100.00%);
-    -webkit-background: linear-gradient(162deg, rgb(178, 197, 217) 0.00%, rgb(69, 92, 114) 100.00%);
+    background: linear-gradient(162deg, rgb(178, 197, 217) 0%, rgb(69, 92, 114) 100.00%);
+    -moz-background: linear-gradient(162deg, rgb(178, 197, 217) 0%, rgb(69, 92, 114) 100.00%);
+    -webkit-background: linear-gradient(162deg, rgb(178, 197, 217) 0%, rgb(69, 92, 114) 100.00%);
 }
 
 .back-red {
-    background: linear-gradient(307deg, rgb(84, 0, 15) 0.00%, rgb(131, 38, 44) 43.73%, rgb(207, 101, 91) 100.00%);
-    -moz-background: linear-gradient(307deg, rgb(84, 0, 15) 0.00%, rgb(131, 38, 44) 43.73%, rgb(207, 101, 91) 100.00%);
-    -webkit-background: linear-gradient(307deg, rgb(84, 0, 15) 0.00%, rgb(131, 38, 44) 43.73%, rgb(207, 101, 91) 100.00%);
+    background: linear-gradient(307deg, rgb(84, 0, 15) 0%, rgb(131, 38, 44) 43.73%, rgb(207, 101, 91) 100.00%);
+    -moz-background: linear-gradient(307deg, rgb(84, 0, 15) 0%, rgb(131, 38, 44) 43.73%, rgb(207, 101, 91) 100.00%);
+    -webkit-background: linear-gradient(307deg, rgb(84, 0, 15) 0%, rgb(131, 38, 44) 43.73%, rgb(207, 101, 91) 100.00%);
 }
 
 .back-green {
-    background: linear-gradient(156deg, rgb(210, 255, 31) 0.00%, rgb(51, 115, 16) 81.57%);
-    -moz-background: linear-gradient(156deg, rgb(210, 255, 31) 0.00%, rgb(51, 115, 16) 81.57%);
-    -webkit-background: linear-gradient(156deg, rgb(210, 255, 31) 0.00%, rgb(51, 115, 16) 81.57%);
+    background: linear-gradient(156deg, rgb(210, 255, 31) 0%, rgb(51, 115, 16) 81.57%);
+    -moz-background: linear-gradient(156deg, rgb(210, 255, 31) 0%, rgb(51, 115, 16) 81.57%);
+    -webkit-background: linear-gradient(156deg, rgb(210, 255, 31) 0%, rgb(51, 115, 16) 81.57%);
 }
 
 .back-purple {
-    background: linear-gradient(156deg, rgb(227, 138, 237) 0.00%, rgb(90, 16, 115) 81.57%);
-    -moz-background: linear-gradient(156deg, rgb(227, 138, 237) 0.00%, rgb(90, 16, 115) 81.57%);
-    -webkit-background: linear-gradient(156deg, rgb(227, 138, 237) 0.00%, rgb(90, 16, 115) 81.57%);
+    background: linear-gradient(156deg, rgb(227, 138, 237) 0%, rgb(90, 16, 115) 81.57%);
+    -moz-background: linear-gradient(156deg, rgb(227, 138, 237) 0%, rgb(90, 16, 115) 81.57%);
+    -webkit-background: linear-gradient(156deg, rgb(227, 138, 237) 0%, rgb(90, 16, 115) 81.57%);
 }
 
 .back-deep-green {
-    background: linear-gradient(202deg, rgb(13, 179, 136) 0.00%, rgb(0, 72, 95) 100.00%);
+    background: linear-gradient(202deg, rgb(13, 179, 136) 0%, rgb(0, 72, 95) 100.00%);
 }
 
 details.license summary {
@@ -845,7 +825,7 @@ input#form-code {
 }
 
 input#form-code:focus {
-    box-shadow: 0px 0px 8px rgb(253, 6, 6);
+    box-shadow: 0 0 8px rgb(253, 6, 6);
 }
 
 .center-login {
@@ -919,13 +899,13 @@ p.m-edit-desc {
 }
 
 .m-edit-codeblock kbd {
-    padding: 0 0.3em 0.19em 0.3em;
+    padding: 0 .3em .19em .3em;
     font-size: initial;
     color: initial;
     background-color: #cbd1d5;
     border-radius: var(--border-radius-app-branding-alt);
     font-family: Monospace;
-    letter-spacing: 0.05rem;
+    letter-spacing: .05rem;
     font-weight: normal;
 }
 
@@ -938,8 +918,8 @@ p.m-edit-desc {
     border-radius: var(--border-radius-app-branding);
     color: initial;
     display: block;
-    font-family: Monospace;
-    letter-spacing: 0.06rem;
+    font-family: monospace;
+    letter-spacing: .06rem;
     margin-top: 5px;
     margin-bottom: 5px;
 }
