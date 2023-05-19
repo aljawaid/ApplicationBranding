@@ -461,7 +461,7 @@
         <details class="license">
             <summary><?= t('Application License') ?></summary>
             <br>
-            <?= nl2br(file_get_contents(ROOT_DIR.DIRECTORY_SEPARATOR . 'LICENSE')) ?>
+            <?= nl2br(file_get_contents(ROOT_DIR . DIRECTORY_SEPARATOR . 'LICENSE')) ?>
         </details>
     </div>
 </div>
