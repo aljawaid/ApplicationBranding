@@ -53,18 +53,15 @@
         <meta name="theme-color" content="#FFFFFF">
         <link rel="manifest" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/site.webmanifest">
         <link rel="mask-icon" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/safari-pinned-tab.svg" color="#5BBAD5">
-        <?php
-            if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
-                $url = "https://";
-            else
-                $url = "http://";
-            // Append the host(domain name, ip) to the URL.
-            $url .= $_SERVER['HTTP_HOST'];
-            // Append the requested resource location to the URL
-            $url .= $_SERVER['REQUEST_URI'];
-        ?>
-        <meta property="og:url" content="<?php echo $url ?>">
-        <?php // og:image must be min 300x300px with 'https' and absolute url to png file ?>
+
+        <?php if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on'): ?>
+            <?php $url = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>
+        <?php else: ?>
+            <?php $url = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>
+        <?php endif ?>
+
+        <meta property="og:url" content="<?= $url ?>">
+        <!-- og:image must be min 300x300px with 'https' and absolute url to png file -->
         <meta property="og:image" content="<?= $this->url->base();$this->url->dir() ?>plugins/ApplicationBranding/Assets/img/workspace-icon-500x500.png">
         <meta property="og:type" content="website">
         <meta property="og:locale" content="<?= $this->app->jsLang() ?>">

@@ -81,19 +81,16 @@
             <link rel="manifest" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/site.webmanifest">
             <link rel="mask-icon" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/safari-pinned-tab.svg" color="#5BBAD5">
         <?php endif ?>
-        <?php
-        if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
-            $url = "https://";
-        else
-            $url = "http://";
-            // Append the host(domain name, ip) to the URL.
-            $url. = $_SERVER['HTTP_HOST'];
-            // Append the requested resource location to the URL
-            $url. = $_SERVER['REQUEST_URI'];
-        ?>
-        <meta property="og:url" content="<?php echo $url ?>">
+
+        <?php if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on'): ?>
+            <?php $url = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>
+        <?php else: ?>
+            <?php $url = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>
+        <?php endif ?>
+
+        <meta property="og:url" content="<?= $url ?>">
         <?php if (null !== $this->task->customizerFileModel->getByType(2)): ?>
-            <?php // og:image must be min 300x300px with 'https' and absolute url to png file ?>
+            <!-- og:image must be min 300x300px with 'https' and absolute url to png file -->
             <meta property="og:image" content="<?= $this->url->href('CustomizerFileController', 'image', array('plugin' => 'customizer', 'file_id' => $this->task->customizerFileModel->getIdByType(2))) ?>">
         <?php else: ?>
             <?php // og:image must be min 300x300px with 'https' and absolute url to png file ?>
