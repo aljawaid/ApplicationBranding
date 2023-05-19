@@ -29,7 +29,7 @@
                     </span>
                     <div class="form-actions">
                         <button type="submit" class="btn verify-btn"><?= t('Verify') ?> &#10004;</button>
-                        <?= $this->url->link(t('Cancel') .' &#10008;', 'AuthController', 'logout', array(), false, 'btn back-btn logout-button', t('Logout')) ?>
+                        <?= $this->url->link(t('Cancel') . ' &#10008;', 'AuthController', 'logout', array(), false, 'btn back-btn logout-button', t('Logout')) ?>
                     </div>
                 </form>
                 <?php if ($_SERVER["REMOTE_ADDR"] == '127.0.0.1'): ?>
