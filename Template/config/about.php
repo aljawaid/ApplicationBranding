@@ -36,8 +36,8 @@
     $userLanguages = $this->task->db->table('users')->findAllByColumn('language');
     $userDifferentLanguages = array_unique($userLanguages);
     $userDifferentLanguagesCount = count($userDifferentLanguages);
-    $allManagers= $this->task->db->table('users')->eq('role', 'app-manager')->findAll();
-    $allMembers= $this->task->db->table('users')->eq('role', 'app-user')->findAll();
+    $allManagers = $this->task->db->table('users')->eq('role', 'app-manager')->findAll();
+    $allMembers = $this->task->db->table('users')->eq('role', 'app-user')->findAll();
     $userCount = $this->task->db->table('users')->count();
     $activeUserCount = $this->task->db->table('users')->eq('is_active', 1)->findAll();
     $allGroups = $this->task->groupModel->getAll();
@@ -153,7 +153,7 @@
                 <div class="box-icon"><i class="fa fa-fw fa-link" aria-hidden="true"></i></div>
                 <div class="box-title"><?= t('Link Labels') ?></div>
                 <div class="box-data">
-                    <span class="data-value bold" title="<?= t('Link Label Pairs') ?>"><?= $linkLabelsCount/2 ?></span>
+                    <span class="data-value bold" title="<?= t('Link Label Pairs') ?>"><?= $linkLabelsCount / 2 ?></span>
                     <span class="data-value data-totals" title="<?= t('Total Links') ?>"><?= $linkLabelsCount ?></span>
                 </div>
             </div>
@@ -264,7 +264,7 @@
                     </svg>
                 </div>
                 <div class="box-title"><?= t('User Timezones') ?></div>
-                <div class="box-data"><span class="data-value bold"><?= $userDifferentTimezonesCount-1 ?></span></div>
+                <div class="box-data"><span class="data-value bold"><?= $userDifferentTimezonesCount - 1 ?></span></div>
             </div>
             <div class="box-wrapper back-red">
                 <div class="box-icon">
@@ -274,7 +274,7 @@
                     </svg>
                 </div>
                 <div class="box-title"><?= t('User Languages') ?></div>
-                <div class="box-data"><span class="data-value bold"><?= $userDifferentLanguagesCount-1 ?></span></div>
+                <div class="box-data"><span class="data-value bold"><?= $userDifferentLanguagesCount - 1 ?></span></div>
             </div>
             <div class="box-wrapper back-red">
                 <div class="box-icon">
@@ -348,7 +348,7 @@
             </li>
             <li class="config-details-item">
                 <span class="config-details-name"><abbr title="<?= t('Server Operating System') ?>"><?= t('Server OS') ?></abbr></span>
-                <span class="config-details-value"><?= @php_uname('s').' '.@php_uname('r') ?></span>
+                <span class="config-details-value"><?= @php_uname('s') . ' ' . @php_uname('r') ?></span>
             </li>
             <li class="config-details-item">
                 <span class="config-details-name"><?= t('Database Driver') ?></span>
@@ -368,7 +368,7 @@
                 <?= $this->url->link('
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-journal-code" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M8.646 5.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 8 8.646 6.354a.5.5 0 0 1 0-.708zm-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 8l1.647-1.646a.5.5 0 0 0 0-.708z"/><path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/><path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
-                    </svg>'. t('Detailed Configuration'), 'TechnicalSupportController', 'show', ['plugin' => 'KanboardSupport'], false, 'btn kb-support-btn', t('View Technical Information')) ?>
+                    </svg>' . t('Detailed Configuration'), 'TechnicalSupportController', 'show', ['plugin' => 'KanboardSupport'], false, 'btn kb-support-btn', t('View Technical Information')) ?>
             </div>
         <?php endif ?>
     </div>
@@ -461,7 +461,7 @@
         <details class="license">
             <summary><?= t('Application License') ?></summary>
             <br>
-            <?= nl2br(file_get_contents(ROOT_DIR.DIRECTORY_SEPARATOR.'LICENSE')) ?>
+            <?= nl2br(file_get_contents(ROOT_DIR.DIRECTORY_SEPARATOR . 'LICENSE')) ?>
         </details>
     </div>
 </div>
