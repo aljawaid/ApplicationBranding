@@ -4,7 +4,7 @@ namespace Kanboard\Plugin\ApplicationBranding;
 
 use Kanboard\Core\Plugin\Base;
 use Kanboard\Core\Translator;
-use Kanboard\Helper;  // Add core Helper for using forms etc. inside external templates
+use Kanboard\Helper;
 
 class Plugin extends Base
 {
