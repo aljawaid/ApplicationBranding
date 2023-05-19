@@ -13,13 +13,13 @@ class ApplicationBrandingHelper extends Base
 
         if (substr(APP_VERSION, 0, 1) === 'v') {
             $version = substr(APP_VERSION, 1);
-        } else if (ctype_digit(substr(APP_VERSION, 0, 1))) {
+        } elseif (ctype_digit(substr(APP_VERSION, 0, 1))) {
             $version = APP_VERSION;
         }
 
         $url = sprintf(DOCUMENTATION_URL_PATTERN, $version, $file);
         return sprintf('
-            <a href="%s" class="channels-link" title="'. t('Opens in a new window') .'" rel="noopener noreferrer" target="_blank">
+            <a href="%s" class="channels-link" title="' . t('Opens in a new window') . '" rel="noopener noreferrer" target="_blank">
                 <div class="icon-wrapper wrapper-docs">
                     <svg version="1.0" width="20px" height="20px" class="kanboard-icon" fill="currentColor" viewBox="0 0 144 144" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
                         <g transform="translate(0.000000,144.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
