@@ -1,5 +1,35 @@
 # Changelog
 
+## v3.2
+
+_(most recent changes are listed on top):_
+- FIX: Code Syntax - `layout.php` - rewrite codeblock
+- FIX: Code Syntax - `check.php`
+- FIX: Code Syntax - `layout.php`
+- FIX: Code Syntax - `title.php`
+- FIX: Code Syntax - `metadata.php`
+- FIX: Code Syntax - `branding-settings.php`
+- FIX: Code Syntax - `about.php`
+- FIX: Code Syntax - `about.php`
+- FIX: Code Syntax - `index_customizer.php`
+- FIX: Code Syntax - `index.php`
+- FIX: Code Syntax - `Plugin.php`
+- FIX: Code Syntax - `ApplicationBrandingController.php`
+- FIX: Code Syntax - `ApplicationBrandingController.php`
+- FIX: Code Syntax - README.md
+- FIX: CSS Code Syntax
+- NEW: Add Code Scanning Tests
+- FIX: Markdown Syntax
+- FIX: README Navigation Links for GitHub
+- FIX: Code Syntax
+- NEW: Add Footer Badges to README.md
+- NEW: Add Section Navigation Links to README.md
+- NEW: Add Badges to README.md
+- NEW: Add README Page Navigation Links
+- FIX: Content Flow for README.md
+- FIX: Content Flow for INSTALL.md
+- Create INSTALL.md
+
 
 ## v3.1
 
