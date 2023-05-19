@@ -43,7 +43,7 @@ class ApplicationBrandingController extends \Kanboard\Controller\PluginControlle
      */
     public function save()
     {
-        $values =  $this->request->getValues();
+        $values = $this->request->getValues();
         $redirect = $this->request->getStringParam('redirect', 'metadata');
 
         if ($this->configModel->save($values)) {
