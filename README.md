@@ -39,8 +39,8 @@ This plugin will rename your installation to \'My Workspace\' and include matchi
 
 **Rename Application**
 - Rename your installation of Kanboard
- - Choose your own site name or use the default `My Workspace`
- - Browser bookmarks and browser tabs now include the site name (overriding the default Kanboard behaviour)
+  - Choose your own site name or use the default `My Workspace`
+  - Browser bookmarks and browser tabs now include the site name (overriding the default Kanboard behaviour)
 - [Customizer](https://github.com/creecros/Customizer) Compatibility:
   - Browser bookmarks and browser tabs now include the site name (overriding the default Kanboard behaviour)
 
