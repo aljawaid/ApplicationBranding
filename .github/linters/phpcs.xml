@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<ruleset name="super-linter">
+    <description>The default coding standard for usage with GitHub Super-Linter. Extended.</description>
+    <arg name="colors"/>
+    <arg name="encoding" value="utf-8"/>
+    <arg value="sp"/>
+    <config name="ignore_warnings_on_exit" value="1"/>
+    <config name="report_width" value="auto"/>
+    <rule ref="PSR12" />
+    <rule ref="Generic.Files.LineLength.MaxExceeded">
+        <type>warning</type>
+        <severity>3</severity>
+        <properties>
+            <property name="ignoreComments" value="true" />
+        </properties>
+    </rule>
+    <rule ref="Generic.Files.LineLength.TooLong">
+        <type>warning</type>
+        <severity>3</severity>
+        <properties>
+            <property name="ignoreComments" value="true" />
+        </properties>
+    </rule>
+    <rule ref="Generic.Formatting.SpaceAfterCast">
+        <properties>
+            <property name="ignoreNewlines" value="true" />
+        </properties>
+    </rule>
+    <rule ref="Generic.Formatting.SpaceAfterNot">
+        <type>warning</type>
+        <properties>
+            <property name="spacing" value="0" />
+            <property name="ignoreNewlines" value="true" />
+        </properties>
+    </rule>
+    <rule ref="Generic.WhiteSpace.ArbitraryParenthesesSpacing">
+        <properties>
+            <property name="ignoreNewlines" value="true" />
+        </properties>
+    </rule>
+    <rule ref="Squiz.WhiteSpace.OperatorSpacing">
+        <properties>
+            <property name="ignoreNewlines" value="true" />
+        </properties>
+    </rule>
+    <rule ref="Squiz.WhiteSpace.MemberVarSpacing">
+        <properties>
+            <property name="spacing" value="2" />
+            <property name="spacingBeforeFirst" value="0" />
+        </properties>
+    </rule>
+    <rule ref="Squiz.Functions.FunctionDeclaration">
+        <properties>
+            <property name="ignoreComments" value="true" />
+        </properties>
+    </rule>
+    <rule ref="Squiz.ControlStructures.ControlSignature">
+        <properties>
+            <property name="requiredSpacesBeforeColon" value="0" />
+        </properties>
+    </rule>
+    <rule ref="PSR12.ControlStructures.ControlStructureSpacing">
+        <type>warning</type>
+    </rule>
+</ruleset>
