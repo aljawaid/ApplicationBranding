@@ -151,23 +151,22 @@
           data-js-date-format="<?= $this->app->getJsDateFormat() ?>"
           data-js-time-format="<?= $this->app->getJsTimeFormat() ?>"
     >
-
-    <?php if (isset($no_layout) && $no_layout): ?>
-        <?= $this->app->flashMessage() ?>
-        <?= $content_for_layout ?>
-    <?php else: ?>
-        <?= $this->hook->render('template:layout:top') ?>
-        <?= $this->render('header', array(
-            'title' => $title,
-            'description' => isset($description) ? $description : '',
-            'board_selector' => isset($board_selector) ? $board_selector : array(),
-            'project' => isset($project) ? $project : array(),
-        )) ?>
-        <section class="page">
+        <?php if (isset($no_layout) && $no_layout): ?>
             <?= $this->app->flashMessage() ?>
             <?= $content_for_layout ?>
-        </section>
-        <?= $this->hook->render('template:layout:bottom') ?>
-    <?php endif ?>
+        <?php else: ?>
+            <?= $this->hook->render('template:layout:top') ?>
+            <?= $this->render('header', array(
+                'title' => $title,
+                'description' => isset($description) ? $description : '',
+                'board_selector' => isset($board_selector) ? $board_selector : array(),
+                'project' => isset($project) ? $project : array(),
+            )) ?>
+            <section class="page">
+                <?= $this->app->flashMessage() ?>
+                <?= $content_for_layout ?>
+            </section>
+            <?= $this->hook->render('template:layout:bottom') ?>
+        <?php endif ?>
     </body>
 </html>
