@@ -1,5 +1,12 @@
 # Changelog
 
+## v3.3
+
+_(most recent changes are listed on top):_
+- FIX: Cleanup Template Code
+- FIX: Kanboard Theme Support - for Kanboard v2.29+
+
+
 ## v3.2
 
 _(most recent changes are listed on top):_
