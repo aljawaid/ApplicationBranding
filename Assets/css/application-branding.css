@@ -745,8 +745,13 @@ details.license summary {
     font-weight: 600;
 }
 
+.channels-list {
+    display: flex;
+    text-align: center;
+}
+
 .channels-wrapper {
-    display: inline-block;
+    flex: auto;
     margin: 5px 15px 5px 5px;
 }
 
