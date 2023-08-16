@@ -528,7 +528,7 @@ ul.icon-list li .filename {
     opacity: .6;
 }
 
-.box-icon svg.kanban-public-icon {
+.box-icon span.kanban-public-icon-white {
     width: 32px;
     height: 32px;
     bottom: -3px;
