@@ -262,12 +262,12 @@ input#form-username, input#form-password {
     border-radius: 4px;
 }
 
-textarea#form-login_message {
+textarea#form-login_message, textarea#form-app_branding_custom_head_css {
     width: 100%;
     height: 50%;
 }
 
-textarea.login-message-textarea, textarea.meta-desc-textarea {
+textarea.login-message-textarea, textarea.meta-desc-textarea, textarea.custom-head-css {
     background: #D8E2F9;
 }
 
@@ -275,7 +275,7 @@ textarea.login-message-textarea, textarea.meta-desc-textarea {
     color: #4D4D4D !important;
 }
 
-textarea.login-message-textarea::placeholder, textarea.login-message-textarea::-webkit-input-placeholder, textarea.meta-desc-textarea::placeholder, textarea.meta-desc-textarea::-webkit-input-placeholder {
+textarea.login-message-textarea::placeholder, textarea.login-message-textarea::-webkit-input-placeholder, textarea.meta-desc-textarea::placeholder, textarea.meta-desc-textarea::-webkit-input-placeholder, textarea.custom-head-css::placeholder, textarea.custom-head-css::-webkit-input-placeholder {
     color: #4D4D4D !important;
 }
 
