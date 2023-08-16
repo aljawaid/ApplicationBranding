@@ -4,11 +4,23 @@ namespace Kanboard\Plugin\ApplicationBranding\Helper;
 
 use Kanboard\Core\Base;
 
+/**
+ * ApplicationBranding Helper
+ *
+ * @package  Helper
+ * @author   aljawaid
+ */
 class ApplicationBrandingHelper extends Base
 {
+    /**
+     * Get Help Docs
+     *
+     * @see     about.php
+     * @access  public
+     * @return  string
+     */
     public function getDocs($label, $file)
     {
-        // GET HELP DOCS
         $version = 'latest';
 
         if (substr(APP_VERSION, 0, 1) === 'v') {
