@@ -9,7 +9,7 @@
         <div class="">
             <div class="app-rename">
                 <?= $this->form->label(t('Site Name'), 'app_rename', array('class=""')) ?>
-                <?= $this->form->text('app_rename', $values, $errors, array('placeholder="My Workspace"')) ?>
+                <?= $this->form->text('app_rename', $values, $errors, array('placeholder="My Workspace"'), 'site-name-text') ?>
                 <p class="form-help"><?= t('By default, this plugin will rename your application to "My Workspace" once installed') ?></p>
             </div>
         </div>
@@ -28,7 +28,7 @@
             <legend><?= t('Login Title') ?></legend>
             <div class="visitor-warning">
                 <?= $this->form->label(t('Visitor Warning'), 'login_warning', array('class=""')) ?>
-                <?= $this->form->text('login_warning', $values, $errors, array('placeholder="' . t('AUTHORISED USERS ONLY') . '"')) ?>
+                <?= $this->form->text('login_warning', $values, $errors, array('placeholder="' . t('AUTHORISED USERS ONLY') . '"'), 'login-warning-text') ?>
                 <p class="form-help"><?= t('Enter a single line title or leave blank for the default title') ?></p>
             </div>
         </fieldset>
@@ -44,7 +44,7 @@
             <legend><?= t('Copyright') ?></legend>
             <div class="app-copyright">
                 <?= $this->form->label(t('From Year'), 'copyright_from', array('class=""')) ?>
-                <?= $this->form->number('copyright_from', $values, $errors, array('placeholder="2014"')) ?>
+                <?= $this->form->number('copyright_from', $values, $errors, array('placeholder="2014"'), 'copyright-from') ?>
                 <p class="form-help"><?= t('Leave blank to show only the current year') ?></p>
             </div>
         </fieldset>
@@ -74,10 +74,10 @@
             <?= e('For total application rebranding, a few manual changes are required to be made to core files. Follow the suggestions in the %s section to learn more.', $this->url->link(t('Manual Edits'), 'ApplicationBrandingController', 'manualEdits', ['plugin' => 'ApplicationBranding'], false, 'application-link', t('Visit page'), false, '')) ?>
         </p>
     </fieldset>
-    <fieldset class="">
+    <fieldset class="site-metadata-settings">
         <legend class=""><?= t('Custom CSS') ?></legend>
         <?= $this->form->label(t('Head Stylesheet'), 'app_branding_custom_head_css', array('class=""')) ?>
-        <?= $this->form->textarea('app_branding_custom_head_css', $values, $errors, array('placeholder="e.g. a {color: red; }"'), 'custom-head-css') ?>
+        <?= $this->form->textarea('app_branding_custom_head_css', $values, $errors, array('placeholder=" a {color: red; }"'), 'custom-head-css') ?>
         <p class="form-help"><?= e('The default custom CSS at the top of this page loads all styles at the top of the %s tag. The custom styles in this section will be inserted at the bottom of the %s tag and after all plugin styles.', '<i>head</i>', '<i>head</i>') ?></p>
     </fieldset>
 </fieldset>
