@@ -275,7 +275,7 @@ textarea.login-message-textarea, textarea.meta-desc-textarea, textarea.custom-he
     color: #4D4D4D !important;
 }
 
-textarea.login-message-textarea::placeholder, textarea.login-message-textarea::-webkit-input-placeholder, textarea.meta-desc-textarea::placeholder, textarea.meta-desc-textarea::-webkit-input-placeholder, textarea.custom-head-css::placeholder, textarea.custom-head-css::-webkit-input-placeholder, input.login-warning-text::placeholder, input.login-warning-text::-webkit-input-placeholder, input.copyright-from::placeholder, input.copyright-from::-webkit-input-placeholder, input.site-name-text::placeholder, input.site-name-text::-webkit-input-placeholder {
+textarea.login-message-textarea::placeholder, textarea.login-message-textarea::-webkit-input-placeholder, textarea.meta-desc-textarea::placeholder, textarea.meta-desc-textarea::-webkit-input-placeholder, textarea.custom-head-css::placeholder, textarea.custom-head-css::-webkit-input-placeholder, input.login-warning-text::placeholder, input.login-warning-text::-webkit-input-placeholder, input.copyright-from::placeholder, input.copyright-from::-webkit-input-placeholder, input.site-name-text::placeholder, input.site-name-text::-webkit-input-placeholder, input.meta-desc-text::placeholder, input.meta-desc-text::-webkit-input-placeholder {
     color: #4D4D4D !important;
 }
 
@@ -901,6 +901,7 @@ p.m-edit-desc {
 
 .m-edit-codeblock a {
     font-weight: 600;
+    text-decoration: none;
 }
 
 .m-edit-codeblock kbd {
