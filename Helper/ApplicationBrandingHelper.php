@@ -42,4 +42,20 @@ class ApplicationBrandingHelper extends Base
                 </div> %s
             </a>', $url, $label);
     }
+
+    /**
+     * Get Custom CSS
+     *
+     * Loads styles inline at the bottom of the 'head' section
+     * @access      public
+     * @return      string
+     */
+    public function customHeadCss()
+    {
+        if ($this->configModel->get('app_branding_custom_head_css')) {
+            return '<style>' . $this->configModel->get('app_branding_custom_head_css') . '</style>';
+        }
+
+        return '';
+    }
 }
