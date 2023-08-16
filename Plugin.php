@@ -55,7 +55,7 @@ class Plugin extends Base
         // Views - Template Hook
         //  - Override name should start lowercase e.g. pluginNameExampleCamelCase
         $this->template->hook->attach('template:config:application', 'applicationBranding:config/branding-settings');
-        $this->template->hook->attach('template:layout:bottom', 'applicationBranding:config/layout_hook');
+        $this->template->hook->attach('template:layout:head', 'applicationBranding:config/layout_head_hook');
 
         // Views - Add Menu Item - Template Hook
         //  - Override name should start lowercase e.g. pluginNameExampleCamelCase
