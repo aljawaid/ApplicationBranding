@@ -53,6 +53,12 @@
         </div>
     </fieldset>
     <fieldset class="site-metadata-settings">
+        <legend class=""><?= t('Custom CSS') ?></legend>
+        <?= $this->form->label(t('Head Stylesheet'), 'app_branding_custom_head_css', array('class=""')) ?>
+        <?= $this->form->textarea('app_branding_custom_head_css', $values, $errors, array('placeholder=" a {color: red; }"'), 'custom-head-css') ?>
+        <p class="form-help"><?= e('The default custom CSS at the top of this page loads all styles at the top of the %s tag. The custom styles in this section will be inserted at the bottom of the %s tag and after all plugin styles.', '<i>head</i>', '<i>head</i>') ?></p>
+    </fieldset>
+    <fieldset class="site-metadata-settings">
         <legend class=""><?= t('Site Metadata') ?></legend>
         <p class="">
             <span class="section-desc">
@@ -73,11 +79,5 @@
             </span>
             <?= e('For total application rebranding, a few manual changes are required to be made to core files. Follow the suggestions in the %s section to learn more.', $this->url->link(t('Manual Edits'), 'ApplicationBrandingController', 'manualEdits', ['plugin' => 'ApplicationBranding'], false, 'application-link', t('Visit page'), false, '')) ?>
         </p>
-    </fieldset>
-    <fieldset class="site-metadata-settings">
-        <legend class=""><?= t('Custom CSS') ?></legend>
-        <?= $this->form->label(t('Head Stylesheet'), 'app_branding_custom_head_css', array('class=""')) ?>
-        <?= $this->form->textarea('app_branding_custom_head_css', $values, $errors, array('placeholder=" a {color: red; }"'), 'custom-head-css') ?>
-        <p class="form-help"><?= e('The default custom CSS at the top of this page loads all styles at the top of the %s tag. The custom styles in this section will be inserted at the bottom of the %s tag and after all plugin styles.', '<i>head</i>', '<i>head</i>') ?></p>
     </fieldset>
 </fieldset>
