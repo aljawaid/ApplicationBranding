@@ -112,7 +112,7 @@ This plugin will rename your installation to \'My Workspace\' and include matchi
   - Show button for direct link to detailed configuration
 
 **Custom CSS**
-- Add custom styles which load in addition to and after the default custom styles 
+- Add custom styles which load in addition to and after the default custom styles
 - Head Stylesheet is loaded after all plugins' styles
 
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#features">&#8592; Previous</a>] [<a href="#usage">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
