@@ -46,6 +46,7 @@ class Plugin extends Base
 
         // CSS - Asset Hook
         $this->hook->on('template:layout:css', array('template' => 'plugins/ApplicationBranding/Assets/css/application-branding.css'));
+        $this->hook->on('template:layout:css', array('template' => 'plugins/ApplicationBranding/Assets/css/application-branding-icons.css'));
 
         // JS - Asset Hook
         $this->hook->on('template:layout:js', array('template' => 'plugins/ApplicationBranding/Assets/js/application-branding.js'));
