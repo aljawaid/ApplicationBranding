@@ -59,11 +59,12 @@
 }
 
 .app-branding-settings h3 {
-    margin-top: 0;
+    margin-top: 5px;
 }
 
 .app-branding-settings h3 > img {
-    vertical-align: bottom;
+    vertical-align: middle;
+    margin-top: -5px;
 }
 
 .app-rename .form-help {
