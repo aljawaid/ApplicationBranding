@@ -124,6 +124,9 @@ return array(
     'Visit page' => '',
     'Saves any changes made on this page' => '',
     'Save Settings' => '',
+    'Custom CSS' => '',
+    'Head Stylesheet' => '',
+    'The default custom CSS at the top of this page loads all styles at the top of the %s tag. The custom styles in this section will be inserted at the bottom of the %s tag and after all plugin styles.' => '',
     'Manual Edits' => '',
     'For total application rebranding, a few manual changes are required to be made to core files. Follow the suggestions in the %s section to learn more.' => '',
     //
