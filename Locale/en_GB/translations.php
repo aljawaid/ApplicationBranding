@@ -107,12 +107,10 @@ return array(
     //'Visitor Warning' => '',
     //'Enter a single line title or leave blank for the default title' => '',
     //'Login Message' => '',
-    //'Use this platform to manage your productivity. Work with tasks inside project boards to track comments, files and activities.' => '',
     //'This message will appear within the form above the username or leave blank for the default message' => '',
     //'Copyright' => '',
     //'From Year' => '',
     //'Leave blank to show only the current year' => '',
-    //'Site Metadata' => '',
     //'The site description and common device icons are shown in the %s section.' => '',
     //'Visit page' => '',
     //'Saves any changes made on this page' => '',
@@ -171,7 +169,6 @@ return array(
     //
     //'A link to change your password will be sent by email to the username registered in the system' => '',
     //'Your profile must have a valid email address' => '',
-    //'Enter the text below' => '',
     //'Back to Login' => '',
     //'Your IP:' => '',
     //
