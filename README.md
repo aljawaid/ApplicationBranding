@@ -155,6 +155,10 @@ This plugin will rename your installation to \'My Workspace\' and include matchi
 
 ![Admin Dashboard](../master/Screenshots/screenshot-admin-dashboard.png "Admin Dashboard")
 
+**About - Admin Dashboard with TemplateManager**  
+
+![Admin Dashboard with TemplateManager](../master/Screenshots/screenshot-admin-dashboard-icons.png "Admin Dashboard")
+
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#features">&#8592; Previous</a>] [<a href="#installation--compatibility">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Usage
