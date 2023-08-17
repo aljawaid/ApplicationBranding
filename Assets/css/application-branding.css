@@ -543,11 +543,11 @@ ul.icon-list li .filename {
     left: 3px;
 }
 
-.box-icon svg.project_tags {
+.box-icon span.project-tags-icon-white {
     width: 34px;
     height: 34px;
     left: 2px;
-    bottom: -4px;
+    bottom: -6px;
 }
 
 .box-icon .fa-comments-o {
