@@ -535,7 +535,7 @@ ul.icon-list li .filename {
     left: 3px;
 }
 
-.box-icon svg.aa-icon-faded {
+.box-icon span.aa-icon-faded {
     opacity: .6;
     vertical-align: middle;
     width: 34px;
