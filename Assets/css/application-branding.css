@@ -596,7 +596,7 @@ ul.icon-list li .filename {
     left: 2px;
 }
 
-.box-icon .comment-templates-icon {
+.box-icon span.comment-templates-icon-white {
     width: 32px;
     height: 32px;
     top: 3px;
