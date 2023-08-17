@@ -79,7 +79,9 @@
                 <div class="box-data"><span class="data-value bold"><?= count($allPublicProjects) ?></span></div>
             </div>
             <div class="box-wrapper back-copper">
-                <div class="box-icon"><i class="fa fa-fw fa-folder-open" aria-hidden="true"></i></div>
+                <div class="box-icon">
+                    <i class="fa fa-fw fa-folder-open" aria-hidden="true"></i>
+                </div>
                 <div class="box-title"><?= t('Categories') ?></div>
                 <div class="box-data"><span class="data-value bold"><?= $allCategories ?></span></div>
             </div>
@@ -107,7 +109,9 @@
                 <div class="box-data"><span class="data-value bold"><?= $installedPluginsCount ?></span></div>
             </div>
             <div class="box-wrapper back-orange">
-                <div class="box-icon"><i class="fa fa-fw fa-sticky-note" aria-hidden="true"></i></div>
+                <div class="box-icon">
+                    <i class="fa fa-fw fa-sticky-note" aria-hidden="true"></i>
+                </div>
                 <div class="box-title"><?= t('Tasks') ?></div>
                 <div class="box-data">
                     <span class="data-value data-open" title="<?= t('Open Tasks') ?>"><?= count($allTasksOpen) ?></span>
@@ -116,12 +120,16 @@
                 </div>
             </div>
             <div class="box-wrapper back-orange">
-                <div class="box-icon"><i class="fa fa-fw fa-comments-o" aria-hidden="true"></i></div>
+                <div class="box-icon">
+                    <i class="fa fa-fw fa-comments-o" aria-hidden="true"></i>
+                </div>
                 <div class="box-title"><?= t('Comments') ?></div>
                 <div class="box-data"><span class="data-value bold"><?= $allComments ?></span></div>
             </div>
             <div class="box-wrapper back-orange">
-                <div class="box-icon"><i class="fa fa-fw fa-file" aria-hidden="true"></i></div>
+                <div class="box-icon">
+                    <i class="fa fa-fw fa-file" aria-hidden="true"></i>
+                </div>
                 <div class="box-title"><?= t('Attachments') ?></div>
                 <div class="box-data"><span class="data-value bold"><?= $allFiles ?></span></div>
             </div>
@@ -143,7 +151,9 @@
                 </div>
             </div>
             <div class="box-wrapper back-grey">
-                <div class="box-icon"><i class="fa fa-fw fa-link" aria-hidden="true"></i></div>
+                <div class="box-icon">
+                    <i class="fa fa-fw fa-link" aria-hidden="true"></i>
+                </div>
                 <div class="box-title"><?= t('Link Labels') ?></div>
                 <div class="box-data">
                     <span class="data-value bold" title="<?= t('Link Label Pairs') ?>"><?= $linkLabelsCount / 2 ?></span>
