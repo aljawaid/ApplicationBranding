@@ -554,9 +554,8 @@ ul.icon-list li .filename {
     font-size: 1.1em;
 }
 
-.box-icon .bi-plugin {
-    position: absolute;
-    bottom: 6px;
+.box-icon .plugin-icon-white {
+    bottom: -2px;
     left: 3px;
 }
 
