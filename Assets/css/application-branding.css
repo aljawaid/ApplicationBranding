@@ -526,8 +526,6 @@ ul.icon-list li .filename {
     bottom: -6px;
 }
 
-.box-icon .fa-comments-o {
-    font-size: 1.1em;
 .box-icon i {
     font-size: .9em;
 }
@@ -535,9 +533,11 @@ ul.icon-list li .filename {
 .box-icon .plugin-icon-white {
     bottom: -2px;
     left: 3px;
+.box-icon i.fa-comments-o {
+    font-size: 1.1em;
 }
 
-.box-icon .fa-file {
+.box-icon i.fa-file {
     position: absolute;
     bottom: 7px;
     font-size: .85em;
