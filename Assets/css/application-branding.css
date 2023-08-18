@@ -726,6 +726,11 @@ details.license summary {
     border: 2px solid var(--tech-bg-grey-border-match);
 }
 
+span.kanboard-support-icon {
+    vertical-align: bottom;
+    margin-right: 3px;
+}
+
 .kb-info-btn a:hover, .kb-info-btn a:focus {
     color: var(--pp-red-alt-2) !important;
     border-color: var(--pp-red-alt-2);
