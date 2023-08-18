@@ -808,7 +808,7 @@ a.channels-link {
     vertical-align: bottom;
 }
 
-.icon-wrapper-gh svg.bi-github {
+.icon-wrapper-gh span.github-icon {
     width: 27px;
     height: 32px;
     vertical-align: text-bottom;
