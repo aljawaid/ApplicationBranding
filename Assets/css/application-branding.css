@@ -759,6 +759,11 @@ details.license summary {
     text-align: center;
 }
 
+a.channels-link {
+    text-decoration: none;
+    transition: var(--transition-app-branding);
+}
+
 .channels-wrapper {
     flex: auto;
     margin: 5px 15px 5px 5px;
