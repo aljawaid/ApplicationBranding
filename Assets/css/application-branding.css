@@ -732,12 +732,7 @@ span.kanboard-support-icon {
 }
 
 .kb-info-btn a:hover, .kb-info-btn a:focus {
-    color: var(--pp-red-alt-2) !important;
     border-color: var(--pp-red-alt-2);
-}
-
-.kb-info-btn a:hover, .kb-info-btn a:focus {
-    border-color: var(--blue-border-gradient-match);
     background: var(--pp-white);
     color: var(--pp-red-alt-2);
 }
