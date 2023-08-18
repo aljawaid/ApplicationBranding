@@ -505,6 +505,12 @@ ul.icon-list li .filename {
     left: 3px;
 }
 
+.box-icon i.fa-folder-open {
+    margin-left: 1px;
+    bottom: 3px;
+    position: absolute;
+}
+
 .box-icon span.aa-icon-faded {
     opacity: .6;
     vertical-align: middle;
@@ -535,11 +541,6 @@ ul.icon-list li .filename {
     font-size: .85em;
 }
 
-.box-icon .fa-folder-open {
-    margin-left: 1px;
-    bottom: 3px;
-    position: absolute;
-}
 
 .box-icon i {
     font-size: .9em;
