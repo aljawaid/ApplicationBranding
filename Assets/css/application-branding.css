@@ -25,6 +25,7 @@
     --border-radius-app-branding-alt: 3px;
     --panel-background-app-branding: #EEEEEE;
     --transition-app-branding: ease-in-out all .3s;
+    --tech-bg-grey-border-match: #6C6E6E;
 }
 
 .pp-blue { color: var(--pp-blue); fill: var(--pp-blue); }
@@ -716,16 +717,18 @@ details.license summary {
     bottom: 6px;
 }
 
-.kb-info-btn a {
+.kb-info-btn a, .kb-info-btn a:visited {
     font-size: 1em;
-    background: var(--blue-border-gradient-match);
     border-radius: var(--border-radius-app-branding-alt);
-    color: var(--pp-white);
+    color: var(--pp-black);
     transition: var(--transition-app-branding);
+    padding: 4px 5px 5px 4px;
+    border: 2px solid var(--tech-bg-grey-border-match);
 }
 
-.kb-info-btn a:visited {
-    color: var(--pp-white);
+.kb-info-btn a:hover, .kb-info-btn a:focus {
+    color: var(--pp-red-alt-2) !important;
+    border-color: var(--pp-red-alt-2);
 }
 
 .kb-info-btn a:hover, .kb-info-btn a:focus {
