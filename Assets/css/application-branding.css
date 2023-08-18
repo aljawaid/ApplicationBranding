@@ -617,6 +617,13 @@ ul.icon-list li .filename {
     bottom: -2px;
     left: 2px;
 }
+
+.box-icon span.translate-icon-white {
+    width: 28px;
+    height: 28px;
+    left: 2px;
+    bottom: -2px;
+}
 .box-title {
     font-weight: 600;
     text-transform: uppercase;
