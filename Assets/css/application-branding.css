@@ -762,9 +762,14 @@ span.kanboard-support-icon {
     text-align: center;
 }
 
-a.channels-link {
+a.channels-link, a.channels-link:visited {
     text-decoration: none;
     transition: var(--transition-app-branding);
+    color: var(--pp-black);
+}
+
+a.channels-link:hover, a.channels-link:focus {
+    color: var(--pp-red-alt-2);
 }
 
 .channels-wrapper {

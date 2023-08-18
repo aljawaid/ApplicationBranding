@@ -34,7 +34,8 @@ class ApplicationBrandingHelper extends Base
             <a href="%s" class="channels-link" title="' . t('Opens in a new window') . '" rel="noopener noreferrer" target="_blank">
                 <div class="icon-wrapper wrapper-docs">
                     <span class="kanboard-icon"></span>
-                </div> %s
+                </div>
+                <span class="channels-name">%s</span>
             </a>', $url, $label);
     }
 

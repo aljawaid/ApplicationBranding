@@ -321,7 +321,8 @@
                 <a href="https://kanboard.org" class="channels-link" title="<?= t('Opens in a new window') ?>" rel="noopener noreferrer" target="_blank">
                     <div class="icon-wrapper">
                         <span class="kanboard-icon"></span>
-                    </div> <?= t('Website') ?>
+                    </div>
+                    <span class="channels-name"><?= t('Website') ?></span>
                 </a>
             </div>
             <div class="channels-wrapper">
@@ -331,21 +332,24 @@
                 <a href="https://kanboard.org/plugins.html" class="channels-link" title="<?= t('Opens in a new window') ?>" rel="noopener noreferrer" target="_blank">
                     <div class="icon-wrapper wrapper-plugins">
                         <span class="kanboard-icon"></span>
-                    </div> <?= t('Plugins') ?>
+                    </div>
+                    <span class="channels-name"><?= t('Plugins') ?></span>
                 </a>
             </div>
             <div class="channels-wrapper">
                 <a href="https://kanboard.discourse.group" class="channels-link" title="<?= t('Opens in a new window') ?>" rel="noopener noreferrer" target="_blank">
                     <div class="icon-wrapper wrapper-forum">
                         <span class="kanboard-icon"></span>
-                    </div> <?= t('Forum') ?>
+                    </div>
+                    <span class="channels-name"><?= t('Forum') ?></span>
                 </a>
             </div>
             <div class="channels-wrapper">
                 <a href="https://github.com/kanboard/kanboard/" class="channels-link" title="<?= t('Opens in a new window') ?>" rel="noopener noreferrer" target="_blank">
                     <div class="icon-wrapper-gh">
                         <span class="github-icon"></span>
-                    </div> <?= t('Source Code') ?>
+                    </div>
+                    <span class="channels-name"><?= t('Source Code') ?></span>
                 </a>
             </div>
         </div>
