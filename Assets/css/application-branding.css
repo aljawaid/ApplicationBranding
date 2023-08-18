@@ -519,20 +519,15 @@ ul.icon-list li .filename {
     left: 3px;
 }
 
-.box-icon span.project-tags-icon-white {
-    width: 34px;
-    height: 34px;
-    left: 2px;
-    bottom: -6px;
+.box-icon span.plugin-icon-white {
+    bottom: -2px;
+    left: 3px;
 }
 
 .box-icon i {
     font-size: .9em;
 }
 
-.box-icon .plugin-icon-white {
-    bottom: -2px;
-    left: 3px;
 .box-icon i.fa-comments-o {
     font-size: 1.1em;
 }
@@ -543,6 +538,11 @@ ul.icon-list li .filename {
     font-size: .85em;
 }
 
+.box-icon span.project-tags-icon-white {
+    width: 34px;
+    height: 34px;
+    left: 2px;
+    bottom: -6px;
 }
 
 .box-icon span.ext-links-icon-white {
