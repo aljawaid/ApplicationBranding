@@ -13,23 +13,17 @@ use Kanboard\Core\Base;
 class ApplicationBrandingHelper extends Base
 {
     /**
-     * Get Help Docs
+     * Get Help Docs - Helper to generate a link to the documentation
      *
      * @see     about.php
+     * @see     UrlHelper.php
      * @access  public
      * @return  string
      */
-    public function getDocs($label, $file)
+    public function getDocs($label, $file = '')
     {
-        $version = 'latest';
+        $url = sprintf(DOCUMENTATION_URL_PATTERN, $file);
 
-        if (substr(APP_VERSION, 0, 1) === 'v') {
-            $version = substr(APP_VERSION, 1);
-        } elseif (ctype_digit(substr(APP_VERSION, 0, 1))) {
-            $version = APP_VERSION;
-        }
-
-        $url = sprintf(DOCUMENTATION_URL_PATTERN, $version, $file);
         return sprintf('
             <a href="%s" class="channels-link" title="' . t('Opens in a new window') . '" rel="noopener noreferrer" target="_blank">
                 <div class="icon-wrapper wrapper-docs">

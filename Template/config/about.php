@@ -325,9 +325,11 @@
                     <span class="channels-name"><?= t('Website') ?></span>
                 </a>
             </div>
-            <div class="channels-wrapper">
-                <?= $this->helper->applicationBrandingHelper->getDocs(t('Documentation'), 'index') ?>
-            </div>
+            <?php if (APP_VERSION > '1.2.25'): ?>
+                <div class="channels-wrapper">
+                    <?= $this->helper->applicationBrandingHelper->getDocs(t('Documentation')) ?>
+                </div>
+            <?php endif ?>
             <div class="channels-wrapper">
                 <a href="https://kanboard.org/plugins.html" class="channels-link" title="<?= t('Opens in a new window') ?>" rel="noopener noreferrer" target="_blank">
                     <div class="icon-wrapper wrapper-plugins">
