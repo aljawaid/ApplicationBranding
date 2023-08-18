@@ -476,7 +476,7 @@ ul.icon-list li .filename {
     opacity: .5;
 }
 
-.box-icon svg {
+.box-icon span {
     position: relative;
     width: 28px;
     height: 28px;
@@ -528,6 +528,8 @@ ul.icon-list li .filename {
 
 .box-icon .fa-comments-o {
     font-size: 1.1em;
+.box-icon i {
+    font-size: .9em;
 }
 
 .box-icon .plugin-icon-white {
@@ -541,26 +543,23 @@ ul.icon-list li .filename {
     font-size: .85em;
 }
 
-
-.box-icon i {
-    font-size: .9em;
 }
 
-.box-icon .ext-links-icon-white {
+.box-icon span.ext-links-icon-white {
     width: 30px;
     height: 30px;
     left: 2px;
     top: 4px;
 }
 
-.box-icon .template-manager-icon-white {
+.box-icon span.template-manager-icon-white {
     width: 32px;
     height: 32px;
     top: 5px;
     left: 0;
 }
 
-.box-icon .description-icon-white {
+.box-icon span.description-icon-white {
     width: 32px;
     height: 32px;
     top: 3px;
