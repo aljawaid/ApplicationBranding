@@ -864,12 +864,7 @@ kbd.user-remote-ip.mt-20 {
     display: inline-block;
 }
 
-.manual-edits-icon, .metadata-html-icon {
-    vertical-align: bottom;
-    color: var(--pp-grey);
-}
-
-span.section-desc > svg.manual-edits-icon, span.section-desc > svg.metadata-html-icon {
+span.section-desc > svg.manual-edits-icon, span.section-desc > span.metadata-html-icon {
     vertical-align: middle;
 }
 
