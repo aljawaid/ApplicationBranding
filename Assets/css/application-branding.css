@@ -802,7 +802,7 @@ a.channels-link {
     vertical-align: bottom;
 }
 
-.icon-wrapper svg.kanboard-icon {
+.icon-wrapper span.kanboard-icon {
     width: 20px;
     height: 20px;
     vertical-align: bottom;
