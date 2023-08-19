@@ -388,8 +388,12 @@ form.form-reset .required-wrapper {
 a.application-link, a.application-link:visited {
     font-weight: 600;
     text-decoration: none;
+    transition: var(--transition-app-branding);
 }
 
+fieldset.site-desc-metadata button.btn {
+    transition: var(--transition-app-branding);
+}
 fieldset.app-name-settings legend, fieldset.login-page-settings legend, fieldset.site-metadata-settings legend, fieldset.site-name-metadata legend, fieldset.site-desc-metadata legend, fieldset.device-icons-metadata legend {
     font-weight: 600;
 }
