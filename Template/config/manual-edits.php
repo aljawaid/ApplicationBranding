@@ -18,7 +18,7 @@
         <div class="m-edit-codeblock">
             <span class="code-icon-red"></span> <i class=""><?= t('Change from') ?></i>
             <br>
-            <a href="https://github.com/kanboard/kanboard/blob/main/app/Core/Mail/Client.php#L71" class="" title="Opens in a new window" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/kanboard/kanboard/blob/main/app/Core/Mail/Client.php#L71" class="" title="<?= t('Opens in a new window') ?>" target="_blank" rel="noopener noreferrer">
                 <span class="chev-link-icon"></span><?= t('Go to line N°') ?> 71
             </a> <?= t('in') ?> <kbd>/app/Core/Mail/Client.php</kbd>
             <br>
@@ -52,7 +52,7 @@
         <div class="m-edit-codeblock">
             <span class="code-icon-red"></span> <i class=""><?= t('Change from') ?></i>
             <br>
-            <a href="https://github.com/kanboard/kanboard/blob/main/config.default.php#L274" class="" title="Opens in a new window" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/kanboard/kanboard/blob/main/config.default.php#L274" class="" title="<?= t('Opens in a new window') ?>" target="_blank" rel="noopener noreferrer">
                 <span class="chev-link-icon"></span><?= t('Go to line N°') ?> 274
             </a> <?= t('in') ?> <kbd>/config.php</kbd>
             <br>
