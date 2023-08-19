@@ -954,9 +954,10 @@ section.m-edit-section h4 {
     margin-left: 10px;
 }
 
-svg.chev-link {
-    width: 16px;
-    height: 16px;
+span.chev-link-icon {
+    width: 18px;
+    height: 18px;
+    vertical-align: sub;
 }
 
 fieldset.settings-subsection legend {
