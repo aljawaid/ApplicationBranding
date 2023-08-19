@@ -30,6 +30,9 @@
             <?= t('Change the application name in the translation string when a username is used') ?> <span class="lead">- <?= t('Optional') ?></span>
         </h4>
         <div class="m-edit-codeblock">
+            <a href="https://github.com/kanboard/kanboard/blob/main/app/Locale" class="" title="<?= t('Opens in a new window') ?>" target="_blank" rel="noopener noreferrer">
+                <span class="chev-link-icon"></span><?= e('Go to the translation file in the relevant language folder inside %s', '<kbd>/app/Locale/</kbd>') ?>
+            </a>
             <span class="code-icon-red"></span> <i class=""><?= t('Change from') ?></i>
             <br>
             <code class="edit-code">'%s via Kanboard'</code>

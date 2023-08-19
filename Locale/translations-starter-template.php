@@ -139,6 +139,7 @@ return array(
     'Change the application name' => '',
     'Change from' => '',
     'Go to line N° %s in %s' => '',
+    'Go to the translation file in the relevant language folder inside %s' => '',
     'Change to' => '',
     'Change the application name in the translation string when a username is used' => '',
     'Changing the Application Name in the 2FA Security Page' => '',
