@@ -17,9 +17,8 @@
         </h4>
         <div class="m-edit-codeblock">
             <a href="https://github.com/kanboard/kanboard/blob/main/app/Core/Mail/Client.php#L71" class="" title="<?= t('Opens in a new window') ?>" target="_blank" rel="noopener noreferrer">
-                <span class="chev-link-icon"></span><?= t('Go to line N°') ?> 71
-            </a> <?= t('in') ?> <kbd>/app/Core/Mail/Client.php</kbd>
-            <br>
+                <span class="chev-link-icon"></span><?= e('Go to line N° %s in %s', '71', '<kbd>/app/Core/Mail/Client.php</kbd>') ?>
+            </a>
             <span class="code-icon-red"></span> <i class=""><?= t('Change from') ?></i>
             <br>
             <code class="edit-code">$author = 'Kanboard';</code>
@@ -51,9 +50,8 @@
         </h4>
         <div class="m-edit-codeblock">
             <a href="https://github.com/kanboard/kanboard/blob/main/config.default.php#L274" class="" title="<?= t('Opens in a new window') ?>" target="_blank" rel="noopener noreferrer">
-                <span class="chev-link-icon"></span><?= t('Go to line N°') ?> 274
-            </a> <?= t('in') ?> <kbd>/config.php</kbd>
-            <br>
+                <span class="chev-link-icon"></span><?= e('Go to line N° %s in %s', '274', '<kbd>/config.php</kbd>') ?>
+            </a>
             <span class="code-icon-red"></span> <i class=""><?= t('Change from') ?></i>
             <br>
             <code class="edit-code">define('TOTP_ISSUER', 'Kanboard');</code>
