@@ -913,11 +913,6 @@ section.m-edit-section h4 {
     vertical-align: sub;
 }
 
-
-.m-edit-codeblock svg:last-of-type {
-    color: var(--pp-green);
-}
-
 .m-edit-codeblock i {
     font-size: 1em;
 }
