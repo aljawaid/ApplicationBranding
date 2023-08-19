@@ -135,3 +135,9 @@
     pointer-events: none;
     display: inline-block;
 }
+
+.manual-edits-icon {
+    content: url("data:image/svg+xml,%3Csvg width='40px' height='40px' class='manual-edits-icon' viewBox='0 0 24 24' fill='%234D4D4D' xmlns='http://www.w3.org/2000/svg'%3E%3Cg stroke-width='0'/%3E%3Cg stroke-linecap='round' stroke-linejoin='round'/%3E%3Cg%3E%3Cpath d='M3 23h18V6.709L15.29 1H3zM15 2h.2L20 6.8V7h-5zM4 2h10v6h6v14H4zm9.13 9.044l.938.35-3.199 8.583-.937-.35zm2.224 1.603l2.853 2.853-2.854 2.854-.707-.707 2.147-2.147-2.146-2.146zm-6 .707L7.207 15.5l2.146 2.146-.707.707L5.793 15.5l2.854-2.854z'/%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3C/g%3E%3C/svg%3E%0A");
+    pointer-events: none;
+    display: inline-block;
+}
