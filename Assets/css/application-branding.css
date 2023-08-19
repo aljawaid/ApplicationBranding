@@ -872,7 +872,7 @@ span.section-desc > span.manual-edits-icon, span.section-desc > span.metadata-ht
     font-weight: 600;
 }
 
-#ManualEditsPage h2 span.manual-edits-icon {
+#ManualEditsPage h2 span.manual-edits-icon, #MetadataPage h2 span.metadata-html-icon {
     width: 32px;
     height: 32px;
     vertical-align: bottom;
