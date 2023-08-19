@@ -165,3 +165,9 @@
     pointer-events: none;
     display: inline-block;
 }
+
+.password-icon {
+    content: url("data:image/svg+xml,%3Csvg width='18px' height='18px' class='password-icon' fill='%234D4D4D' viewBox='0 0 48 48' stroke='0' xmlns='http://www.w3.org/2000/svg'%3E%3Cg stroke-width='0'/%3E%3Cg stroke-linecap='round' stroke-linejoin='round'/%3E%3Cg%3E%3Cg data-name='Layer 2'%3E%3Cg data-name='invisible box'%3E%3Crect width='48' height='48' fill='none'/%3E%3C/g%3E%3Cg data-name='Layer 7'%3E%3Cg%3E%3Cpath d='M39,18H35V13A11,11,0,0,0,24,2H22A11,11,0,0,0,11,13v5H7a2,2,0,0,0-2,2V44a2,2,0,0,0,2,2H39a2,2,0,0,0,2-2V20A2,2,0,0,0,39,18ZM15,13a7,7,0,0,1,7-7h2a7,7,0,0,1,7,7v5H15ZM37,42H9V22H37Z'/%3E%3Ccircle cx='15' cy='32' r='3'/%3E%3Ccircle cx='23' cy='32' r='3'/%3E%3Ccircle cx='31' cy='32' r='3'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    pointer-events: none;
+    display: inline-block;
+}

@@ -170,12 +170,11 @@ span.user-icon {
     margin-left: 5px;
 }
 
-.password-icon {
+span.password-icon {
     width: 24px;
     vertical-align: middle;
     margin-right: 2px;
     margin-top: -3px;
-    pointer-events: none;
 }
 
 .login-icon {
