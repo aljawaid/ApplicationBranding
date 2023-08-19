@@ -907,15 +907,12 @@ section.m-edit-section h4 {
     line-height: 2;
 }
 
-.m-edit-codeblock svg {
+.m-edit-codeblock span {
     width: 24px;
     height: 24px;
     vertical-align: sub;
 }
 
-.m-edit-codeblock svg:first-of-type {
-    color: var(--pp-red);
-}
 
 .m-edit-codeblock svg:last-of-type {
     color: var(--pp-green);
