@@ -920,6 +920,7 @@ section.m-edit-section h4 {
 .m-edit-codeblock a {
     font-weight: 600;
     text-decoration: none;
+    transition: var(--transition-app-branding);
 }
 
 .m-edit-codeblock kbd {
