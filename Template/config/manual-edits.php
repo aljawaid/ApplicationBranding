@@ -16,11 +16,11 @@
             <?= t('Change the application name') ?> <span class="lead">- <?= t('Optional') ?></span>
         </h4>
         <div class="m-edit-codeblock">
-            <span class="code-icon-red"></span> <i class=""><?= t('Change from') ?></i>
-            <br>
             <a href="https://github.com/kanboard/kanboard/blob/main/app/Core/Mail/Client.php#L71" class="" title="<?= t('Opens in a new window') ?>" target="_blank" rel="noopener noreferrer">
                 <span class="chev-link-icon"></span><?= t('Go to line N°') ?> 71
             </a> <?= t('in') ?> <kbd>/app/Core/Mail/Client.php</kbd>
+            <br>
+            <span class="code-icon-red"></span> <i class=""><?= t('Change from') ?></i>
             <br>
             <code class="edit-code">$author = 'Kanboard';</code>
             <span class="code-icon-green"></span> <i class=""><?= t('Change to') ?></i>
@@ -50,11 +50,11 @@
             <?= t('Change the application name') ?> <span class="lead">- <?= t('Optional') ?></span>
         </h4>
         <div class="m-edit-codeblock">
-            <span class="code-icon-red"></span> <i class=""><?= t('Change from') ?></i>
-            <br>
             <a href="https://github.com/kanboard/kanboard/blob/main/config.default.php#L274" class="" title="<?= t('Opens in a new window') ?>" target="_blank" rel="noopener noreferrer">
                 <span class="chev-link-icon"></span><?= t('Go to line N°') ?> 274
             </a> <?= t('in') ?> <kbd>/config.php</kbd>
+            <br>
+            <span class="code-icon-red"></span> <i class=""><?= t('Change from') ?></i>
             <br>
             <code class="edit-code">define('TOTP_ISSUER', 'Kanboard');</code>
             <span class="code-icon-green"></span> <i class=""><?= t('Change to') ?></i>
