@@ -872,7 +872,7 @@ span.section-desc > span.manual-edits-icon, span.section-desc > span.metadata-ht
     vertical-align: middle;
 }
 
-#ManualEditsPage h2 {
+#ManualEditsPage h2, #MetadataPage h2 {
     font-weight: 600;
 }
 
