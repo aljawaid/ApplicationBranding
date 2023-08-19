@@ -868,6 +868,13 @@ span.section-desc > span.manual-edits-icon, span.section-desc > span.metadata-ht
     vertical-align: middle;
 }
 
+
+#ManualEditsPage h2 span.manual-edits-icon {
+    width: 32px;
+    height: 32px;
+    vertical-align: bottom;
+}
+
 .edits-page-desc {
     margin-top: 2em;
     margin-bottom: 2em;
