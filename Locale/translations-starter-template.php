@@ -133,7 +133,7 @@ return array(
     // config/manual-edits.php
     //
     'To gain complete control over rebranding this application, some manual changes are required which are out of scope for Kanboard plugins. Following the simple changes below ensures your Kanboard installation is consistently named to your preferences.' => '',
-    'Changing the Application Name in the Automated Emails' => '',
+    'Changing the Application Name in Automated Emails' => '',
     'Optional' => '',
     'Automated emails received via cronjob can be adjusted to your preferred application name by completing the following:' => '',
     'Change the application name' => '',

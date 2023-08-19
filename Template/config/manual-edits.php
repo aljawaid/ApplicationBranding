@@ -7,7 +7,7 @@
     </h2>
     <p class="edits-page-desc"><?= t('To gain complete control over rebranding this application, some manual changes are required which are out of scope for Kanboard plugins. Following the simple changes below ensures your Kanboard installation is consistently named to your preferences.') ?></p>
     <section class="m-edit-section">
-        <h3 class="m-edit-title"><?= t('Changing the Application Name in the Automated Emails') ?> <span class="lead">- <?= t('Optional') ?></span></h3>
+        <h3 class="m-edit-title"><?= t('Changing the Application Name in Automated Emails') ?> <span class="lead">- <?= t('Optional') ?></span></h3>
         <p class="m-edit-desc"><?= t('Automated emails received via cronjob can be adjusted to your preferred application name by completing the following:') ?></p>
         <h4 class=""><?= t('Change the application name') ?> <span class="lead">- <?= t('Optional') ?></span></h4>
         <div class="m-edit-codeblock">
