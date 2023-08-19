@@ -157,14 +157,13 @@ kbd.user-remote-ip {
     background-color: initial;
 }
 
-.user-icon {
+span.user-icon {
     width: 20px;
     vertical-align: text-bottom;
     margin-right: 5px;
-    pointer-events: none;
 }
 
-.form-reset .user-icon {
+.form-reset span.user-icon {
     width: 20px;
     vertical-align: text-bottom;
     margin-right: 5px;
