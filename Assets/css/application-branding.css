@@ -868,6 +868,9 @@ span.section-desc > span.manual-edits-icon, span.section-desc > span.metadata-ht
     vertical-align: middle;
 }
 
+#ManualEditsPage h2 {
+    font-weight: 600;
+}
 
 #ManualEditsPage h2 span.manual-edits-icon {
     width: 32px;
@@ -892,9 +895,13 @@ p.m-edit-desc {
     margin-bottom: 5px;
 }
 
+section.m-edit-section h4 {
+    margin-bottom: 0;
+}
+
 .m-edit-codeblock {
-    margin: 15px;
-    border: 1px solid var(--blue-icon-dark);
+    margin: 5px 15px 15px 15px;
+    border: 1px inset var(--pp-red-alt-2);
     padding: 15px 10px 20px 10px;
     border-radius: var(--border-radius-app-branding-alt);
     line-height: 2;
