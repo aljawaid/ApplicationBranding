@@ -21,7 +21,7 @@
             <a href="https://github.com/kanboard/kanboard/blob/main/app/Core/Mail/Client.php#L71" class="" title="Opens in a new window" target="_blank" rel="noopener noreferrer">
                 <svg xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" fill="#000000" class="bi bi-chevron-right chev-link" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                </svg><?= t('Line') ?> 71
+                </svg><?= t('Go to line N°') ?> 71
             </a> <?= t('in') ?> <kbd>/app/Core/Mail/Client.php</kbd>
             <br>
             <code class="edit-code">$author = 'Kanboard';</code>
@@ -57,7 +57,7 @@
             <a href="https://github.com/kanboard/kanboard/blob/main/config.default.php#L274" class="" title="Opens in a new window" target="_blank" rel="noopener noreferrer">
                 <svg xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" fill="#000000" class="bi bi-chevron-right chev-link" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                </svg><?= t('Line') ?> 274
+                </svg><?= t('Go to line N°') ?> 274
             </a> <?= t('in') ?> <kbd>/config.php</kbd>
             <br>
             <code class="edit-code">define('TOTP_ISSUER', 'Kanboard');</code>

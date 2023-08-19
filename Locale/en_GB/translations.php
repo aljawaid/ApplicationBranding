@@ -129,7 +129,7 @@ return array(
     //'Automated emails received via cronjob can be adjusted to your preferred application name by completing the following:' => '',
     //'Change the application name' => '',
     //'Change from' => '',
-    //'Line' => '',
+    //'Go to line N°' => '',
     //'in' => '',
     //'Change to' => '',
     //'Change the application name in the translation string when a username is used' => '',
