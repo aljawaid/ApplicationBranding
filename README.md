@@ -193,6 +193,14 @@ This plugin will rename your installation to \'My Workspace\' and include matchi
 - Install via the **[Kanboard](https://github.com/kanboard/kanboard "Kanboard - Kanban Project Management Software") Plugin Directory** or see [INSTALL.md](../master/INSTALL.md)
 - Read the full [**Changelog**](../master/changelog.md "See changes") to see the latest updates
 
+**Content Security Policy - CSP Server Configuration**
+
+If icons or Unsplash images are not displaying you may need to set the CSP on your server. Add the line below in the `.htaccess` file found in the root directory of your Kanboard installation.
+
+```
+Header set Content-Security-Policy "default-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' https; connect-src 'self'; img-src 'self' data:; style-src 'unsafe-inline' https *; base-uri 'self'; form-action 'self'; frame-src 'self' https; child-src 'self';"
+```
+
 </details>
 <details>
     <summary><strong>Compatibility</strong></summary>
