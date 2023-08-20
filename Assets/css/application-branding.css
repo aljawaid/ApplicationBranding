@@ -337,10 +337,8 @@ form.form-reset .required-wrapper {
     opacity: .8;
 }
 
-.btn-reset-password svg {
+.btn-reset-password span {
     vertical-align: text-top;
-    fill: var(--pp-green-dark);
-    pointer-events: none;
 }
 
 .reset-message {
