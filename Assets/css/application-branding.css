@@ -138,10 +138,10 @@ a.reset-password-link {
     text-decoration: none;
 }
 
-.reset-password-link svg {
-    vertical-align: text-bottom;
-    width: 18px;
-    margin-right: 3px;
+.reset-password-link i {
+    margin-inline: 5px;
+    font-size: 1.1em;
+    color: var(--pp-light-grey);
 }
 
 kbd.user-remote-ip {
@@ -392,6 +392,7 @@ a.application-link, a.application-link:visited {
 fieldset.site-desc-metadata button.btn {
     transition: var(--transition-app-branding);
 }
+
 fieldset.app-name-settings legend, fieldset.login-page-settings legend, fieldset.site-metadata-settings legend, fieldset.site-name-metadata legend, fieldset.site-desc-metadata legend, fieldset.device-icons-metadata legend {
     font-weight: 600;
 }
