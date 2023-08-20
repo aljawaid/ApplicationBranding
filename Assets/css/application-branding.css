@@ -219,7 +219,7 @@ a.back-btn.logout-button {
     margin-left: 20px;
 }
 
-.back-btn svg {
+.back-btn span {
     vertical-align: bottom;
 }
 
