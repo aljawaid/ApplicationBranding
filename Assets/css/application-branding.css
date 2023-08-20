@@ -323,7 +323,7 @@ form.form-reset .required-wrapper {
     background-color: var(--pp-white);
 }
 
-.reset-title .reset-icon {
+.reset-title span.reset-icon {
     position: absolute;
     top: 5px;
     right: 5px;
