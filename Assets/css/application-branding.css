@@ -834,7 +834,7 @@ a.channels-link:hover, a.channels-link:focus {
     border-color: var(--pp-black);
 }
 
-.otp-icon {
+span.otp-icon {
     position: absolute;
     right: 0;
     width: 100px;
