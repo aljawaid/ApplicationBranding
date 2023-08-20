@@ -1,5 +1,39 @@
 # Changelog
 
+## v4.0
+
+_(most recent changes are listed on top):_
+- NEW: Add CSP Configuration Information to README.md
+- FIX: Reset Password Button Border Transitions
+- FIX: Settings Page Title Consistency
+- FIX: Anchor Transitions Consistency
+- NEW: Add Language Folder Location in Manual Edits
+- FIX: Link Margins
+- FIX: Improve Language Strings for Code Line Number Links
+- FIX: Code Block Layout
+- FIX: Anchor Transitions
+- FIX: Missing Translation Strings
+- FIX: Better Wording in Code Block
+- FIX: Update Manual Edit Core Code Reference Link
+- FIX: Styling of Manual Edits Page
+- FIX: Better Wording
+- FIX: Show Documentation URL if KB v1.2.25+ Installed - fixes #16
+- FIX: Platform Channel Links
+- FIX: Cleanup Duplicate Code
+- FIX: KanboardSupport Button Style Consistency
+- FIX: Link Styling
+- FIX: Update README.md to Show Complete Dashboard Icons
+- FIX: FA Icons #15
+- FIX: Syntax Error
+- NEW: Add Custom CSS After All Default & Plugin Styles - closes #14
+- FIX: Duplicate Translation Strings
+- FIX: Logo Alignment in Plugin Settings
+- FIX: Meta Description Placeholder & Link Styling
+- FIX: Input Placeholder Color
+- FIX: Application Platform Section Alignment
+- Cleanup Page Structure and performance improvements
+
+
 ## v3.3
 
 _(most recent changes are listed on top):_
