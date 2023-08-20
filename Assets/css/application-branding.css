@@ -198,13 +198,19 @@ button.btn-reset-password {
     border: 2px outset var(--pp-green-dark);
     float: right;
     font-size: 1em;
+    transition: var(--transition-app-branding);
 }
 
-.back-btn, a.back-btn:visited {
+a.btn.back-btn, a.btn.back-btn:visited {
     border-radius: var(--border-radius-app-branding-alt);
-    border: 2px solid var(--pp-grey);
+    border: 2px outset var(--pp-grey);
     color: var(--pp-grey);
     font-size: 1em;
+    transition: var(--transition-app-branding);
+}
+
+.back-btn:hover, .back-btn:focus {
+    border-color: var(--pp-light-grey) !important;
 }
 
 a.back-btn.logout-button {
