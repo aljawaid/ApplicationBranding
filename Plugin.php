@@ -61,7 +61,7 @@ class Plugin extends Base
         $this->template->hook->attach('template:config:sidebar', 'applicationBranding:config/sidebar');
 
         // Extra Page - Routes
-        //  - Example: $this->route->addRoute('/my/custom/route', 'myController', 'show', 'PluginNameExampleStudlyCaps');
+        //  - Example: $this->route->addRoute('/my/custom/route', 'MyController', 'show', 'PluginNameExampleStudlyCaps');
         //  - Must have the corresponding action in the matching controller
         $this->route->addRoute('/settings/metadata', 'ApplicationBrandingController', 'show', 'ApplicationBranding');
         $this->route->addRoute('/security-check', 'TwoFactorController', 'code');
