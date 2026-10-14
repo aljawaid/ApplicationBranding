@@ -10,30 +10,14 @@ class Plugin extends Base
 {
     public function initialize()
     {
-        // Get accurate version of Kanboard
-        $accurate_version = str_replace('v', '', APP_VERSION);
-        $accurate_version = preg_replace('/\s+/', '', $accurate_version);
-
-        if (strpos(APP_VERSION, 'master') !== false || strpos(APP_VERSION, 'main') !== false && file_exists('ChangeLog')) {
-            $accurate_version = trim(file_get_contents('ChangeLog', false, null, 8, 6), ' ');
-        }
-
         // Template Override
         //  - Override name should be camelCase e.g. pluginNameExampleCamelCase
         if (file_exists('plugins/Customizer')) {
-            if (version_compare($accurate_version, '1.2.29') >= 0) {
-                $this->template->setTemplateOverride('layout', 'applicationBranding:layout_customizer_latest');
-            } else {
-                $this->template->setTemplateOverride('layout', 'applicationBranding:layout_customizer');
-            }
+            $this->template->setTemplateOverride('layout', 'applicationBranding:layout_customizer_latest');
             $this->template->setTemplateOverride('header/title', 'applicationBranding:header/title_customizer');
             $this->template->setTemplateOverride('auth/index', 'applicationBranding:auth/index_customizer');
         } else {
-            if (version_compare($accurate_version, '1.2.29') >= 0) {
-                $this->template->setTemplateOverride('layout', 'applicationBranding:layout_latest');
-            } else {
-                $this->template->setTemplateOverride('layout', 'applicationBranding:layout');
-            }
+            $this->template->setTemplateOverride('layout', 'applicationBranding:layout_latest');
             $this->template->setTemplateOverride('header/title', 'applicationBranding:header/title');
             $this->template->setTemplateOverride('auth/index', 'applicationBranding:auth/index');
         }
@@ -101,9 +85,8 @@ class Plugin extends Base
 
     public function getCompatibleVersion()
     {
-        // Examples: '>=1.0.37' '<1.0.37' '<=1.0.37'
-        // Tested on KB v1.2.20 upto plugin v3.3.0, then KB v1.2.32+
-        return '>=1.2.20';
+        // See tests/template_compatibility_contract.php.
+        return '>=1.2.54';
     }
 
     public function getPluginHomepage()

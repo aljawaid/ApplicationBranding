@@ -61,6 +61,9 @@ jobs:
       - name: Check login background contract
         run: php plugin/tests/login_background_contract.php
 
+      - name: Check Kanboard template compatibility contract
+        run: php plugin/tests/template_compatibility_contract.php
+
       - name: Install Kanboard dependencies
         run: composer install --working-dir=kanboard --no-dev --no-interaction --prefer-dist --no-progress --optimize-autoloader
 

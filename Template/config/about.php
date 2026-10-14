@@ -308,6 +308,10 @@
                     <?= $this->url->link(t('Optimize Database'), 'ConfigController', 'optimizeDb', array(), true) ?>&nbsp;
                     <?= t('(VACUUM command)') ?>
                 </li>
+                <?php // See tests/template_compatibility_contract.php for this Kanboard SQLite-options contract. ?>
+                <?php foreach ($db_options as $option => $value): ?>
+                    <li><strong><?= $this->text->e($option) ?></strong> = <?= $this->text->e($value) ?></li>
+                <?php endforeach ?>
             </ul>
         </div>
     <?php endif ?>
