@@ -65,7 +65,8 @@ This plugin will rename your installation to \'My Workspace\' and include matchi
 - Show a comprehensive list of manual changes required for complete Kanboard rebranding
 
 **New Login Page**
-- Show User IP Address
+- Hide the visitor IP address by default, with an administrator option to show it
+- Use the active theme background by default, with an administrator option for a white background
 - Show application name and copyright
 - Include metadata and generic logo (for when sharing links)
 - Faster login switching between users by hovering over the username and password fields
@@ -73,7 +74,7 @@ This plugin will rename your installation to \'My Workspace\' and include matchi
   - After installing this plugin, Customizer shows the Custom Note feature retaining its hook (`'template:auth:login-form:newbox'`)
 
 **New Reset Password Page**
-- Show User IP Address
+- Respect the administrator setting for showing or hiding the visitor IP address
 - Add user friendly page title
 - Show application name and copyright
 - Include application metadata and generic logo (for when sharing links)
@@ -82,7 +83,7 @@ This plugin will rename your installation to \'My Workspace\' and include matchi
   - After installing this plugin, Customizer will use the meta tags and page title
 
 **New 2FA Page**
-- Show User IP Address
+- Respect the administrator setting for showing or hiding the visitor IP address
 - Add user friendly page title
 - Include application metadata and generic logo (for code structure and style consistency)
 - A complete revamp of the two factor code check page which shows after login
@@ -189,7 +190,8 @@ This plugin will rename your installation to \'My Workspace\' and include matchi
 <details>
     <summary><strong>Compatibility</strong></summary>
 
-- Requires [Kanboard](https://github.com/kanboard/kanboard "Kanboard - Kanban Project Management Software") ≥`1.2.20`
+- Requires [Kanboard](https://github.com/kanboard/kanboard "Kanboard - Kanban Project Management Software") ≥`1.2.54`
+- Tested with PHP `8.2`–`8.5`
 - **Other Plugins & Action Plugins**
   - _No known issues_
   - Compatible with [KanboardEmailHistory](https://github.com/aljawaid/KanboardEmailHistory), [AutomaticActionUX](https://github.com/aljawaid/AutomaticActionUX), [PluginManager](https://github.com/aljawaid/PluginManager), [TagManager](https://github.com/aljawaid/TagManager), [KanboardSupport](https://github.com/aljawaid/KanboardSupport), [Customizer](https://github.com/creecros/Customizer), [TemplateManager](https://github.com/aljawaid/TemplateManager)
@@ -201,7 +203,9 @@ This plugin will rename your installation to \'My Workspace\' and include matchi
 <details>
     <summary><strong>Translations</strong></summary>
 
+- English (US fallback)
 - English (UK)
+- French
 - _Starter template available_
 
 </details>
