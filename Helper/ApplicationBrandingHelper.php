@@ -13,6 +13,45 @@ use Kanboard\Core\Base;
 class ApplicationBrandingHelper extends Base
 {
     /**
+     * Determine whether authentication pages may display the visitor address.
+     *
+     * The privacy-first default is hidden when the setting has not yet been saved.
+     * See tests/ip_visibility_contract.php.
+     *
+     * @access public
+     * @return boolean
+     */
+    public function shouldShowRemoteAddress()
+    {
+        return $this->configModel->get('app_branding_show_ip_address') === 'visible';
+    }
+
+    /**
+     * Return the web server's validated remote address.
+     *
+     * @access public
+     * @return string
+     */
+    public function getRemoteAddress()
+    {
+        $remoteAddress = isset($_SERVER['REMOTE_ADDR']) ? (string) $_SERVER['REMOTE_ADDR'] : '';
+
+        return filter_var($remoteAddress, FILTER_VALIDATE_IP) !== false ? $remoteAddress : '';
+    }
+
+    /**
+     * Determine whether a remote address is the local machine.
+     *
+     * @access public
+     * @param  string $remoteAddress
+     * @return boolean
+     */
+    public function isLocalRemoteAddress($remoteAddress)
+    {
+        return $remoteAddress === '127.0.0.1' || $remoteAddress === '::1';
+    }
+
+    /**
      * Get Help Docs - Helper to generate a link to the documentation
      *
      * @see     about.php

@@ -34,6 +34,16 @@
             </div>
         </fieldset>
         <fieldset class="settings-subsection">
+            <legend><?= t('IP Address') ?></legend>
+            <?php $ipAddressVisibility = isset($values['app_branding_show_ip_address']) ? $values['app_branding_show_ip_address'] : 'hidden' ?>
+            <?= $this->form->radios('app_branding_show_ip_address', array(
+                'hidden' => t('Hide IP address'),
+                'visible' => t('Show IP address'),
+            ), array('app_branding_show_ip_address' => $ipAddressVisibility)) ?>
+            <p class="form-help"><?= t('Hidden by default. Works with Apache, Nginx and other web servers that pass the client address to PHP.') ?></p>
+            <p class="form-help"><?= t('Reverse-proxy forwarding is not handled because trusting forwarded headers without a trusted-proxy configuration is unsafe.') ?></p>
+        </fieldset>
+        <fieldset class="settings-subsection">
             <legend><?= t('Copyright') ?></legend>
             <div class="app-copyright">
                 <?= $this->form->label(t('From Year'), 'copyright_from', array('class=""')) ?>

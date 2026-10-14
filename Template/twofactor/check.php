@@ -28,10 +28,13 @@
                         <?= $this->url->link(t('Cancel') . ' &#10008;', 'AuthController', 'logout', array(), true, 'btn back-btn logout-button', t('Logout')) ?>
                     </div>
                 </form>
-                <?php if ($_SERVER["REMOTE_ADDR"] == '127.0.0.1'): ?>
-                    <kbd class="user-remote-ip"><?= t('Your IP:') ?> <i><abbr title="127.0.0.1">localhost</abbr></i></kbd>
-                <?php else: ?>
-                    <kbd class="user-remote-ip mt-20"><?= t('Your IP:') ?> <?= $_SERVER["REMOTE_ADDR"]; ?></kbd>
+                <?php $remoteAddress = $this->helper->applicationBrandingHelper->getRemoteAddress() ?>
+                <?php if ($this->helper->applicationBrandingHelper->shouldShowRemoteAddress() && $remoteAddress !== ''): ?>
+                    <?php if ($this->helper->applicationBrandingHelper->isLocalRemoteAddress($remoteAddress)): ?>
+                        <kbd class="user-remote-ip"><?= t('Your IP:') ?> <i><abbr title="<?= $this->text->e($remoteAddress) ?>">localhost</abbr></i></kbd>
+                    <?php else: ?>
+                        <kbd class="user-remote-ip mt-20"><?= t('Your IP:') ?> <?= $this->text->e($remoteAddress) ?></kbd>
+                    <?php endif ?>
                 <?php endif ?>
             </div>
         </div>

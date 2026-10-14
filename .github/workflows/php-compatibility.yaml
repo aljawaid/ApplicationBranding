@@ -55,6 +55,9 @@ jobs:
             php -l "$file"
           done < <(find plugin -type f -name '*.php' -print0)
 
+      - name: Check IP visibility contract
+        run: php plugin/tests/ip_visibility_contract.php
+
       - name: Install Kanboard dependencies
         run: composer install --working-dir=kanboard --no-dev --no-interaction --prefer-dist --no-progress --optimize-autoloader
 
