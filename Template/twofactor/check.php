@@ -1,11 +1,8 @@
+<?php // See tests/output_safety_contract.php for configured-text escaping. ?>
 <section class="login-logo center-login">
     <img src="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/workspace-icon-500x500.png" class="ws-logo" alt="<?= t('Workspace logo') ?>">
     <h3 class="no-top no-bottom login-title">
-        <?php if (!empty($this->task->configModel->get('app_rename'))): ?>
-            <?= strtoupper($this->task->configModel->get('app_rename')) ?>
-        <?php else: ?>
-            <?= strtoupper(t('My Workspace')) ?>
-        <?php endif ?>
+        <?= $this->text->e(strtoupper($this->helper->applicationBrandingHelper->getApplicationName())) ?>
     </h3>
     <div class="form-wrapper relative">
         <div class="otp-area">

@@ -131,6 +131,7 @@ return array(
     'Saves any changes made on this page' => '',
     'Save Settings' => '',
     'Custom CSS' => '',
+    'Administrator-supplied CSS is trusted and inserted without filtering. It can change every application page.' => '',
     'Head Stylesheet' => '',
     'The default custom CSS at the top of this page loads all styles at the top of the %s tag. The custom styles in this section will be inserted at the bottom of the %s tag and after all plugin styles.' => '',
     'Manual Edits' => '',

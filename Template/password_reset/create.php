@@ -1,11 +1,8 @@
+<?php // See tests/output_safety_contract.php for configured-text escaping. ?>
 <section class="login-logo center-login">
     <img src="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/workspace-icon-500x500.png" class="ws-logo" alt="<?= t('Workspace logo') ?>">
     <h3 class="no-top no-bottom login-title">
-        <?php if (!empty($this->task->configModel->get('app_rename'))): ?>
-            <?= strtoupper($this->task->configModel->get('app_rename')) ?>
-        <?php else: ?>
-            <?= strtoupper(t('My Workspace')) ?>
-        <?php endif ?>
+        <?= $this->text->e(strtoupper($this->helper->applicationBrandingHelper->getApplicationName())) ?>
     </h3>
     <div class="form-wrapper">
         <div class="password-area">
@@ -55,15 +52,7 @@
 </section>
 <footer class="copyright">
     <span class="center">&copy;&nbsp;
-        <?php if (!empty($this->task->configModel->get('app_rename'))): ?>
-            <?= $this->task->configModel->get('app_rename') ?>
-        <?php else: ?>
-            <?= t('My Workspace') ?>
-        <?php endif ?>
-        <?php if (!empty($this->task->configModel->get('copyright_from'))): ?>
-            <?= $this->task->configModel->get('copyright_from') ?>-<?= date("Y"); ?>
-        <?php else: ?>
-            <?= date("Y"); ?>
-        <?php endif ?>
+        <?= $this->text->e($this->helper->applicationBrandingHelper->getApplicationName()) ?>
+        <?= $this->text->e($this->helper->applicationBrandingHelper->getCopyrightYears()) ?>
     </span>
 </footer>

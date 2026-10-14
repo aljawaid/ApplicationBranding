@@ -73,6 +73,95 @@ class ApplicationBrandingHelper extends Base
     }
 
     /**
+     * Return the configured application name or the translated default.
+     *
+     * See tests/output_safety_contract.php.
+     *
+     * @access public
+     * @return string
+     */
+    public function getApplicationName()
+    {
+        $applicationName = trim((string) $this->configModel->get('app_rename'));
+
+        return $applicationName !== '' ? $applicationName : t('My Workspace');
+    }
+
+    /**
+     * Return the current canonical URL using only the configured application origin.
+     *
+     * See tests/canonical_url_contract.php and tests/output_safety_contract.php.
+     *
+     * @access public
+     * @return string
+     */
+    public function getCanonicalUrl()
+    {
+        $applicationUrl = trim((string) $this->configModel->get('application_url'));
+        $base = parse_url($applicationUrl);
+
+        if ($applicationUrl === ''
+            || filter_var($applicationUrl, FILTER_VALIDATE_URL) === false
+            || $base === false
+            || !isset($base['scheme'], $base['host'])
+            || !in_array(strtolower($base['scheme']), array('http', 'https'), true)
+            || isset($base['user'])
+            || isset($base['pass'])
+            || isset($base['query'])
+            || isset($base['fragment'])) {
+            return '';
+        }
+
+        $requestUri = (string) $this->request->getUri();
+        if (!$this->request->isSafeRedirectUri($requestUri)) {
+            return rtrim($applicationUrl, '/');
+        }
+
+        $origin = strtolower($base['scheme']) . '://' . $base['host'];
+        if (isset($base['port'])) {
+            $origin .= ':' . $base['port'];
+        }
+
+        return $origin . $requestUri;
+    }
+
+    /**
+     * Return a validated copyright year range.
+     *
+     * @access public
+     * @return string
+     */
+    public function getCopyrightYears()
+    {
+        $currentYear = (int) date('Y');
+        $configuredYear = trim((string) $this->configModel->get('copyright_from'));
+
+        if (!preg_match('/^\d{4}$/', $configuredYear)) {
+            return (string) $currentYear;
+        }
+
+        $startYear = (int) $configuredYear;
+        if ($startYear < 1000 || $startYear >= $currentYear) {
+            return (string) $currentYear;
+        }
+
+        return $startYear . '-' . $currentYear;
+    }
+
+    /**
+     * Return a bounded Customizer header-logo height.
+     *
+     * @access public
+     * @return integer
+     */
+    public function getHeaderLogoHeight()
+    {
+        $height = (int) $this->configModel->get('headerlogo_size', '30');
+
+        return max(1, min(512, $height));
+    }
+
+    /**
      * Get Help Docs - Helper to generate a link to the documentation
      *
      * @see     about.php
@@ -102,8 +191,13 @@ class ApplicationBrandingHelper extends Base
      */
     public function customHeadCss()
     {
-        if ($this->configModel->get('app_branding_custom_head_css')) {
-            return '<style>' . $this->configModel->get('app_branding_custom_head_css') . '</style>';
+        $customCss = (string) $this->configModel->get('app_branding_custom_head_css');
+
+        if ($customCss !== '') {
+            // Prevent stored values from closing the style element while preserving administrator CSS.
+            $customCss = str_ireplace('</style', '<\\/style', $customCss);
+
+            return '<style>' . $customCss . '</style>';
         }
 
         return '';

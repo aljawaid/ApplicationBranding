@@ -64,8 +64,12 @@
             <button type="submit" class="btn btn-blue" title="<?= t('Saves any changes made on this page') ?>"><?= t('Save Settings') ?></button>
         </div>
     </fieldset>
+    <?php // See tests/output_safety_contract.php for the trusted administrator CSS boundary. ?>
     <fieldset class="site-metadata-settings">
-        <legend class=""><?= t('Custom CSS') ?></legend>
+        <legend class="">
+            <?= t('Custom CSS') ?>
+            <?= $this->app->tooltipHTML($this->text->e(t('Administrator-supplied CSS is trusted and inserted without filtering. It can change every application page.'))) ?>
+        </legend>
         <?= $this->form->label(t('Head Stylesheet'), 'app_branding_custom_head_css', array('class=""')) ?>
         <?= $this->form->textarea('app_branding_custom_head_css', $values, $errors, array('placeholder=" a {color: red; }"'), 'custom-head-css') ?>
         <p class="form-help"><?= e('The default custom CSS at the top of this page loads all styles at the top of the %s tag. The custom styles in this section will be inserted at the bottom of the %s tag and after all plugin styles.', '<i>head</i>', '<i>head</i>') ?></p>

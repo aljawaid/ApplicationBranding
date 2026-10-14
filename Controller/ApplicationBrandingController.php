@@ -3,15 +3,16 @@
 namespace Kanboard\Plugin\ApplicationBranding\Controller;
 
 use Kanboard\Controller\BaseController;
-use Kanboard\Core\Plugin\Directory;
+use Kanboard\Core\Controller\AccessForbiddenException;
 
 /**
  * Plugin ApplicationBranding
  * Class ApplicationBrandingController
+ * See tests/output_safety_contract.php for the administrator-only settings boundary.
  * @author aljawaid
  */
 
-class ApplicationBrandingController extends \Kanboard\Controller\PluginController
+class ApplicationBrandingController extends BaseController
 {
     /**
      * Display the Settings Page
@@ -43,8 +44,19 @@ class ApplicationBrandingController extends \Kanboard\Controller\PluginControlle
      */
     public function save()
     {
+        if (! $this->userSession->isAdmin()) {
+            throw new AccessForbiddenException();
+        }
+
+        $this->checkCSRFForm();
         $values = $this->request->getValues();
-        $redirect = $this->request->getStringParam('redirect', 'metadata');
+        $allowedSettings = array('meta_description');
+
+        if (array_diff(array_keys($values), $allowedSettings) !== array()) {
+            throw new AccessForbiddenException();
+        }
+
+        $values = array_intersect_key($values, array_flip($allowedSettings));
 
         if ($this->configModel->save($values)) {
             $this->languageModel->loadCurrentLanguage();
@@ -53,6 +65,6 @@ class ApplicationBrandingController extends \Kanboard\Controller\PluginControlle
             $this->flash->failure(t('Unable to save your settings'));
         }
 
-        $this->response->redirect($this->helper->url->to('ApplicationBrandingController', $redirect, ['plugin' => 'ApplicationBranding']));
+        $this->response->redirect($this->helper->url->to('ApplicationBrandingController', 'show', ['plugin' => 'ApplicationBranding']));
     }
 }

@@ -3,17 +3,10 @@
 <p><?= $this->url->to('PasswordResetController', 'change', array('token' => $token), '', true) ?></p>
 
 <hr>
+<?php // See tests/output_safety_contract.php for configured-text escaping. ?>
 <footer class="copyright">
     <span class="center">&copy;&nbsp;
-        <?php if (!empty($this->task->configModel->get('app_rename'))): ?>
-            <?= $this->task->configModel->get('app_rename') ?>
-        <?php else: ?>
-            <?= t('My Workspace') ?>
-        <?php endif ?>
-        <?php if (!empty($this->task->configModel->get('copyright_from'))): ?>
-            <?= $this->task->configModel->get('copyright_from') ?>-<?= date("Y"); ?>
-        <?php else: ?>
-            <?= date("Y"); ?>
-        <?php endif ?>
+        <?= $this->text->e($this->helper->applicationBrandingHelper->getApplicationName()) ?>
+        <?= $this->text->e($this->helper->applicationBrandingHelper->getCopyrightYears()) ?>
     </span>
 </footer>

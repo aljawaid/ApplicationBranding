@@ -60,24 +60,23 @@
         <link rel="manifest" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/site.webmanifest">
         <link rel="mask-icon" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/safari-pinned-tab.svg" color="#5BBAD5">
 
-        <?php if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on'): ?>
-            <?php $url = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>
-        <?php else: ?>
-            <?php $url = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>
-        <?php endif ?>
-
-        <meta property="og:url" content="<?= $url ?>">
-        <!-- og:image must be min 300x300px with 'https' and absolute url to png file -->
-        <meta property="og:image" content="<?= $this->url->base();$this->url->dir() ?>plugins/ApplicationBranding/Assets/img/workspace-icon-500x500.png">
-        <meta property="og:type" content="website">
-        <meta property="og:locale" content="<?= $this->app->jsLang() ?>">
-        <meta property="og:locale:alternate" content="en_GB">
-        <meta property="og:locale:alternate" content="en_US">
-
+        <?php // See tests/output_safety_contract.php for canonical URL and metadata escaping. ?>
         <?php
             $incomingController = $this->app->getRouterController();
             $outgoingAction = $this->app->getRouterAction();
+            $applicationName = $this->helper->applicationBrandingHelper->getApplicationName();
+            $canonicalUrl = $this->helper->applicationBrandingHelper->getCanonicalUrl();
         ?>
+
+        <?php if ($canonicalUrl !== ''): ?>
+            <meta property="og:url" content="<?= $this->text->e($canonicalUrl) ?>">
+        <?php endif ?>
+        <!-- og:image must be min 300x300px with 'https' and absolute url to png file -->
+        <meta property="og:image" content="<?= $this->text->e(rtrim($this->url->base(), '/')) ?>/plugins/ApplicationBranding/Assets/img/workspace-icon-500x500.png">
+        <meta property="og:type" content="website">
+        <meta property="og:locale" content="<?= $this->text->e($this->app->jsLang()) ?>">
+        <meta property="og:locale:alternate" content="en_GB">
+        <meta property="og:locale:alternate" content="en_US">
 
         <?php if (($incomingController == 'PasswordResetController') && ($outgoingAction == 'create')): ?>
             <meta name="description" content="<?= t('Change your password for this kanban platform.') ?>">
@@ -88,61 +87,29 @@
         <?php endif ?>
 
         <?php if (isset($page_title)): ?>
-            <?php if (!empty($this->task->configModel->get('app_rename'))): ?>
-                <meta property="og:title" content="<?= $this->text->e($page_title) ?> | <?= $this->task->configModel->get('app_rename') ?>">
-            <?php else: ?>
-                <meta property="og:title" content="<?= $this->text->e($page_title) ?> | <?= t('My Workspace') ?>">
-            <?php endif ?>
+            <meta property="og:title" content="<?= $this->text->e($page_title) ?> | <?= $this->text->e($applicationName) ?>">
         <?php elseif (isset($title)): ?>
-            <?php if (!empty($this->task->configModel->get('app_rename'))): ?>
-                <meta property="og:title" content="<?= $this->text->e($title) ?> | <?= $this->task->configModel->get('app_rename') ?>">
-            <?php else: ?>
-                <meta property="og:title" content="<?= $this->text->e($title) ?> | <?= t('My Workspace') ?>">
-            <?php endif ?>
+            <meta property="og:title" content="<?= $this->text->e($title) ?> | <?= $this->text->e($applicationName) ?>">
         <?php elseif (($incomingController == 'PasswordResetController') && ($outgoingAction == 'create')): ?>
-            <?php if (!empty($this->task->configModel->get('app_rename'))): ?>
-                <meta property="og:title" content="<?= t('Reset Password') ?> | <?= $this->task->configModel->get('app_rename') ?>">
-            <?php else: ?>
-                <meta property="og:title" content="<?= t('Reset Password') ?> | <?= t('My Workspace') ?>">
-            <?php endif ?>
+            <meta property="og:title" content="<?= t('Reset Password') ?> | <?= $this->text->e($applicationName) ?>">
         <?php else: ?>
-            <?php if (!empty($this->task->configModel->get('app_rename'))): ?>
-                <meta property="og:title" content="<?= $this->task->configModel->get('app_rename') ?>">
-            <?php else: ?>
-                <meta property="og:title" content="<?= t('My Workspace') ?>">
-            <?php endif ?>
+            <meta property="og:title" content="<?= $this->text->e($applicationName) ?>">
         <?php endif ?>
 
         <title>
             <?php if (isset($page_title)): ?>
                 <?= $this->text->e($page_title) ?>
-                <?php if (!empty($this->task->configModel->get('app_rename'))): ?>
-                    | <?= $this->task->configModel->get('app_rename') ?>
-                <?php else: ?>
-                    | <?= t('My Workspace') ?>
-                <?php endif ?>
+                | <?= $this->text->e($applicationName) ?>
 
             <?php elseif (isset($title)): ?>
                 <?= $this->text->e($title) ?>
-                <?php if (!empty($this->task->configModel->get('app_rename'))): ?>
-                    | <?= $this->task->configModel->get('app_rename') ?>
-                <?php else: ?>
-                    | <?= t('My Workspace') ?>
-                <?php endif ?>
+                | <?= $this->text->e($applicationName) ?>
 
             <?php elseif (($incomingController == 'PasswordResetController') && ($outgoingAction == 'create')): ?>
-                <?php if (!empty($this->task->configModel->get('app_rename'))): ?>
-                    <?= t('Reset Password') ?> | <?= $this->task->configModel->get('app_rename') ?>
-                <?php else: ?>
-                    <?= t('Reset Password') ?> | <?= t('My Workspace') ?>
-                <?php endif ?>
+                <?= t('Reset Password') ?> | <?= $this->text->e($applicationName) ?>
 
             <?php else: ?>
-                <?php if (!empty($this->task->configModel->get('app_rename'))): ?>
-                    | <?= $this->task->configModel->get('app_rename') ?>
-                <?php else: ?>
-                    | <?= t('My Workspace') ?>
-                <?php endif ?>
+                <?= $this->text->e($applicationName) ?>
 
             <?php endif ?>
         </title>

@@ -46,19 +46,18 @@ body.application-branding-background-white {
 .pp-dark-green { color: var(--pp-green-dark); fill: var(--pp-green-dark); }
 .pp-orange { color: var(--pp-orange); fill: var(--pp-orange); }
 
-.display-none, .d-none { display: none; }
+/* Keep plug-in utility styles scoped; see tests/output_safety_contract.php. */
+.about-page .bold { font-weight: bold; }
 
-.font-weight-bold, .bold { font-weight: bold; }
+footer.copyright .center { text-align: center; }
 
-.center, .text-center { text-align: center; }
+.about-page .relative, .login-logo .relative { position: relative; }
 
-.relative { position: relative; }
+.login-logo .no-top { margin-top: 0; }
 
-.no-top {margin-top: 0;}
+.login-logo .no-bottom { margin-bottom: 0; }
 
-.no-bottom {margin-bottom: 0;}
-
-.cursor {cursor: pointer;}
+.about-page .cursor { cursor: pointer; }
 
 #AppBrandingSettings h3 {
     font-weight: 600;
@@ -86,7 +85,8 @@ body.application-branding-background-white {
 
 footer.copyright {
     font-size: .8em;
-    background-color: #FFFFFF96;
+    background-color: var(--panel-background-color);
+    color: var(--color-primary);
     letter-spacing: 1px;
     padding: 3px;
     text-align: center;
@@ -107,24 +107,24 @@ section.login-logo {
     font-weight: 600;
     text-transform: full-width;
     font-size: 1.8em;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: white;
+    color: var(--color-primary);
     line-height: 1;
 }
 
 .login-area .form-login, .password-area .reset-form, .otp-area .otp-form {
     margin: 1em auto;
     padding: 1em;
-    border: 1px solid var(--pp-white);
+    border: 1px solid var(--panel-border-color);
     border-radius: var(--border-radius-app-branding);
-    background-color: rgba(255, 255, 255, .8);
+    background-color: var(--panel-background-color);
+    color: var(--color-primary);
     box-shadow: 0 0 3px 1px rgba(0, 0, 0, .78);
     box-sizing: content-box;
 }
 
 .form-login .warning, .reset-form .warning {
     font-weight: 600;
-    color: var(--pp-red-alt-2);
+    color: var(--color-error);
     text-align: center;
     margin-bottom: 15px;
 }
@@ -139,14 +139,14 @@ section.login-logo {
 a.reset-password-link {
     display: block;
     text-align: right;
-    color: var(--pp-grey);
+    color: var(--link-color-primary);
     text-decoration: none;
 }
 
 .reset-password-link i {
     margin-inline: 5px;
     font-size: 1.1em;
-    color: var(--pp-light-grey);
+    color: var(--color-light);
 }
 
 kbd.user-remote-ip {
@@ -158,8 +158,8 @@ kbd.user-remote-ip {
     font-weight: normal;
     border-radius: var(--border-radius-kbcss);
     font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    color: initial;
-    background-color: initial;
+    color: var(--color-primary);
+    background-color: var(--input-background-color);
 }
 
 span.user-icon {
@@ -190,17 +190,17 @@ span.password-icon {
 
 button.login-btn {
     border-radius: var(--border-radius-app-branding-alt);
-    background-color: var(--pp-white);
-    color: var(--pp-green-dark);
-    border: 2px outset var(--pp-green-dark);
+    background-color: var(--button-primary-background-color);
+    color: var(--button-primary-color);
+    border: 2px solid var(--button-primary-border-color);
     float: right;
 }
 
 button.btn-reset-password {
     border-radius: var(--border-radius-app-branding-alt);
-    background-color: var(--pp-white);
-    color: var(--pp-green-dark);
-    border: 2px outset var(--pp-green-dark);
+    background-color: var(--button-primary-background-color);
+    color: var(--button-primary-color);
+    border: 2px solid var(--button-primary-border-color);
     float: right;
     font-size: 1em;
     transition: var(--transition-app-branding);
@@ -208,14 +208,17 @@ button.btn-reset-password {
 
 a.btn.back-btn, a.btn.back-btn:visited {
     border-radius: var(--border-radius-app-branding-alt);
-    border: 2px outset var(--pp-grey);
-    color: var(--pp-grey);
+    border: 2px solid var(--button-default-border-color);
+    color: var(--button-default-color);
+    background-color: var(--button-default-background-color);
     font-size: 1em;
     transition: var(--transition-app-branding);
 }
 
 .back-btn:hover, .back-btn:focus {
-    border-color: var(--pp-light-grey) !important;
+    border-color: var(--button-default-border-color-focus) !important;
+    color: var(--button-default-color-focus);
+    background-color: var(--button-default-background-color-focus);
 }
 
 a.back-btn.logout-button {
@@ -230,9 +233,9 @@ a.back-btn.logout-button {
 
 button.verify-btn {
     border-radius: var(--border-radius-app-branding-alt);
-    background-color: white;
-    color: var(--pp-green-dark);
-    border: 2px outset var(--pp-green-dark);
+    background-color: var(--button-primary-background-color);
+    color: var(--button-primary-color);
+    border: 2px solid var(--button-primary-border-color);
 }
 
 input#form-username, input#form-password {
@@ -241,16 +244,17 @@ input#form-username, input#form-password {
     border: 0;
     border-radius: 0;
     height: 31px;
-    color: #4D4D4D;
+    color: var(--color-primary);
+    background-color: var(--input-background-color);
 }
 
 .required-wrapper {
-    border: 2px inset var(--pp-red-alt-2);
+    border: 2px solid var(--input-border-color);
     height: 30px;
     display: inline-block;
     padding: 0 0 3px 5px;
     border-radius: var(--border-radius-app-branding-alt);
-    background-color: var(--pp-white);
+    background-color: var(--input-background-color);
 }
 
 .required-wrapper .form-required, .required-wrapper-captcha .form-required {
@@ -258,7 +262,7 @@ input#form-username, input#form-password {
 }
 
 .required-wrapper-captcha {
-    border: 2px inset var(--pp-red-alt-2);
+    border: 2px solid var(--input-border-color);
     height: 30px;
     display: inline-block;
     padding: 0 0 3px 0;
@@ -266,7 +270,7 @@ input#form-username, input#form-password {
 }
 
 .required-wrapper-otp {
-    border: 2px inset var(--pp-red-alt-2);
+    border: 2px solid var(--input-border-color);
     height: 30px;
     display: inline-block;
     padding: 0 0 3px 0;
@@ -279,15 +283,16 @@ textarea#form-login_message, textarea#form-app_branding_custom_head_css {
 }
 
 textarea.login-message-textarea, textarea.meta-desc-textarea, textarea.custom-head-css {
-    background: #D8E2F9;
+    background: var(--input-background-color);
+    color: var(--color-primary);
 }
 
 .username-input::placeholder, .username-input::-webkit-input-placeholder, .password-input::placeholder, .password-input::-webkit-input-placeholder, .captcha-input::placeholder, .captcha-input::-webkit-input-placeholder, #form-username::placeholder, #form-username::-webkit-input-placeholder {
-    color: #4D4D4D !important;
+    color: var(--input-placeholder-color) !important;
 }
 
 textarea.login-message-textarea::placeholder, textarea.login-message-textarea::-webkit-input-placeholder, textarea.meta-desc-textarea::placeholder, textarea.meta-desc-textarea::-webkit-input-placeholder, textarea.custom-head-css::placeholder, textarea.custom-head-css::-webkit-input-placeholder, input.login-warning-text::placeholder, input.login-warning-text::-webkit-input-placeholder, input.copyright-from::placeholder, input.copyright-from::-webkit-input-placeholder, input.site-name-text::placeholder, input.site-name-text::-webkit-input-placeholder, input.meta-desc-text::placeholder, input.meta-desc-text::-webkit-input-placeholder {
-    color: #4D4D4D !important;
+    color: var(--input-placeholder-color) !important;
 }
 
 form.login-form .form-actions {
@@ -331,7 +336,7 @@ h2.otp-title {
 
 form.form-reset .required-wrapper {
     padding-left: 0;
-    background-color: var(--pp-white);
+    background-color: var(--input-background-color);
 }
 
 .reset-title span.reset-icon {

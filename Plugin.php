@@ -3,6 +3,7 @@
 namespace Kanboard\Plugin\ApplicationBranding;
 
 use Kanboard\Core\Plugin\Base;
+use Kanboard\Core\Security\Role;
 use Kanboard\Core\Translator;
 use Kanboard\Helper;
 
@@ -10,6 +11,9 @@ class Plugin extends Base
 {
     public function initialize()
     {
+        // Keep all branding configuration routes administrator-only; see tests/output_safety_contract.php.
+        $this->applicationAccessMap->add('ApplicationBrandingController', '*', Role::APP_ADMIN);
+
         // Template Override
         //  - Override name should be camelCase e.g. pluginNameExampleCamelCase
         if (file_exists('plugins/Customizer')) {

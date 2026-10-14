@@ -1,10 +1,7 @@
+<?php // See tests/output_safety_contract.php for configured application-name escaping. ?>
 <div class="about-page">
     <h2 class="app-header">
-        <?php if (!empty($this->task->configModel->get('app_rename'))): ?>
-            <?= $this->task->configModel->get('app_rename') ?> <?= t('Dashboard') ?>
-        <?php else: ?>
-            <?= t('My Workspace Dashboard') ?>
-        <?php endif ?>
+        <?= $this->text->e($this->helper->applicationBrandingHelper->getApplicationName()) ?> <?= t('Dashboard') ?>
     </h2>
 
     <?php

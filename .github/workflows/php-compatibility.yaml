@@ -64,6 +64,12 @@ jobs:
       - name: Check Kanboard template compatibility contract
         run: php plugin/tests/template_compatibility_contract.php
 
+      - name: Check output safety and theme contract
+        run: php plugin/tests/output_safety_contract.php
+
+      - name: Check canonical URL contract
+        run: php plugin/tests/canonical_url_contract.php
+
       - name: Install Kanboard dependencies
         run: composer install --working-dir=kanboard --no-dev --no-interaction --prefer-dist --no-progress --optimize-autoloader
 
