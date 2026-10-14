@@ -79,11 +79,11 @@
         <meta property="og:locale:alternate" content="en_US">
 
         <?php if (($incomingController == 'PasswordResetController') && ($outgoingAction == 'create')): ?>
-            <meta name="description" content="<?= t('Change your password for this kanban platform.') ?>">
-            <meta property="og:description" content="<?= t('Change your password for this kanban platform.') ?>">
+            <meta name="description" content="<?= t('application_branding.reset_description') ?>">
+            <meta property="og:description" content="<?= t('application_branding.reset_description') ?>">
         <?php else: ?>
-            <meta name="description" content="<?= t('Use this kanban platform to manage your productivity using tasks inside project boards to track files, comments and activities.') ?>">
-            <meta property="og:description" content="<?= t('Use this kanban platform to manage your productivity using tasks inside project boards to track files, comments and activities.') ?>">
+            <meta name="description" content="<?= t('application_branding.site_description') ?>">
+            <meta property="og:description" content="<?= t('application_branding.site_description') ?>">
         <?php endif ?>
 
         <?php if (isset($page_title)): ?>
@@ -91,7 +91,7 @@
         <?php elseif (isset($title)): ?>
             <meta property="og:title" content="<?= $this->text->e($title) ?> | <?= $this->text->e($applicationName) ?>">
         <?php elseif (($incomingController == 'PasswordResetController') && ($outgoingAction == 'create')): ?>
-            <meta property="og:title" content="<?= t('Reset Password') ?> | <?= $this->text->e($applicationName) ?>">
+            <meta property="og:title" content="<?= t('application_branding.reset_password') ?> | <?= $this->text->e($applicationName) ?>">
         <?php else: ?>
             <meta property="og:title" content="<?= $this->text->e($applicationName) ?>">
         <?php endif ?>
@@ -106,7 +106,7 @@
                 | <?= $this->text->e($applicationName) ?>
 
             <?php elseif (($incomingController == 'PasswordResetController') && ($outgoingAction == 'create')): ?>
-                <?= t('Reset Password') ?> | <?= $this->text->e($applicationName) ?>
+                <?= t('application_branding.reset_password') ?> | <?= $this->text->e($applicationName) ?>
 
             <?php else: ?>
                 <?= $this->text->e($applicationName) ?>

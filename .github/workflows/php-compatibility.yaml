@@ -70,6 +70,11 @@ jobs:
       - name: Check canonical URL contract
         run: php plugin/tests/canonical_url_contract.php
 
+      - name: Check translation completeness and isolation contract
+        run: php plugin/tests/translation_contract.php
+        env:
+          KANBOARD_ROOT: ${{ github.workspace }}/kanboard
+
       - name: Install Kanboard dependencies
         run: composer install --working-dir=kanboard --no-dev --no-interaction --prefer-dist --no-progress --optimize-autoloader
 

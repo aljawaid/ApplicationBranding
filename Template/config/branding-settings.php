@@ -1,95 +1,95 @@
 <fieldset id="AppBrandingSettings" class="panel app-branding-settings">
     <h3 class="">
-        <img src="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/workspace-icon-500x500.png" class="" width="30px" alt="<?= t('Workspace logo') ?>">
-        <?= t('Application Branding') ?>
+        <img src="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/workspace-icon-500x500.png" class="" width="30px" alt="<?= t('application_branding.workspace_logo') ?>">
+        <?= t('application_branding.settings_title') ?>
     </h3>
     <fieldset class="app-name-settings">
-        <legend class=""><?= t('Application Name') ?></legend>
-        <p class=""><?= t('Enter the new name for this application') ?></p>
+        <legend class=""><?= t('application_branding.application_name') ?></legend>
+        <p class=""><?= t('application_branding.application_name_help') ?></p>
         <div class="">
             <div class="app-rename">
-                <?= $this->form->label(t('Site Name'), 'app_rename', array('class=""')) ?>
+                <?= $this->form->label(t('application_branding.site_name'), 'app_rename', array('class=""')) ?>
                 <?= $this->form->text('app_rename', $values, $errors, array('placeholder="My Workspace"'), 'site-name-text') ?>
-                <p class="form-help"><?= t('By default, this plugin will rename your application to "My Workspace" once installed') ?></p>
+                <p class="form-help"><?= t('application_branding.application_name_default') ?></p>
             </div>
         </div>
     </fieldset>
     <fieldset class="login-page-settings">
-        <legend class=""><?= t('Login Page') ?></legend>
-        <p class=""><?= t('Adjust the settings below to customise the login page') ?></p>
+        <legend class=""><?= t('application_branding.login_page') ?></legend>
+        <p class=""><?= t('application_branding.login_settings_help') ?></p>
         <fieldset class="settings-subsection">
-            <legend><?= t('Login Title') ?></legend>
+            <legend><?= t('application_branding.login_title') ?></legend>
             <div class="visitor-warning">
-                <?= $this->form->label(t('Visitor Warning'), 'login_warning', array('class=""')) ?>
-                <?= $this->form->text('login_warning', $values, $errors, array('placeholder="' . t('AUTHORISED USERS ONLY') . '"'), 'login-warning-text') ?>
-                <p class="form-help"><?= t('Enter a single line title or leave blank for the default title') ?></p>
+                <?= $this->form->label(t('application_branding.visitor_warning'), 'login_warning', array('class=""')) ?>
+                <?= $this->form->text('login_warning', $values, $errors, array('placeholder="' . t('application_branding.authorised_users_only') . '"'), 'login-warning-text') ?>
+                <p class="form-help"><?= t('application_branding.login_title_help') ?></p>
             </div>
         </fieldset>
         <fieldset class="settings-subsection">
-            <legend><?= t('Login Text') ?></legend>
+            <legend><?= t('application_branding.login_text') ?></legend>
             <div class="login-message">
-                <?= $this->form->label(t('Login Message'), 'login_message', array('class=""')) ?>
-                <?= $this->form->textarea('login_message', $values, $errors, array('placeholder="' . t('Use this platform to manage your productivity. Work with tasks inside project boards to track comments, files and activities.') . '"'), 'login-message-textarea') ?>
-                <p class="form-help"><?= t('This message will appear within the form above the username or leave blank for the default message') ?></p>
+                <?= $this->form->label(t('application_branding.login_message'), 'login_message', array('class=""')) ?>
+                <?= $this->form->textarea('login_message', $values, $errors, array('placeholder="' . t('application_branding.productivity_message') . '"'), 'login-message-textarea') ?>
+                <p class="form-help"><?= t('application_branding.login_message_help') ?></p>
             </div>
         </fieldset>
         <fieldset class="settings-subsection">
-            <legend><?= t('IP Address') ?></legend>
+            <legend><?= t('application_branding.ip_address') ?></legend>
             <?php $ipAddressVisibility = isset($values['app_branding_show_ip_address']) ? $values['app_branding_show_ip_address'] : 'hidden' ?>
             <?= $this->form->radios('app_branding_show_ip_address', array(
-                'hidden' => t('Hide IP address'),
-                'visible' => t('Show IP address'),
+                'hidden' => t('application_branding.hide_ip_address'),
+                'visible' => t('application_branding.show_ip_address'),
             ), array('app_branding_show_ip_address' => $ipAddressVisibility)) ?>
-            <p class="form-help"><?= t('Hidden by default. Works with Apache, Nginx and other web servers that pass the client address to PHP.') ?></p>
-            <p class="form-help"><?= t('Reverse-proxy forwarding is not handled because trusting forwarded headers without a trusted-proxy configuration is unsafe.') ?></p>
+            <p class="form-help"><?= t('application_branding.ip_address_help') ?></p>
+            <p class="form-help"><?= t('application_branding.ip_address_proxy_help') ?></p>
         </fieldset>
         <fieldset class="settings-subsection">
-            <legend><?= t('Login Background') ?></legend>
+            <legend><?= t('application_branding.login_background') ?></legend>
             <?php $loginBackground = isset($values['app_branding_login_background']) ? $values['app_branding_login_background'] : 'default' ?>
             <?= $this->form->radios('app_branding_login_background', array(
-                'default' => t('Use theme background'),
-                'white' => t('Use white background'),
+                'default' => t('application_branding.use_theme_background'),
+                'white' => t('application_branding.use_white_background'),
             ), array('app_branding_login_background' => $loginBackground)) ?>
-            <p class="form-help"><?= t('The theme background option follows the active Kanboard or user theme.') ?></p>
+            <p class="form-help"><?= t('application_branding.login_background_help') ?></p>
         </fieldset>
         <fieldset class="settings-subsection">
-            <legend><?= t('Copyright') ?></legend>
+            <legend><?= t('application_branding.copyright') ?></legend>
             <div class="app-copyright">
-                <?= $this->form->label(t('From Year'), 'copyright_from', array('class=""')) ?>
+                <?= $this->form->label(t('application_branding.from_year'), 'copyright_from', array('class=""')) ?>
                 <?= $this->form->number('copyright_from', $values, $errors, array('placeholder="2014"'), 'copyright-from') ?>
-                <p class="form-help"><?= t('Leave blank to show only the current year') ?></p>
+                <p class="form-help"><?= t('application_branding.copyright_year_help') ?></p>
             </div>
         </fieldset>
         <div class="form-actions">
-            <button type="submit" class="btn btn-blue" title="<?= t('Saves any changes made on this page') ?>"><?= t('Save Settings') ?></button>
+            <button type="submit" class="btn btn-blue" title="<?= t('application_branding.save_settings_help') ?>"><?= t('application_branding.save_settings') ?></button>
         </div>
     </fieldset>
     <?php // See tests/output_safety_contract.php for the trusted administrator CSS boundary. ?>
     <fieldset class="site-metadata-settings">
         <legend class="">
-            <?= t('Custom CSS') ?>
-            <?= $this->app->tooltipHTML($this->text->e(t('Administrator-supplied CSS is trusted and inserted without filtering. It can change every application page.'))) ?>
+            <?= t('application_branding.custom_css') ?>
+            <?= $this->app->tooltipHTML($this->text->e(t('application_branding.custom_css_warning'))) ?>
         </legend>
-        <?= $this->form->label(t('Head Stylesheet'), 'app_branding_custom_head_css', array('class=""')) ?>
+        <?= $this->form->label(t('application_branding.head_stylesheet'), 'app_branding_custom_head_css', array('class=""')) ?>
         <?= $this->form->textarea('app_branding_custom_head_css', $values, $errors, array('placeholder=" a {color: red; }"'), 'custom-head-css') ?>
-        <p class="form-help"><?= e('The default custom CSS at the top of this page loads all styles at the top of the %s tag. The custom styles in this section will be inserted at the bottom of the %s tag and after all plugin styles.', '<i>head</i>', '<i>head</i>') ?></p>
+        <p class="form-help"><?= e('application_branding.custom_css_help', '<i>head</i>', '<i>head</i>') ?></p>
     </fieldset>
     <fieldset class="site-metadata-settings">
-        <legend class=""><?= t('Site Metadata') ?></legend>
+        <legend class=""><?= t('application_branding.site_metadata') ?></legend>
         <p class="">
             <span class="section-desc">
                 <span class="metadata-html-icon"></span>
             </span>
-            <?= e('The site description and common device icons are shown in the %s section.', $this->url->link(t('Site Metadata'), 'ApplicationBrandingController', 'show', ['plugin' => 'ApplicationBranding'], false, 'application-link', t('Visit page'), false, '')) ?>
+            <?= e('application_branding.metadata_help', $this->url->link(t('application_branding.site_metadata'), 'ApplicationBrandingController', 'show', ['plugin' => 'ApplicationBranding'], false, 'application-link', t('application_branding.visit_page'), false, '')) ?>
         </p>
     </fieldset>
     <fieldset class="site-metadata-settings">
-        <legend class=""><?= t('Manual Edits') ?></legend>
+        <legend class=""><?= t('application_branding.manual_edits') ?></legend>
         <p class="">
             <span class="section-desc">
                 <span class="manual-edits-icon"></span>
             </span>
-            <?= e('For total application rebranding, a few manual changes are required to be made to core files. Follow the suggestions in the %s section to learn more.', $this->url->link(t('Manual Edits'), 'ApplicationBrandingController', 'manualEdits', ['plugin' => 'ApplicationBranding'], false, 'application-link', t('Visit page'), false, '')) ?>
+            <?= e('application_branding.manual_edits_help', $this->url->link(t('application_branding.manual_edits'), 'ApplicationBrandingController', 'manualEdits', ['plugin' => 'ApplicationBranding'], false, 'application-link', t('application_branding.visit_page'), false, '')) ?>
         </p>
     </fieldset>
 </fieldset>

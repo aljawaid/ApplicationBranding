@@ -1,4 +1,4 @@
-<p><?= t('Click on the following link to reset your password:') ?></p>
+<p><?= t('application_branding.password_reset_link') ?></p>
 
 <p><?= $this->url->to('PasswordResetController', 'change', array('token' => $token), '', true) ?></p>
 

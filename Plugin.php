@@ -63,7 +63,13 @@ class Plugin extends Base
 
     public function onStartup()
     {
-        Translator::load($this->languageModel->getCurrentLanguage(), __DIR__ . '/Locale');
+        // Load the complete US English catalogue first, then override it with the selected locale.
+        Translator::load('en_US', __DIR__ . '/Locale');
+
+        $currentLanguage = $this->languageModel->getCurrentLanguage();
+        if ($currentLanguage !== 'en_US') {
+            Translator::load($currentLanguage, __DIR__ . '/Locale');
+        }
     }
 
     public function getPluginName()
@@ -74,7 +80,7 @@ class Plugin extends Base
 
     public function getPluginDescription()
     {
-        return t('This plugin will rename your installation to \'My Workspace\' and include matching device icons in the site metadata for a better user experience. A revamped login page, with a new Admin Dashboard showing global installation activity data with corrected page titles will give a more professional appeal across the site and when sharing links.');
+        return t('application_branding.plugin_description');
     }
 
     public function getPluginAuthor()

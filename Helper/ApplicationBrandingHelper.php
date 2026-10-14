@@ -84,7 +84,7 @@ class ApplicationBrandingHelper extends Base
     {
         $applicationName = trim((string) $this->configModel->get('app_rename'));
 
-        return $applicationName !== '' ? $applicationName : t('My Workspace');
+        return $applicationName !== '' ? $applicationName : t('application_branding.workspace_name');
     }
 
     /**
@@ -174,7 +174,7 @@ class ApplicationBrandingHelper extends Base
         $url = sprintf(DOCUMENTATION_URL_PATTERN, $file);
 
         return sprintf('
-            <a href="%s" class="channels-link" title="' . t('Opens in a new window') . '" rel="noopener noreferrer" target="_blank">
+            <a href="%s" class="channels-link" title="' . t('application_branding.opens_new_window') . '" rel="noopener noreferrer" target="_blank">
                 <div class="icon-wrapper wrapper-docs">
                     <span class="kanboard-icon"></span>
                 </div>

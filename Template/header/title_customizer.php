@@ -8,7 +8,7 @@
         </span>
     <?php else: ?>
         <span class="logo">
-            <?= $this->url->link('<img src="' . $this->url->dir() . 'plugins/ApplicationBranding/Assets/img/workspace-icon-500x500.png" width="40px" style="vertical-align: middle;"  alt="' . t('Workspace logo') . '">', 'DashboardController', 'show', array(), false, '', t('Dashboard')) ?>
+            <?= $this->url->link('<img src="' . $this->url->dir() . 'plugins/ApplicationBranding/Assets/img/workspace-icon-500x500.png" width="40px" style="vertical-align: middle;"  alt="' . t('application_branding.workspace_logo') . '">', 'DashboardController', 'show', array(), false, '', t('Dashboard')) ?>
         </span>
     <?php endif ?>
     <span class="title">

@@ -1,6 +1,6 @@
 <?php // See tests/output_safety_contract.php for configured-text escaping. ?>
 <section class="login-logo center-login">
-    <img src="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/workspace-icon-500x500.png" class="ws-logo" alt="<?= t('Workspace logo') ?>">
+    <img src="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/workspace-icon-500x500.png" class="ws-logo" alt="<?= t('application_branding.workspace_logo') ?>">
     <h3 class="no-top no-bottom login-title">
         <?= $this->text->e(strtoupper($this->helper->applicationBrandingHelper->getApplicationName())) ?>
     </h3>
@@ -11,7 +11,7 @@
                     <?php if (!empty($this->task->configModel->get('login_warning'))): ?>
                         <?= $this->text->e($this->task->configModel->get('login_warning')) ?>
                     <?php else: ?>
-                        <?= t('AUTHORISED USERS ONLY') ?>
+                        <?= t('application_branding.authorised_users_only') ?>
                     <?php endif ?>
                 </h4>
 
@@ -25,7 +25,7 @@
                     <?php if (!empty($this->task->configModel->get('login_message'))): ?>
                         <?= $this->text->e($this->task->configModel->get('login_message')) ?>
                     <?php else: ?>
-                        <?= t('Use this platform to manage your productivity. Work with tasks inside project boards to track comments, files and activities.') ?>
+                        <?= t('application_branding.productivity_message') ?>
                     <?php endif ?>
                 </p>
 
@@ -59,12 +59,12 @@
                         <div class="form-actions">
                             <?php if ($this->app->config('password_reset') == 1): ?>
                                 <div class="reset-password">
-                                    <?= $this->url->link(t('Reset Password') . '<i class="fa fa-question-circle-o" aria-hidden="true"></i>', 'PasswordResetController', 'create', array(), false, 'reset-password-link', '') ?>
+                                    <?= $this->url->link(t('application_branding.reset_password') . '<i class="fa fa-question-circle-o" aria-hidden="true"></i>', 'PasswordResetController', 'create', array(), false, 'reset-password-link', '') ?>
                                 </div>
                             <?php endif ?>
                             <button type="submit" class="btn login-btn">
                                 <?= t('Login') ?>
-                                <img src="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/login.svg" class="login-icon" width="30px" alt="<?= t('Enter Application') ?>" title="<?= t('Enter Application') ?>">
+                                <img src="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/login.svg" class="login-icon" width="30px" alt="<?= t('application_branding.enter_application') ?>" title="<?= t('application_branding.enter_application') ?>">
                             </button>
                         </div>
 
@@ -76,9 +76,9 @@
                 <?php $remoteAddress = $this->helper->applicationBrandingHelper->getRemoteAddress() ?>
                 <?php if ($this->helper->applicationBrandingHelper->shouldShowRemoteAddress() && $remoteAddress !== ''): ?>
                     <?php if ($this->helper->applicationBrandingHelper->isLocalRemoteAddress($remoteAddress)): ?>
-                        <kbd class="user-remote-ip"><?= t('Your IP:') ?> <i><abbr title="<?= $this->text->e($remoteAddress) ?>">localhost</abbr></i></kbd>
+                        <kbd class="user-remote-ip"><?= t('application_branding.your_ip') ?> <i><abbr title="<?= $this->text->e($remoteAddress) ?>">localhost</abbr></i></kbd>
                     <?php else: ?>
-                        <kbd class="user-remote-ip"><?= t('Your IP:') ?> <?= $this->text->e($remoteAddress) ?></kbd>
+                        <kbd class="user-remote-ip"><?= t('application_branding.your_ip') ?> <?= $this->text->e($remoteAddress) ?></kbd>
                     <?php endif ?>
                 <?php endif ?>
             </div>
