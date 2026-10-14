@@ -68,7 +68,6 @@ This plugin will rename your installation to \'My Workspace\' and include matchi
 - Show User IP Address
 - Show application name and copyright
 - Include metadata and generic logo (for when sharing links)
-- Show Unsplash random image as background or use plain white
 - Faster login switching between users by hovering over the username and password fields
 - [Customizer](https://github.com/creecros/Customizer) Compatibility:
   - After installing this plugin, Customizer shows the Custom Note feature retaining its hook (`'template:auth:login-form:newbox'`)
@@ -78,7 +77,6 @@ This plugin will rename your installation to \'My Workspace\' and include matchi
 - Add user friendly page title
 - Show application name and copyright
 - Include application metadata and generic logo (for when sharing links)
-- Show Unsplash random image as background or use plain white
 - Move your mouse over the username and captcha fields to automatically save time selecting the field
 - [Customizer](https://github.com/creecros/Customizer) Compatibility:
   - After installing this plugin, Customizer will use the meta tags and page title
@@ -176,14 +174,8 @@ This plugin will rename your installation to \'My Workspace\' and include matchi
     <a href="https://github.com/aljawaid/ApplicationBranding/actions/workflows/linter.yml">
         <img src="https://github.com/aljawaid/ApplicationBranding/actions/workflows/linter.yml/badge.svg?branch=master&event=push" alt="Code Scanning" title="View Test">
     </a>
-    <a href="https://github.com/aljawaid/ApplicationBranding/actions/workflows/php-compatibility-7.4.yaml">
-        <img src="https://github.com/aljawaid/ApplicationBranding/actions/workflows/php-compatibility-7.4.yaml/badge.svg?branch=master&event=push" alt="PHP Compatibility Test" title="View Test">
-    </a>
-    <a href="https://github.com/aljawaid/ApplicationBranding/actions/workflows/php-compatibility-8.0.yaml">
-        <img src="https://github.com/aljawaid/ApplicationBranding/actions/workflows/php-compatibility-8.0.yaml/badge.svg?branch=master&event=push" alt="PHP Compatibility Test" title="View Test">
-    </a>
-    <a href="https://github.com/aljawaid/ApplicationBranding/actions/workflows/php-compatibility-8.2.yaml">
-        <img src="https://github.com/aljawaid/ApplicationBranding/actions/workflows/php-compatibility-8.2.yaml/badge.svg?branch=master&event=push" alt="PHP Compatibility Test" title="View Test">
+    <a href="https://github.com/aljawaid/ApplicationBranding/actions/workflows/php-compatibility.yaml">
+        <img src="https://github.com/aljawaid/ApplicationBranding/actions/workflows/php-compatibility.yaml/badge.svg?branch=master&event=push" alt="PHP Compatibility Test" title="View Test">
     </a>
 </p>
 
@@ -192,14 +184,6 @@ This plugin will rename your installation to \'My Workspace\' and include matchi
 
 - Install via the **[Kanboard](https://github.com/kanboard/kanboard "Kanboard - Kanban Project Management Software") Plugin Directory** or see [INSTALL.md](../master/INSTALL.md)
 - Read the full [**Changelog**](../master/changelog.md "See changes") to see the latest updates
-
-**Content Security Policy - CSP Server Configuration**
-
-If icons or Unsplash images are not displaying you may need to set the CSP on your server. Add the line below in the `.htaccess` file found in the root directory of your Kanboard installation.
-
-```apache
-Header set Content-Security-Policy "default-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' https; connect-src 'self'; img-src 'self' data:; style-src 'unsafe-inline' https *; base-uri 'self'; form-action 'self'; frame-src 'self' https; child-src 'self';"
-```
 
 </details>
 <details>
