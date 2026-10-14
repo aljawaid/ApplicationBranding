@@ -6,6 +6,8 @@
  * Related file: Helper/ApplicationBrandingHelper.php.
  */
 
+// phpcs:disable PSR1.Classes.ClassDeclaration.MultipleClasses -- Contract test defines minimal namespaced fixtures.
+
 namespace Kanboard\Core {
     class Base
     {

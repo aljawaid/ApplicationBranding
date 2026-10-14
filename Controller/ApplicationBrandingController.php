@@ -44,7 +44,7 @@ class ApplicationBrandingController extends BaseController
      */
     public function save()
     {
-        if (! $this->userSession->isAdmin()) {
+        if (!$this->userSession->isAdmin()) {
             throw new AccessForbiddenException();
         }
 

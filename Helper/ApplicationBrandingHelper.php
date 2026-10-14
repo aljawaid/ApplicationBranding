@@ -100,7 +100,8 @@ class ApplicationBrandingHelper extends Base
         $applicationUrl = trim((string) $this->configModel->get('application_url'));
         $base = parse_url($applicationUrl);
 
-        if ($applicationUrl === ''
+        if (
+            $applicationUrl === ''
             || filter_var($applicationUrl, FILTER_VALIDATE_URL) === false
             || $base === false
             || !isset($base['scheme'], $base['host'])
@@ -108,7 +109,8 @@ class ApplicationBrandingHelper extends Base
             || isset($base['user'])
             || isset($base['pass'])
             || isset($base['query'])
-            || isset($base['fragment'])) {
+            || isset($base['fragment'])
+        ) {
             return '';
         }
 

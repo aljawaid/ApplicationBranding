@@ -36,9 +36,11 @@ foreach ($templateIterator as $template) {
     }
 
     foreach (preg_split('/\R/', $contents) as $line) {
-        if (strpos($line, '<?=') !== false
+        if (
+            strpos($line, '<?=') !== false
             && strpos($line, 'getApplicationName()') !== false
-            && strpos($line, '$this->text->e(') === false) {
+            && strpos($line, '$this->text->e(') === false
+        ) {
             $failures[] = $relativePath . ' renders the application name without escaping.';
         }
     }
@@ -66,11 +68,13 @@ foreach (array("configModel->get('application_url')", 'request->getUri()', 'requ
     }
 }
 
-if (strpos($helper, "array('http', 'https')") === false
+if (
+    strpos($helper, "array('http', 'https')") === false
     || strpos($helper, "isset(\$base['user'])") === false
     || strpos($helper, "isset(\$base['pass'])") === false
     || strpos($helper, "isset(\$base['query'])") === false
-    || strpos($helper, "isset(\$base['fragment'])") === false) {
+    || strpos($helper, "isset(\$base['fragment'])") === false
+) {
     $failures[] = 'Canonical URLs must use a credential-free configured HTTP(S) origin.';
 }
 
@@ -96,9 +100,11 @@ foreach (array('.bold {', '.relative {', '.no-top {', '.no-bottom {', '.cursor {
     }
 }
 
-if ((strpos($settings, "t('application_branding.custom_css_warning')") === false
+if (
+    (strpos($settings, "t('application_branding.custom_css_warning')") === false
         && strpos($settings, "t('Administrator-supplied CSS is trusted and inserted without filtering. It can change every application page.')") === false)
-    || strpos($settings, 'tooltipHTML') === false) {
+    || strpos($settings, 'tooltipHTML') === false
+) {
     $failures[] = 'The custom CSS setting must explain its trusted, unfiltered behaviour in a helper tooltip.';
 }
 

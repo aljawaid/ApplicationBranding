@@ -21,10 +21,12 @@ if (strpos($settings, "isset(\$values['app_branding_login_background']) ? \$valu
     $failures[] = 'The login background setting must default to the active theme.';
 }
 
-foreach (array(
-    array("'default' => t('Use theme background')", "'default' => t('application_branding.use_theme_background')"),
-    array("'white' => t('Use white background')", "'white' => t('application_branding.use_white_background')"),
-) as $optionVariants) {
+foreach (
+    array(
+        array("'default' => t('Use theme background')", "'default' => t('application_branding.use_theme_background')"),
+        array("'white' => t('Use white background')", "'white' => t('application_branding.use_white_background')"),
+    ) as $optionVariants
+) {
     if (strpos($settings, $optionVariants[0]) === false && strpos($settings, $optionVariants[1]) === false) {
         $failures[] = 'The login background setting is missing an expected option.';
     }
@@ -50,9 +52,11 @@ $remoteUrlPatterns = array('source.unsplash.com', 'images.unsplash.com', 'api.un
 foreach ($remoteUrlPatterns as $pattern) {
     $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($pluginRoot, FilesystemIterator::SKIP_DOTS));
     foreach ($iterator as $file) {
-        if ($file->isFile()
+        if (
+            $file->isFile()
             && $file->getPathname() !== __FILE__
-            && strpos($file->getPathname(), DIRECTORY_SEPARATOR . '.git' . DIRECTORY_SEPARATOR) === false) {
+            && strpos($file->getPathname(), DIRECTORY_SEPARATOR . '.git' . DIRECTORY_SEPARATOR) === false
+        ) {
             if (strpos(file_get_contents($file->getPathname()), $pattern) !== false) {
                 $failures[] = 'Third-party background reference remains in ' . $file->getPathname();
             }

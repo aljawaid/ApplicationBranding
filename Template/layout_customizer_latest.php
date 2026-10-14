@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="<?= $this->app->jsLang() ?>"<?php if ($this->app->isRtlLanguage()): ?> dir="rtl"<?php endif; ?>>
+<html lang="<?= $this->app->jsLang() ?>"<?= $this->app->isRtlLanguage() ? ' dir="rtl"' : '' ?>>
     <head>
         <?php // See tests/template_compatibility_contract.php for the Kanboard 1.2.54 layout contract. ?>
         <meta charset="utf-8">
