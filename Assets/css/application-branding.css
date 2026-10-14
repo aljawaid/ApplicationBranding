@@ -118,7 +118,7 @@ section.login-logo {
     border-radius: var(--border-radius-app-branding);
     background-color: var(--panel-background-color);
     color: var(--color-primary);
-    box-shadow: 0 0 3px 1px rgba(0, 0, 0, .78);
+    box-shadow: 0 0 3px 1px rgb(0, 0, 0, .78);
     box-sizing: content-box;
 }
 
