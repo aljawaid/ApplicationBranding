@@ -58,6 +58,9 @@ jobs:
       - name: Check IP visibility contract
         run: php plugin/tests/ip_visibility_contract.php
 
+      - name: Check login background contract
+        run: php plugin/tests/login_background_contract.php
+
       - name: Install Kanboard dependencies
         run: composer install --working-dir=kanboard --no-dev --no-interaction --prefer-dist --no-progress --optimize-autoloader
 

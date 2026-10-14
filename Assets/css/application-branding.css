@@ -1,5 +1,10 @@
 /* KANBOARD PLUGIN - CSS FILE */
 
+body.application-branding-background-white {
+    background-color: #FFFFFF;
+    background-image: none;
+}
+
 :root {
     --pp-blue: #007AC9;
     --pp-blue-alt: #00ADFF;

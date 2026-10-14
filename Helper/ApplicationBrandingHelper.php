@@ -52,6 +52,27 @@ class ApplicationBrandingHelper extends Base
     }
 
     /**
+     * Return the optional white background class for authentication pages.
+     *
+     * An empty class preserves the active Kanboard or user-theme background.
+     * See tests/login_background_contract.php.
+     *
+     * @access public
+     * @param  string $controller
+     * @return string
+     */
+    public function getAuthenticationBackgroundClass($controller)
+    {
+        $authenticationControllers = array('AuthController', 'PasswordResetController', 'TwoFactorController');
+
+        if ($this->configModel->get('app_branding_login_background') !== 'white') {
+            return '';
+        }
+
+        return in_array($controller, $authenticationControllers, true) ? 'application-branding-background-white' : '';
+    }
+
+    /**
      * Get Help Docs - Helper to generate a link to the documentation
      *
      * @see     about.php

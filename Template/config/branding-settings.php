@@ -44,6 +44,15 @@
             <p class="form-help"><?= t('Reverse-proxy forwarding is not handled because trusting forwarded headers without a trusted-proxy configuration is unsafe.') ?></p>
         </fieldset>
         <fieldset class="settings-subsection">
+            <legend><?= t('Login Background') ?></legend>
+            <?php $loginBackground = isset($values['app_branding_login_background']) ? $values['app_branding_login_background'] : 'default' ?>
+            <?= $this->form->radios('app_branding_login_background', array(
+                'default' => t('Use theme background'),
+                'white' => t('Use white background'),
+            ), array('app_branding_login_background' => $loginBackground)) ?>
+            <p class="form-help"><?= t('The theme background option follows the active Kanboard or user theme.') ?></p>
+        </fieldset>
+        <fieldset class="settings-subsection">
             <legend><?= t('Copyright') ?></legend>
             <div class="app-copyright">
                 <?= $this->form->label(t('From Year'), 'copyright_from', array('class=""')) ?>
