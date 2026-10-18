@@ -1,5 +1,47 @@
 # Changelog
 
+## v5.0.4
+
+_(most recent changes are listed on top):_
+- FIX: Route the Password-Reset Return Action to the Live Kanboard Login Page Instead of the Server-Local Base URL
+- FIX: Add Focused Regression Coverage for Password-Reset Navigation
+
+
+## v5.0.3
+
+_(most recent changes are listed on top):_
+- FIX: Use Theme-Aware Code and Keyboard Colours with WCAG AA Contrast on the Manual-Edits Page
+- FIX: Extend Contrast Regression Coverage to Light and Dark Manual-Edit Examples
+
+
+## v5.0.2
+
+_(most recent changes are listed on top):_
+- FIX: Preserve Release File Modification Times so Kanboard Changes Asset Cache-Busting URLs After Plugin Updates
+
+
+## v5.0.1
+
+_(most recent changes are listed on top):_
+- FIX: Darken Administration Dashboard Gradients While Preserving Their Colours so White Card Text Maintains WCAG AA Contrast in Light and Dark Themes
+- FIX: Add Numerical Regression Coverage for Every Dashboard Gradient Stop
+
+
+## v5.0.0
+
+_(most recent changes are listed on top):_
+- SECURITY FIX: Restrict Branding Settings to Administrators, Validate CSRF Tokens and Escape Configurable Output
+- SECURITY FIX: Build Canonical Metadata URLs from the Configured Credential-Free HTTP(S) Origin
+- SECURITY FIX: Prevent Administrator-Supplied Custom CSS from Closing Its Containing Style Element
+- FIX: Require Kanboard 1.2.54 and Use Its Current Layout Templates
+- FIX: Support PHP 8.2, 8.3, 8.4 and 8.5 in the Compatibility Workflow
+- FIX: Make the Login Background and Branding Controls Theme-Aware - Closes #21
+- FIX: Make Visitor IP Display Optional and Explain Local Addresses Accurately - Closes #19
+- FIX: Remove Third-Party Login Backgrounds to Avoid External Requests from the Sign-In Page
+- FIX: Isolate and Complete the US English, British English and French Translation Catalogues
+- FIX: Add Focused Contracts for Output Safety, Canonical URLs, Translations, Login Backgrounds, Visitor IP Visibility and Template Compatibility
+
+
 ## v4.0
 
 _(most recent changes are listed on top):_
