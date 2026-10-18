@@ -1,4 +1,5 @@
 /* KANBOARD PLUGIN - CSS FILE */
+/* Related test: tests/dashboard_contrast_contract.php. */
 
 body.application-branding-background-white {
     background-color: #FFFFFF;
@@ -31,6 +32,10 @@ body.application-branding-background-white {
     --panel-background-app-branding: #EEEEEE;
     --transition-app-branding: ease-in-out all .3s;
     --tech-bg-grey-border-match: #6C6E6E;
+    --dashboard-card-blend-color: #666666;
+    --manual-code-background-color: light-dark(#E7ECF0, #2C2C2C);
+    --manual-code-color: light-dark(#1F2937, #E6EDF3);
+    --manual-kbd-background-color: light-dark(#CBD1D5, #3B3B3B);
 }
 
 .pp-blue { color: var(--pp-blue); fill: var(--pp-blue); }
@@ -720,6 +725,17 @@ ul.icon-list li .filename {
     background: linear-gradient(202deg, rgb(13, 179, 136) 0%, rgb(0, 72, 95) 100.00%);
 }
 
+.back-orange,
+.back-copper,
+.back-grey,
+.back-red,
+.back-green,
+.back-purple,
+.back-deep-green {
+    background-color: var(--dashboard-card-blend-color);
+    background-blend-mode: multiply;
+}
+
 details.license summary {
     cursor: pointer;
 }
@@ -945,8 +961,8 @@ section.m-edit-section h4 {
 .m-edit-codeblock kbd {
     padding: 0 .3em .19em .3em;
     font-size: initial;
-    color: initial;
-    background-color: #CBD1D5;
+    color: var(--manual-code-color);
+    background-color: var(--manual-kbd-background-color);
     border-radius: var(--border-radius-app-branding-alt);
     font-family: monospace;
     letter-spacing: .05rem;
@@ -958,9 +974,9 @@ section.m-edit-section h4 {
     overflow: auto;
     font-size: 95%;
     line-height: 1.45;
-    background-color: #E7ECF0;
+    background-color: var(--manual-code-background-color);
     border-radius: var(--border-radius-app-branding);
-    color: initial;
+    color: var(--manual-code-color);
     display: block;
     font-family: monospace;
     letter-spacing: .06rem;

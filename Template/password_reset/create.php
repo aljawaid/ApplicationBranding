@@ -1,4 +1,4 @@
-<?php // See tests/output_safety_contract.php for configured-text escaping. ?>
+<?php // See tests/output_safety_contract.php and tests/password_reset_navigation_contract.php. ?>
 <section class="login-logo center-login">
     <img src="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/workspace-icon-500x500.png" class="ws-logo" alt="<?= t('application_branding.workspace_logo') ?>">
     <h3 class="no-top no-bottom login-title">
@@ -30,7 +30,7 @@
                         <?= $this->form->text('captcha', array(), $errors, array('required', 'placeholder="Required"'), 'captcha-input') ?>
                     </span>
                     <div class="form-actions">
-                        <a href="<?= $this->url->base() ?>" class="btn back-btn">
+                        <a href="<?= $this->url->href('AuthController', 'login') ?>" class="btn back-btn">
                             <span class="back-home-icon"></span> <?= t('application_branding.back_to_login') ?>
                         </a>
                         <button type="submit" class="btn btn-reset-password">
