@@ -16,6 +16,7 @@ jobs:
   compatibility:
     name: PHP ${{ matrix.php }}
     runs-on: ubuntu-24.04
+    timeout-minutes: 15
     strategy:
       fail-fast: false
       matrix:
@@ -74,6 +75,12 @@ jobs:
         run: php plugin/tests/translation_contract.php
         env:
           KANBOARD_ROOT: ${{ github.workspace }}/kanboard
+
+      - name: Check dashboard contrast contract
+        run: php plugin/tests/dashboard_contrast_contract.php
+
+      - name: Check password-reset navigation contract
+        run: php plugin/tests/password_reset_navigation_contract.php
 
       - name: Install Kanboard dependencies
         run: composer install --working-dir=kanboard --no-dev --no-interaction --prefer-dist --no-progress --optimize-autoloader
