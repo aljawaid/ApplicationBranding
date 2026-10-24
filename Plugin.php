@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * Register the branding views, settings and public home-screen manifest.
+ * Manifest behaviour is covered by tests/web_manifest_contract.php.
+ */
+
 namespace Kanboard\Plugin\ApplicationBranding;
 
 use Kanboard\Core\Plugin\Base;
@@ -13,6 +18,8 @@ class Plugin extends Base
     {
         // Keep all branding configuration routes administrator-only; see tests/output_safety_contract.php.
         $this->applicationAccessMap->add('ApplicationBrandingController', '*', Role::APP_ADMIN);
+        // Browsers fetch the manifest before sign-in; only non-secret branding is returned.
+        $this->applicationAccessMap->add('ManifestController', 'show', Role::APP_PUBLIC);
 
         // Template Override
         //  - Override name should be camelCase e.g. pluginNameExampleCamelCase
@@ -51,6 +58,7 @@ class Plugin extends Base
         // Extra Page - Routes
         //  - Example: $this->route->addRoute('/my/custom/route', 'MyController', 'show', 'PluginNameExampleStudlyCaps');
         //  - Must have the corresponding action in the matching controller
+        $this->route->addRoute('/application-branding/manifest.webmanifest', 'ManifestController', 'show', 'ApplicationBranding');
         $this->route->addRoute('/settings/metadata', 'ApplicationBrandingController', 'show', 'ApplicationBranding');
         $this->route->addRoute('/security-check', 'TwoFactorController', 'code');
         $this->route->addRoute('/settings/manual-edits', 'ApplicationBrandingController', 'manualEdits', 'ApplicationBranding');

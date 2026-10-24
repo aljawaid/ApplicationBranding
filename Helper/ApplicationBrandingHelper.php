@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * Resolve safe branding values for layouts, metadata and the web manifest.
+ * Manifest behaviour is covered by tests/web_manifest_contract.php.
+ */
+
 namespace Kanboard\Plugin\ApplicationBranding\Helper;
 
 use Kanboard\Core\Base;
@@ -85,6 +90,73 @@ class ApplicationBrandingHelper extends Base
         $applicationName = trim((string) $this->configModel->get('app_rename'));
 
         return $applicationName !== '' ? $applicationName : t('application_branding.workspace_name');
+    }
+
+    /**
+     * Build site-wide home-screen metadata from administrator-controlled settings.
+     *
+     * This stays independent of the visitor's language and session so the
+     * installed application identity remains stable across users.
+     * See tests/web_manifest_contract.php.
+     *
+     * @return array
+     */
+    public function getWebManifest()
+    {
+        $configuredUrl = trim((string) $this->configModel->get('application_url'));
+        $parts = parse_url($configuredUrl);
+
+        if (
+            $configuredUrl === ''
+            || filter_var($configuredUrl, FILTER_VALIDATE_URL) === false
+            || $parts === false
+            || !isset($parts['scheme'], $parts['host'])
+            || isset($parts['user'])
+            || isset($parts['pass'])
+            || isset($parts['query'])
+            || isset($parts['fragment'])
+        ) {
+            return array();
+        }
+
+        $scheme = strtolower($parts['scheme']);
+        $host = strtolower($parts['host']);
+        $isLocalHttp = $scheme === 'http' && in_array($host, array('localhost', '127.0.0.1', '[::1]'), true);
+        if ($scheme !== 'https' && !$isLocalHttp) {
+            return array();
+        }
+
+        $path = isset($parts['path']) ? '/' . trim($parts['path'], '/') . '/' : '/';
+        if ($path === '//') {
+            $path = '/';
+        }
+
+        $origin = $scheme . '://' . $host;
+        if (isset($parts['port'])) {
+            $origin .= ':' . $parts['port'];
+        }
+
+        $startUrl = $origin . $path;
+        $assetUrl = $startUrl . 'plugins/ApplicationBranding/Assets/img/favicon/';
+        $name = trim((string) $this->configModel->get('app_rename'));
+        if ($name === '') {
+            $name = 'My Workspace';
+        }
+
+        return array(
+            'id' => $path,
+            'name' => $name,
+            'short_name' => $name,
+            'start_url' => $startUrl,
+            'scope' => $path,
+            'display' => 'standalone',
+            'background_color' => '#ffffff',
+            'theme_color' => '#ffffff',
+            'icons' => array(
+                array('src' => $assetUrl . 'android-chrome-192x192.png', 'sizes' => '192x192', 'type' => 'image/png'),
+                array('src' => $assetUrl . 'android-chrome-512x512.png', 'sizes' => '512x512', 'type' => 'image/png'),
+            ),
+        );
     }
 
     /**

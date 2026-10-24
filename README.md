@@ -38,6 +38,8 @@ This plugin will rename your installation to \'My Workspace\' and include matchi
 ## Features
 
 **Rename Application**
+- The configured application name and Kanboard Application URL are used for the mobile home-screen manifest. Its icon is bundled with this plugin, including when Customizer supplies other favicons.
+- A valid HTTPS Application URL is required outside local development. The shortcut needs a network connection; offline access is not provided.
 - Rename your installation of Kanboard
   - Choose your own site name or use the default `My Workspace`
   - Browser bookmarks and browser tabs now include the site name (overriding the default Kanboard behaviour)

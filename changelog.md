@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+- FIX: Generate the mobile home-screen manifest from the administrator's application name and Kanboard URL.
+- FIX: Add a correctly sized 512 px branded icon and explain the shortcut in Application settings.
+
 ## v5.0.4
 
 _(most recent changes are listed on top):_

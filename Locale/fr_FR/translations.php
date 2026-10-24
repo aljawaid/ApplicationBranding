@@ -16,6 +16,7 @@ return array(
     'application_branding.your_ip' => 'Votre adresse IP :',
     'application_branding.settings_title' => 'Personnalisation de l’application',
     'application_branding.application_name_help' => 'Saisissez le nouveau nom de cette application',
+    'application_branding.home_screen_help' => 'Ce nom apparaît sur les raccourcis de l’écran d’accueil. Ils utilisent l’icône fournie, ouvrent l’URL de l’application indiquée ci-dessus et nécessitent une connexion réseau.',
     'application_branding.application_name_default' => 'Par défaut, ce plugin renomme votre application « Mon espace de travail ».',
     'application_branding.login_settings_help' => 'Modifiez les paramètres ci-dessous pour personnaliser la page de connexion',
     'application_branding.login_title_help' => 'Saisissez un titre sur une seule ligne ou laissez ce champ vide pour utiliser le titre par défaut',

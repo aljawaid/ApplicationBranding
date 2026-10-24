@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<?php
+// Render the branded Kanboard layout; manifest coverage is in tests/web_manifest_contract.php.
+?><!DOCTYPE html>
 <html lang="<?= $this->app->jsLang() ?>"<?= $this->app->isRtlLanguage() ? ' dir="rtl"' : '' ?>>
     <head>
         <?php // See tests/template_compatibility_contract.php for the Kanboard 1.2.54 layout contract. ?>
@@ -57,7 +59,9 @@
         <meta name="msapplication-square310x310logo" content="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/mstile-310x310.png">
         <meta name="msapplication-config" content="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/browserconfig.xml">
         <meta name="theme-color" content="#FFFFFF">
-        <link rel="manifest" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/site.webmanifest">
+        <?php if ($this->helper->applicationBrandingHelper->getWebManifest() !== array()): ?>
+            <link rel="manifest" href="<?= $this->url->href('ManifestController', 'show', array('plugin' => 'ApplicationBranding')) ?>">
+        <?php endif ?>
         <link rel="mask-icon" href="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/favicon/safari-pinned-tab.svg" color="#5BBAD5">
 
         <?php // See tests/output_safety_contract.php for canonical URL and metadata escaping. ?>

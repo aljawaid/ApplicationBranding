@@ -17,6 +17,7 @@ return array(
     'application_branding.your_ip' => '',
     'application_branding.settings_title' => '',
     'application_branding.application_name_help' => '',
+    'application_branding.home_screen_help' => '',
     'application_branding.application_name_default' => '',
     'application_branding.login_settings_help' => '',
     'application_branding.login_title_help' => '',

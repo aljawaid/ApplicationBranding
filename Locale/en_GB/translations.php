@@ -11,6 +11,7 @@ return array(
     'application_branding.your_ip' => 'Your IP:',
     'application_branding.settings_title' => 'Application Branding',
     'application_branding.application_name_help' => 'Enter the new name for this application',
+    'application_branding.home_screen_help' => 'This name appears on home-screen shortcuts. They use the bundled icon, open the Application URL shown above and need a network connection.',
     'application_branding.application_name_default' => 'By default, this plugin renames your application to "My Workspace".',
     'application_branding.login_settings_help' => 'Adjust the settings below to customise the login page',
     'application_branding.login_title_help' => 'Enter a single-line title or leave this blank to use the default title',

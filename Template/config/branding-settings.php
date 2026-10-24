@@ -1,10 +1,15 @@
-<fieldset id="AppBrandingSettings" class="panel app-branding-settings">
+<?php
+// Explain how the administrator's existing settings drive the home-screen shortcut.
+?><fieldset id="AppBrandingSettings" class="panel app-branding-settings">
     <h3 class="">
         <img src="<?= $this->url->dir() ?>plugins/ApplicationBranding/Assets/img/workspace-icon-500x500.png" class="" width="30px" alt="<?= t('application_branding.workspace_logo') ?>">
         <?= t('application_branding.settings_title') ?>
     </h3>
     <fieldset class="app-name-settings">
-        <legend class=""><?= t('application_branding.application_name') ?></legend>
+        <legend class="">
+            <?= t('application_branding.application_name') ?>
+            <?= $this->app->tooltipHTML($this->text->e(t('application_branding.home_screen_help'))) ?>
+        </legend>
         <p class=""><?= t('application_branding.application_name_help') ?></p>
         <div class="">
             <div class="app-rename">
